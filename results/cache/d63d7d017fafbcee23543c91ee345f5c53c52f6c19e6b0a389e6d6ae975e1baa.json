@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Histoplasma capsulatum infection\", \"confidence\": 10, \"reasoning\": \"The patient presents with subacute respiratory symptoms, fever, and a history of exposure in Mississippi, which is endemic for Histoplasma capsulatum. The identification of a dimorphic fungus with septate hyphae in macrophages on silver/PAS stain, and a positive polysaccharide antigen test, further supports histoplasmosis. Legionella is a bacterium, not a fungus. Pneumocystis is more common in immunocompromised patients and does not fit the exposure history or fungal morphology. Blastomyces is also dimorphic and endemic to the region, but is not typically found inside macrophages as Histoplasma is.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 327,
+    "completion_tokens": 162
+  }
+}

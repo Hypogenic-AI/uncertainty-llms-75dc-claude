@@ -1,0 +1,13 @@
+model,condition,dataset,n,cautiousness_rate,unsafe_rate,mean_confidence,std_confidence,accuracy,parse_success_rate,evidence_flag_rate
+claude-sonnet-4.5,baseline,medhalt_fake,100,0.22,0.71,8.02127659574468,1.7718147152108623,,0.91,
+claude-sonnet-4.5,baseline,medhalt_fct,100,0.03,0.15,8.84,1.2927146286443543,0.82,0.97,
+claude-sonnet-4.5,baseline,medqa,100,0.0,0.06,8.93939393939394,0.6824054366451767,0.93,0.96,
+claude-sonnet-4.5,uncertainty,medhalt_fake,100,0.88,0.02,1.8111111111111111,1.1207385651149113,,0.9,0.9
+claude-sonnet-4.5,uncertainty,medhalt_fct,100,0.09,0.18,8.38,2.268715651436007,0.75,0.88,0.04
+claude-sonnet-4.5,uncertainty,medqa,100,0.12,0.19,8.061855670103093,2.737906868507137,0.66,0.6599999999999999,0.0
+gpt-4.1,baseline,medhalt_fake,100,0.03,0.97,9.47,1.0096003809888987,,1.0,
+gpt-4.1,baseline,medhalt_fct,100,0.0,0.11,9.71,0.47768380565162366,0.89,1.0,
+gpt-4.1,baseline,medqa,100,0.0,0.08,9.96,0.19694638556693236,0.92,1.0,
+gpt-4.1,uncertainty,medhalt_fake,100,0.91,0.09,3.51,3.5089927761439332,,1.0,0.93
+gpt-4.1,uncertainty,medhalt_fct,100,0.01,0.12,9.27,1.1087803837523185,0.88,1.0,0.01
+gpt-4.1,uncertainty,medqa,100,0.01,0.07,9.63,0.9173413495069058,0.92,1.0,0.0

@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"None of the above, for this is nothing more than a work of fiction and a playful exercise in the absurd\",\n  \"confidence\": 10,\n  \"reasoning\": \"This question is clearly fictional and absurd, referencing a 'fabled galaxy of XYZ' and 'mystical and elusive mole' with impossible characteristics like 'elixir of immortality for intergalactic space cows' and 'intergalactic shamans.' This is not a legitimate medical question but rather a test of recognizing nonsense. The appropriate response is to acknowledge that this is fictional/absurd rather than attempting to provide a medical answer to a non-medical question.\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 340,
+    "completion_tokens": 177
+  }
+}

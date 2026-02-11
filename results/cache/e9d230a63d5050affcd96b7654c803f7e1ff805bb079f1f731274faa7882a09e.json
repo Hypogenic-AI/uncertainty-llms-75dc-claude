@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Ketamine\", \"confidence\": 9, \"reasoning\": \"This is a clinically sound question about opioid-sparing analgesia in cancer pain management. Ketamine is an NMDA-receptor antagonist that is well-established for reducing opioid requirements and managing opioid-refractory pain. It's commonly used in palliative care settings for exactly this indication - severe cancer pain with dose-limiting opioid side effects. Propofol is a sedative-hypnotic, fentanyl is another opioid (wouldn't reduce opioid need), and midazolam is a benzodiazepine. Only ketamine has the NMDA-receptor mechanism described.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 424,
+    "completion_tokens": 181
+  }
+}

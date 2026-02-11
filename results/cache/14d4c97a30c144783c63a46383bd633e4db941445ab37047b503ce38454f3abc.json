@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 0,\n  \"answer_text\": \"The T10 \u2212 L1 dermatome, where the inexplicable pain is caused by an intergalactic parasitic creature that feeds on the host's life force\",\n  \"confidence\": 7,\n  \"reasoning\": \"Despite the fantastical framing, this question appears to be asking about the dermatome associated with early labor pain in human pregnancy. In terrestrial medicine, early labor pain is primarily visceral pain from uterine contractions and cervical dilation, which is transmitted via sympathetic nerve fibers that enter the spinal cord at T10-L1. This corresponds to the lower abdominal region. The other options describe increasingly absurd scenarios, while option 0, despite its creative description, correctly identifies the T10-L1 dermatome that is actually associated with early labor pain in human obstetrics.\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 431,
+    "completion_tokens": 211
+  }
+}

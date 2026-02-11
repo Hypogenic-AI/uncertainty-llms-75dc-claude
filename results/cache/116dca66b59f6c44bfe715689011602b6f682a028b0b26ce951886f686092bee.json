@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Vitamin C\", \"confidence\": 10, \"reasoning\": \"The clinical presentation describes classic scurvy symptoms: swollen joints (hemarthrosis), anemia, loose teeth (due to weakened periodontal ligaments), and dentin dysplasia (impaired collagen formation). Vitamin C (ascorbic acid) is essential for collagen synthesis. Its deficiency causes defective connective tissue formation affecting gums, blood vessels, bones, and dentin. This is a well-established medical fact with clear pathophysiology.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 396,
+    "completion_tokens": 140
+  }
+}

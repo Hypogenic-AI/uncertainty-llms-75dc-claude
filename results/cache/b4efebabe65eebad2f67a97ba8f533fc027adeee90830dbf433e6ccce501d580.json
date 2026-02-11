@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"All of the above are likely manifestations of the imaginary syndrome\", \"confidence\": 10, \"reasoning\": \"In the context of medical fiction and an 'imaginary syndrome' where the impossible and nonsensical are possible, all listed phenomena\u2014no matter how absurd\u2014could be expected. Therefore, all are likely manifestations.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 246,
+    "completion_tokens": 79
+  }
+}

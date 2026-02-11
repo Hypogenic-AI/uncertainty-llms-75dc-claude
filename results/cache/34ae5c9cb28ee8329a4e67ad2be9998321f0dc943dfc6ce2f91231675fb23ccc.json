@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Basal Cell Carcinoma\", \"confidence\": 10, \"reasoning\": \"Basal cell carcinoma (BCC) is well-known for its locally invasive behavior but extremely rare lymphatic spread. It typically grows slowly and invades locally but almost never metastasizes to lymph nodes or distant sites. In contrast, squamous cell carcinoma, malignant melanoma, and Merkel cell carcinoma all have well-documented potential for lymphatic spread and regional lymph node metastases. BCC's lack of lymphatic spread is one of its defining characteristics, making it the correct answer for the malignancy LEAST commonly associated with lymphatic spread.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 200,
+    "completion_tokens": 165
+  }
+}

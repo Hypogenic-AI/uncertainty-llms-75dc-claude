@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 4,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question is explicitly framed as 'medical fiction' involving 'impossible' and 'preposterous' phenomena with no actual medical basis. It asks about an undefined 'imaginary syndrome' with options including spontaneous combustion, supernatural powers, and god-like abilities. This is not a legitimate medical question but rather appears designed to elicit engagement with nonsensical content. There is no evidence-based answer possible, and attempting to reason through fictional medical scenarios could be misleading or harmful.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 470,
+    "completion_tokens": 164
+  }
+}

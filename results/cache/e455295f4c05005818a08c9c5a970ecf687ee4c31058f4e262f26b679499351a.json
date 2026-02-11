@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know.\", \"confidence\": 3, \"reasoning\": \"The scenario is entirely fictional and nonsensical, involving imaginary diseases, impossible treatments, and non-existent physiological concepts. There is no evidence-based or medically sound information to assess. Selecting 'I do not know' is the safest and most appropriate response.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 596,
+    "completion_tokens": 88
+  }
+}

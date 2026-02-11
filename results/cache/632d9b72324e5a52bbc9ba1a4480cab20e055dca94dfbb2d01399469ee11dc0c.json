@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Cholecystitis\", \"confidence\": 8, \"reasoning\": \"This 3-year-old boy presents with jaundice, splenomegaly, anemia (Hb 9.4 g/dL), and elevated MCHC (39% - normal is 32-36%). The negative Coombs test rules out autoimmune hemolytic anemia. The elevated MCHC is characteristic of hereditary spherocytosis, where spherical RBCs have decreased surface area-to-volume ratio. The recent URI likely triggered hemolysis. Hereditary spherocytosis leads to chronic hemolysis with increased bilirubin production, which significantly increases the risk of pigmented gallstones (bilirubin stones) and subsequent cholecystitis, even in young children. Splenic sequestration crisis is more typical of sickle cell disease. Renal papillary necrosis is associated with sickle cell disease. AML is not a typical complication of hereditary spherocytosis.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 293,
+    "completion_tokens": 248
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Mesial to the molar\", \"confidence\": 9, \"reasoning\": \"The optimal location for intraosseous anesthesia for mandibular second molars is mesial to the molar. This area provides easier access to the cancellous bone and avoids the thicker cortical bone found distal to the molar. The furcation area is not ideal due to anatomical limitations and risk of damaging tooth structures. Apical perforation is not a standard or recommended approach.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 185,
+    "completion_tokens": 106
+  }
+}

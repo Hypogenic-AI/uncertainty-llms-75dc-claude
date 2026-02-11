@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Lipohyalinosis of small penetrating arteries due to chronic hypertension\", \"confidence\": 10, \"reasoning\": \"The patient has pure sensory stroke with MRI showing a small lesion in the left thalamus, consistent with a lacunar infarct. The most crucial mechanism for lacunar infarcts is lipohyalinosis of small penetrating arteries, often due to chronic hypertension and diabetes. There is no evidence of large vessel disease or embolic source. Carotid stenosis typically causes cortical strokes, not deep small vessel infarcts.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 478,
+    "completion_tokens": 123
+  }
+}

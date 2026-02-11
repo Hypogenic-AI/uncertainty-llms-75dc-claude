@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Lipohyalinosis of small penetrating arteries due to chronic hypertension\", \"confidence\": 9, \"reasoning\": \"This patient has a lacunar stroke affecting the left thalamus, evidenced by the 15mm diffusion restriction on MRI. Key features include: 1) Pure sensory stroke (right-sided numbness without weakness), 2) Small deep infarct in thalamus, 3) History of hypertension and diabetes. Lacunar strokes result from occlusion of small penetrating arteries (lenticulostriate, thalamoperforating) due to lipohyalinosis - a degenerative process caused by chronic hypertension. The student incorrectly chose carotid stenosis, which typically causes cortical strokes with different presentations. Patent foramen ovale would be paradoxical embolism (less likely given risk factors), and hemorrhage is excluded by imaging showing infarction not bleeding. The chronic hypertension (BP 165/102) and small vessel location make lipohyalinosis the most crucial mechanism.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 540,
+    "completion_tokens": 258
+  }
+}

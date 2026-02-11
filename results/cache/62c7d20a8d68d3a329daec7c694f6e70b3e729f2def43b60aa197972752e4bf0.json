@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Add fluticasone daily\", \"confidence\": 10, \"reasoning\": \"This child has persistent asthma, as evidenced by symptoms more than twice per week, nighttime awakenings, and activity limitation. The preferred next step is to add a daily inhaled corticosteroid such as fluticasone. Salmeterol is not first-line in children and should only be added to inhaled corticosteroids if control is not achieved. Zileuton is rarely used in children. Maintaining current therapy is inappropriate as symptoms are not well-controlled.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 324,
+    "completion_tokens": 121
+  }
+}

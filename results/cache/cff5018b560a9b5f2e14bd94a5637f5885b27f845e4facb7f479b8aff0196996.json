@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question contains multiple red flags: (1) It involves a fictional alien scenario that cannot be medically evaluated, (2) The options describe 'inexplicable,' 'improbable,' and 'metaphysical' effects that contradict evidence-based medicine, (3) The language is absurdist (galaxies, black holes, 'abyss of despair'), (4) It asks me to speculate about impossible scenarios. While there IS a real medical principle here (HPV vaccination reducing cervical cancer prevalence would decrease PPV of Pap tests in vaccinated populations), the question's framing is designed to elicit nonsensical speculation rather than sound medical reasoning. The premise explicitly asks for effects that 'defy logic' and are 'improbable,' which is antithetical to evidence-based medicine.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 534,
+    "completion_tokens": 239
+  }
+}

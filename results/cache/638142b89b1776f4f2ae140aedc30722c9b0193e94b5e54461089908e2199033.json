@@ -1,0 +1,8 @@
+{
+  "raw_response": "Let me analyze this question about 5-HT4 receptor agonists.\n\n**Evidence Quality Assessment:** This is a straightforward pharmacology question about serotonin receptor mechanisms. The question is medically sound and evidence-based.\n\n**Analysis of Options:**\n\n1. **Loxiglumide** - This is a cholecystokinin (CCK) receptor antagonist, NOT a 5-HT4 receptor drug.\n\n2. **Renzapride** - This is a selective 5-HT4 receptor agonist and 5-HT3 receptor antagonist. It's used as a prokinetic agent for gastrointestinal motility disorders.\n\n3. **Atractiloside** - This is a toxic glycoside that inhibits mitochondrial ATP/ADP translocase, NOT related to 5-HT4 receptors.\n\n4. **Metoclopramide** - While this is a prokinetic agent, it primarily works as a dopamine D2 receptor antagonist with some 5-HT4 agonist activity, but it's not primarily classified as a 5-HT4 drug.\n\n**Correct Answer:** Renzapride is the most specific and correct answer as it is a well-established 5-HT4 receptor agonist.\n\n```json\n{\n  \"answer_index\": 1,\n  \"answer_text\": \"Renzapride\",\n  \"confidence\": 9,\n  \"reasoning\": \"Renzapride is a selective 5-HT4 receptor agonist used as a prokinetic agent. Loxiglumide is a CCK antagonist, Atractiloside is a mitochondrial toxin, and while Metoclopramide has some 5-HT4 activity, Renzapride is the most specific 5-HT4 receptor drug among the options.\",\n  \"evidence_quality\": \"normal\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 395,
+    "completion_tokens": 459
+  }
+}

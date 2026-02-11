@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Centrilobular hepatocytes\", \"confidence\": 9, \"reasoning\": \"This patient experienced significant hypotension (BP 86/60) and hemorrhagic shock from diverticular bleeding. The markedly elevated transaminases (ALT 2,674, AST 2,254) indicate acute hepatocellular injury, consistent with ischemic hepatitis (shock liver). The liver has a dual blood supply, but zone 3 (centrilobular region) is furthest from arterial blood supply and receives blood with the lowest oxygen tension. During hypoperfusion states, centrilobular hepatocytes are most vulnerable to ischemic injury due to their location in the hepatic acinus. The pattern of very high transaminases with relatively normal bilirubin and alkaline phosphatase is classic for ischemic hepatitis. The elevated BUN/Cr ratio also supports prerenal azotemia from hypoperfusion. Periportal hepatocytes (zone 1) are closest to arterial blood supply and most resistant to ischemia.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 474,
+    "completion_tokens": 251
+  }
+}

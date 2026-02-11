@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Avoidant personality disorder\", \"confidence\": 10, \"reasoning\": \"The patient's behavior is characterized by extreme shyness, avoidance of social situations, and a strong desire for relationships despite social withdrawal. This is most consistent with avoidant personality disorder, which involves social inhibition, feelings of inadequacy, hypersensitivity to negative evaluation, and avoidance of social interaction, but with a desire for connection. Schizoid personality disorder would involve indifference to social relationships and lack of desire for intimacy, which is not the case here. Antisocial personality disorder is characterized by disregard for the rights of others, which is not described. Agoraphobia involves fear of situations where escape might be difficult, typically leading to avoidance of public places, but the social withdrawal here is more related to fear of rejection and desire for relationships.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 544,
+    "completion_tokens": 185
+  }
+}

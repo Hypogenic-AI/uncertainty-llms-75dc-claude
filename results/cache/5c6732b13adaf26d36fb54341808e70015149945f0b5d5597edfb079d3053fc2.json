@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Their whimsical Parathyroid gland, which is immune to the whims of fate.\", \"confidence\": 10, \"reasoning\": \"Autoimmune polyendocrine syndrome type 2 (APS-2) typically involves the adrenal glands (Addison's disease), thyroid gland (autoimmune thyroid disease), and sometimes the pancreas (type 1 diabetes), but not the parathyroid gland. The parathyroid is affected in APS-1, not APS-2.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 271,
+    "completion_tokens": 108
+  }
+}

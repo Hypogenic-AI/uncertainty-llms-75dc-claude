@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Cervical lymph nodes\", \"confidence\": 10, \"reasoning\": \"The patient's presentation is consistent with thyroid cancer, most likely papillary thyroid carcinoma, which is the most common type and typically metastasizes first to the cervical lymph nodes. The other options (trachea, inferior thyroid arteries, thyrohyoid muscle) are less common initial metastatic sites. The clinical scenario, imaging, and cytology all support this diagnosis and metastatic pattern.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 284,
+    "completion_tokens": 106
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Antibodies directed against phospholipids\", \"confidence\": 10, \"reasoning\": \"This patient with systemic lupus erythematosus, history of spontaneous abortion, and now a deep vein thrombosis (DVT) with a prolonged PTT that does not correct with mixing study, is exhibiting classic features of antiphospholipid antibody syndrome. The most likely cause is antibodies directed against phospholipids (such as lupus anticoagulant or anticardiolipin antibodies), which cause a hypercoagulable state. The student's answer (antibodies against glycoprotein IIb/IIIa) is associated with immune thrombocytopenic purpura, not this presentation.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 607,
+    "completion_tokens": 164
+  }
+}

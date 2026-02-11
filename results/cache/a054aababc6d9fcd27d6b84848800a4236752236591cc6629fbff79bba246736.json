@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 4, \"answer_text\": \"I do not know\", \"confidence\": 1, \"reasoning\": \"The question is based on an imaginary syndrome ('Melfan's Syndrome') and references nonsensical enzymes that do not exist in real medical literature. Answering this would not be evidence-based or medically sound.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 80
+  }
+}

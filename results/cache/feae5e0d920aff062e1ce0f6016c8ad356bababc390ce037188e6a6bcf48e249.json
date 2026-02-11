@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Parietal cell destruction\", \"confidence\": 10, \"reasoning\": \"This patient has symptoms and findings consistent with autoimmune (chronic atrophic) gastritis, which is associated with hypothyroidism (as part of autoimmune polyglandular syndrome). The key findings are anemia (likely due to vitamin B12 deficiency from intrinsic factor loss), increased serum gastrin (due to loss of acid-producing parietal cells leading to feedback hypergastrinemia), and inflammation of the gastric body and fundus (where parietal cells reside). The most likely cause is parietal cell destruction.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 244,
+    "completion_tokens": 136
+  }
+}

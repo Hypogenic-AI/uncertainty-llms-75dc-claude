@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Inability to deviate the mandible to the right\", \"confidence\": 9, \"reasoning\": \"A subcondylar fracture on the left side typically impairs movement of the mandible to the opposite side (right), due to disruption of the left condylar function. Therefore, the patient would have an inability to deviate the mandible to the right. The student's answer is incorrect because deviation on protrusion is toward the side of the fracture (left), not the opposite side.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 211,
+    "completion_tokens": 115
+  }
+}

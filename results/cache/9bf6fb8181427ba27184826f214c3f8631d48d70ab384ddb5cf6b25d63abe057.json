@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Streptomycin\", \"confidence\": 10, \"reasoning\": \"The patient's presentation (painful, swollen inguinal lymph nodes, fever, recent travel to Madagascar, and history of painless papules) is classic for bubonic plague caused by Yersinia pestis. The diagnosis is supported by gram-negative coccobacilli on microscopy and a 4-fold rise in anti-F1 titers. Streptomycin is the drug of choice for bubonic plague. Azithromycin is not effective against Y. pestis, imipenem is not first-line, and pharmacotherapy is definitely required.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 573,
+    "completion_tokens": 147
+  }
+}

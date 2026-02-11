@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Factitious disorder\", \"confidence\": 10, \"reasoning\": \"The patient presents with severe hypoglycemia (glucose 35 mg/dL), a normal HbA1c (5.1%), and decreased C-peptide. Insulinoma would show elevated C-peptide due to endogenous insulin production. Factitious hypoglycemia from exogenous insulin administration leads to low C-peptide (since exogenous insulin suppresses endogenous insulin and C-peptide). The context of psychosocial stress (difficult divorce) and no prior episodes supports a psychiatric etiology. Hypothyroidism and somatization disorder do not cause hypoglycemia. Thus, factitious disorder is most likely.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 254,
+    "completion_tokens": 152
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 10, \"reasoning\": \"All of the described test scenarios are implausible and nonsensical, involving supernatural or impossible abilities (telekinesis, quantum physics and alchemy, magic, zero gravity, moon games). These do not reflect real psychometric or G-Factor tests. The only appropriate response is to select 'I do not know.'\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 544,
+    "completion_tokens": 104
+  }
+}

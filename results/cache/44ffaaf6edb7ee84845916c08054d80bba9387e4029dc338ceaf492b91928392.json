@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Repeat blood cultures now\", \"confidence\": 9, \"reasoning\": \"This patient presents with classic signs of infective endocarditis (IE): fever, a new murmur (high-pitched systolic murmur at left sternal border that increases with inspiration suggests tricuspid regurgitation, common in IV drug users), risk factors (IV drug use, hepatitis C), and now has a positive blood culture for S. aureus. The modified Duke criteria for diagnosing IE require either pathological criteria or clinical criteria including major criteria (positive blood cultures with typical organisms, evidence of endocardial involvement) and minor criteria. For blood culture criteria to be considered a major criterion, there must be either: 1) at least 2 separate blood cultures positive for typical organisms, or 2) persistently positive blood cultures. Since only one blood culture has returned positive so far, repeating blood cultures immediately (now) is appropriate to establish the diagnosis according to Duke criteria. Waiting 24-48 hours would delay diagnosis and treatment unnecessarily when the patient is already symptomatic and at high risk.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 350,
+    "completion_tokens": 253
+  }
+}

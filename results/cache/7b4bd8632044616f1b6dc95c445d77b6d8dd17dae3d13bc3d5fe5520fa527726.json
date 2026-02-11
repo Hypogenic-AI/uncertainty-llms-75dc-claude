@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"2003\", \"confidence\": 8, \"reasoning\": \"The Medical Termination of Pregnancy (MTP) Act in India was originally enacted in 1971. It was amended in 2003 to allow for certain procedural changes and updates. The 2003 amendment was a significant modification to the original act. Note: There was a more recent major amendment in 2021, but among the given options, 2003 represents the last modification listed.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 375,
+    "completion_tokens": 124
+  }
+}

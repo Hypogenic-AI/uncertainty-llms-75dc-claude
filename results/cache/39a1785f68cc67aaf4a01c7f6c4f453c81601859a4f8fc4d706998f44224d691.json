@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Avoidant personality disorder\", \"confidence\": 9, \"reasoning\": \"The patient presents with extreme shyness, social inhibition, avoidance of social gatherings, and rarely leaving home, BUT she expresses a strong desire to be in a relationship. This is the key distinguishing feature. In avoidant personality disorder, patients desperately want social connections but avoid them due to fear of rejection and feelings of inadequacy. In contrast, schizoid personality disorder involves lack of desire for relationships and emotional detachment. Agoraphobia focuses on fear of specific situations where escape might be difficult, not primarily social situations. Antisocial personality disorder involves disregard for others' rights and is clearly not consistent here. The combination of social avoidance WITH desire for relationships is pathognomonic for avoidant personality disorder.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 382,
+    "completion_tokens": 194
+  }
+}

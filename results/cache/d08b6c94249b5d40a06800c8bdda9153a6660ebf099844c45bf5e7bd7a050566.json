@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Uncontrolled activation of macrophages and defects in the function of NK cells.\", \"confidence\": 10, \"reasoning\": \"Familial hemophagocytic lymphohistiocytosis (FHL) with perforin deficiency is characterized by impaired cytotoxic function. Perforin is essential for NK cells and cytotoxic T lymphocytes to kill target cells. When perforin is deficient, these cells cannot properly eliminate activated macrophages and other immune cells, leading to uncontrolled macrophage activation and defective NK cell function. This results in the characteristic hyperinflammatory state with hemophagocytosis. The student's answer about MHC class II defects is incorrect - that would be associated with bare lymphocyte syndrome, not FHL. Options 2 and 3 are also not characteristic of perforin deficiency.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 267,
+    "completion_tokens": 214
+  }
+}

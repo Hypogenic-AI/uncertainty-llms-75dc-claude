@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Bacterial infection\", \"confidence\": 9, \"reasoning\": \"Otitis externa (swimmer's ear) is most commonly caused by bacterial infection, particularly Pseudomonas aeruginosa and Staphylococcus aureus. These account for approximately 90% of cases. While fungal infections (otomycosis) can cause otitis externa, they represent only about 10% of cases. Seborrheic dermatitis and herpes zoster are much rarer causes. This is well-established medical knowledge taught in standard otolaryngology curricula.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 386,
+    "completion_tokens": 149
+  }
+}

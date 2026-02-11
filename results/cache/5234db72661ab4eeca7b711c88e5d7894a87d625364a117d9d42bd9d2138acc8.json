@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 10, \"reasoning\": \"The question is based entirely on fictional and nonsensical premises, referencing a nonexistent material (Zax) and mystical sources. There is no scientific or medical evidence to support any answer. Selecting 'I do not know' is the only appropriate and safe response.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 550,
+    "completion_tokens": 90
+  }
+}

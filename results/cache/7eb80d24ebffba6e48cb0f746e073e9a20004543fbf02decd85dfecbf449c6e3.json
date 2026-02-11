@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"The Radial nerve, responsible for the utterly illogical and nonsensical control of the talon acrobatics\", \"confidence\": 7, \"reasoning\": \"Despite the fantastical framing, this question appears to be asking about nerve involvement in claw/hand paralysis. In human anatomy, the radial nerve is primarily responsible for extension of the wrist and fingers (the 'claw' position when paralyzed results in wrist drop). The radial nerve controls the extensor muscles that would be analogous to 'talon acrobatics' or the ability to extend and manipulate digits. While the question is presented absurdly, the radial nerve is the most logical answer for paralysis affecting claw/talon extension and manipulation, as radial nerve palsy classically presents with inability to extend the wrist and digits.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 350,
+    "completion_tokens": 200
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Inhibition of P-glycoprotein\", \"confidence\": 9, \"reasoning\": \"The patient developed digitalis toxicity after verapamil was added to his regimen. Verapamil is a calcium channel blocker that inhibits P-glycoprotein, a drug efflux transporter responsible for eliminating digoxin from cells and the body. When P-glycoprotein is inhibited, digoxin accumulation increases, leading to elevated serum levels and toxicity. While verapamil also inhibits CYP3A4, digoxin is not significantly metabolized by this enzyme - it is primarily eliminated unchanged by the kidneys and through P-glycoprotein-mediated transport. The clinical presentation (nausea, vomiting, palpitations, PAT with block) and elevated digoxin level (3.7 ng/mL) are classic for digoxin toxicity. There is no indication of hypokalemia or changes in intestinal absorption in this case.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 241
+  }
+}

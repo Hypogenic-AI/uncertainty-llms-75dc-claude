@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Autoimmune endocrinopathy\", \"confidence\": 10, \"reasoning\": \"This patient has a history of chronic diarrhea, eczematous dermatitis, failure to thrive, and a FOXP3 gene mutation, which is diagnostic for IPEX syndrome (Immune dysregulation, Polyendocrinopathy, Enteropathy, X-linked). IPEX is characterized by immune dysregulation leading to autoimmune diseases, especially autoimmune endocrinopathies such as type 1 diabetes and thyroiditis. The other options are not characteristic of IPEX syndrome.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 232,
+    "completion_tokens": 124
+  }
+}

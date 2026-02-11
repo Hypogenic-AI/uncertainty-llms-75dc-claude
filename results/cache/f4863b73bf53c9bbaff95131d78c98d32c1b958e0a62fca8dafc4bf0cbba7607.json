@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"HSV-1\", \"confidence\": 10, \"reasoning\": \"This is a classic presentation of primary herpetic gingivostomatitis. The key features are: 1) Young child (5 years old) - this is the typical age for primary HSV-1 infection, 2) Painful vesicular lesions on lips, tongue, gingiva, and buccal mucosa, 3) Fever (39.1\u00b0C), 4) Inability to eat/drink due to pain, 5) Cervical/submandibular lymphadenopathy, 6) Systemic symptoms (muscle aches, irritability). HSV-1 is the most common cause of primary gingivostomatitis in children. HSV-2 typically causes genital lesions. CMV can cause oral lesions but is more common in immunocompromised patients and doesn't typically present this way. HIV doesn't directly cause these acute vesicular lesions. This presentation is pathognomonic for HSV-1 primary infection.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 309,
+    "completion_tokens": 248
+  }
+}

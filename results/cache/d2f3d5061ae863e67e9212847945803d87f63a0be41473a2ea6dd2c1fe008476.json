@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 4, \"answer_text\": \"An inexplicable and bewildering substance that defies all reason and logic, a true enigma of the mystical and the absurd.\", \"confidence\": 2, \"reasoning\": \"All options are fantastical and nonsensical, none correspond to real biology. In the context of the whimsical question, option 4 matches the tone best, though it is not medically accurate.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 326,
+    "completion_tokens": 89
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Histoplasma capsulatum infection\", \"confidence\": 9, \"reasoning\": \"This patient presents with acute respiratory symptoms (dry cough, chest discomfort, fever, chills, myalgias) after hiking in Mississippi, an area endemic for Histoplasma capsulatum. The laboratory findings show a positive polysaccharide antigen (which can be detected in urine for Histoplasma), and bronchoalveolar lavage reveals macrophages filled with a dimorphic fungus with septate hyphae. Histoplasma is known to be found within macrophages and is a dimorphic fungus endemic to the Mississippi and Ohio River valleys. The other options do not fit the epidemiology, clinical presentation, or laboratory findings as well as Histoplasma.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 520,
+    "completion_tokens": 170
+  }
+}

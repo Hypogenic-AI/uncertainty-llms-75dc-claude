@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Sequel of pulpal diseases\", \"confidence\": 10, \"reasoning\": \"Apical periodontitis is most commonly caused by the spread of infection and inflammation from pulpal diseases (such as pulpitis or necrosis) to the periapical tissues. High points in restoration and wedging of foreign objects may cause trauma but are not primary causes of apical periodontitis. Therefore, the correct answer is 'Sequel of pulpal diseases.'\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 178,
+    "completion_tokens": 106
+  }
+}

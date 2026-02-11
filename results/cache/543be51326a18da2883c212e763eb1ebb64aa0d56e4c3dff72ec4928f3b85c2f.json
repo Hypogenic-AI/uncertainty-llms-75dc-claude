@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 0,\n  \"answer_text\": \"\\\"Let's talk about what makes it difficult for you to take your medications.\\\"\",\n  \"confidence\": 9,\n  \"reasoning\": \"This is a medically sound question about medication non-adherence in HIV treatment. The patient has detectable viral load after missing medications every other day. The most appropriate response uses open-ended, non-judgmental exploration of barriers to adherence. This approach (option 0) follows best practices in patient-centered care by: 1) avoiding assumptions about why adherence is poor, 2) not being condescending (unlike option 1), 3) exploring root causes before jumping to solutions (unlike options 2-3), and 4) building therapeutic alliance. The patient's socioeconomic factors suggest multiple potential barriers (financial, social, psychological) that need exploration before intervention.\",\n  \"evidence_quality\": \"normal\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 527,
+    "completion_tokens": 216
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Recall bias\", \"confidence\": 10, \"reasoning\": \"This is a retrospective case-control study relying on mothers' recollection of folic acid use before pregnancy. Mothers of children with ASD may recall or report their prenatal behaviors differently compared to mothers of healthy children, leading to recall bias. This is a well-known limitation in studies that depend on self-reported past exposures.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 457,
+    "completion_tokens": 97
+  }
+}

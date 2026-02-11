@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"The symptoms suggest that it could be a digitalis toxicity.\", \"confidence\": 10, \"reasoning\": \"The patient's symptoms (nausea, loss of appetite, general malaise, bradycardia, bigeminy) and current medications (notably digoxin, with a relatively high weekly dose for an elderly patient) strongly suggest digitalis (digoxin) toxicity. The slow pulse and arrhythmia are classic findings. The other options do not fit the clinical picture as well, and the student's answer (anxiety) is not supported by the symptoms or findings.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 680,
+    "completion_tokens": 138
+  }
+}

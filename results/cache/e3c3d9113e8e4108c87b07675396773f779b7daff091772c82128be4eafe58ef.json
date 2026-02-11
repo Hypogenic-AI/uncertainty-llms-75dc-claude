@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Sporozoite protein\", \"confidence\": 9, \"reasoning\": \"The most advanced malaria vaccine, RTS,S/AS01 (Mosquirix), targets the circumsporozoite protein (CSP) found on the surface of Plasmodium falciparum sporozoites. This is the form of the parasite that enters the human body through mosquito bites. The vaccine works by generating an immune response against sporozoite surface proteins to prevent infection. Polysaccharide sheaths are not characteristic of malaria parasites, and while gametocytic proteins exist, they are not the primary target of current approved vaccines. The sporozoite stage is the critical target for pre-erythrocytic immunity.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 190,
+    "completion_tokens": 176
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Frequently getting lost in the metaphysical maelstrom of cosmic disarray and losing track of time, space, and reality itself\", \"confidence\": 8, \"reasoning\": \"Despite the fantastical language, this question is asking about symptoms of inattention in ADHD. When we strip away the whimsical descriptions, option 0 describes getting lost in thought, losing track of time, and being disorganized - which are classic symptoms of the inattentive presentation of ADHD. Options 1, 2, and 4 better describe hyperactive-impulsive symptoms (impulsivity, excessive talking, and intrusiveness). Option 3 doesn't align with any ADHD symptom cluster. The core feature of inattention includes difficulty maintaining focus, being easily distracted, and losing track of time and tasks.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 363,
+    "completion_tokens": 201
+  }
+}

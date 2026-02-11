@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Gastritis\", \"confidence\": 9, \"reasoning\": \"A history of gastritis is a relative contraindication to aspirin use because aspirin can irritate the gastric mucosa and increase the risk of gastrointestinal bleeding or ulceration. The other options (ECG changes, hypercholesterolemia, increased pulse rate) are not contraindications to aspirin use.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 494,
+    "completion_tokens": 94
+  }
+}

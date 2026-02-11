@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Heparan sulphate\", \"confidence\": 10, \"reasoning\": \"Heparan sulphate is the main proteoglycan present in the glomerular basement membrane, contributing to its charge-selective properties. Chondroitin sulphate is not a major component of the glomerular basement membrane.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 183,
+    "completion_tokens": 77
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Sickle cell disease\", \"confidence\": 10, \"reasoning\": \"The patient is a young African American boy presenting with jaundice, normocytic anemia, elevated reticulocyte count, and severe bone pain with dactylitis (swollen, tender hands). The peripheral smear shows sickled cells and Howell-Jolly bodies (erythrocytes with nuclear remnants), indicating functional asplenia. The hemoglobin electrophoresis would show a predominance of HbS. These findings are classic for sickle cell disease (homozygous HbSS), not sickle cell trait (which is usually asymptomatic), nor HbC disease or isolated hemoglobin F. The clinical presentation and lab findings are most consistent with sickle cell disease.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 340,
+    "completion_tokens": 166
+  }
+}

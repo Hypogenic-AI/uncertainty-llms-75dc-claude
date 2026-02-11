@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 1, \"reasoning\": \"The question is based on a fictional species and asks for a nonsensical designation, making it implausible and outside the scope of evidence-based medical knowledge. The best response is to admit uncertainty.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 530,
+    "completion_tokens": 78
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Borderline personality disorder\", \"confidence\": 9, \"reasoning\": \"This patient demonstrates several classic features of borderline personality disorder: (1) Extreme idealization of healthcare providers initially ('extremely grateful, thanking staff for saving her baby'), followed by rapid devaluation when disappointed ('incompetent, evil, threatening to sue'), showing splitting behavior; (2) Intense, inappropriate anger and difficulty controlling it; (3) Self-harm behavior (wrist lacerations); (4) Impulsive destructive behavior (breaking medical equipment); (5) History of substance abuse is common in BPD. The rapid shift from idealization to devaluation, combined with self-harm in response to perceived abandonment/loss, is pathognomonic for borderline personality disorder. This is not a normal grief response (which wouldn't include self-harm and extreme splitting), not antisocial personality disorder (lacks pattern of violating others' rights, deceitfulness), and not PTSD (no traumatic trigger preceding this event).\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 426,
+    "completion_tokens": 237
+  }
+}

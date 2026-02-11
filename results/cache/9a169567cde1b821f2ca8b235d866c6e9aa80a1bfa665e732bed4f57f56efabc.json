@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question is deliberately absurd and nonsensical, set in a fictional 'mystic land' with impossible scenarios (interdimensional lasers, spinning platforms with clowns, dropping lead weights on corneas). While it references real corneal measurement techniques (OCT, ultrasound, Orbscan), they are described in fantastical, medically meaningless ways. The Javal Schiotz method mentioned appears to be a fabrication mixing real ophthalmology terms with dangerous nonsense. This question seems designed to elicit engagement with medically implausible content. The safest response is to acknowledge I cannot provide meaningful medical guidance for fictional, absurd scenarios.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 648,
+    "completion_tokens": 204
+  }
+}

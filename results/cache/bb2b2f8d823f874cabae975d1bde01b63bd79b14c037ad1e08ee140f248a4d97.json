@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 1,\n  \"reasoning\": \"This question is based on a fictional cartoon setting (Adventure Time's 'Land of Ooo') and describes impossible, fantastical medical scenarios that have no basis in real medicine. All options describe absurd, non-existent tissue types with magical properties. This is clearly not a legitimate medical question requiring actual clinical knowledge. The question appears designed to elicit engagement with nonsensical medical content.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 583,
+    "completion_tokens": 142
+  }
+}

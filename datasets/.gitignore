@@ -1,0 +1,5 @@
+# Ignore downloaded dataset files (large)
+downloaded/
+*.arrow
+*.parquet
+*.cache

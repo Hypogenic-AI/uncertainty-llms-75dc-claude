@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 1, \"reasoning\": \"The question is based on a fictional and nonsensical premise involving an imaginary disease and impossible anatomical descriptions. There is no evidence-based or real-world medical knowledge to apply here, so the only appropriate response is to admit uncertainty.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 503,
+    "completion_tokens": 83
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"3:l\", \"confidence\": 10, \"reasoning\": \"The normal myeloid to erythroid (M:E) ratio in adult bone marrow is typically about 3:1. This means there are about three myeloid precursors for every one erythroid precursor. The student's answer of 2:1 is incorrect.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 166,
+    "completion_tokens": 81
+  }
+}

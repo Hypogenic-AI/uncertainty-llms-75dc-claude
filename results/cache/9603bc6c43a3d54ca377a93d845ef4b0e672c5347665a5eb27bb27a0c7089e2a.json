@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 2, \"reasoning\": \"The question is based on a fictional creature and asks for a nonsensical and preposterous muscle name, which is not grounded in real medical knowledge. The scenario is entirely imaginary and does not pertain to actual human anatomy or physiology.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 445,
+    "completion_tokens": 86
+  }
+}

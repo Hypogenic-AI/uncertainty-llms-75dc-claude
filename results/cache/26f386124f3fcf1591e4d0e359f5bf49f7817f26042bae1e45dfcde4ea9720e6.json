@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Lactotrophs\", \"confidence\": 10, \"reasoning\": \"The patient's symptoms of headaches, bitemporal hemianopsia (temporal visual field deficits), and erectile dysfunction suggest a pituitary macroadenoma compressing the optic chiasm and affecting pituitary function. The most common functioning pituitary adenoma in adults is a prolactinoma, derived from lactotrophs, which can cause hypogonadism and erectile dysfunction due to prolactin's inhibitory effect on GnRH. The other cell types are less likely to present with this constellation of symptoms.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 211,
+    "completion_tokens": 133
+  }
+}

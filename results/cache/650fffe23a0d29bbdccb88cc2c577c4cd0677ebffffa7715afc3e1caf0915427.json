@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"The elusive and enigmatic Para-aoic Lymph Nodes, whose existence is questionable at best and fictional at worst\", \"confidence\": 10, \"reasoning\": \"Among the options, the 'Para-aoic Lymph Nodes' are explicitly described as fictional, making them the only truly impossible and nonexistent lymph nodes in this list. The other options, while described in fanciful terms, refer to real anatomical structures. Therefore, the Para-aoic Lymph Nodes are not involved.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 310,
+    "completion_tokens": 112
+  }
+}

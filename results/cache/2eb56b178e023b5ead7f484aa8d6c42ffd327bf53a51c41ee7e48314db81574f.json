@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Primary spermatocyte\", \"confidence\": 10, \"reasoning\": \"The patient's clinical presentation (tall stature, gynecomastia, small testes, infertility, increased FSH, increased estradiol:testosterone ratio, and cytogenetic abnormality) is classic for Klinefelter syndrome (47,XXY). The extra X chromosome is usually due to nondisjunction during meiosis. If the abnormality was inherited from the father, the error must have occurred during meiosis I of spermatogenesis, when homologous chromosomes (including X and Y) are separated in the primary spermatocyte stage.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 251,
+    "completion_tokens": 140
+  }
+}

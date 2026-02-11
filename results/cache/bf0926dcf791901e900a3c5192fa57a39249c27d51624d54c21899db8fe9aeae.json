@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Clomipramine\", \"confidence\": 9, \"reasoning\": \"The patient presents with unconsciousness progressing to coma after a pill overdose, with a prolonged QT interval (450 ms). The key clinical features are: 1) Major depressive disorder with poor response to treatment, 2) Social withdrawal and suicidal ideation, 3) Overdose leading to coma, 4) Prolonged QT interval. Tricyclic antidepressants (TCAs) like clomipramine are known for causing significant cardiotoxicity in overdose, including QT prolongation, arrhythmias, and altered mental status progressing to coma. TCAs also cause anticholinergic effects and sodium channel blockade. While SSRIs (sertraline) and SNRIs (venlafaxine) can cause QT prolongation, it's typically less severe. Bupropion overdose more commonly causes seizures rather than significant QT prolongation. The combination of coma and QT prolongation in the context of antidepressant overdose most strongly suggests a TCA like clomipramine.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 309,
+    "completion_tokens": 271
+  }
+}

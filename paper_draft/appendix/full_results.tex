@@ -1,0 +1,64 @@
+\section{Full Results}
+\label{sec:appendix_results}
+
+\Tabref{tab:full_results} presents the complete results across all models, datasets, and conditions.
+
+\begin{table}[h]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \renewcommand{\arraystretch}{1.15}
+    \begin{tabular}{@{}lllccccccc@{}}
+        \toprule
+        \textbf{Model} & \textbf{Dataset} & \textbf{Condition} & \textbf{Caut.} & \textbf{Unsafe} & \textbf{Conf.\ (mean $\pm$ std)} & \textbf{Acc.} & \textbf{Parse} & \textbf{Ev.\ Flag} \\
+        \midrule \midrule
+        \gptmodel & \medqa & Baseline & 0.0\% & 8.0\% & $10.0 \pm 0.2$ & 92.0\% & 100\% & --- \\
+        \gptmodel & \medqa & \uaprompt & 1.0\% & 7.0\% & $9.6 \pm 0.9$ & 92.0\% & 100\% & 0.0\% \\
+        \midrule
+        \gptmodel & \medhaltfake & Baseline & 3.0\% & 97.0\% & $9.5 \pm 1.0$ & --- & 100\% & --- \\
+        \gptmodel & \medhaltfake & \uaprompt & 91.0\% & 9.0\% & $3.5 \pm 3.5$ & --- & 100\% & 93.0\% \\
+        \midrule
+        \gptmodel & \medhaltfct & Baseline & 0.0\% & 11.0\% & $9.7 \pm 0.5$ & 89.0\% & 100\% & --- \\
+        \gptmodel & \medhaltfct & \uaprompt & 1.0\% & 12.0\% & $9.3 \pm 1.1$ & 88.0\% & 100\% & 1.0\% \\
+        \midrule \midrule
+        \claudemodel & \medqa & Baseline & 0.0\% & 6.0\% & $8.9 \pm 0.7$ & 93.0\% & 96\% & --- \\
+        \claudemodel & \medqa & \uaprompt & 12.0\% & 19.0\% & $8.1 \pm 2.7$ & 66.0\% & 66\% & 0.0\% \\
+        \midrule
+        \claudemodel & \medhaltfake & Baseline & 22.0\% & 71.0\% & $8.0 \pm 1.8$ & --- & 91\% & --- \\
+        \claudemodel & \medhaltfake & \uaprompt & 88.0\% & 2.0\% & $1.8 \pm 1.1$ & --- & 90\% & 90.0\% \\
+        \midrule
+        \claudemodel & \medhaltfct & Baseline & 3.0\% & 15.0\% & $8.8 \pm 1.3$ & 82.0\% & 97\% & --- \\
+        \claudemodel & \medhaltfct & \uaprompt & 9.0\% & 18.0\% & $8.4 \pm 2.3$ & 75.0\% & 88\% & 4.0\% \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{Complete results across all experimental conditions. Caut.\ = cautiousness rate; Unsafe = unsafe completion rate; Conf.\ = mean confidence; Acc.\ = accuracy; Parse = JSON parse success rate; Ev.\ Flag = evidence flagged as suspicious/implausible/dangerous.}
+    \label{tab:full_results}
+\end{table}
+
+\Tabref{tab:full_stats} reports all statistical tests.
+
+\begin{table}[h]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \renewcommand{\arraystretch}{1.15}
+    \begin{tabular}{@{}lllcccc@{}}
+        \toprule
+        \textbf{Model} & \textbf{Dataset} & \textbf{Test} & \textbf{Baseline} & \textbf{\uaprompt} & \textbf{$p$-value} & \textbf{Effect Size} \\
+        \midrule
+        \gptmodel & \medhaltfake & Cautiousness ($\chi^2$) & 3.0\% & 91.0\% & $< 0.0001$ & OR $= 326.9$ \\
+        \gptmodel & \medhaltfake & Unsafe rate ($\chi^2$) & 97.0\% & 9.0\% & $< 0.0001$ & --- \\
+        \gptmodel & \medhaltfake & Confidence ($t$-test) & 9.5 & 3.5 & $< 0.0001$ & $d = 2.31$ \\
+        \gptmodel & \medqa & Confidence ($t$-test) & 10.0 & 9.6 & 0.0005 & $d = 0.50$ \\
+        \midrule
+        \claudemodel & \medhaltfake & Cautiousness ($\chi^2$) & 22.0\% & 88.0\% & $< 0.0001$ & OR $= 26.0$ \\
+        \claudemodel & \medhaltfake & Unsafe rate ($\chi^2$) & 71.0\% & 2.0\% & $< 0.0001$ & --- \\
+        \claudemodel & \medhaltfake & Confidence ($t$-test) & 8.0 & 1.8 & $< 0.0001$ & $d = 4.19$ \\
+        \claudemodel & \medqa & Cautiousness ($\chi^2$) & 0.0\% & 12.0\% & 0.0011 & --- \\
+        \claudemodel & \medqa & Unsafe rate ($\chi^2$) & 6.0\% & 19.0\% & 0.0103 & --- \\
+        \claudemodel & \medhaltfct & Cautiousness ($\chi^2$) & 3.0\% & 9.0\% & 0.137 & OR $= 3.20$ \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{Statistical tests for all experimental comparisons. OR = odds ratio; $d$ = Cohen's $d$.}
+    \label{tab:full_stats}
+\end{table}

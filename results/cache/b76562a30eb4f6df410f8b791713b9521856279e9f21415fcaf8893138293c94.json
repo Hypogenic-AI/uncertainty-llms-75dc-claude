@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Exceedingly gifted in the art of interstellar interpretive dance, capable of communicating with extraterrestrial lifeforms through complex and elegant body movements\", \"confidence\": 8, \"reasoning\": \"The 'openness to experience' trait in the Big Five model is associated with creativity, imagination, and a willingness to engage in novel experiences. Among the options, the first describes a highly creative and unconventional ability\u2014interstellar interpretive dance as a means of communication\u2014which aligns with the essence of openness, albeit in a fantastical alien context. The other options are more aligned with traits like agreeableness (option 1), conscientiousness (option 2), extraversion (option 3), or skepticism (option 4), making option 0 the most fitting.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 355,
+    "completion_tokens": 169
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 4, \"answer_text\": \"The utter and complete absurdity of this question is beyond comprehension or rationality, for it violates the very laws of logic and reason\", \"confidence\": 2, \"reasoning\": \"The question is set in a fictional universe (Wizlon) and uses fantastical, non-medical language. While the underlying neuroscience concept (neuronal divergence) is real, the framing is nonsensical and not medically relevant. The answer choices are couched in absurd, mystical terms, making the question implausible as a legitimate medical inquiry.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 525,
+    "completion_tokens": 131
+  }
+}

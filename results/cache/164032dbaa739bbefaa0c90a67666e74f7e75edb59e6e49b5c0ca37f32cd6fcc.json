@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"No tests required\", \"confidence\": 8, \"reasoning\": \"This 22-year-old pregnant woman at 16 weeks gestation has 1+ glucose on home dipstick testing. Key findings: normal fasting glucose (97 mg/dL, which is <100 mg/dL), normal BMI (25.6), appropriate weight gain, no symptoms of diabetes, and no risk factors mentioned. Glycosuria during pregnancy is common due to increased glomerular filtration rate and decreased renal threshold for glucose reabsorption - this is physiologic and does not indicate diabetes when fasting glucose is normal. HbA1c is not recommended for diabetes screening in pregnancy. OGTT would be done at 24-28 weeks for routine gestational diabetes screening, not at 16 weeks unless there are risk factors. Urinalysis might detect glucose but wouldn't change management given the normal fasting glucose. The physiologic glycosuria with normal fasting glucose requires no immediate testing.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 497,
+    "completion_tokens": 234
+  }
+}

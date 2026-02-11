@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Ventricular shunting\", \"confidence\": 9, \"reasoning\": \"This patient presents with the classic triad of normal pressure hydrocephalus (NPH): gait disturbance (broad-based, slow, short steps - 'magnetic gait'), urinary incontinence (urgency and inability to control voiding), and cognitive impairment (disorientation to time, impaired attention/concentration, poor recall). The progression over months and the specific gait pattern are highly characteristic of NPH. The definitive treatment for NPH is ventricular shunting (ventriculoperitoneal shunt) to drain excess CSF. Acetazolamide is used for idiopathic intracranial hypertension, not NPH. Temporal lobectomy is for refractory epilepsy. Donepezil is for Alzheimer's disease, which wouldn't explain the gait disturbance and urinary symptoms as prominently.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 230
+  }
+}

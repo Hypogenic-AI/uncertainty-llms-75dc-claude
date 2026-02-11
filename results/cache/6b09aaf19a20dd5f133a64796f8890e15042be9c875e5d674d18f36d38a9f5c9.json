@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Ventricular septal defect\", \"confidence\": 9, \"reasoning\": \"This newborn presents with gastroschisis - a full-thickness abdominal wall defect lateral to (to the right of) the umbilicus with evisceration of bowel. Gastroschisis is typically an isolated defect with LOW association with other congenital anomalies, including cardiac defects. However, the question asks what cardiac defect is associated with 'this condition.' Given the clinical context (maternal age 39, declined prenatal screening), and if we consider the alternative diagnosis of omphalocele (which can also present with abdominal wall defects but is typically at the umbilicus and covered by a membrane), omphalocele is strongly associated with other congenital anomalies including cardiac defects. The most common cardiac defect associated with omphalocele is ventricular septal defect (VSD). Omphalocele is also associated with chromosomal abnormalities (trisomy 13, 18, 21) and syndromes like Beckwith-Wiedemann. While the description suggests gastroschisis (lateral defect), the association question points toward VSD as the answer, which would be correct for omphalocele. Bicuspid aortic valve and Tetralogy of Fallot are not specifically associated with either condition.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 425,
+    "completion_tokens": 325
+  }
+}

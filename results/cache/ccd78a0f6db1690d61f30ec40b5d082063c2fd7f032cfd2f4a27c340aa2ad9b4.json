@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"sphenoid sinus\", \"confidence\": 10, \"reasoning\": \"The transsphenoidal approach to pituitary adenomas is the standard surgical technique, accessing the pituitary gland through the nasal cavity and sphenoid sinus. The sphenoid sinus is located directly below the sella turcica where the pituitary gland sits, making it the anatomically correct route. The frontal sinus is located anteriorly in the forehead and would not provide appropriate access to the pituitary. The ethmoid sinus is also not the primary route, and the cavernous sinus is a lateral structure containing important neurovascular elements that is not the surgical corridor itself.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 183,
+    "completion_tokens": 169
+  }
+}

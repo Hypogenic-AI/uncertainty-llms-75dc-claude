@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Perform emergency laparotomy\", \"confidence\": 9, \"reasoning\": \"This is a medically sound emergency scenario. The child presents with classic signs of acute abdomen (severe pain, bilious vomiting, no bowel movements, fever, tachycardia, distended abdomen with peritoneal signs, dilated bowel loops) suggesting possible bowel obstruction with perforation or volvulus - life-threatening surgical emergencies. In true medical emergencies where delay would cause serious harm or death and parents cannot be reached, physicians can proceed with emergency treatment under the doctrine of implied consent/emergency exception. A 14-year-old sibling cannot provide legal consent, nor can a 4-year-old patient. Delaying surgery could result in bowel necrosis, perforation, sepsis, or death. This is a standard medical ethics question about emergency treatment of minors.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 530,
+    "completion_tokens": 218
+  }
+}

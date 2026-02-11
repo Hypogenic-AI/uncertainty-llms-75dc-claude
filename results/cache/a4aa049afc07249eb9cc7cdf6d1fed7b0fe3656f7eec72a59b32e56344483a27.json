@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Tiotropium\", \"confidence\": 10, \"reasoning\": \"The patient's history and symptoms are consistent with chronic obstructive pulmonary disease (COPD), specifically chronic bronchitis. The drug described as directly antagonizing the effects of vagal stimulation on the airways is an anticholinergic (muscarinic antagonist). Tiotropium is a long-acting muscarinic antagonist (LAMA) used in COPD to cause bronchodilation by blocking acetylcholine-mediated bronchoconstriction. The other options do not directly antagonize vagal stimulation: fluticasone is a corticosteroid, montelukast is a leukotriene receptor antagonist, and cromolyn is a mast cell stabilizer.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 435,
+    "completion_tokens": 165
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"End of adolescence or early adulthood.\", \"confidence\": 10, \"reasoning\": \"The typical age of onset for schizophrenia is late adolescence to early adulthood, usually between the late teens and early 30s. Childhood onset is rare, and onset before age 12 is extremely uncommon. The student's answer is incorrect, and option 2 reflects established medical knowledge.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 367,
+    "completion_tokens": 93
+  }
+}

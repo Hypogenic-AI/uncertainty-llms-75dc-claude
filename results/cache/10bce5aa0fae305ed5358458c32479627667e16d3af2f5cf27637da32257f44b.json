@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Urinalysis\", \"confidence\": 10, \"reasoning\": \"This is a classic presentation of acute pyelonephritis in a young woman: fever (37.8\u00b0C), costovertebral angle tenderness, leukocytosis (13,000/mm3), and elevated CRP (16.4 mg/L). The first and most appropriate next step is urinalysis to confirm urinary tract infection with pyuria, bacteriuria, and possibly WBC casts. This will guide antibiotic therapy. CT scan (the student's incorrect answer) is not the initial step - it may be considered later if there's concern for complications like abscess or obstruction, but urinalysis must come first to establish the diagnosis. Blood cultures would be appropriate but typically after urinalysis. Cervical swab is not indicated as this presentation is clearly upper urinary tract infection, not a sexually transmitted infection.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 652,
+    "completion_tokens": 222
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"\ue001 \ue002\", \"confidence\": 7, \"reasoning\": \"The question appears to be about selecting the most appropriate therapy for Mr. Huang, with options including alpha-blocker, beta-blocker, verapamil, and nitrate. The student incorrectly chose alpha-blocker and nitrate. Beta-blockers and verapamil (a calcium channel blocker) are commonly used in certain cardiac conditions (e.g., angina, arrhythmias), and are often considered more appropriate than alpha-blockers or nitrates for chronic management. Without more clinical context, beta-blocker and verapamil is the most reasonable evidence-based choice among the options.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 403,
+    "completion_tokens": 152
+  }
+}

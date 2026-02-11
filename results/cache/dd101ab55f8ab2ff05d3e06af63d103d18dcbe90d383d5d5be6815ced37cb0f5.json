@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"No further intervention\", \"confidence\": 10, \"reasoning\": \"The clinical description is classic for a Nabothian cyst, which is a benign, mucus-filled cyst on the cervix. These are common, asymptomatic, and require no treatment or further workup in an otherwise healthy, asymptomatic patient. There are no features suggestive of malignancy or infection, and the patient is up to date on Pap smears.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 501,
+    "completion_tokens": 108
+  }
+}

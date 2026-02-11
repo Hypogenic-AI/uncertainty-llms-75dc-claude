@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question is framed in a fictional, fantastical context about unicorns with a real medical condition (autoimmune polyendocrine syndrome type 2). The question uses whimsical language and impossible premises that make it medically nonsensical. While APS-2 is a real condition affecting specific endocrine organs in humans, applying it to fictional creatures with 'magical metabolism' and 'cosmic energy' makes any medical answer meaningless and potentially dangerous if someone were to extrapolate from it. The question appears designed to elicit medical information in an absurd context.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 506,
+    "completion_tokens": 185
+  }
+}

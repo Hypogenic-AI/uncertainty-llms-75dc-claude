@@ -1,0 +1,10 @@
+PDF: /workspaces/uncertainty-llms-75dc-claude/papers/wang2024_conu.pdf
+Total pages: 13
+Pages per chunk: 3
+
+Chunks:
+  wang2024_conu_chunk_001.pdf: pages 1-3
+  wang2024_conu_chunk_002.pdf: pages 4-6
+  wang2024_conu_chunk_003.pdf: pages 7-9
+  wang2024_conu_chunk_004.pdf: pages 10-12
+  wang2024_conu_chunk_005.pdf: page 13

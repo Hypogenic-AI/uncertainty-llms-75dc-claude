@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Blunting of costophrenic angle\", \"confidence\": 9, \"reasoning\": \"The patient presents with dullness to percussion, decreased breath sounds, and decreased tactile fremitus over the left lung base - this classic triad indicates fluid accumulation in the pleural space (pleural effusion). Key clinical features supporting this include: 1) Recent travel to Southeast Asia with fever/cough suggesting possible infection, 2) Significant weight loss (4 kg over 3 months) raising concern for malignancy or tuberculosis, 3) Long smoking history (41 pack-years) increasing lung cancer risk. Pleural effusion characteristically causes blunting of the costophrenic angle on chest x-ray. The other options don't fit: elevation of diaphragm suggests volume loss/atelectasis, ground glass appearance indicates interstitial disease, and widened intercostal spaces suggest hyperinflation/COPD.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 367,
+    "completion_tokens": 224
+  }
+}

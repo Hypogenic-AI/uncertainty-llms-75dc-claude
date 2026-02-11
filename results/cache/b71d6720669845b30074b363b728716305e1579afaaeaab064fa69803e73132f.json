@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Glutamine is the amino group donor for N9\", \"confidence\": 9, \"reasoning\": \"In purine synthesis, glutamine donates the amino group at position N9 of the purine ring in the first committed step (PRPP + glutamine \u2192 5-phosphoribosyl-1-amine). The student's answer is incorrect because while PRPP synthetase produces PRPP, the rate-limiting enzyme is actually amidophosphoribosyltransferase (glutamine-PRPP amidotransferase). Option 2 is incorrect as THFA (tetrahydrofolate) provides C2 and C8, not C6. Option 3 is incorrect as IMP (inosine monophosphate) is the first nucleotide formed, which then branches to form AMP and GMP.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 223,
+    "completion_tokens": 208
+  }
+}

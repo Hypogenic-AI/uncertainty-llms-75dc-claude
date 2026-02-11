@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"3:l\", \"confidence\": 8, \"reasoning\": \"The normal myeloid to erythroid (M:E) ratio in bone marrow is typically 3:1 to 4:1, with 3:1 being the most commonly cited normal value. The student answered 2:1, which is lower than normal and would suggest erythroid hyperplasia. A ratio of 1:1 would be abnormally low (significant erythroid predominance), while 4:1 is at the upper end of normal. The answer '3:l' (interpreting 'l' as '1') represents the standard normal M:E ratio.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 171
+  }
+}

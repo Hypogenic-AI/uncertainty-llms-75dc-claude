@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Histoplasma capsulatum infection\", \"confidence\": 8, \"reasoning\": \"The patient presents with respiratory symptoms after hiking in Mississippi (endemic area), fever, and systemic symptoms. Key diagnostic findings include: 1) Positive polysaccharide antigen in urine (characteristic of Histoplasma), 2) Bronchoalveolar lavage showing macrophages filled with dimorphic fungus. Histoplasma capsulatum is endemic to the Mississippi and Ohio River valleys, causes flu-like illness with respiratory symptoms, and appears as small intracellular yeast within macrophages. The dimorphic nature (yeast in tissue, mold in environment) and geographic exposure strongly support this diagnosis. Blastomyces would show broad-based budding yeast, Pneumocystis would show cysts not dimorphic fungi, and Legionella wouldn't show fungal elements.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 221
+  }
+}

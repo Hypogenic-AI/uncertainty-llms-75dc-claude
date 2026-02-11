@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"The whimsical Lateral border, adorned with glitter and pixie dust, where the unicorns engage in jovial tongue twisters with the gnomes\", \"confidence\": 10, \"reasoning\": \"In real-world medicine, carcinoma horn (cutaneous horn) and squamous cell carcinoma of the tongue most commonly affect the lateral border of the tongue. Despite the fantastical context, the best answer aligns with established anatomical predilection.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 335,
+    "completion_tokens": 101
+  }
+}

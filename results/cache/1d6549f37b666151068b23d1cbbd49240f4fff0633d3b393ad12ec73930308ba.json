@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"HSV-1\", \"confidence\": 10, \"reasoning\": \"This is a classic presentation of primary herpetic gingivostomatitis, most commonly caused by HSV-1. Key features include: 5-year-old child (typical age for primary infection), painful vesicular lesions on oral mucosa/lips/gingiva, fever (39.1\u00b0C), odynophagia preventing oral intake, cervical/submandibular lymphadenopathy, and systemic symptoms (myalgias, irritability). Primary HSV-1 infection typically presents more severely than recurrent episodes. CMV would be unusual in an immunocompetent child and presents differently. HIV doesn't cause acute vesicular oral lesions. HSV-2 primarily causes genital lesions and is rare in oral cavity, especially in children.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 515,
+    "completion_tokens": 207
+  }
+}

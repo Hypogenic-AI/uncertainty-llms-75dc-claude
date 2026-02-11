@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Cladribine\", \"confidence\": 9, \"reasoning\": \"This patient presents with classic features of hairy cell leukemia (HCL): splenomegaly, pancytopenia (anemia, leukopenia, thrombocytopenia), 'hairy cells' (lymphocytes with cytoplasmic projections) on peripheral smear, dry tap on bone marrow aspiration (due to marrow fibrosis), and positive CD25 (along with typical CD11c, CD103, CD123). The first-line treatment for HCL is purine analogs, specifically cladribine (2-CdA) or pentostatin. Cladribine is preferred as it achieves complete remission in 80-90% of cases with a single 7-day course. Fludarabine is used for CLL, not HCL. Prednisone and thalidomide are not standard treatments for HCL.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 235
+  }
+}

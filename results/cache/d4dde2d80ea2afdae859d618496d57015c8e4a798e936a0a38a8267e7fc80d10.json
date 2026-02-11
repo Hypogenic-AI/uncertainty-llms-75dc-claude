@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Basal Cell Carcinoma\", \"confidence\": 10, \"reasoning\": \"Basal cell carcinoma is well known for its extremely low propensity for lymphatic spread compared to other skin malignancies. Squamous cell carcinoma, malignant melanoma, and Merkel cell carcinoma all have a higher risk of lymphatic metastasis. Therefore, the correct answer is Basal Cell Carcinoma.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 182,
+    "completion_tokens": 90
+  }
+}

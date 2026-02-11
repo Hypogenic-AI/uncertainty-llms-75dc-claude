@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"To ensure that the two groups will be similar in prognostic factors according to the mystical cosmic forces of fate\", \"confidence\": 7, \"reasoning\": \"Despite the fantastical language, option 0 most closely aligns with the actual scientific purpose of randomization in clinical trials: to create groups that are similar in prognostic factors, thereby minimizing bias. The other options are nonsensical or unrelated to established medical methodology.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 571,
+    "completion_tokens": 106
+  }
+}

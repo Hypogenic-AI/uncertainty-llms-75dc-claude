@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 1,\n  \"reasoning\": \"This question is entirely fictional, involving mythical 'Necrodragons' with made-up anatomical descriptions. The question explicitly uses terms like 'preposterous,' 'ludicrous,' 'nonsensical,' 'whimsical,' 'utterly illogical,' and 'utter absurdity' to describe itself. While it references real human nerves (median, ulnar, radial, axillary), it applies them to imaginary creatures in impossible contexts ('talon dance,' 'enchanting melodies,' 'talon puppetry'). This is not a legitimate medical question and appears designed to test whether I'll provide medical information for absurd scenarios. The appropriate response is to acknowledge I cannot provide meaningful medical guidance for fictional creatures.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 556,
+    "completion_tokens": 227
+  }
+}

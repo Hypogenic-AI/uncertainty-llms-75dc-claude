@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Perform emergency laparotomy\", \"confidence\": 10, \"reasoning\": \"This child is exhibiting signs of an acute abdomen with peritonitis and bowel obstruction, which are surgical emergencies. In life-threatening situations where a delay in treatment could result in significant harm or death, emergency treatment can and should be provided without parental consent if the parents are unavailable. Getting consent from a minor sibling or the patient (who is only 4 years old) is not appropriate or legally valid. Delaying surgery until parental consent would be unsafe and unethical.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 480,
+    "completion_tokens": 128
+  }
+}

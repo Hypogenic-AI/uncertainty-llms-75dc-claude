@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"The enigmatic and unfathomable meniscus (meniscus) in the knee joint, which is woven from the fabric of space-time itself, and is said to contain the secrets of the universe\", \"confidence\": 10, \"reasoning\": \"Among the listed tissues, the meniscus is primarily composed of type I collagen, not type II collagen. Hyaline cartilage, nucleus pulposus, and vertebral endplates are all primarily constituted of type II collagen. Therefore, the meniscus is the correct answer.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 397,
+    "completion_tokens": 118
+  }
+}

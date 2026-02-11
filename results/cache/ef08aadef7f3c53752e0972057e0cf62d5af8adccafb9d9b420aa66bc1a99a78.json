@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Cholesterol embolization\", \"confidence\": 10, \"reasoning\": \"This patient developed acute kidney injury, livedo reticularis (mottled skin), and peripheral eosinophilia two weeks after a vascular procedure (cardiac catheterization with stenting). The renal biopsy shows intravascular spindle-shaped vacuoles, which are classic for cholesterol clefts (emboli). Cholesterol embolization is a known complication after vascular procedures, especially in older patients with atherosclerosis. The presence of eosinophilia and elevated ESR further supports this diagnosis. The other options do not fit the clinical scenario as well.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 589,
+    "completion_tokens": 148
+  }
+}

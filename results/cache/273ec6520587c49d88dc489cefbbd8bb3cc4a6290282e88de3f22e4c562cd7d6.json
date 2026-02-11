@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"B.\", \"confidence\": 10, \"reasoning\": \"Germinal centers are specialized structures within secondary lymphoid organs where B lymphocytes (B cells) proliferate, differentiate, and undergo somatic hypermutation and class switching. T helper (Th) cells assist in this process, but the primary proliferating cells in germinal centers are B cells, not cytotoxic T cells (Tc), NK cells, or Th cells themselves.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 159,
+    "completion_tokens": 102
+  }
+}

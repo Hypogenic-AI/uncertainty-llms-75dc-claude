@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Lichen sclerosus\", \"confidence\": 9, \"reasoning\": \"This 60-year-old postmenopausal woman presents with classic features of lichen sclerosus: severe vulvar itching, white plaque-like lesions, atrophy of labia minora, retracted clitoris, and characteristic pale, wrinkled perianal skin (often described as 'cigarette paper' appearance). The dyspareunia is consistent with vulvar atrophy and scarring. Lichen sclerosus typically affects postmenopausal women and has a characteristic figure-of-8 distribution around the vulva and perianal area. Squamous cell hyperplasia would show thickened, not atrophic, tissue. Squamous cell carcinoma would typically present with a mass or ulceration. Lichen planus typically presents with violaceous papules and erosions, different from the described presentation.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 334,
+    "completion_tokens": 226
+  }
+}

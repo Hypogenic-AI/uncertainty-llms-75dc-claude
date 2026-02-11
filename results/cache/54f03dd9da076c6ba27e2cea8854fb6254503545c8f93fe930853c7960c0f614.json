@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Posterior cerebral artery\", \"confidence\": 10, \"reasoning\": \"The patient has a sudden onset of right homonymous hemianopia with macular sparing, which is classic for a lesion in the contralateral occipital cortex. The occipital cortex is supplied by the posterior cerebral artery (PCA). Macular sparing occurs because the macular region of the visual cortex has dual blood supply from both the PCA and the middle cerebral artery. The other vessels listed do not specifically supply the occipital cortex. The clinical presentation and neuroanatomy are consistent with a PCA lesion.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 460,
+    "completion_tokens": 144
+  }
+}

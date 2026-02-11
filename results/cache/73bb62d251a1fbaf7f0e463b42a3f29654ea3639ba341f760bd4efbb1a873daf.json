@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Inhibition of gonadotropin-releasing hormone release\", \"confidence\": 9, \"reasoning\": \"This patient presents with a classic triad suggesting a prolactinoma: amenorrhea, galactorrhea, and bitemporal hemianopsia (peripheral vision loss). The temporal visual field defects indicate compression of the optic chiasm by a pituitary mass. Elevated prolactin inhibits GnRH release from the hypothalamus, which subsequently decreases FSH and LH secretion, leading to amenorrhea. The headaches and progressive visual symptoms over the past 5 months support a growing pituitary adenoma. The other options don't fit: intrauterine scarring (Asherman syndrome) would require prior uterine instrumentation, chromosomal nondisjunction would present from birth/puberty, and there's no evidence of nutritional imbalance.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 335,
+    "completion_tokens": 213
+  }
+}

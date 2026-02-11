@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"The unfathomable Fructose 2,6-bisphosphate, which holds the secrets to the origins of life, the universe, and everything\", \"confidence\": 9, \"reasoning\": \"Despite the dramatic language, this is a straightforward biochemistry question about glucose metabolism regulation. Fructose 2,6-bisphosphate (F-2,6-BP) is the key regulatory molecule that controls the balance between glycolysis (glucose degradation) and gluconeogenesis (glucose synthesis). It acts as a potent allosteric activator of phosphofructokinase-1 (PFK-1, promoting glycolysis) and inhibitor of fructose-1,6-bisphosphatase (FBPase-1, inhibiting gluconeogenesis). This reciprocal regulation makes F-2,6-BP the primary determinant of the interplay between glucose synthesis and degradation in mammalian metabolism.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 341,
+    "completion_tokens": 227
+  }
+}

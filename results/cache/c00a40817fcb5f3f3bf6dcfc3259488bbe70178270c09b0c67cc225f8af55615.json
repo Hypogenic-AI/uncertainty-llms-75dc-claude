@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Ventricular shunting\", \"confidence\": 10, \"reasoning\": \"This patient has the classic triad of normal pressure hydrocephalus (NPH): gait disturbance (broad-based, slow, short steps), urinary incontinence, and cognitive impairment (inattention, memory loss, disorientation). NPH is treated with ventricular shunting (ventriculoperitoneal shunt), which can improve symptoms. The other options do not address the underlying pathophysiology of NPH.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 355,
+    "completion_tokens": 116
+  }
+}

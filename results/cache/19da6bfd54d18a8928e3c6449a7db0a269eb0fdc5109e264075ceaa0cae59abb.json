@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Glutamine is the amino group donor for N9\", \"confidence\": 10, \"reasoning\": \"The rate-limiting enzyme of purine synthesis is actually glutamine-PRPP amidotransferase, not PRPP synthetase. Glutamine donates the amino group at the N9 position of the purine ring, making option 0 correct. THFA is involved in the formation of C2 and C8, not C6, and IMP, not GMP, is the first nucleotide formed.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 210,
+    "completion_tokens": 120
+  }
+}

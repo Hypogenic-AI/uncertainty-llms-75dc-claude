@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Oral mifepristone + misoprostol\", \"confidence\": 9, \"reasoning\": \"This patient is approximately 8 weeks pregnant (4 weeks of missed menses + 4 weeks from LMP). For early first-trimester pregnancy termination (up to 10-11 weeks), medical abortion with mifepristone followed by misoprostol is highly effective (95-98%) and is the most appropriate option. Manual vacuum aspiration is also acceptable but medical abortion is preferred at this early gestational age when available. D&E is typically used for second-trimester terminations (>13-14 weeks). Oxytocin-induced labor is used for later gestations. The clinical scenario is medically plausible and straightforward.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 535,
+    "completion_tokens": 192
+  }
+}

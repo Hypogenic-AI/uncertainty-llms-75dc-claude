@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Dermatofibroma\", \"confidence\": 10, \"reasoning\": \"The lesion described is a painless, nonpruritic, slowly enlarging hyperpigmented papule with a characteristic 'dimple sign' (surface retracts inward when squeezed). This is classic for dermatofibroma, a benign fibrous nodule. Cherry hemangiomas are bright red and vascular, actinic keratosis is scaly and related to sun exposure, and seborrheic keratosis has a 'stuck-on' appearance. The clinical presentation and physical exam findings best fit dermatofibroma.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 266,
+    "completion_tokens": 137
+  }
+}

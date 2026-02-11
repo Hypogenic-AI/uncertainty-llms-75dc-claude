@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"To ensure that the two groups will be similar in prognostic factors according to the mystical cosmic forces of fate\", \"confidence\": 10, \"reasoning\": \"The primary purpose of randomization in a clinical trial is to create groups that are similar in all prognostic factors, both known and unknown, to minimize bias and allow for a fair comparison of treatments. The other options, while colorful, do not accurately reflect the methodological rationale for randomization.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 104
+  }
+}

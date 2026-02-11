@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"150-300 RPM\", \"confidence\": 8, \"reasoning\": \"Profile instruments in endodontics (such as rotary NiTi files used for root canal preparation) typically operate at lower speeds compared to cutting instruments. The standard rotation speed for most profile/rotary endodontic instruments is 150-300 RPM to ensure controlled, safe canal preparation while minimizing instrument separation risk. The student's answer of 300-500 RPM is too high for these instruments. Option 1 (100-3000 RPM) is too broad a range, and 50-100 RPM would be too slow for efficient cutting action.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 188,
+    "completion_tokens": 160
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know.\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question describes fictional 'Glowers' in dreams with nonsensical characteristics. This is not a legitimate medical or scientific question - it appears to be entirely fabricated content with no basis in medicine, biology, or any established field of study. The question asks about characteristics of imaginary creatures, making it impossible to provide a medically sound answer.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 540,
+    "completion_tokens": 132
+  }
+}

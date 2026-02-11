@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Dermatomyositis, a sinister disease that afflicts the enchanted muscles, causing them to fester with dark magic and become imbued with the malevolent spirits of the underworld, rendering them all but useless\", \"confidence\": 10, \"reasoning\": \"Groton's sign is a play on 'Gottron's sign,' which is a hallmark cutaneous finding in dermatomyositis, characterized by violaceous papules over the knuckles. Therefore, dermatomyositis is the correct answer.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 418,
+    "completion_tokens": 116
+  }
+}

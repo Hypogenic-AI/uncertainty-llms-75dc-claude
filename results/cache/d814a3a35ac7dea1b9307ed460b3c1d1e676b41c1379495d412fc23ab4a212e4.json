@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Systolic blood pressure (systolic blood pressure) plummets to impossible depths, as the very blood vessels themselves transform into ethereal threads of light\", \"confidence\": 8, \"reasoning\": \"At high altitude, the body undergoes several physiological adaptations to compensate for reduced oxygen availability (hypoxia). Known adaptations include: increased cardiac output initially, increased heart rate (not slowed), increased arteriovenous O2 difference (more oxygen extraction), and increased systolic blood pressure (not decreased). The question asks which is NOT a known adaptation. Option 1 (heart rate slows) is incorrect as heart rate increases. Option 3 (systolic BP plummets) is the opposite of what actually occurs - systolic BP typically increases at altitude due to hypoxic pulmonary vasoconstriction and sympathetic activation. The flowery language is distracting, but the core physiological error is in option 3.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 349,
+    "completion_tokens": 220
+  }
+}

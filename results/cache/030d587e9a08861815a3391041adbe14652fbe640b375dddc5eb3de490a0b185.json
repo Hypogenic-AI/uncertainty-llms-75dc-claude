@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"The Maxillary nasal cavity, where the insidious mucus seeps into the depths of the cosmos, causing the creature to suffer an existential crisis of the highest degree\", \"confidence\": 10, \"reasoning\": \"Mucoceles most commonly occur in the paranasal sinuses, with the maxillary sinus being the most frequently affected. The question's fantastical context does not change the anatomical fact that the maxillary sinus is the most common site for mucoceles.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 110
+  }
+}

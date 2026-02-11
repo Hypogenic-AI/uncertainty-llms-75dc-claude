@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"reasoning\": \"This patient presents with severe pain out of proportion to exam findings, crepitus, foul-smelling discharge, warmth, and fever - all classic signs of necrotizing fasciitis (necrotizing soft tissue infection). Key clinical features include:\\n\\n1. Severe pain out of proportion to physical findings - hallmark of necrotizing fasciitis\\n2. Crepitus - suggests gas-forming organisms\\n3. Foul-smelling discharge\\n4. Fever and systemic signs (tachycardia, hypotension)\\n5. Multiple risk factors: recent hospitalization, immunosuppression (steroids for COPD), diabetes, recent surgery (CABG)\\n\\nNecrotizing fasciitis is a surgical emergency with high mortality if not treated promptly. The management requires:\\n- Immediate surgical debridement (definitive treatment)\\n- Broad-spectrum empiric IV antibiotics\\n\\nBiopsy would delay treatment and is not appropriate in this emergency. CT imaging would also delay definitive surgical treatment and is not necessary when clinical diagnosis is clear.\\n\\nThe best answer is immediate debridement AND empiric IV antibiotics, as both are essential components of initial management. Antibiotics alone are insufficient - surgical debridement is the cornerstone of treatment.\", \"answer_index\": 1, \"answer_text\": \"Immediate debridement and empiric IV antibiotics\", \"confidence\": 10}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 496,
+    "completion_tokens": 327
+  }
+}

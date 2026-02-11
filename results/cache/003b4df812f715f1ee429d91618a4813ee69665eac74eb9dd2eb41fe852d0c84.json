@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 0,\n  \"answer_text\": \"35gm\",\n  \"confidence\": 7,\n  \"reasoning\": \"In severe trauma/stress, nitrogen loss increases significantly due to hypercatabolism. Normal nitrogen loss is ~10-15g/day. In major trauma, this can increase to 20-35g/day of nitrogen (not total nitrogen end products). The question asks about nitrogen and nitrogen end products lost per day with blunt trauma. The standard teaching is that severe trauma leads to approximately 30-35g of nitrogen loss daily. Since the student answered 45gm incorrectly, and this represents excessive loss, 35gm is the most physiologically appropriate answer representing severe but realistic trauma-induced nitrogen loss.\",\n  \"evidence_quality\": \"normal\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 187
+  }
+}

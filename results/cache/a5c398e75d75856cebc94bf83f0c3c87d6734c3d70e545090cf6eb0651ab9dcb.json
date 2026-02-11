@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Fibroadenoma\", \"confidence\": 9, \"reasoning\": \"This is a classic presentation of fibroadenoma: young woman, painless, rubbery, mobile 2-3cm breast mass in upper outer quadrant. The biopsy showing rounded contour with overgrowth of fibrous and glandular tissue is pathognomonic for fibroadenoma. While pregnancy can cause breast changes, they are typically bilateral and diffuse, not a discrete mass. Fat necrosis usually has trauma history and different histology. Phyllodes tumor would show leaf-like architecture on biopsy, not simple fibrous and glandular overgrowth.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 459,
+    "completion_tokens": 173
+  }
+}

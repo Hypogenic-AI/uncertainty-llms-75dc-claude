@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Frequently getting lost in the metaphysical maelstrom of cosmic disarray and losing track of time, space, and reality itself\", \"confidence\": 9, \"reasoning\": \"Despite the fantastical phrasing, option 0 most closely parallels the inattentive symptoms of ADHD, such as being easily distracted, losing focus, and losing track of tasks or time. The other options are exaggerated representations of impulsivity or hyperactivity, not inattention.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 330,
+    "completion_tokens": 105
+  }
+}

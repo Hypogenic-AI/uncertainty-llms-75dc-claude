@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Cervical lymph nodes\", \"confidence\": 10, \"reasoning\": \"The clinical scenario describes a patient with a suspicious thyroid nodule, likely thyroid cancer. The most common type of thyroid cancer is papillary carcinoma, which typically metastasizes first to the cervical lymph nodes. The workup (including CT for distant metastases and planned radioiodine therapy) is consistent with thyroid malignancy. Cervical lymph nodes are the most common initial metastatic site, while distant metastases (lungs, bones) occur later.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 477,
+    "completion_tokens": 126
+  }
+}

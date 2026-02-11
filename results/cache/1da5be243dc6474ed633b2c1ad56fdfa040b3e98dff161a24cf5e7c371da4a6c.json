@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"The unfathomable Fructose 2,6-bisphosphate, which holds the secrets to the origins of life, the universe, and everything\", \"confidence\": 10, \"reasoning\": \"Fructose 2,6-bisphosphate is the key regulator of the balance between glycolysis and gluconeogenesis in human metabolism. It activates phosphofructokinase-1 (PFK-1) to promote glycolysis and inhibits fructose 1,6-bisphosphatase to suppress gluconeogenesis, thus determining the interplay between glucose synthesis and degradation.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 317,
+    "completion_tokens": 136
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 1, \"reasoning\": \"The scenario is entirely fictional, referencing the fantastical realm of Ooo and Lumpy Space Princess from the animated series 'Adventure Time.' The question describes impossible and absurd tissue types and presentations that do not exist in real medicine. Therefore, it is not possible to provide a medically sound answer.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 522,
+    "completion_tokens": 96
+  }
+}

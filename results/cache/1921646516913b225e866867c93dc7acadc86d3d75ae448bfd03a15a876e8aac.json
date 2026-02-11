@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"At 45 degrees\", \"confidence\": 9, \"reasoning\": \"The sprue in a wax pattern should be placed at approximately 45 degrees to the broadest, bulkiest part of the pattern. This helps to minimize turbulence and porosity during casting. Placement at 90 degrees can cause defects due to improper flow of molten metal.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 171,
+    "completion_tokens": 84
+  }
+}

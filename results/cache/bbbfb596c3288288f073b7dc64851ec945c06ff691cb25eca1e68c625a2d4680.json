@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Transient hypertrophic cardiomyopathy\", \"confidence\": 8, \"reasoning\": \"This pregnant woman has poorly controlled type 1 diabetes (HbA1C 8.5%, random glucose 220 mg/dL). Maternal diabetes, particularly when poorly controlled, is associated with fetal hyperinsulinemia due to maternal hyperglycemia crossing the placenta. This leads to increased insulin production by the fetal pancreas, which acts as a growth factor. The most common cardiac complication in infants of diabetic mothers is transient hypertrophic cardiomyopathy, characterized by asymmetric septal hypertrophy that typically resolves within the first few months of life. While hypertrophic obstructive cardiomyopathy (option 0) is related, it is a permanent genetic condition rather than the transient form seen in infants of diabetic mothers. The maternal mitral stenosis does not significantly increase risk for specific congenital heart defects in the infant.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 320,
+    "completion_tokens": 241
+  }
+}

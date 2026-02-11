@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Fibroadenoma\", \"confidence\": 9, \"reasoning\": \"The clinical presentation describes a 33-year-old pregnant woman with a painless, rubbery, mobile 2.5-cm breast mass that has been stable for 3 weeks. The biopsy shows rounded contour with overgrowth of fibrous and glandular tissue. These are classic features of fibroadenoma:\\n\\n1. Fibroadenoma: Most common benign breast tumor in young women, typically presents as a painless, rubbery, mobile mass. Biopsy showing fibrous and glandular tissue overgrowth is pathognomonic. Can occur during pregnancy.\\n\\n2. Normal pregnancy changes: Would typically be bilateral, diffuse, and wouldn't present as a discrete mass with these specific histologic findings.\\n\\n3. Fat necrosis: Usually follows trauma, presents as a firm irregular mass, and biopsy would show necrotic fat cells and inflammatory changes, not fibrous and glandular overgrowth.\\n\\n4. Phyllodes tumor: While it can have fibrous tissue, it's much rarer, typically larger, and has characteristic leaf-like architecture on histology, not simply fibrous and glandular overgrowth.\\n\\nThe biopsy findings are diagnostic for fibroadenoma.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 253,
+    "completion_tokens": 321
+  }
+}

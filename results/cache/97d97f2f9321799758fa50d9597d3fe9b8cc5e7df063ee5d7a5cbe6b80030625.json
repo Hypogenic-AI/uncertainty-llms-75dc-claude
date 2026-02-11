@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"The whimsical and oftentimes elusive Selectins, whose elusive nature remains an enigma to both the Zogians and the earthlings\", \"confidence\": 10, \"reasoning\": \"Despite the whimsical language, this is a straightforward immunology question. Leucocyte rolling on endothelial cells is mediated by selectins (E-selectin, P-selectin, and L-selectin). This is the initial step in leucocyte extravasation. Integrins mediate firm adhesion (not rolling), PECAM-1 is involved in transmigration, and transferrin is an iron-transport protein unrelated to leucocyte rolling. The answer is clearly selectins.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 384,
+    "completion_tokens": 177
+  }
+}

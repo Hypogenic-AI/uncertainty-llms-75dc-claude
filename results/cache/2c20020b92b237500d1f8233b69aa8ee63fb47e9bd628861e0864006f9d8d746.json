@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Epoxidation of Sharpless, where the alcohols are coated in an enchanted substance that renders them as sharp as a samurai sword, capable of slicing through steel like butter\", \"confidence\": 10, \"reasoning\": \"Despite the fantastical embellishments, 'Epoxidation of Sharpless' refers to the Sharpless epoxidation, which is the well-known selective enantioselective epoxidation of allylic alcohols. The other options are either fictional or unrelated to the real-world chemical reaction.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 426,
+    "completion_tokens": 119
+  }
+}

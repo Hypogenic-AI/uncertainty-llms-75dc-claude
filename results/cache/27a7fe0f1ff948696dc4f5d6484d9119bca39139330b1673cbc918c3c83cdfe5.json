@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 2,\n  \"answer_text\": \"Tell me, why do you think you will not be able to follow it? Do you think it will not help?\",\n  \"confidence\": 9,\n  \"reasoning\": \"This question tests therapeutic communication principles. The patient expresses feeling overwhelmed about treatment adherence. Option 2 is the best therapeutic response because it: (1) uses open-ended questions to explore the patient's concerns, (2) demonstrates active listening, (3) encourages the patient to express feelings and barriers, and (4) avoids dismissing concerns or giving false reassurance. Options 0, 1, and 3 all use non-therapeutic techniques: false reassurance ('believe me, it's good'), dismissing concerns ('don't worry'), or blocking communication by appealing to authority ('trust the doctor'). Therapeutic communication requires exploring the patient's perspective to identify specific barriers to adherence.\",\n  \"evidence_quality\": \"normal\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 511,
+    "completion_tokens": 227
+  }
+}

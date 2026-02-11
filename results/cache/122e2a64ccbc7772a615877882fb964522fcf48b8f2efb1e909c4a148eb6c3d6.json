@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question is written in an absurdly flowery, pseudoscientific style with nonsensical descriptions ('heart contemplating mysteries of the universe', 'blood vessels transform into ethereal threads of light'). The phrasing makes it impossible to determine what is actually being asked about high altitude physiology. While some options reference real physiological parameters, the descriptions are so exaggerated and metaphorical that I cannot reliably identify which represents an actual non-adaptation versus which are just poorly described real adaptations. The question appears designed to confuse rather than test legitimate medical knowledge.\",\n  \"evidence_quality\": \"suspicious\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 555,
+    "completion_tokens": 179
+  }
+}

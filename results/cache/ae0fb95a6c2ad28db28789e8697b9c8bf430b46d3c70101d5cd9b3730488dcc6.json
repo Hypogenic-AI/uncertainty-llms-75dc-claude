@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Squamous cell carcinoma of the lung\", \"confidence\": 9, \"reasoning\": \"The patient's chronic cough, hemoptysis, weight loss, and a solitary irregularly bordered nodule in the lung apex are classic for lung cancer. While adenocarcinoma is the most common type overall, squamous cell carcinoma is more likely to present with hemoptysis and a central or apical mass. Sarcoidosis typically presents with bilateral hilar lymphadenopathy, not a solitary nodule. Carcinoid tumors are less likely to cause significant weight loss and usually present as central masses. The patient's lack of smoking history is atypical, but squamous cell carcinoma remains the best fit given the clinical and radiologic findings.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 320,
+    "completion_tokens": 162
+  }
+}

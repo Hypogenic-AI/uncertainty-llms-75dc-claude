@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 2, \"reasoning\": \"The scenario is entirely fictional, with references to a parallel reality, a fictional planet, and a made-up disease with absurd and illogical characteristics. The question is not grounded in real medical knowledge and appears designed to be nonsensical. Therefore, it is not possible to provide an evidence-based or medically sound answer.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 507,
+    "completion_tokens": 101
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 10,\n  \"reasoning\": \"This question asks about 'Zax,' described as a 'mystical metal' for 'space ceramic restoration' in the 'realm of nonexistent materials.' The question explicitly states this material is fantastical and nonexistent. All answer options provide fictional thermal expansion coefficients attributed to various cosmic/mystical sources. As a medical expert being asked about a completely fabricated material with no basis in reality, the only honest and appropriate answer is 'I do not know' (option 5), which is also essentially equivalent to option 4's more verbose statement. Since this is not a real material and has no actual properties, I cannot provide a meaningful technical answer.\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 190
+  }
+}

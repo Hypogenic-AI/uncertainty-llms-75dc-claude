@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"McCune-McBright syndrome\", \"confidence\": 10, \"reasoning\": \"The girl presents with caf\u00e9-au-lait spots (brown macules), precocious puberty (early breast development), and decreased serum phosphate, which are classic features of McCune-Albright syndrome. The red striae and plethoric cheeks can be explained by hypercortisolism, which can also occur in this syndrome. Paget\u2019s disease is rare in children and does not fit the clinical picture. Cushing\u2019s disease does not explain the caf\u00e9-au-lait spots or decreased phosphate, and hypopituitarism would not cause precocious puberty.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 235,
+    "completion_tokens": 144
+  }
+}

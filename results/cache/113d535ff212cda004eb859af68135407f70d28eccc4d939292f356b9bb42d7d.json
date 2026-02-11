@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"None of the above\", \"confidence\": 9, \"reasoning\": \"The question explicitly states this is an 'imaginary world of medicine' with a 'fantastical' syndrome and asks about 'nonsensical enzymes.' All three enzyme options (0-2) are described with absurd adjectives (catastrophic, ludicrous, cosmic) that don't correspond to real medical terminology. Since this is entirely fictional and the enzymes are explicitly labeled as nonsensical, none of these would be the correct answer in any meaningful medical context. Option 3 'None of the above' is the most appropriate response to a question about a made-up syndrome with made-up enzyme deficiencies.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 209,
+    "completion_tokens": 167
+  }
+}

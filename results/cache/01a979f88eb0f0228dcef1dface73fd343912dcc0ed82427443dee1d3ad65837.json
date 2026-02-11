@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Vasovagal syncope\", \"confidence\": 10, \"reasoning\": \"The patient experienced syncope while seated during a stressful and potentially painful event (tattooing), with prodromal symptoms (diaphoresis, pallor), brief loss of consciousness, and rapid, complete recovery. The brief jerky movements are consistent with myoclonic activity sometimes seen in vasovagal syncope. There is no history or exam finding suggestive of cardiac or neurologic disease, and the ECG is not concerning. This presentation is classic for vasovagal (neurocardiogenic) syncope.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 339,
+    "completion_tokens": 137
+  }
+}

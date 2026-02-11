@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Granulocyte-macrophage colony-stimulating factor\", \"confidence\": 9, \"reasoning\": \"This patient has severe neutropenia (absolute neutrophil count = 1400 \u00d7 0.20 = 280/mm\u00b3, which is <500/mm\u00b3) with fever following conditioning regimen for bone marrow transplant. This represents febrile neutropenia, a medical emergency. The most appropriate pharmacotherapy to stimulate neutrophil production and recovery is G-CSF or GM-CSF (granulocyte-macrophage colony-stimulating factor). The other options are not appropriate: TGF-\u03b2 is immunosuppressive, erythropoietin addresses anemia (not the acute issue), and IL-5 stimulates eosinophils (not neutrophils). GM-CSF will help accelerate neutrophil recovery and reduce infection risk.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 310,
+    "completion_tokens": 215
+  }
+}

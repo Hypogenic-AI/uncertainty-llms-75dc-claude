@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Veex - veex\", \"confidence\": 10, \"reasoning\": \"The most common presentation in twin pregnancy is both twins presenting as vertex (cephalic), i.e., 'veex - veex'. The other combinations are less common, and breech-breech is particularly rare. 'Veex' is a typographical variant of 'vertex' in this context.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 176,
+    "completion_tokens": 92
+  }
+}

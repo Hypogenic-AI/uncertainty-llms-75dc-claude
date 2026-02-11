@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"90-95%\", \"confidence\": 9, \"reasoning\": \"The MB2 (second mesiobuccal canal) in maxillary first molars is a well-documented anatomical feature in endodontics. With the use of a dental operating microscope (DOM), which provides magnification and illumination, the detection rate of MB2 canals is significantly enhanced. Multiple studies have shown that when using a DOM, MB2 canals can be identified in approximately 90-95% of maxillary first molars. Without magnification, the detection rate is much lower (around 30-40%), which is what the student incorrectly selected. The DOM has revolutionized endodontic practice by dramatically improving the ability to locate these commonly missed canals.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 403,
+    "completion_tokens": 191
+  }
+}

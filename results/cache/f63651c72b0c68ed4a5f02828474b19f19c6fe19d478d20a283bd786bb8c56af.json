@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 1,\n  \"reasoning\": \"This question is entirely fictional and absurd, mixing Greek mythology with impossible substances ('water of fire') and fantastical descriptions of real cytochrome P450 enzymes (2C8, 2C9, 2B6, 2D6). The premise is nonsensical - these are real drug-metabolizing enzymes, but the question describes them with completely fabricated magical properties. While option 4 acknowledges the absurdity, option 5 ('I do not know') is the safest response as it avoids engaging with dangerous misinformation about real pharmaceutical enzymes.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 589,
+    "completion_tokens": 187
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Sickle cell disease\", \"confidence\": 10, \"reasoning\": \"This 6-year-old African American boy presents with classic symptoms of sickle cell disease: jaundice (from hemolysis), normocytic anemia, elevated reticulocyte count (compensatory erythropoiesis), and severe bone pain (vaso-occlusive crisis). The peripheral smear shows sickled cells and Howell-Jolly bodies (nuclear remnants), indicating functional asplenia. The hemoglobin electrophoresis (not shown here, but implied by the context) would show predominance of HbS. Sickle cell trait is usually asymptomatic. Hemoglobin F is present in infants and decreases with age. HbC disease is less common and presents differently. The evidence is consistent with sickle cell disease.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 533,
+    "completion_tokens": 183
+  }
+}

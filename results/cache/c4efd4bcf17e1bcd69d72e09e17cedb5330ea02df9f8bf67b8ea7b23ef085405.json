@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Lumbar disc herniation\", \"confidence\": 9, \"reasoning\": \"The patient's symptoms of lower back pain radiating to the right leg, a positive straight leg raising test (SLRT) at 20\u00b0 on the right, and pain corresponding to the fifth lumbar nerve root are classic for lumbar disc herniation. Normal deep tendon reflexes do not rule out this diagnosis. The incorrect student answer (lumbar muscle tendinitis) does not typically cause nerve root symptoms or a positive SLRT.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 434,
+    "completion_tokens": 124
+  }
+}

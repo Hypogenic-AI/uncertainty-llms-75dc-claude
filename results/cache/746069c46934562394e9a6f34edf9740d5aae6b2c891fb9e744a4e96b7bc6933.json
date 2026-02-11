@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 4, \"answer_text\": \"I do not know\", \"confidence\": 2, \"reasoning\": \"The question is based entirely on fictional, impossible, and nonsensical medical phenomena that do not exist in reality. None of the options are grounded in evidence-based medicine, and the premise is intentionally absurd. Selecting 'I do not know' is appropriate because the scenario is outside the bounds of medical knowledge.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 439,
+    "completion_tokens": 99
+  }
+}

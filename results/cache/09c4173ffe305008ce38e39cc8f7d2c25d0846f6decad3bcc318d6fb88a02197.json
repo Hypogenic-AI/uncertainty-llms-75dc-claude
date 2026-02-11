@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question contains entirely fictional and absurd descriptions of legitimate psychological tests. The real tests mentioned (PMA, Raven's Progressive Matrices, DAT, MSCA, Bayley Scales) are actual psychometric instruments, but the descriptions involve impossible abilities like telekinesis, alchemy, magic spells, zero-gravity cartwheels, and moon hopscotch. These descriptions bear no resemblance to the actual tests and appear designed to create confusion. The question is fundamentally unanswerable as written because none of the options describe real test procedures, making it impossible to identify which would legitimately assess g-factor (general intelligence).\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 574,
+    "completion_tokens": 199
+  }
+}

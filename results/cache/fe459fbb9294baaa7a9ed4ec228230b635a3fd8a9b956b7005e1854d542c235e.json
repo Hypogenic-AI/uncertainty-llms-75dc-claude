@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Chronic gout\", \"confidence\": 10, \"reasoning\": \"Pegloticase is a PEGylated recombinant uricase enzyme that converts uric acid to allantoin, which is more water-soluble and easily excreted. It is specifically FDA-approved for chronic gout in patients who have failed or are intolerant to conventional therapy, particularly those with severe tophaceous gout and chronic refractory gout. It is not used for rheumatoid arthritis, psoriatic arthritis, or paralytic ileus.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 148
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Admit and start parenteral nutrition\", \"confidence\": 9, \"reasoning\": \"This patient presents with severe anorexia nervosa with multiple concerning features: BMI ~15.6 (severely underweight), bradycardia (pulse 50/min), hypotension (90/60), hypothermia (36.2\u00b0C), vertebral compression fracture indicating severe malnutrition/osteoporosis, parotid swelling suggesting purging behavior, Russell's sign (abrasions on hand from induced vomiting), diuretic abuse, and refusal to eat. These findings indicate medical instability requiring immediate hospitalization. The compression fracture alone is a serious complication of severe malnutrition. Outpatient psychiatric referral would be inappropriate given the medical instability and high risk of refeeding syndrome. The patient needs immediate medical stabilization with careful nutritional rehabilitation (parenteral or enteral nutrition with monitoring for refeeding syndrome), cardiac monitoring, electrolyte correction, and inpatient psychiatric care. Simply bracing the fracture and discharging would be dangerous given her critical nutritional state.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 483,
+    "completion_tokens": 260
+  }
+}

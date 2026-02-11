@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Case-control study\", \"confidence\": 10, \"reasoning\": \"The investigators identified individuals with the disease (cases) and matched them to individuals without the disease (controls), then assessed prior exposure to the chemical. This is the classic design of a case-control study.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 418,
+    "completion_tokens": 75
+  }
+}

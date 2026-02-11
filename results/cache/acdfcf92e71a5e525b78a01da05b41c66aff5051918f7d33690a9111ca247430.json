@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Inability to deviate the mandible to the right\", \"confidence\": 9, \"reasoning\": \"In a left subcondylar fracture, the left lateral pterygoid muscle loses its mechanical advantage. During protrusion, the intact right lateral pterygoid pulls the mandible forward and to the LEFT (toward the fractured side). For lateral deviation to the RIGHT, the LEFT lateral pterygoid must contract to pull the mandible to the opposite side, but this is impaired due to the fracture. Therefore, the patient cannot deviate the mandible to the RIGHT side (away from the fracture). The student's answer stating deviation TO the right is incorrect - deviation actually occurs TOWARD the fractured side (left) on protrusion, and there is inability to deviate AWAY from the fracture (to the right).\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 223,
+    "completion_tokens": 194
+  }
+}

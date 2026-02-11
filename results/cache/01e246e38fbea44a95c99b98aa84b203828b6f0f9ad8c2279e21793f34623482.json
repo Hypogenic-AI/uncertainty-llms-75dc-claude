@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 4, \"answer_text\": \"The answer eludes even the greatest minds of the galaxy, for the cosmos is a vast and inscrutable mystery\", \"confidence\": 10, \"reasoning\": \"The question is set in a fictional world with made-up diseases, and none of the options correspond to real medical knowledge. Option 4 acknowledges the impossibility of knowing the answer in this context, which is the most accurate response.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 286,
+    "completion_tokens": 93
+  }
+}

@@ -1,0 +1,19 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+We introduce \uaprompt, a prompt-based intervention that instructs LLMs to assess evidence quality before answering medical questions.
+Our experiments on two frontier models across 1,200 API calls demonstrate five key findings:
+(1)~\uaprompt reduces unsafe completions on counterfactual medical questions from 97\% to 9\% for \gptmodel and from 71\% to 2\% for \claudemodel ($p < 0.0001$, Cohen's $d = 2.3\text{--}4.2$);
+(2)~self-reported confidence under \uaprompt achieves AUROC 0.88--0.89 for counterfactual detection, substantially exceeding the prior best medical uncertainty estimation result of 0.58;
+(3)~the accuracy--safety tradeoff is model-dependent, with \gptmodel preserving accuracy perfectly while \claudemodel shows degradation partly due to structured output compliance failures;
+(4)~the intervention is specific to implausible premises and does not improve detection of subtle factual errors;
+(5)~even baseline frontier models are dangerously overconfident on counterfactual inputs, with \gptmodel confidently answering 97\% of absurd medical questions.
+
+These results suggest that frontier LLMs already possess the ability to recognize implausible medical evidence, but this ability is suppressed by standard task-focused prompts.
+A simple, zero-cost prompting intervention can activate this latent capability, providing an immediately deployable safety layer for medical applications.
+
+\para{Future work.}
+Three directions emerge from our findings.
+First, evaluating \uaprompt on more sophisticated medical misinformation---plausible but subtly wrong premises---would test the boundaries of prompt-based safety.
+Second, combining prompt-based uncertainty with structured output constraints and fine-tuning approaches may address the format compliance issues observed with \claudemodel.
+Third, testing in multi-turn conversational settings where misinformation accumulates gradually would better approximate real clinical deployment conditions.

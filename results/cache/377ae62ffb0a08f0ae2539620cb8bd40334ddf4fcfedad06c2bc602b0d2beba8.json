@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Squamous cell carcinoma of the lung\", \"confidence\": 8, \"reasoning\": \"This patient presents with hemoptysis, chronic cough, weight loss, and a solitary irregular lung nodule at the apex. While she is a non-smoker, squamous cell carcinoma is a classic cause of hemoptysis and often presents as a central or apical mass with irregular borders. Sarcoidosis typically presents with bilateral hilar lymphadenopathy, not a solitary nodule. Carcinoid tumors are less likely to cause significant weight loss and are usually centrally located. Adenocarcinoma is more common in non-smokers and women, but it typically presents as a peripheral nodule. The combination of symptoms and radiographic findings most closely fits squamous cell carcinoma, despite the absence of smoking history.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 513,
+    "completion_tokens": 185
+  }
+}

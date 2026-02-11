@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"All of these\", \"confidence\": 10, \"reasoning\": \"Naloxone is a non-selective opioid antagonist that acts at all three major opioid receptor types: mu (\u03bc), delta (\u03b4), and kappa (\u03ba) receptors. While the student's answer of kappa receptor is not wrong per se (naloxone does act at kappa receptors), it is incomplete. The correct answer is 'All of these' because naloxone antagonizes all three opioid receptor subtypes, which is why it's effective in reversing the effects of various opioid agonists that may act preferentially at different receptor types.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 192,
+    "completion_tokens": 162
+  }
+}

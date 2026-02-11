@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Air bronchogram on chest x\u2013ray\", \"confidence\": 8, \"reasoning\": \"Respiratory Distress Syndrome (RDS/HMD) is characterized by surfactant deficiency. Air bronchograms on chest x-ray are a classic radiological finding in RDS, showing air-filled bronchi against opacified, collapsed alveoli (ground-glass appearance). The other options argue AGAINST RDS: antenatal corticosteroids reduce RDS risk, RDS typically presents within 4-6 hours of birth (not after 6 hours), and RDS primarily affects preterm infants (not term babies). The question contains 'HIVID' which appears to be a typo for 'HMD' (Hyaline Membrane Disease), another term for RDS.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 425,
+    "completion_tokens": 204
+  }
+}

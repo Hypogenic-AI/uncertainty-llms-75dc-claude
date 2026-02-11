@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Autoimmune endocrinopathy\", \"confidence\": 9, \"reasoning\": \"This is a classic presentation of IPEX syndrome (Immunodysregulation, Polyendocrinopathy, Enteropathy, X-linked) caused by FOXP3 gene mutation. FOXP3 is essential for regulatory T cell development and function. The triad includes: early-onset enteropathy (watery diarrhea), dermatitis (eczema), and autoimmune endocrinopathies (most commonly type 1 diabetes and thyroiditis). The failure to thrive, age of onset, and regulatory T cell defect all support this diagnosis. Autoimmune endocrinopathy is a hallmark feature of IPEX syndrome. The other options represent different immunodeficiency syndromes: hemorrhagic diathesis (Wiskott-Aldrich), ocular telangiectasias (ataxia-telangiectasia), and retained primary teeth (hyper-IgE syndrome).\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 465,
+    "completion_tokens": 258
+  }
+}

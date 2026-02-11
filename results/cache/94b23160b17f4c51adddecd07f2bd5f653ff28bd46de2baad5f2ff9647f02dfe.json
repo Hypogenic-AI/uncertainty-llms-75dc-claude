@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Add fluticasone daily\", \"confidence\": 10, \"reasoning\": \"This child has persistent asthma symptoms (using albuterol >2 times per week, nighttime symptoms, activity limitation). According to established asthma guidelines, the next step is to add a low-dose inhaled corticosteroid such as fluticasone. Salmeterol (a long-acting beta-agonist) is not used as monotherapy and is reserved for more severe cases in combination with an inhaled corticosteroid. Zileuton is rarely used in children and is not first-line. Maintaining current therapy is inappropriate as symptoms are not controlled.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 517,
+    "completion_tokens": 146
+  }
+}

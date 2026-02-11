@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Vitamin C\", \"confidence\": 10, \"reasoning\": \"The symptoms described\u2014swollen joints, anemia, loose teeth, and dentin dysplasia\u2014are classic features of scurvy, which is caused by a deficiency of Vitamin C. Vitamin C is essential for collagen synthesis, and its deficiency leads to defective connective tissue, resulting in these symptoms. The other options do not cause this constellation of symptoms.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 177,
+    "completion_tokens": 97
+  }
+}

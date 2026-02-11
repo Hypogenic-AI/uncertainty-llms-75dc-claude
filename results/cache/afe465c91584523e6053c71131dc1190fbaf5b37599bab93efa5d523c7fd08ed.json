@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Active hepatitis A infection\", \"confidence\": 10, \"reasoning\": \"The presence of anti-HAV IgM (and absence of anti-HAV IgG) indicates an acute or recent hepatitis A infection. The hepatitis B serology shows anti-HBs positivity with all other markers negative, consistent with prior vaccination (not infection). All hepatitis C markers are negative. Therefore, the best explanation is active hepatitis A infection.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 439,
+    "completion_tokens": 105
+  }
+}

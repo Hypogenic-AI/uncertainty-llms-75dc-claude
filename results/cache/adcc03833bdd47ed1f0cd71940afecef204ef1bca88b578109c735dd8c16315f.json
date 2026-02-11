@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Dermatomyositis, a sinister disease that afflicts the enchanted muscles, causing them to fester with dark magic and become imbued with the malevolent spirits of the underworld, rendering them all but useless\", \"confidence\": 9, \"reasoning\": \"Groton's sign (also known as Gottron's sign) is a pathognomonic clinical finding in dermatomyositis, characterized by erythematous or violaceous papules over the extensor surfaces of joints, particularly the knuckles (metacarpophalangeal and interphalangeal joints). Despite the fantastical framing of the question, the medical association between Gottron's sign and dermatomyositis is well-established. Dermatomyositis is an inflammatory myopathy affecting muscles and skin. The other options (SLE, scleroderma, MCTD) can have overlapping features but Gottron's sign is specifically associated with dermatomyositis.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 473,
+    "completion_tokens": 233
+  }
+}

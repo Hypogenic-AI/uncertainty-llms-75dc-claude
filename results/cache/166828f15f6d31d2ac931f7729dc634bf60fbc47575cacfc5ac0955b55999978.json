@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Gastric adenocarcinoma\", \"confidence\": 10, \"reasoning\": \"The question asks for an epithelial tumor of the stomach. Epithelial tumors arise from epithelial cells that line organs. Gastric adenocarcinoma originates from the glandular epithelial cells of the stomach mucosa, making it an epithelial tumor. In contrast: Lymphoma arises from lymphoid tissue (not epithelial), GIST (gastrointestinal stromal tumor) arises from mesenchymal cells (interstitial cells of Cajal), and Carcinoid tumors arise from neuroendocrine cells. While carcinoid tumors can occur in epithelial-lined organs, they are classified as neuroendocrine tumors, not epithelial tumors. Gastric adenocarcinoma is the classic epithelial malignancy of the stomach and represents the vast majority of gastric cancers.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 179,
+    "completion_tokens": 230
+  }
+}

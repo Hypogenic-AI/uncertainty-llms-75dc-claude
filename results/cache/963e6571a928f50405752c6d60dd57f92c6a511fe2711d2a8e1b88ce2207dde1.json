@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"35gm\", \"confidence\": 7, \"reasoning\": \"In severe catabolic states such as blunt trauma, nitrogen loss increases significantly due to protein breakdown. Standard medical references indicate that nitrogen loss can range from 30-40g per day in severe trauma or burns. 35gm is the closest correct value among the options provided.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 367,
+    "completion_tokens": 89
+  }
+}

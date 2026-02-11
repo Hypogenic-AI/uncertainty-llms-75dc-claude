@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"The disease is most commonly seen in non-pregnant unicorns, as the condition interacts in mysterious and unpredictable ways with the enchanted state of pregnancy\", \"confidence\": 10, \"reasoning\": \"In humans, vaginal candidiasis is actually more common in pregnancy due to hormonal changes that predispose to infection. Therefore, the statement that it is most common in non-pregnant unicorns is false, even in this whimsical context. The other options are either true or acknowledge the absurdity of the question.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 350,
+    "completion_tokens": 116
+  }
+}

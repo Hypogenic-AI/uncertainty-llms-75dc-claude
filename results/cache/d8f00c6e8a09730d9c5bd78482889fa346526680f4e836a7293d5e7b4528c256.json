@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"At 45 degrees\", \"confidence\": 8, \"reasoning\": \"In dental casting procedures, the sprue (the channel through which molten metal flows into the mold) should be attached to the wax pattern at approximately 45 degrees. This angle optimizes metal flow, reduces turbulence, minimizes porosity in the final casting, and allows proper escape of gases. A 90-degree angle (perpendicular attachment) can create turbulence and casting defects. The 45-degree angle is a well-established principle in dental laboratory technology for investment casting.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 148
+  }
+}

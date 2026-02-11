@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Gastric aspiration\", \"confidence\": 10, \"reasoning\": \"Mendelson's syndrome is a well-established medical condition first described by Curtis Mendelson in 1946. It specifically refers to chemical pneumonitis caused by aspiration of acidic gastric contents, typically occurring during anesthesia or in patients with impaired consciousness. The syndrome is characterized by acute respiratory distress following aspiration of gastric acid (pH <2.5), leading to direct chemical injury to the lungs. This is a classic obstetric anesthesia complication but can occur in any setting where aspiration risk is elevated. The student's answer of 'tracheal stenosis' is incorrect as this is a structural airway problem unrelated to aspiration.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 411,
+    "completion_tokens": 187
+  }
+}

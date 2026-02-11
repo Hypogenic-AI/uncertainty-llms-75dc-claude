@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Anomalous edema, inexplicably manifested in the form of grotesque and bulbous protrusions from various regions of the body\", \"confidence\": 10, \"reasoning\": \"Marasmus is characterized by severe wasting of muscle and subcutaneous fat without significant edema. Edema is more characteristic of kwashiorkor, not marasmus. Therefore, the statement about anomalous edema is not consistent with the features of marasmus, even in this absurd context.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 314,
+    "completion_tokens": 107
+  }
+}

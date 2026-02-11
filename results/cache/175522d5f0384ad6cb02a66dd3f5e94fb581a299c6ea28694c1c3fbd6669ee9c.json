@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Fibroadenoma\", \"confidence\": 10, \"reasoning\": \"The patient's age, pregnancy status, and the description of a painless, mobile, rubbery breast mass are classic for fibroadenoma. The biopsy findings of a well-circumscribed lesion with overgrowth of fibrous and glandular tissue further support this diagnosis. Normal pregnancy-related changes would not present as a discrete, mobile mass. Fat necrosis typically follows trauma and is often tender. Phyllodes tumors are less common and usually have more rapid growth and can be larger, with more cellular atypia on biopsy.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 426,
+    "completion_tokens": 140
+  }
+}

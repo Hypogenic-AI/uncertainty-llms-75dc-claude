@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"It travels through the inscrutable cosmic ether aboard a mystical transport protein of untold power and mystery, known only as the ATPADP permease\", \"confidence\": 10, \"reasoning\": \"In mitochondria, ADP enters the matrix via a specific transport protein, the adenine nucleotide translocase (also called ATP/ADP translocase or permease), which exchanges ADP and ATP across the inner mitochondrial membrane. The scenario described is fantastical, but option 2 most closely mirrors the real biological mechanism.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 386,
+    "completion_tokens": 121
+  }
+}

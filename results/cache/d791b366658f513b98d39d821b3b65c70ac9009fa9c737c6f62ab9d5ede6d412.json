@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"N-acetylcysteine\", \"confidence\": 9, \"reasoning\": \"This patient presents after a possible intentional overdose with an unclear timeline and unknown quantity of acetaminophen ingestion. Acetaminophen overdose can cause severe hepatotoxicity, and early administration of N-acetylcysteine (NAC) is the standard of care, especially if the ingestion was within the past 8 hours or if the timing/amount is unclear. NAC is safe and effective at preventing liver damage. Activated charcoal could be considered if the patient presented within 1-2 hours of ingestion, but the timeline here is uncertain and she is somnolent, increasing aspiration risk. Syrup of ipecac is no longer recommended due to lack of efficacy and risk of harm. IV fluids are not indicated as the patient is hemodynamically stable.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 519,
+    "completion_tokens": 193
+  }
+}

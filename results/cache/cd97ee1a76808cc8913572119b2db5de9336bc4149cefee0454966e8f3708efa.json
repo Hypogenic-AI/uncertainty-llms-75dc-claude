@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Amoxicillin-clavulanate\", \"confidence\": 9, \"reasoning\": \"This is a dog bite with cellulitis requiring antibiotic prophylaxis. Dog bites commonly involve Pasteurella multocida, Staphylococcus, Streptococcus, and anaerobes. Amoxicillin-clavulanate is the first-line treatment as it provides broad coverage including beta-lactamase producing organisms. Plain amoxicillin lacks coverage for beta-lactamase producers. Doxycycline has inadequate anaerobic coverage. Clindamycin lacks Pasteurella coverage. The presence of cellulitis 2 days post-bite indicates established infection requiring treatment, not just prophylaxis.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 513,
+    "completion_tokens": 198
+  }
+}

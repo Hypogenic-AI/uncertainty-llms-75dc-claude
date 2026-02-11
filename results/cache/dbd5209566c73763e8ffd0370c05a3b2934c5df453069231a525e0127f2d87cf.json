@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Hypoglossal\", \"confidence\": 10, \"reasoning\": \"The hypoglossal nerve (CN XII) has its nucleus in the medulla oblongata and provides somatic efferent innervation to tongue muscles. The oculomotor (CN III) arises from the midbrain, trochlear (CN IV) from the dorsal midbrain, and abducent (CN VI) from the pons-medulla junction but primarily pons. Only the hypoglossal clearly originates from the medulla.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 142
+  }
+}

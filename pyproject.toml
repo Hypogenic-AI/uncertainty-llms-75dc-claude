@@ -1,0 +1,28 @@
+[project]
+name = "research-workspace"
+version = "0.1.0"
+description = "Research workspace for experiments"
+requires-python = ">=3.10"
+dependencies = [
+    "datasets>=4.5.0",
+    "httpx>=0.28.1",
+    "matplotlib>=3.10.8",
+    "numpy>=2.2.6",
+    "openai>=2.20.0",
+    "pandas>=2.3.3",
+    "pypdf>=6.7.0",
+    "requests>=2.32.5",
+    "scikit-learn>=1.7.2",
+    "scipy>=1.15.3",
+    "seaborn>=0.13.2",
+]
+
+[tool.hatch.build]
+skip-excluded-dirs = true
+
+[tool.hatch.build.targets.wheel]
+only-include = ["research_workspace"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

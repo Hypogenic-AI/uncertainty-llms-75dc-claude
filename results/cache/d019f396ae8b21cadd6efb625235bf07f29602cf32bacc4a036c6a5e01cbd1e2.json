@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Primary hyperparathyroidism\", \"confidence\": 10, \"reasoning\": \"The patient presents with symptoms of nephrolithiasis (flank pain, hematuria), hypercalcemia (fatigue, constipation), and laboratory findings of increased PTH and hypercalcemia. Primary hyperparathyroidism is the most common cause of hypercalcemia with elevated PTH and is associated with kidney stones due to hypercalciuria. Pseudopseudohypoparathyroidism and secondary/tertiary hyperparathyroidism are not consistent with the lab findings (they are associated with low or normal calcium, or occur in the context of chronic kidney disease).\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 313,
+    "completion_tokens": 148
+  }
+}

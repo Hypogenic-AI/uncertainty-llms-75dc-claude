@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"\u2f29 proximal renal tubular top film (apical membrane) Using the main Li-type second shot egg white sodium-dependent glucose transport (sodium-dependent glucose transporter 2) glucose reabsorption\", \"confidence\": 9, \"reasoning\": \"Glucose reabsorption in the kidney primarily occurs in the proximal tubule. The apical membrane of proximal tubular cells uses the sodium-dependent glucose transporter 2 (SGLT2) to reabsorb glucose from the filtrate. This matches option 2. The other options incorrectly describe the location or type of transporter involved.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 527,
+    "completion_tokens": 138
+  }
+}

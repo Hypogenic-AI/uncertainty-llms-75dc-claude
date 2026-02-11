@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Oral mifepristone + misoprostol\", \"confidence\": 9, \"reasoning\": \"This patient has a positive pregnancy test with 4 weeks of amenorrhea, suggesting she is approximately 4-5 weeks pregnant (dating from last menstrual period). For early first-trimester pregnancy termination (up to 10 weeks gestation), medical abortion with mifepristone followed by misoprostol is highly effective (95-98% success rate) and is the most appropriate option. Manual uterine aspiration is also appropriate for early pregnancy but is more invasive. D&E is typically used for second-trimester abortions (after 13-14 weeks). Oxytocin-induced labor is used for later gestations. Given the very early gestational age and the effectiveness and safety profile of medical abortion, mifepristone + misoprostol is the most appropriate choice.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 329,
+    "completion_tokens": 218
+  }
+}

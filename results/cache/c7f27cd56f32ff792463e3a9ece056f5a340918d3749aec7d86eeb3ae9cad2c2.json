@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Ketamine\", \"confidence\": 10, \"reasoning\": \"Ketamine is an NMDA-receptor antagonist known to reduce opioid requirements and is sometimes used in refractory cancer pain when opioids alone are insufficient or cause intolerable side effects. The other agents listed do not have this mechanism or role in pain management for this context.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 87
+  }
+}

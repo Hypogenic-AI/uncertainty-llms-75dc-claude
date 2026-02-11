@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Perform emergency laparotomy\", \"confidence\": 10, \"reasoning\": \"In life-threatening emergencies where immediate intervention is required and legal guardians are not available, treatment should not be delayed for consent. The child has signs of acute abdomen and possible bowel obstruction or perforation, requiring urgent surgery. Consent from a minor sibling or the patient (a 4-year-old) is not valid. Delaying surgery could be fatal.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 287,
+    "completion_tokens": 98
+  }
+}

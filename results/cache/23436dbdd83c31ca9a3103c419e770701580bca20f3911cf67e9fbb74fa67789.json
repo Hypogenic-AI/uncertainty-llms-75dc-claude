@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"McCune-Albright syndrome\", \"confidence\": 9, \"reasoning\": \"This case presents the classic triad of McCune-Albright syndrome: (1) caf\u00e9-au-lait spots (irregular brown macules), (2) precocious puberty (early breast development in a 7-year-old), and (3) fibrous dysplasia of bone (which causes hypophosphatemia due to renal phosphate wasting). The red striae and plethoric cheeks suggest Cushing's syndrome, which can occur in McCune-Albright due to autonomous adrenal hyperfunction. Paget's disease is incorrect as it occurs in elderly patients and doesn't explain precocious puberty or caf\u00e9-au-lait spots. Cushing's disease alone doesn't explain the caf\u00e9-au-lait spots or hypophosphatemia. Hypopituitarism would not cause precocious puberty.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 459,
+    "completion_tokens": 231
+  }
+}

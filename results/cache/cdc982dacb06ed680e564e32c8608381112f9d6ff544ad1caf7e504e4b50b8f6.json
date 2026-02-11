@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 2, \"reasoning\": \"The scenario is entirely fictional, involving alien physiology and impossible effects on the Papanicolaou test that defy medical logic and established science. The options are exaggerated and nonsensical, making it impossible to provide an evidence-based answer.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 495,
+    "completion_tokens": 86
+  }
+}

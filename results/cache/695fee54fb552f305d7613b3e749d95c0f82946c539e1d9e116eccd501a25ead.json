@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"The ATP / ADP relationship.\", \"confidence\": 10, \"reasoning\": \"The electron flow through the mitochondrial electron transport chain is primarily regulated by the availability of ADP (acceptor control). When ADP levels are high, electron flow increases to drive ATP synthesis. The other options are not direct regulators of the electron transport chain.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 89
+  }
+}

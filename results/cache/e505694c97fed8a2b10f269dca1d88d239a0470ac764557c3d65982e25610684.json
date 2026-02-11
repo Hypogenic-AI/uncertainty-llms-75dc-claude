@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Bishydroxy coumarin\", \"confidence\": 10, \"reasoning\": \"Vitamin K is antagonized by drugs such as bishydroxy coumarin (a type of coumarin anticoagulant, like warfarin), not the other way around. Vitamin K itself does not antagonize corticosteroids, thrombin formation directly, or the production of clotting factors by the liver (it actually promotes clotting factor synthesis). The question is medically sound and evidence-based.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 367,
+    "completion_tokens": 119
+  }
+}

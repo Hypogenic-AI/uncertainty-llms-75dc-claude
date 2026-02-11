@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Demyelination of the medial longitudinal fasciculus\", \"confidence\": 10, \"reasoning\": \"This young woman presents with bilateral internuclear ophthalmoplegia (INO)\u2014adduction deficit in each eye with contralateral abducting nystagmus\u2014without other cranial nerve deficits. INO is caused by a lesion in the medial longitudinal fasciculus (MLF), which coordinates conjugate horizontal gaze. Bilateral INO in a young adult is classically due to demyelination, most commonly multiple sclerosis. Other options (tumor, infarction, thiamine deficiency) are less likely to cause isolated, bilateral MLF lesions in this age group.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 345,
+    "completion_tokens": 151
+  }
+}

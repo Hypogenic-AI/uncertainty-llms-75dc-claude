@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Anemia of chronic disease\", \"confidence\": 10, \"reasoning\": \"The patient has microcytic anemia (MCV 55 fl) with low serum iron, elevated ferritin, and low-normal TIBC. These findings are characteristic of anemia of chronic disease, especially in the context of rheumatoid arthritis. Iron deficiency anemia would show low ferritin and high TIBC, while thalassemia would not have low serum iron or high ferritin.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 226,
+    "completion_tokens": 106
+  }
+}

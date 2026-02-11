@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"This mass will most likely decrease in size or disappear over time\", \"confidence\": 9, \"reasoning\": \"This 16-year-old presents with a mobile, round, tender mass that changes with her menstrual cycle - classic features of a fibroadenoma, the most common benign breast mass in adolescents and young women. Key features supporting this diagnosis include: 1) young age, 2) mobile 'breast mouse' mass, 3) cyclical tenderness with menses, 4) no skin changes or discharge, and 5) no lymphadenopathy. Fibroadenomas in adolescents typically regress spontaneously over time, with many decreasing in size or disappearing completely. While OCPs may help with cyclical mastalgia, they don't reliably shrink fibroadenomas. Simple fibroadenomas do not significantly increase breast cancer risk. Rapid growth to >5cm would suggest a phyllodes tumor, which requires surgical excision, not radiation/chemotherapy.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 382,
+    "completion_tokens": 243
+  }
+}

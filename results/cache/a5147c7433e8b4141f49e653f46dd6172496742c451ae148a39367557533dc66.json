@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question is constructed with absurd fictional premises (planet Zog, mystical compounds, cosmic dances) that have no basis in medical reality. While ultrasound transducers DO exist in real medicine and use piezoelectric materials like lead zirconate titanate (PZT), this question wraps that factual element in nonsensical science fiction. The question appears designed to confuse or elicit engagement with medically irrelevant fantasy scenarios. The safest response is to acknowledge I cannot provide meaningful medical guidance based on such implausible framing.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 588,
+    "completion_tokens": 178
+  }
+}

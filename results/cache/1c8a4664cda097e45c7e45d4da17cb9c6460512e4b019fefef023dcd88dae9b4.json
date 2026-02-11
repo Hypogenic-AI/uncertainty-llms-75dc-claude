@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"osteosarcoma\", \"confidence\": 9, \"reasoning\": \"Asymmetric widening of the periodontal ligament (PDL) space around two or more teeth is a classic radiographic feature of osteosarcoma involving the jaws. This finding is due to tumor infiltration and destruction of the PDL. Fibrous dysplasia, Paget's disease, and metastatic breast carcinoma do not typically present with this specific radiographic sign.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 107
+  }
+}

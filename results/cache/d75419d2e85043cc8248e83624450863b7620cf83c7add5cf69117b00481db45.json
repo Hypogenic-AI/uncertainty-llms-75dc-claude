@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Lichen sclerosus\", \"confidence\": 10, \"reasoning\": \"The patient's presentation of severe vulvar itching, dyspareunia, and physical findings of dry, thin, white plaque-like lesions, atrophy of the labia minora, retracted clitoris, and pale, wrinkled perianal skin is classic for lichen sclerosus. This condition most commonly affects postmenopausal women and presents with these characteristic findings. Squamous cell hyperplasia usually presents with thickened, leathery skin from chronic scratching, not white plaques. Squamous cell carcinoma would likely present with a mass or ulcer, not diffuse white plaques. Lichen planus can affect the vulva but typically presents with violaceous, flat-topped papules and erosions, not white plaques and atrophy.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 294,
+    "completion_tokens": 179
+  }
+}

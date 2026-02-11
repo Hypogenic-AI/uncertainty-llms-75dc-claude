@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 4, \"answer_text\": \"The baffling and nonsensical Musculus Insanitus\", \"confidence\": 10, \"reasoning\": \"The question asks for a name that is utterly nonsensical and preposterous, fitting the fantastical and whimsical context. 'Musculus Insanitus' is not a real anatomical term and is described as baffling and nonsensical, making it the best fit among the options, while the others are actual muscles of the larynx.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 252,
+    "completion_tokens": 107
+  }
+}

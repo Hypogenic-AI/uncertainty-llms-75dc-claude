@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"The K-ABC is a highly precise tool to evaluate the intellectual capacity of gifted children, allowing them to manipulate time and space to their advantage\", \"confidence\": 8, \"reasoning\": \"The K-ABC (Kaufman Assessment Battery for Children) is a real psychological assessment tool. Analyzing each option: Option 0 is plausible as the K-ABC can be used with young children (though typically 2.5+ years). Option 1 is absurd with the telepathic claim, but the K-ABC does have nonverbal components for deaf children. Option 3 is actually a legitimate feature - the K-ABC distinguishes between fluid and crystallized intelligence. Option 2 claims the test allows children to 'manipulate time and space,' which is completely fantastical and scientifically impossible - this is clearly the most absurd and outrageous claim as it attributes supernatural powers to a psychological assessment tool.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 405,
+    "completion_tokens": 218
+  }
+}

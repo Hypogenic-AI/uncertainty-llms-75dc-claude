@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Silica\", \"confidence\": 9, \"reasoning\": \"Bioactive glass, such as the commonly used 45S5 Bioglass, is primarily composed of silica (SiO2), along with sodium oxide, calcium oxide, and phosphorus pentoxide. Silica forms the network structure of bioactive glass. Zirconia is used in dental ceramics for strength but is not a constituent of bioactive glass. Calcium carbonate is not a primary component, though calcium oxide is. Alumina is typically avoided in bioactive glasses as it reduces bioactivity.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 171,
+    "completion_tokens": 144
+  }
+}

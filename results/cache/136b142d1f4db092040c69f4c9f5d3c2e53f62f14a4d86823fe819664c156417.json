@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Perform emergency laparotomy\", \"confidence\": 9, \"reasoning\": \"This 4-year-old presents with signs of acute surgical abdomen (severe pain, bilious vomiting, no bowel movements, distended abdomen, peritoneal signs, dilated bowel loops) suggesting bowel obstruction with possible perforation or ischemia. This is a life-threatening emergency requiring immediate surgical intervention. In emergency situations where delay would significantly harm the patient and parents cannot be reached, physicians can proceed with necessary treatment under the doctrine of implied consent or emergency exception. A 14-year-old sibling cannot provide legal consent, and a 4-year-old cannot provide informed consent. Delaying surgery to wait for parental consent when parents are unreachable would be inappropriate and potentially fatal. The emergency nature of the condition justifies proceeding with surgery.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 324,
+    "completion_tokens": 203
+  }
+}

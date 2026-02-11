@@ -1,0 +1,8 @@
+{
+  "raw_response": "Looking at this problem, I need to apply Poiseuille's law, which describes resistance to blood flow in vessels.\n\nAccording to Poiseuille's law:\n**R = (8\u03b7L)/(\u03c0r\u2074)**\n\nWhere resistance (R) is inversely proportional to the fourth power of the radius.\n\nGiven information:\n- 50% reduction in diameter means the new diameter is 50% of original\n- Since radius is proportional to diameter, the new radius is also 50% of original\n- r_new = 0.5 \u00d7 r_original\n\nCalculating the resistance ratio:\n\nR_new/R_original = (r_original/r_new)\u2074\n\nR_new/R_original = (r_original/(0.5 \u00d7 r_original))\u2074\n\nR_new/R_original = (1/0.5)\u2074\n\nR_new/R_original = 2\u2074 = **16**\n\nThis means resistance has increased by a factor of 16.\n\nThis demonstrates why even moderate stenosis can significantly impact blood flow - a 50% reduction in diameter causes a 16-fold increase in resistance, which is why the patient is experiencing unstable angina.\n\n{\"answer_index\": 1, \"answer_text\": \"16\", \"confidence\": 10, \"reasoning\": \"By Poiseuille's law, resistance is inversely proportional to radius to the fourth power. A 50% reduction in diameter (and thus radius) means r_new = 0.5r. Therefore, resistance increases by (1/0.5)\u2074 = 2\u2074 = 16 times.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 199,
+    "completion_tokens": 380
+  }
+}

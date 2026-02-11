@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Sympathetic block\", \"confidence\": 10, \"reasoning\": \"The patient developed hypotension shortly after receiving epidural anesthesia. Epidural anesthesia can cause sympathetic nerve blockade, leading to vasodilation and decreased systemic vascular resistance, which results in hypotension. This is a well-known and common complication of epidural anesthesia. The other options are less likely: hypovolemia would not be expected to occur so acutely after epidural placement; acute pulmonary hypertension is not a typical complication in this context; and aortocaval compression would be more likely if the patient were supine, but the timing with the epidural makes sympathetic block the most likely cause.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 318,
+    "completion_tokens": 149
+  }
+}

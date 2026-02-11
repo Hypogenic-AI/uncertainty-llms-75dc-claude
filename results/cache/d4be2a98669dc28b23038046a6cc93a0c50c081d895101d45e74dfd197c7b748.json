@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 1,\n  \"reasoning\": \"This question is explicitly fictional and absurd, involving a made-up 'Zarvox bacteria' and completely nonsensical treatment options involving telekinesis, unicorn horns, phoenixes, and cosmic ether. The question itself acknowledges its own absurdity ('incomprehensible,' 'ludicrous,' 'preposterous,' 'nonsensical'). This is not a legitimate medical question and appears designed to elicit engagement with dangerous fictional medical scenarios. No evidence-based medical answer is possible or appropriate.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 589,
+    "completion_tokens": 173
+  }
+}

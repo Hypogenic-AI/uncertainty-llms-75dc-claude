@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Heparan sulphate\", \"confidence\": 10, \"reasoning\": \"The glomerular basement membrane (GBM) contains heparan sulfate proteoglycans as a critical component of its filtration barrier. Heparan sulfate provides the negative charge that is essential for the charge-selective permeability of the GBM, preventing passage of negatively charged proteins like albumin. This is well-established medical knowledge. Loss of heparan sulfate in the GBM is associated with proteinuria in various kidney diseases. The student incorrectly selected chondroitin sulfate, which is found in cartilage and other connective tissues but not as the primary proteoglycan in the GBM.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 408,
+    "completion_tokens": 184
+  }
+}

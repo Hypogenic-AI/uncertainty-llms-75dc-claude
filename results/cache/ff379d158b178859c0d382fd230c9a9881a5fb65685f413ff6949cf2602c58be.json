@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"70-85%\", \"confidence\": 9, \"reasoning\": \"The MB2 (mesiobuccal 2) canal in maxillary first molars is often missed without magnification. Studies using a dental operating microscope report MB2 detection rates between 70-85%. The student's answer (30-40%) reflects detection rates without magnification. Therefore, 70-85% is the correct answer.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 104
+  }
+}

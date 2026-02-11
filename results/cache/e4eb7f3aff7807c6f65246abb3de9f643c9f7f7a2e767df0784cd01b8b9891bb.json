@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Urethral hemangioma\", \"confidence\": 7, \"reasoning\": \"In a neonate (newborn), blood-stained diapers require consideration of age-appropriate causes. Bilharziasis (schistosomiasis) is a parasitic infection not typically seen in neonates. Sickle cell trait is generally asymptomatic and doesn't cause hematuria. Meatal stenosis is more common in older infants/children, particularly after circumcision. Urethral hemangioma, though rare, is a recognized cause of hematuria in neonates and young infants, presenting as blood-stained diapers. It's a benign vascular lesion that can cause bleeding in this age group. Among the given options, urethral hemangioma is the most appropriate answer for a neonate with blood-stained diapers.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 192,
+    "completion_tokens": 213
+  }
+}

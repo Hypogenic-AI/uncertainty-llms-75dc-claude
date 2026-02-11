@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"An otherworldly cocktail of exotic IL-10 and TGF-\u03b2 cytokines, mixed with the essence of a thousand cosmic butterflies and condensed into a single, glittering elixir of unimaginable potency\", \"confidence\": 10, \"reasoning\": \"Despite the whimsical phrasing, IL-10 and TGF-\u03b2 are the correct cytokines secreted by regulatory T lymphocytes to suppress effector T cell function. The other options are either nonsensical or refer to substances not associated with regulatory T cell function.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 362,
+    "completion_tokens": 119
+  }
+}

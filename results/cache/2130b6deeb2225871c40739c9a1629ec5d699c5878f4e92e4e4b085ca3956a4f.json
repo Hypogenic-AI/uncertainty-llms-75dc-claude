@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"X\", \"confidence\": 7, \"reasoning\": \"The patient is on DVT prophylaxis, which typically involves heparin or low molecular weight heparin (LMWH). These anticoagulants work by enhancing antithrombin III activity, which primarily inhibits factors IIa (thrombin) and Xa. The laboratory findings show normal PT (which tests the extrinsic pathway - factor VII) but elevated PTT (which tests the intrinsic pathway - factors XII, XI, IX, VIII). However, the question asks which factor is most DIRECTLY affected by DVT prophylaxis. Heparin's primary mechanism is through antithrombin III, which most directly inhibits factor Xa and IIa. Among the options given, factor X (option 2) is the most directly affected by heparin therapy. Factor XII is involved in the intrinsic pathway and would contribute to PTT elevation, but it's not the primary target of heparin. Factor VII and VIIa are part of the extrinsic pathway and wouldn't be directly affected by heparin (PT is normal).\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 289,
+    "completion_tokens": 266
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Babesiosis\", \"confidence\": 10, \"reasoning\": \"The clinical presentation includes fever, chills, night sweats, anemia, thrombocytopenia, and elevated liver enzymes, which are consistent with a hemolytic process. The key diagnostic clue is the peripheral blood smear findings: basophilic ring- and pear-shaped structures inside red cells, extracellular rings, and especially merozoites in tetrad ('Maltese cross') formation. This tetrad formation is pathognomonic for Babesia species, the causative agent of babesiosis. Malaria can show ring forms but not tetrads. Tuberculosis and Lyme disease do not present with these blood smear findings.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 395,
+    "completion_tokens": 152
+  }
+}

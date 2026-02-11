@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Autosomal dominant polycystic kidney disease\", \"confidence\": 9, \"reasoning\": \"This 31-year-old woman presents with classic features of autosomal dominant polycystic kidney disease (ADPKD): 1) Bilateral palpable flank masses (enlarged kidneys), 2) Recurrent UTIs (common complication), 3) Hypertension (150/88 mmHg - common early manifestation), 4) Elevated creatinine indicating renal impairment, and 5) Bilateral enlarged kidneys with multiple anechoic (cystic) masses on ultrasound. ADPKD typically presents in the 3rd-4th decade of life. Autosomal recessive PKD presents in infancy/childhood. Medullary sponge kidney causes medullary cysts, not the large parenchymal cysts described here. Obstructive cystic dysplasia is typically unilateral and congenital.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 302,
+    "completion_tokens": 242
+  }
+}

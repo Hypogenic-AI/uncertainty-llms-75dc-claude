@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Urinalysis\", \"confidence\": 10, \"reasoning\": \"This patient suffered a high-voltage electrical injury with a burn on the right arm and severe bilateral flank pain. Electrical injuries can cause rhabdomyolysis due to muscle breakdown, which releases myoglobin that can damage the kidneys. Flank pain is a classic symptom of rhabdomyolysis-induced myoglobinuria. Urinalysis is the first diagnostic test to evaluate for myoglobinuria and assess kidney involvement. Other options (FAST, X-ray, EEG) are less immediately relevant to the most life-threatening complication in this context.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 262,
+    "completion_tokens": 137
+  }
+}

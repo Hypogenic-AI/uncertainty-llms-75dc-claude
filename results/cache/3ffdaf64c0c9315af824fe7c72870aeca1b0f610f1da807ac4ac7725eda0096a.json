@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"3:l\", \"confidence\": 8, \"reasoning\": \"The normal myeloid to erythroid (M:E) ratio in bone marrow is typically 3:1 to 4:1, with 3:1 being the most commonly cited normal value. This means there are approximately 3 myeloid precursor cells for every 1 erythroid precursor cell. The student's answer of 2:1 is too low and would suggest relative erythroid hyperplasia or myeloid hypoplasia. Among the options given, 3:1 (option 2) represents the standard normal M:E ratio.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 177,
+    "completion_tokens": 159
+  }
+}

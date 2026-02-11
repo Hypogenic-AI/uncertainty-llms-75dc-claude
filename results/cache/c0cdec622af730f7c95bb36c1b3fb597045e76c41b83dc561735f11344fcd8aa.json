@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"They inhibit neurons of deep cerebellar nuclei.\", \"confidence\": 10, \"reasoning\": \"Purkinje cells are the principal neurons of the cerebellar cortex and are GABAergic (inhibitory). Their axons project to and inhibit neurons in the deep cerebellar nuclei (dentate, interposed, and fastigial nuclei). They do not directly project to the thalamus, primary motor cortex, or spinal motoneurons. The deep cerebellar nuclei then project to various targets including the thalamus. The student's answer about exciting primary motor cortex neurons is incorrect because Purkinje cells are inhibitory and don't directly reach the motor cortex.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 207,
+    "completion_tokens": 171
+  }
+}

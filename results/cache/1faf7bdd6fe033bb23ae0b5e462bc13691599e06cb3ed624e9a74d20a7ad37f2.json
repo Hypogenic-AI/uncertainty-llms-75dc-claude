@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"\ue001 \ue002\", \"confidence\": 8, \"reasoning\": \"The question appears to be about the most appropriate therapy for a condition where alpha-blockers and nitrates (student's answer) are incorrect. Beta-blockers and verapamil (a calcium channel blocker) are commonly used in conditions such as hypertrophic cardiomyopathy or angina, where reducing heart rate and contractility is beneficial. Nitrates and alpha-blockers are generally not first-line in these settings. Therefore, the correct answer is beta-blocker and verapamil.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 210,
+    "completion_tokens": 127
+  }
+}

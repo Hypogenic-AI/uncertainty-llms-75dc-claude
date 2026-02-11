@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Fluoxetine\", \"confidence\": 8, \"reasoning\": \"This patient presents with classic symptoms of social anxiety disorder (social phobia): fear of negative evaluation by peers, avoidance of social situations, physical symptoms during performance situations (tachycardia, flushing), and significant functional impairment (academic decline, social isolation). The presentation is medically plausible and well-described. For adolescent social anxiety disorder, SSRIs (like fluoxetine) are first-line pharmacotherapy, supported by evidence and FDA approval for pediatric anxiety disorders. Phenelzine (MAOI) would be effective but is not first-line due to dietary restrictions and side effects. Propranolol helps with performance anxiety symptoms but doesn't address the underlying disorder. Clomipramine is primarily for OCD. CBT combined with an SSRI would be ideal treatment.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 542,
+    "completion_tokens": 217
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Secondary hyperparathyroidism\", \"confidence\": 9, \"reasoning\": \"This patient with chronic kidney disease (CKD) and a vertebral compression fracture likely has renal osteodystrophy due to secondary hyperparathyroidism. CKD leads to phosphate retention and decreased vitamin D activation, causing hypocalcemia and increased parathyroid hormone (PTH) secretion. This results in bone resorption and increased fracture risk. Labs show anemia, thrombocytopenia, hyperkalemia, and hypocalcemia, all consistent with CKD. There is no evidence for primary or tertiary hyperparathyroidism (which would usually show hypercalcemia), and while elder abuse is possible, the clinical context and lab findings strongly support a metabolic bone disease secondary to CKD.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 645,
+    "completion_tokens": 176
+  }
+}

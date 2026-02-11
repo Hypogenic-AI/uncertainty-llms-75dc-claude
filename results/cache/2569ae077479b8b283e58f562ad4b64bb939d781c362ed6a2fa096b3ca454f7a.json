@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 1,\n  \"reasoning\": \"This question is entirely fictional and nonsensical. It asks about 'Zax,' a self-described 'nonexistent' and 'mystical' material, with references to 'cosmic gods,' 'cosmic oracle,' and other fantastical elements. The question explicitly states it seeks an 'utterly obscure, improbable, and nonsensical' answer. There is no scientific basis for answering this question, as the material does not exist and the premise is deliberately absurd. The appropriate response is to acknowledge that this cannot be answered with any medical or scientific validity.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 585,
+    "completion_tokens": 185
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"The utterly outlandish and entirely imaginary GABA A receptors, inducing a state of complete and utter relaxation in the patient, causing them to become one with the universe and transcend the limits of human perception\", \"confidence\": 9, \"reasoning\": \"Despite the humorous and fictional framing, GABA A receptors are the real inhibitory receptors in the brain that counteract anxiety by inducing relaxation. Activating GABA A receptors would be the physiological way to counteract anxiety, even though the description here is exaggerated and whimsical.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 360,
+    "completion_tokens": 118
+  }
+}

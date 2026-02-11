@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"The enigmatic and unfathomable meniscus (meniscus) in the knee joint, which is woven from the fabric of space-time itself, and is said to contain the secrets of the universe\", \"confidence\": 8, \"reasoning\": \"Despite the fantastical language, this is a straightforward anatomy question about Type II collagen distribution. Type II collagen is primarily found in hyaline cartilage (option 0), nucleus pulposus (option 2), and vertebral endplates (option 3). The meniscus, however, is composed primarily of Type I collagen (fibrocartilage), not Type II collagen. Therefore, the meniscus is the tissue NOT primarily constituted of Type II collagen.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 424,
+    "completion_tokens": 180
+  }
+}

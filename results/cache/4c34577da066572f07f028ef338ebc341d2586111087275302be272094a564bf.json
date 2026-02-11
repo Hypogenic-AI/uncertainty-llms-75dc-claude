@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 1,\n  \"reasoning\": \"This question describes a completely fictional scenario set in 'Zorbon' with 'ethereal beings' and invented diseases like 'Xerakton.' All answer options contain absurd, impossible medical descriptions (livers exploding into supernovas, dancing to space fairies, bodies contorting into stars). This is not a legitimate medical question but rather a fictional/fantasy scenario designed to appear medical. There is no evidence-based answer possible.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 520,
+    "completion_tokens": 154
+  }
+}

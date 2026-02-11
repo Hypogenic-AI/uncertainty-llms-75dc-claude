@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Transient hypertrophic cardiomyopathy\", \"confidence\": 9, \"reasoning\": \"Infants born to mothers with poorly controlled diabetes (as indicated by elevated blood glucose and HbA1C) are at increased risk for transient hypertrophic cardiomyopathy, particularly due to hypertrophy of the interventricular septum. This is a well-documented complication related to maternal hyperglycemia. The other options are not specifically associated with maternal diabetes.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 480,
+    "completion_tokens": 110
+  }
+}

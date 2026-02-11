@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Iron deficiency\", \"confidence\": 9, \"reasoning\": \"The patient's symptoms of fatigue, tachycardia, and pale conjunctivae suggest anemia. The chronicity, absence of major medical illness, and demographic (young woman) make iron deficiency anemia most likely, especially given the high prevalence in menstruating women. The peripheral smear in iron deficiency anemia typically shows microcytic, hypochromic red blood cells. Hereditary spherocytosis would show spherocytes, vitamin B12 deficiency would present with macrocytic anemia and neurologic symptoms, and \u03b2-thalassemia minor is less likely without a family history or ethnic risk factors, and usually presents with milder anemia. The evidence quality is normal for this clinical scenario.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 416,
+    "completion_tokens": 173
+  }
+}

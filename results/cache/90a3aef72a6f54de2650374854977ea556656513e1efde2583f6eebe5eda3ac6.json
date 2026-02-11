@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Lactotrophs\", \"confidence\": 9, \"reasoning\": \"This patient presents with headaches, visual field deficits (bitemporal hemianopsia), and erectile dysfunction, along with an intrasellar mass on MRI - classic features of a pituitary adenoma. The bitemporal hemianopsia occurs due to compression of the optic chiasm. The erectile dysfunction suggests hypogonadism. Prolactinomas (derived from lactotrophs) are the most common functional pituitary adenomas (~40% of all pituitary adenomas). Hyperprolactinemia causes hypogonadotropic hypogonadism by inhibiting GnRH secretion, leading to decreased testosterone and erectile dysfunction in men. The combination of mass effect symptoms (headache, visual changes) plus hypogonadism strongly suggests a prolactinoma.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 223,
+    "completion_tokens": 208
+  }
+}

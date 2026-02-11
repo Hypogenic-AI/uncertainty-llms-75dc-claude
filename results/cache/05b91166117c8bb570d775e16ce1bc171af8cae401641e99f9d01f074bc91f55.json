@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Admit and start parenteral nutrition\", \"confidence\": 9, \"reasoning\": \"This patient has severe anorexia nervosa with medical instability (bradycardia, hypotension, hypothermia, electrolyte disturbances from diuretic abuse, evidence of purging, and a compression fracture from low bone density). She is at high risk for serious complications and requires immediate inpatient medical stabilization, including nutritional rehabilitation. Outpatient therapy is not appropriate given her unstable condition.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 628,
+    "completion_tokens": 116
+  }
+}

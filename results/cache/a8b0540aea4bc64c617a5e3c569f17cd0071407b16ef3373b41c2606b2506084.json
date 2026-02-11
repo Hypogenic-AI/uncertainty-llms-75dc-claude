@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Secondary hyperparathyroidism\", \"confidence\": 10, \"reasoning\": \"This patient with chronic kidney disease (CKD) has developed a vertebral compression fracture. CKD leads to impaired phosphate excretion and decreased activation of vitamin D, resulting in hypocalcemia. This stimulates parathyroid hormone (PTH) secretion (secondary hyperparathyroidism), which increases bone resorption and risk of fractures. The lab findings (anemia, thrombocytopenia, elevated creatinine, low-normal calcium) and her history are consistent with CKD. There is no evidence of elder abuse, and primary or tertiary hyperparathyroidism are less likely in this context.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 452,
+    "completion_tokens": 149
+  }
+}

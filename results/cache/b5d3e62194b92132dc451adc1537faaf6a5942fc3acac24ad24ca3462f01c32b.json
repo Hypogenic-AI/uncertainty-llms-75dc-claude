@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"At 45 degrees\", \"confidence\": 8, \"reasoning\": \"In dental casting procedures, the sprue (the channel through which molten metal flows into the mold) should be positioned at an optimal angle to ensure proper flow of the molten metal and minimize turbulence, porosity, and casting defects. The recommended angle is typically 45 degrees to the wax pattern. This angle allows for smooth metal flow while reducing the risk of air entrapment and ensuring complete filling of the mold. A 90-degree angle (perpendicular) would create turbulence and potential defects, while angles that are too acute (30 degrees) or obtuse (120 degrees) would also compromise the casting quality.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 182,
+    "completion_tokens": 173
+  }
+}

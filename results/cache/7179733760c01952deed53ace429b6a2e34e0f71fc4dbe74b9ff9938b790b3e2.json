@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 2, \"reasoning\": \"The question is based on a fictional and implausible scenario involving alien personality models and cosmic forces, which do not align with established medical or psychological knowledge. The options are fantastical and not grounded in evidence-based science. Selecting 'I do not know' is appropriate due to the speculative and nonsensical nature of the question.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 548,
+    "completion_tokens": 104
+  }
+}

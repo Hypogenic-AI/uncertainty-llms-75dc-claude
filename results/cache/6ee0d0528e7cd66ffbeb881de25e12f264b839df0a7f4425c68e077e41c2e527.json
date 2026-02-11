@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Increased renal tubular sodium reabsorption\", \"confidence\": 10, \"reasoning\": \"The patient's symptoms (exertional dyspnea, orthopnea, paroxysmal nocturnal dyspnea, pitting edema, bibasilar crackles) are classic for congestive heart failure, likely due to chronic alcohol use. In heart failure, decreased cardiac output leads to activation of the renin-angiotensin-aldosterone system (RAAS), resulting in increased renal tubular sodium reabsorption in an attempt to increase blood volume and perfusion. This maladaptive response contributes to fluid overload and edema. The other options do not fit: GFR is typically decreased, ECF volume is increased (not decreased), and renal blood flow is often reduced in heart failure.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 316,
+    "completion_tokens": 173
+  }
+}

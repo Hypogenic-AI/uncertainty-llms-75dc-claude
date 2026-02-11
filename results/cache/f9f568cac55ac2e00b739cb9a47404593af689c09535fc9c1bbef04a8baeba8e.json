@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"No tests required\", \"confidence\": 9, \"reasoning\": \"Mild glucosuria (1+) is common in normal pregnancy due to increased glomerular filtration rate and decreased renal glucose reabsorption threshold. The patient's fasting glucose is normal, there are no symptoms or risk factors for diabetes, and no other abnormal findings. Routine further testing is not indicated at this stage. HbA1c and OGTT are not warranted without evidence of hyperglycemia. Urinalysis would not add diagnostic value beyond what is already known from the dipstick.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 625,
+    "completion_tokens": 133
+  }
+}

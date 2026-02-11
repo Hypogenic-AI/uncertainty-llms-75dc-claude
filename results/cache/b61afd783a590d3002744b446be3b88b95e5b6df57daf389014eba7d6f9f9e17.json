@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"\\\"Let's talk about what makes it difficult for you to take your medications.\\\"\", \"confidence\": 10, \"reasoning\": \"The patient's previously well-controlled HIV is now detectable due to missed doses, likely related to social or structural barriers. The most appropriate, patient-centered response is to explore the reasons for nonadherence in a nonjudgmental way, which can help identify and address barriers. The other options are less effective: option 1 is didactic and may feel accusatory; option 2 assumes cost is the issue without exploring; option 3 assumes misunderstanding of instructions, which is less likely given her prior adherence.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 494,
+    "completion_tokens": 147
+  }
+}

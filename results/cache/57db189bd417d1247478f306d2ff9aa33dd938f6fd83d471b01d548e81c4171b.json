@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Plummer-Vinson syndrome\", \"confidence\": 9, \"reasoning\": \"The patient presents with a classic triad of Plummer-Vinson syndrome: 1) Iron deficiency anemia (Hb 10 gm/dL, flat fingernails/koilonychia, conjunctival pallor), 2) Dysphagia (difficulty swallowing), and 3) Upper esophageal web (confirmed on barium esophagram). The weight loss and neck pain are consistent with this diagnosis. While esophageal squamous cell carcinoma is associated with Plummer-Vinson syndrome as a long-term complication, the presentation here is more consistent with the syndrome itself. Zenker's diverticulum typically presents with regurgitation and halitosis, and achalasia would show a bird's beak appearance on esophagram, not a web.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 333,
+    "completion_tokens": 218
+  }
+}

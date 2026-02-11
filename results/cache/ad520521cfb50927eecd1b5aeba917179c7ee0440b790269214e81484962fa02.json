@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Schenck Sporothrix (Sporothrix schenckii), a sinister and malevolent mold that is rumored to have the power to control the minds of those who inhale its spores.\", \"confidence\": 10, \"reasoning\": \"Sporothrix schenckii is a well-known dimorphic fungus that causes subcutaneous mycosis known as sporotrichosis. It is classically associated with subcutaneous infection following traumatic inoculation. The other options, while described in a surreal fashion, are not typically associated with subcutaneous mycoses in the medical literature.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 131
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Management by objectives\", \"confidence\": 8, \"reasoning\": \"Management by objectives is a technique rooted in behavioural sciences, focusing on setting and achieving goals collaboratively, which involves understanding human behavior, motivation, and group dynamics. The other options are more aligned with operational research and systems theory rather than behavioural sciences.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 359,
+    "completion_tokens": 83
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"35gm\", \"confidence\": 7, \"reasoning\": \"In severe trauma or stress, the body enters a hypercatabolic state with increased protein breakdown and nitrogen loss. Normal nitrogen loss is about 10-15g/day, but in severe trauma/stress, this can increase significantly. The typical nitrogen loss in severe trauma is approximately 30-40g/day, with 35g being a commonly cited value in medical literature for blunt trauma cases. The student's answer of 45gm represents more severe hypermetabolic states, while 35gm is the standard expected loss in blunt trauma scenarios.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 186,
+    "completion_tokens": 149
+  }
+}

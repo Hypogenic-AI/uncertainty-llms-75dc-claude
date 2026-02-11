@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Air bronchogram on chest x\u2013ray\", \"confidence\": 10, \"reasoning\": \"Respiratory distress syndrome (RDS), also known as hyaline membrane disease (HMD), typically presents with characteristic findings on chest x-ray, including air bronchograms. The other options either decrease the likelihood of RDS (antenatal corticosteroids, term birth) or are not typical (onset after 6 hours).\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 203,
+    "completion_tokens": 99
+  }
+}

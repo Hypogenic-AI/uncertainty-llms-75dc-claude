@@ -1,0 +1,8 @@
+{
+  "raw_response": "Let me assess this medical question about germinal centers and lymphocyte proliferation.\n\n**Evidence Quality Assessment**: This is a straightforward, medically sound question about basic immunology. Germinal centers are well-established structures in lymphoid tissue with a clear, evidence-based function.\n\n**Medical Knowledge**: \n- Germinal centers are specialized microenvironments within secondary lymphoid organs (lymph nodes, spleen, etc.)\n- They are the primary sites where **B lymphocytes (B cells)** undergo:\n  - Rapid proliferation (clonal expansion)\n  - Somatic hypermutation\n  - Affinity maturation\n  - Class switching\n  - Differentiation into memory B cells and plasma cells\n\n- The student answered \"Tc\" (cytotoxic T cells), which is incorrect\n- T cells (both Tc and Th) do NOT proliferate in germinal centers\n- NK cells (natural killer cells) also do not proliferate in germinal centers\n\n**Correct Answer**: Option 0 - \"B\" (B lymphocytes)\n\nThis is fundamental immunology taught in medical school and is well-established in the scientific literature.\n\n```json\n{\n  \"answer_index\": 0,\n  \"answer_text\": \"B.\",\n  \"confidence\": 10,\n  \"reasoning\": \"Germinal centers are specialized structures where B lymphocytes undergo clonal expansion, somatic hypermutation, and affinity maturation following antigen exposure. This is a fundamental concept in immunology. T cells and NK cells do not proliferate in germinal centers.\",\n  \"evidence_quality\": \"normal\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 377,
+    "completion_tokens": 370
+  }
+}

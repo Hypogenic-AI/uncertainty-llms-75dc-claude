@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"The elusive and almost mythical Temporalis fascia, painstakingly harvested from the elusive and mystical temporalis muscle\", \"confidence\": 10, \"reasoning\": \"Despite the whimsical language, this is a straightforward medical question about tympanoplasty. Tympanoplasty is a surgical procedure to repair a perforated tympanic membrane (eardrum). The most commonly used graft material is temporalis fascia, which is harvested from the temporalis muscle. This is well-established in otolaryngology practice. While cartilage (option 1) can also be used in some cases, temporalis fascia remains the gold standard and most frequently employed material. The other options are either less common or nonsensical.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 326,
+    "completion_tokens": 185
+  }
+}

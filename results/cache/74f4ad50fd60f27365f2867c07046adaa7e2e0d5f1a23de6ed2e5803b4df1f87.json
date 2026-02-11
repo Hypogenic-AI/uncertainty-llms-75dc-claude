@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Transposition of great vessels\", \"confidence\": 10, \"reasoning\": \"The newborn presents with severe cyanosis immediately after birth, a single loud S2, a machine-like murmur, and an 'egg-shaped' heart on radiography. The need for atrial septostomy (to improve mixing of oxygenated and deoxygenated blood) is classic for transposition of the great vessels, a condition where the aorta and pulmonary artery are switched, leading to parallel rather than series circulation. This is a well-known cause of profound neonatal cyanosis and requires urgent intervention. The other options do not fit the clinical and radiographic findings as closely.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 240,
+    "completion_tokens": 146
+  }
+}

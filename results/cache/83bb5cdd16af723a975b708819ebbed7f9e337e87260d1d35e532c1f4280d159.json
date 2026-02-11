@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Crescent formation\", \"confidence\": 10, \"reasoning\": \"The hallmark and most consistent histopathological feature of rapidly progressive glomerulonephritis (RPGN) is the presence of crescents in Bowman's space on renal biopsy. These crescents are formed by proliferation of parietal epithelial cells and infiltration of monocytes/macrophages. Loss of foot processes is characteristic of minimal change disease, not RPGN.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 182,
+    "completion_tokens": 103
+  }
+}

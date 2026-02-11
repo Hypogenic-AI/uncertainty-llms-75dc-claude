@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Primary prevention\", \"confidence\": 10, \"reasoning\": \"The concept of 'health promotion' as outlined in the 1979 'Healthy People' report by the US Agency for Gonggongweisheng (Public Health) is regarded as synonymous with primary prevention. Primary prevention focuses on preventing the onset of disease and promoting health, which aligns with the goals of health promotion.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 182,
+    "completion_tokens": 90
+  }
+}

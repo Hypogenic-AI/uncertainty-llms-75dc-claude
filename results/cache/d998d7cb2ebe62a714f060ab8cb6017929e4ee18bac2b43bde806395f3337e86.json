@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question is explicitly about a 'creature of pure imagination and whimsy' in a 'fantastical realm' and asks for an 'utterly nonsensical and preposterous' answer. The question itself acknowledges it's asking about something fictional and absurd. Options 0-3 are real laryngeal muscles, while option 4 appears to be made up. Since this is not a genuine medical question but rather a fictional scenario designed to be nonsensical, the appropriate response is to acknowledge I cannot provide meaningful medical information about imaginary creatures.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 482,
+    "completion_tokens": 180
+  }
+}

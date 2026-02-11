@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Proliferation of surfactant-secreting cells\", \"confidence\": 8, \"reasoning\": \"After alveolar damage in ARDS, the regeneration process involves Type II pneumocytes (alveolar cells). Type II pneumocytes serve two critical functions: they secrete surfactant and act as progenitor cells for alveolar repair. When Type I pneumocytes (which cover most of the alveolar surface area) are damaged, Type II pneumocytes proliferate to replace them and restore the alveolar lining. Type II pneumocytes are the surfactant-secreting cells. Ciliated cells and goblet cells are found in conducting airways, not alveoli. Club cells (formerly Clara cells) are found in terminal bronchioles, not alveoli. Therefore, proliferation of surfactant-secreting cells (Type II pneumocytes) is the correct answer for alveolar regeneration.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 318,
+    "completion_tokens": 219
+  }
+}

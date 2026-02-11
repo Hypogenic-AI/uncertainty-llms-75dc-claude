@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"They occur only during non-REM sleep\", \"confidence\": 10, \"reasoning\": \"The described episodes are characteristic of sleep terrors (night terrors), which are parasomnias that occur during non-REM (specifically slow-wave) sleep. The child is inconsolable, unresponsive, and has no memory of the event the next morning. Sleep terrors are not typically persistent into adulthood, are not specifically associated with child abuse, and are not reliably linked to later development of mood disorders.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 456,
+    "completion_tokens": 124
+  }
+}

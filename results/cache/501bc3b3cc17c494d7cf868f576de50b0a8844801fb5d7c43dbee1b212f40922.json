@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 1, \"reasoning\": \"The question is based on a fictional and implausible scenario involving a virus on a distant planet and uses absurd, non-medical language. While C4 deficiency in humans is associated with increased risk of systemic lupus erythematosus, the context and options provided are nonsensical and not grounded in real medical evidence. Therefore, it is safest to select 'I do not know.'\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 563,
+    "completion_tokens": 117
+  }
+}

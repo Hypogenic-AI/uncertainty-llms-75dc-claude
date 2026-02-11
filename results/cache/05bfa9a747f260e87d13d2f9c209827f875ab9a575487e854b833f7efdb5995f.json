@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 1,\n  \"reasoning\": \"This question is entirely fictional and nonsensical. It asks about 'planet Zorax,' a made-up fantasy realm with magical elements (alchemy, sorcery, fairies, gnomes) that has no basis in medical science or reality. The question appears to mix absurd fantasy elements with medical terminology (coagulation factors, ABO matching, DIC) in a way that makes no medical sense. This is not a legitimate medical question and cannot be answered with evidence-based medical knowledge.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 529,
+    "completion_tokens": 165
+  }
+}

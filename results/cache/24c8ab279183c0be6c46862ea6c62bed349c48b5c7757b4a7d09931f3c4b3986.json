@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Sofosbuvir and simeprevir\", \"confidence\": 8, \"reasoning\": \"This patient has chronic hepatitis C infection (positive HCV IgG with high viral load of 100,000,000 IU/ml) and a history of IV drug use. The hepatitis B serology shows immunity from vaccination (isolated HBsAb positive). Modern treatment for hepatitis C involves direct-acting antivirals (DAAs). Sofosbuvir (NS5B polymerase inhibitor) combined with simeprevir (NS3/4A protease inhibitor) represents a DAA regimen that was commonly used for HCV treatment. Interferon-gamma is not used for HCV. Ribavirin alone is inadequate. Lamivudine is primarily for hepatitis B. While current guidelines favor newer DAA combinations (like sofosbuvir/velpatasvir), among the given options, sofosbuvir and simeprevir is the most appropriate choice.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 685,
+    "completion_tokens": 247
+  }
+}

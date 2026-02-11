@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 6,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question is framed entirely within a fictional fantasy context (Lord of the Rings/Mordor) with made-up diseases ('Smegolitis') and presents schools of medicine that are either fictional or deliberately mischaracterized. While 'the solution is the problem' is actually a real concept from family systems therapy associated with the Mental Research Institute (MRI), the question's absurd framing makes it impossible to provide legitimate medical guidance. The entire premise is designed as fantasy roleplay rather than genuine medical inquiry.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 644,
+    "completion_tokens": 169
+  }
+}

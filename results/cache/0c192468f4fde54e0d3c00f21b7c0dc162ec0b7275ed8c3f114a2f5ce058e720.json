@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Coagulation\", \"confidence\": 10, \"reasoning\": \"Alum (aluminum sulfate) is added during the coagulation stage in rapid sand filtration to destabilize suspended particles and facilitate their aggregation. This is a well-established process in water treatment.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 355,
+    "completion_tokens": 73
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Brown recluse spider\", \"confidence\": 9, \"reasoning\": \"The clinical presentation is classic for a brown recluse spider bite (loxoscelism). Key features include: 1) Initially painless bite that becomes painful over hours, 2) Progressive skin changes from erythema to blistering to a characteristic blue/violaceous discoloration with central necrosis (described as 'red, white, and blue' sign), 3) The blackish necrotic center surrounded by erythema, 4) Geographic location (Texas is within brown recluse habitat), 5) Nocturnal encounter ('something crawling'). The progression from painless to necrotic lesion with the bluish plaque and central necrosis is pathognomonic for brown recluse envenomation. Rattlesnake bites cause immediate severe pain and different tissue damage patterns. Scorpion stings cause neurotoxic symptoms rather than necrotic skin lesions. Deer tick bites cause erythema migrans (expanding red rash) in Lyme disease, not necrotic lesions.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 343,
+    "completion_tokens": 264
+  }
+}

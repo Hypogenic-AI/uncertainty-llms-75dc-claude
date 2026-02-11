@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 10, \"reasoning\": \"All answer options except the 'I do not know' choices are based on fictional, absurd, or nonsensical premises that do not reflect established medical knowledge. The question itself is constructed in a way that is not compatible with evidence-based medicine.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 553,
+    "completion_tokens": 87
+  }
+}

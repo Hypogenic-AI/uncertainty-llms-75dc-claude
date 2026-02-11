@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Only \u2460\u2462\", \"confidence\": 8, \"reasoning\": \"Let me analyze each disease for autoantibody involvement:\\n\\n\u2460 Pemphigus vulgaris - This is a classic autoantibody-mediated disease with anti-desmoglein antibodies causing blistering. AUTOANTIBODY: YES\\n\\n\u2461 Polyarteritis nodosa (PAN) - This is a necrotizing vasculitis. While some vasculitides are associated with autoantibodies (like ANCA in microscopic polyangiitis), classic PAN is NOT primarily autoantibody-mediated. It's associated with Hepatitis B in some cases but not characterized by pathogenic autoantibodies. AUTOANTIBODY: NO\\n\\n\u2462 Pernicious anemia - This is caused by autoantibodies against intrinsic factor and/or parietal cells, leading to B12 deficiency. AUTOANTIBODY: YES\\n\\nSince the student answered \u2460\u2461\u2462 (all three) and this is incorrect, and only \u2460 and \u2462 are truly autoantibody-mediated diseases, the correct answer should be 'Only \u2460\u2462'.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 238,
+    "completion_tokens": 290
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "I need to find the diastolic blood pressure using the given hemodynamic parameters.\n\n**Given information:**\n- Cardiac output (CO) = 5 L/min\n- Heart rate (HR) = 80 bpm\n- Systemic vascular resistance (SVR) = 22 mmHg/L/min\n- Systolic blood pressure (SBP) = 150 mmHg\n- Need to find: Diastolic blood pressure (DBP)\n\n**Key formula:**\nMean arterial pressure (MAP) = CO \u00d7 SVR\n\n**Calculation:**\nMAP = 5 L/min \u00d7 22 mmHg/L/min = 110 mmHg\n\n**Relationship between MAP, SBP, and DBP:**\nMAP \u2248 DBP + 1/3(SBP - DBP)\nor\nMAP \u2248 (SBP + 2\u00d7DBP)/3\n\nUsing the second formula:\n110 = (150 + 2\u00d7DBP)/3\n330 = 150 + 2\u00d7DBP\n180 = 2\u00d7DBP\nDBP = 90 mmHg\n\n**Verification:**\nMAP = 90 + 1/3(150 - 90) = 90 + 20 = 110 mmHg \u2713\n\nThe student answered 110, which is actually the MAP, not the DBP. The correct diastolic pressure is **90 mmHg**.\n\n```json\n{\"answer_index\": 2, \"answer_text\": \"90\", \"confidence\": 10, \"reasoning\": \"Using MAP = CO \u00d7 SVR gives MAP = 110 mmHg. Using MAP = DBP + 1/3(pulse pressure), we get 110 = DBP + 1/3(150-DBP), solving gives DBP = 90 mmHg. The student confused MAP with DBP.\", \"evidence_quality\": \"normal\"}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 459,
+    "completion_tokens": 454
+  }
+}

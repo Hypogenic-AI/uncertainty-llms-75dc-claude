@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Face\", \"confidence\": 10, \"reasoning\": \"Nevus simplex, also known as 'salmon patch' or 'stork bite', most commonly presents on the face, particularly on the glabella, eyelids, or nape of the neck in newborns. The legs are not a typical site for nevus simplex.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 154,
+    "completion_tokens": 82
+  }
+}

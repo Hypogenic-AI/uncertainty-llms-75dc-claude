@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Parry Romberg syndrome\", \"confidence\": 9, \"reasoning\": \"Parry Romberg syndrome (progressive hemifacial atrophy) is classified as a form of localized scleroderma, specifically linear scleroderma 'en coup de sabre'. It involves progressive atrophy of skin and soft tissues on one side of the face. Pierre Robin syndrome is a congenital condition with micrognathia and cleft palate. Gardner syndrome is a familial adenomatous polyposis variant. Merkelsson-Rosenthal syndrome involves facial paralysis, facial edema, and fissured tongue. Only Parry Romberg has a connection to scleroderma.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 183
+  }
+}

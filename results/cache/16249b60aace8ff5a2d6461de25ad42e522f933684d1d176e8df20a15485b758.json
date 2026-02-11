@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"PCOD\", \"confidence\": 10, \"reasoning\": \"The classic triad of hirsutism, amenorrhea (or oligomenorrhea), and obesity is most commonly associated with Polycystic Ovarian Disease (PCOD), also known as Polycystic Ovary Syndrome (PCOS). Turner syndrome typically presents with primary amenorrhea and short stature, but not hirsutism or obesity. Ovarian tumors and androgen insensitivity syndrome do not typically present with this triad in this way.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 366,
+    "completion_tokens": 130
+  }
+}

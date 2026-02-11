@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Transient hypertrophic cardiomyopathy\", \"confidence\": 10, \"reasoning\": \"Infants of mothers with poorly controlled diabetes, especially type 1 diabetes, are at high risk for transient hypertrophic cardiomyopathy due to fetal hyperinsulinemia, which stimulates myocardial growth. This is a well-documented complication and is not related to the mother's mitral stenosis. The other options are not specifically associated with maternal diabetes.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 287,
+    "completion_tokens": 101
+  }
+}

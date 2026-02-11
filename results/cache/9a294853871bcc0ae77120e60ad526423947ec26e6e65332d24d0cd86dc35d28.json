@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"C\", \"confidence\": 10, \"reasoning\": \"This patient has episodic headaches, palpitations, hypertension, and diaphoresis, classic for pheochromocytoma. Pheochromocytomas are catecholamine-secreting tumors derived from chromaffin cells of the adrenal medulla. On adrenal histology, the medulla is centrally located (region C in the typical adrenal gland histology slide), where chromaffin cells are found. Thus, the most likely cause is produced by cells in region C.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 277,
+    "completion_tokens": 123
+  }
+}

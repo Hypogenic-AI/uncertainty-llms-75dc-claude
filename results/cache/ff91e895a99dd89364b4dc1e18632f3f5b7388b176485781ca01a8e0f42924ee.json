@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"98% is reabsorbed calcium kidney, mainly in the distal end of the tubular\", \"confidence\": 9, \"reasoning\": \"The majority of filtered calcium in the kidney is reabsorbed, but most of this occurs in the proximal tubule and loop of Henle, not mainly in the distal tubule. Only a small fraction is reabsorbed in the distal tubule. Therefore, this statement is incorrect.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 280,
+    "completion_tokens": 100
+  }
+}

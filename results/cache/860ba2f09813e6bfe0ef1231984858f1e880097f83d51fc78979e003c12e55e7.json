@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question describes a fictional 'disease X' using absurd, flowery language with impossible metaphors (drunken octopus, banana peels and landmines, walking Rorschach test). The symptoms are described in nonsensical terms that don't correspond to real medical presentations. Option 4 is clearly not a symptom but a philosophical statement. This appears to be either a test question with fabricated content or an attempt to elicit medical advice about a non-existent condition. Without knowing what 'disease X' actually refers to, and given the implausible framing, I cannot provide medically sound guidance.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 575,
+    "completion_tokens": 195
+  }
+}

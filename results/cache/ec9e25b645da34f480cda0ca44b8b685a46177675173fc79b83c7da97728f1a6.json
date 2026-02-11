@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Brown recluse spider\", \"confidence\": 10, \"reasoning\": \"The patient's history of camping in Texas, waking up to something crawling on her hand, and the development of a painless wound that progressed to erythema, blistering, and then a necrotic ulcer with a bluish-black center and surrounding erythema is classic for a brown recluse spider bite. This spider is endemic to the southern United States, including Texas, and its bite can cause local tissue necrosis. The other options do not fit the clinical presentation: rattlesnake bites cause immediate pain and systemic symptoms; scorpion stings cause intense pain and neurotoxic effects; deer ticks transmit Lyme disease, which does not present with necrotic ulcers.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 312,
+    "completion_tokens": 164
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Sympathetic block\", \"confidence\": 9, \"reasoning\": \"This patient developed hypotension 10 minutes after epidural anesthesia was administered. The key clinical features are:\\n\\n1. Timing: Hypotension occurred shortly after epidural placement\\n2. Vital signs: Hypotension (90/60) with normal pulse (68/min) and respirations (16/min)\\n3. Position: Patient is at -1 station, actively pushing, likely in various positions\\n\\nEpidural anesthesia can cause sympathetic blockade, leading to vasodilation and subsequent hypotension. This is one of the most common complications of epidural/spinal anesthesia.\\n\\nOther options are less likely:\\n- Hypovolemia: No evidence of bleeding or fluid loss\\n- Acute pulmonary hypertension: Would expect tachycardia, respiratory distress\\n- Aortocaval compression: While possible in pregnancy, this typically occurs when supine and would be expected earlier in labor, not specifically after epidural placement. The timing immediately after epidural strongly suggests sympathetic block as the cause.\\n\\nThe temporal relationship between epidural administration and hypotension makes sympathetic block the most likely diagnosis.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 358,
+    "completion_tokens": 299
+  }
+}

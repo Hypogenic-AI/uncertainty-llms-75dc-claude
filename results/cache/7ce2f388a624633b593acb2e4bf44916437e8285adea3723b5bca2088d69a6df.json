@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 1,\n  \"reasoning\": \"This question is deliberately absurd and nonsensical, mixing fictional fantasy elements (Narnia, fauns, centaurs) with real medical terminology (Sertoli cells, fetal testicular). All answer options are completely fabricated fantasy substances (unicorn snot, pixie dust, dragonfire, etc.) that have no basis in medical reality. This appears designed to elicit a nonsensical medical response. The question contains no legitimate medical inquiry despite mentioning real anatomical terms. In reality, Sertoli cells secrete anti-M\u00fcllerian hormone and other substances, but none of the options reflect actual medical knowledge.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 584,
+    "completion_tokens": 195
+  }
+}

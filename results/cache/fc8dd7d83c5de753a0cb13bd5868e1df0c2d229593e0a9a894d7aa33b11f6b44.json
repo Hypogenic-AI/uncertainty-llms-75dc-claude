@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Sympathetic block\", \"confidence\": 10, \"reasoning\": \"This patient developed hypotension and dizziness shortly after epidural anesthesia. Epidural anesthesia can cause sympathetic blockade, leading to vasodilation and decreased systemic vascular resistance, resulting in hypotension. The timing and context make this the most likely cause. Hypovolemia is less likely given no evidence of bleeding or fluid loss; acute pulmonary hypertension and aortocaval compression would not be expected to present acutely after epidural placement.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 511,
+    "completion_tokens": 122
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 10, \"reasoning\": \"The scenario is entirely fictional and absurd, involving a made-up planet, syndrome, and impossible symptoms. This question does not pertain to real medical knowledge, and the only medically responsible answer is to admit ignorance.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 499,
+    "completion_tokens": 80
+  }
+}

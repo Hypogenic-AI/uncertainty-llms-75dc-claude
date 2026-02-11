@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Renzapride\", \"confidence\": 9, \"reasoning\": \"The question asks about drugs acting on 5-HT4 receptors. Loxiglumide is a CCK receptor antagonist, not a 5-HT4 agent. Atractiloside is a mitochondrial toxin. Metoclopramide has some 5-HT4 agonist activity but is primarily a D2 antagonist. Renzapride is a well-known 5-HT4 receptor agonist (also has 5-HT3 antagonist properties) used for gastrointestinal motility disorders. This is the correct answer.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 189,
+    "completion_tokens": 172
+  }
+}

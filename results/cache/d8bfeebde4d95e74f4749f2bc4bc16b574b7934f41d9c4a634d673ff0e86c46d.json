@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Lumbar disc herniation\", \"confidence\": 9, \"reasoning\": \"The clinical presentation is classic for lumbar disc herniation: young patient with unilateral radicular pain (right leg), markedly positive straight leg raise test on affected side (20\u00b0 vs 70\u00b0 on left - normal is >60-70\u00b0), pain in L5 distribution, and preserved motor strength and reflexes. The severely limited SLRT on the right indicates nerve root tension/compression. Lumbar muscle tendinitis would not cause radicular symptoms or positive SLRT. Tumor and spondylolisthesis are less likely given the acute presentation and classic findings.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 468,
+    "completion_tokens": 166
+  }
+}

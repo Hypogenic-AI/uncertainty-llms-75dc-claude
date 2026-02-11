@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"osteosarcoma\", \"confidence\": 10, \"reasoning\": \"Asymmetric widening of the periodontal ligament space around two or more teeth is a classic radiographic feature seen in osteosarcoma. This finding is not characteristic of fibrous dysplasia, metastatic breast carcinoma, or Paget's disease.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 177,
+    "completion_tokens": 76
+  }
+}

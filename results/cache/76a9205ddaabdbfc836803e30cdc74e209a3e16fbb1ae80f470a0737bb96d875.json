@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Corn (Zea mays).\", \"confidence\": 10, \"reasoning\": \"Among the listed eukaryotic organisms, corn (Zea mays) is known to have the largest number of genes, with estimates around 32,000\u201340,000 genes. This is more than mouse, rice, or zebrafish. Plant genomes, especially those of crops like corn, often have more genes due to genome duplications and complex evolutionary histories.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 193,
+    "completion_tokens": 108
+  }
+}

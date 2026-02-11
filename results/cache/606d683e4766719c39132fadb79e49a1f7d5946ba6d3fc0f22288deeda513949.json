@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Coagulation\", \"confidence\": 9, \"reasoning\": \"In water treatment, alum (aluminum sulfate) is added during the coagulation stage, which is the first step where chemicals are added to destabilize particles. While rapid mixing is the physical process used to disperse the coagulant, the chemical process itself is called coagulation. The student confused the mixing mechanism with the actual treatment stage. Coagulation is followed by flocculation (gentle mixing to form larger flocs) and then sedimentation.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 176,
+    "completion_tokens": 132
+  }
+}

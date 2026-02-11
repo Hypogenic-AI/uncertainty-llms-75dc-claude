@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Blade length\", \"confidence\": 10, \"reasoning\": \"In the 4-digit instrument formula (used for dental hand instruments), the second digit indicates the blade length in millimeters. The student's answer (blade angle) is incorrect; blade angle is indicated by the fourth digit.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 356,
+    "completion_tokens": 78
+  }
+}

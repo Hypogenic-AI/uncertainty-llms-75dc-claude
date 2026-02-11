@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 4, \"answer_text\": \"An admission of total and complete ignorance in the face of such an utterly preposterous and incomprehensible medical anomaly\", \"confidence\": 10, \"reasoning\": \"The scenario is entirely fictional and medically implausible, involving mythical creatures and fantastical causes. The only reasonable response is to acknowledge the impossibility of drawing any meaningful medical conclusion from such an absurd premise.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 307,
+    "completion_tokens": 89
+  }
+}

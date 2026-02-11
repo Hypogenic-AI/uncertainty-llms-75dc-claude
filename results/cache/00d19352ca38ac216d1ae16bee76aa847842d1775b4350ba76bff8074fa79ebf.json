@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Air bronchogram on chest x\u2013ray\", \"confidence\": 10, \"reasoning\": \"Respiratory distress syndrome (RDS), also known as hyaline membrane disease (HMD), is characterized by surfactant deficiency and is most common in preterm infants. A classic radiological finding supporting RDS is the presence of air bronchograms on chest x-ray. The other options are either not supportive (term birth, onset after 6 hours) or are protective (antenatal corticosteroids).\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 396,
+    "completion_tokens": 123
+  }
+}

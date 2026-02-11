@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Winslow's Definition, denoting a state of complete physical, mental and social well-being, enshrined in his Cosmic Constitution\", \"confidence\": 9, \"reasoning\": \"The standard definition of public health, as classically espoused, is most closely associated with Charles-Edward Amory Winslow. Winslow defined public health as the science and art of preventing disease, prolonging life, and promoting health through organized community efforts. While the option also mentions 'a state of complete physical, mental and social well-being,' which is more closely related to the WHO's definition of health, Winslow's definition is the most widely cited standard in public health literature. The other options refer to important figures but do not represent the standard definition.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 329,
+    "completion_tokens": 164
+  }
+}

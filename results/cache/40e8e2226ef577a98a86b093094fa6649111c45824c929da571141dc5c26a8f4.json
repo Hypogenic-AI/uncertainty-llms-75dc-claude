@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Dermatofibroma\", \"confidence\": 10, \"reasoning\": \"The key diagnostic feature described is the 'dimple sign' or 'buttonhole sign' - when the lesion is squeezed, the surface retracts inwards. This is pathognomonic for dermatofibroma. The clinical presentation also fits: a slowly growing, hyperpigmented papule on the extremity (thigh) in an adult woman. Dermatofibromas are benign fibrous nodules that commonly occur on the legs of young to middle-aged adults, often following minor trauma (which the patient may have mistaken for an insect bite). Cherry hemangiomas are bright red vascular lesions that don't show the dimple sign. Actinic keratoses are rough, scaly lesions on sun-exposed areas. Seborrheic keratoses have a 'stuck-on' appearance and don't demonstrate the dimple sign.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 293,
+    "completion_tokens": 228
+  }
+}

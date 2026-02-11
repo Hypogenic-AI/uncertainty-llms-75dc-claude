@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Glycosidic bonds\", \"confidence\": 10, \"reasoning\": \"Miglitol is an alpha-glucosidase inhibitor, which prevents the breakdown of complex carbohydrates into monosaccharides by inhibiting the cleavage of glycosidic bonds. This reduces glucose absorption and helps control blood sugar levels in diabetic patients. The other bonds listed (phosphodiester, cystine, hydrogen) are not the primary targets of miglitol.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 207,
+    "completion_tokens": 105
+  }
+}

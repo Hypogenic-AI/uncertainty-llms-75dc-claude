@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Air bronchogram on chest x\u2013ray\", \"confidence\": 9, \"reasoning\": \"Respiratory Distress Syndrome (RDS), also known as Hyaline Membrane Disease (HMD), is characterized by surfactant deficiency. Key features that favor RDS include: (1) Preterm birth - RDS is primarily a disease of prematurity, so term birth (option 3) argues AGAINST RDS; (2) Early onset - RDS typically presents within the first 4-6 hours of life, so onset after 6 hours (option 2) is LESS typical; (3) Antenatal corticosteroids (option 0) actually PREVENT RDS by promoting surfactant production, so this would argue against RDS; (4) Air bronchogram on chest x-ray (option 1) is a CLASSIC radiological finding in RDS, along with ground-glass appearance and low lung volumes. Therefore, air bronchogram is the finding that would most favor the diagnosis of RDS.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 219,
+    "completion_tokens": 247
+  }
+}

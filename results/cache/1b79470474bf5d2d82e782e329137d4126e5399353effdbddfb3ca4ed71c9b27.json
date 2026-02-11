@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Amoxicillin-clavulanate\", \"confidence\": 10, \"reasoning\": \"Dog bite wounds are at risk for infection with organisms such as Pasteurella, Streptococcus, Staphylococcus, and anaerobes. Amoxicillin-clavulanate is the first-line antibiotic because it covers both aerobic and anaerobic organisms commonly found in animal bites. Doxycycline does not provide adequate coverage for all relevant organisms. Amoxicillin alone does not cover beta-lactamase producers, and clindamycin lacks coverage for Pasteurella.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 463,
+    "completion_tokens": 134
+  }
+}

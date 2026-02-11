@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 2,\n  \"answer_text\": \"Sporozoite protein\",\n  \"confidence\": 9,\n  \"reasoning\": \"The RTS,S/AS01 (Mosquirix) malaria vaccine, the first WHO-approved malaria vaccine, is based on the circumsporozoite protein (CSP) from the sporozoite stage of Plasmodium falciparum. This protein is expressed on the surface of sporozoites and is the target antigen. Malaria parasites are protozoa, not bacteria, so they lack polysaccharide capsules. The vaccine specifically targets the pre-erythrocytic sporozoite stage to prevent liver infection.\",\n  \"evidence_quality\": \"normal\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 396,
+    "completion_tokens": 179
+  }
+}

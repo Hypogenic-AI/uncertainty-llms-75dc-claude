@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"GI upset\", \"confidence\": 9, \"reasoning\": \"The clinical vignette describes a child with absence seizures (characterized by 'spacing out', normal development, and EEG showing 3-Hz spike-and-wave discharges). The first-line treatment for absence seizures is ethosuximide. The most common side effect of ethosuximide is gastrointestinal upset (such as nausea, vomiting, and abdominal pain). The other options are not typical side effects of ethosuximide: nystagmus is more associated with phenytoin, facial rash and hematuria with lamotrigine or other agents, and weight gain/hair color change are not recognized side effects. Therefore, GI upset is the correct answer.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 473,
+    "completion_tokens": 169
+  }
+}

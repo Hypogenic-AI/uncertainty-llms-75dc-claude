@@ -1,0 +1,8 @@
+{
+  "raw_response": "Looking at this case systematically:\n\n**Key Clinical Features:**\n- Headache, palpitations, diaphoresis, hypertension \u2192 suggests pheochromocytoma\n- Elevated 24-hour urinary VMA and metanephrines, elevated serum epinephrine \u2192 confirms pheochromocytoma\n- Diffuse thyroid swelling with elevated calcitonin \u2192 medullary thyroid carcinoma (MTC)\n- Elevated parathormone with hypercalcemia \u2192 hyperparathyroidism\n- Bone pain \u2192 likely from hypercalcemia\n\n**Syndrome Analysis:**\n\nThe triad of:\n1. Pheochromocytoma\n2. Medullary thyroid carcinoma\n3. Primary hyperparathyroidism\n\nThis is the classic presentation of **MEN 2A** (Sipple syndrome).\n\n**Differential:**\n- **MEN 2B**: Has pheochromocytoma and MTC but NOT hyperparathyroidism. Instead features marfanoid habitus, mucosal neuromas, and intestinal ganglioneuromatosis\n- **Von Hippel-Lindau**: Can have pheochromocytoma but not MTC or hyperparathyroidism\n- **Neurofibromatosis**: Can have pheochromocytoma but not the other endocrine tumors\n\nThe presence of all three components (pheochromocytoma + MTC + hyperparathyroidism) is pathognomonic for MEN 2A.\n\n{\"answer_index\": 1, \"answer_text\": \"Multiple endocrine neoplasia (MEN) 2A\", \"confidence\": 10, \"reasoning\": \"Classic triad of pheochromocytoma (elevated catecholamines/VMA), medullary thyroid carcinoma (elevated calcitonin, thyromegaly), and primary hyperparathyroidism (elevated PTH, hypercalcemia) is diagnostic of MEN 2A. MEN 2B lacks hyperparathyroidism.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 684,
+    "completion_tokens": 493
+  }
+}

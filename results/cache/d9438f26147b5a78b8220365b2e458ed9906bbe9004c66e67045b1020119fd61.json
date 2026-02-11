@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"MRI of the knee\", \"confidence\": 2, \"reasoning\": \"This patient's clinical presentation is classic for osteoarthritis: chronic, activity-related knee pain, minimal morning stiffness, bony enlargement, crepitus, and decreased range of motion. The diagnosis of osteoarthritis is primarily clinical and can be confirmed with plain radiographs (X-rays), not MRI. MRI is not routinely indicated for typical osteoarthritis and is usually reserved for cases with atypical features or suspicion of other pathology. None of the other options (CBC, ESR) are indicated for typical osteoarthritis unless there is suspicion for inflammatory or infectious arthritis. The best initial imaging study would be a plain X-ray, which is not listed. Therefore, all options are suboptimal, but MRI is not indicated in this scenario. The question may be missing the correct answer.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 509,
+    "completion_tokens": 188
+  }
+}

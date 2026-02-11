@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"After 3 years of age can begin to provision some simple table manners\", \"confidence\": 8, \"reasoning\": \"The question asks about training infants and children in good eating habits. The student's answer about using skim milk for 2-4 year olds is incorrect, as whole milk is generally recommended until age 2 due to fat requirements for brain development. Option 1 is correct because introducing simple table manners after age 3 is developmentally appropriate and aligns with pediatric guidance.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 412,
+    "completion_tokens": 118
+  }
+}

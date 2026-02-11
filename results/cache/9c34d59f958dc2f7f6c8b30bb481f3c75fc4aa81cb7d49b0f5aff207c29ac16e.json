@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Autosomal dominant polycystic kidney disease\", \"confidence\": 10, \"reasoning\": \"The patient's age, history of recurrent UTIs, hypertension, bilateral enlarged kidneys with multiple cysts on ultrasound, and impaired renal function are classic for autosomal dominant polycystic kidney disease (ADPKD). Autosomal recessive PKD presents in childhood, and medullary sponge kidney does not typically cause large, palpable kidneys or significant renal dysfunction. Obstructive cystic dysplasia is a congenital disorder seen in infants or children.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 459,
+    "completion_tokens": 130
+  }
+}

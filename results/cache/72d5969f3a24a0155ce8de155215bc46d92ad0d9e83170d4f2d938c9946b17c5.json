@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Cholecystitis\", \"confidence\": 10, \"reasoning\": \"This child presents with acute hemolytic anemia (jaundice, anemia, splenomegaly) following an infection, with elevated mean corpuscular hemoglobin concentration and a negative Coombs test. The blood smear likely shows spherocytes, suggesting hereditary spherocytosis. Chronic hemolysis in hereditary spherocytosis leads to increased bilirubin, predisposing to pigment gallstones and, consequently, cholecystitis. The other options are not typical complications of hereditary spherocytosis.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 261,
+    "completion_tokens": 133
+  }
+}

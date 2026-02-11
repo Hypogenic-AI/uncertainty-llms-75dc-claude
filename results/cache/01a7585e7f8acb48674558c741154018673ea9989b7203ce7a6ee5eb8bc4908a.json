@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Lift endopelvic fascia by putting fingers in vagina\", \"confidence\": 8, \"reasoning\": \"During a Burch colposuspension, bleeding in the space of Retzius (retropubic space) that cannot be visualized is a known complication. The key issue is that blind suturing (the student's incorrect answer) can be dangerous as it may injure important structures like vessels, bladder, or ureters. The correct approach when the bleeding source cannot be visualized is to elevate the endopelvic fascia by placing fingers in the vagina. This maneuver helps identify the bleeding source by changing the anatomical relationships and improving visualization, allowing for targeted hemostasis. This is a standard technique taught for managing this specific complication during Burch procedures.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 231,
+    "completion_tokens": 190
+  }
+}

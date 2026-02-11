@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"B.\", \"confidence\": 10, \"reasoning\": \"Germinal centers are specialized microenvironments within secondary lymphoid organs (like lymph nodes and spleen) where B lymphocytes undergo rapid proliferation, somatic hypermutation, and affinity maturation in response to antigen stimulation. This is a fundamental immunology concept. Tc (cytotoxic T cells), Th (helper T cells), and NK (natural killer) cells do not proliferate in germinal centers. The student incorrectly chose Tc cells, but the correct answer is B cells.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 171,
+    "completion_tokens": 142
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Gallbladder cancer\", \"confidence\": 10, \"reasoning\": \"The presence of a calcified gallbladder (porcelain gallbladder) on CT scan in a patient with a history of cholelithiasis and a family history of abdominal cancer raises strong suspicion for gallbladder cancer, which is associated with porcelain gallbladder. This diagnosis should be excluded first due to its serious prognosis and the need for prompt management. The other options are less directly linked to the CT finding of a calcified mass near the gallbladder.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 295,
+    "completion_tokens": 125
+  }
+}

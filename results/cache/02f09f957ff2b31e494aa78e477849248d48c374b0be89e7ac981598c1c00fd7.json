@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Ackerman\", \"confidence\": 9, \"reasoning\": \"The question refers to a classification system, and among the options, Ackerman is known for classification systems in pathology (e.g., oral pathology). Dewey and Proffit are associated with orthodontics and dental education, but not with a classification system per se. The student's answer 'Dewey' is incorrect, so the correct answer is Ackerman.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 162,
+    "completion_tokens": 99
+  }
+}

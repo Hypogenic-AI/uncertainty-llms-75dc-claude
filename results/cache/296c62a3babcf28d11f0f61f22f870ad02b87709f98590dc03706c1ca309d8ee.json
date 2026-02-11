@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Projection\", \"confidence\": 10, \"reasoning\": \"Projection is a defense mechanism in which an individual attributes their own unacceptable thoughts or feelings to someone else. In this scenario, the man is having doubts about his marriage and is flirting with coworkers, but instead of acknowledging his own behavior, he accuses his wife of being unfaithful. This is classic projection.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 431,
+    "completion_tokens": 95
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question is deliberately absurd, mixing real medical terminology (Widal test, O-antigen, H-antigen) with completely fictional elements (mythical species 'zyx', cosmic events, confetti showers, mystical portals). The Widal test is a real serological test for typhoid fever, but the question frames it in an impossible, fantastical context that makes any medical answer meaningless. All options contain either nonsensical claims or acknowledge the absurdity. This appears designed to elicit fabricated medical information in a fictional context.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 546,
+    "completion_tokens": 180
+  }
+}

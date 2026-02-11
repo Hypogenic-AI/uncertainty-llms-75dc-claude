@@ -1,0 +1,8 @@
+{
+  "raw_response": "Looking at this pharmacokinetics problem, I need to calculate the loading dose using the standard formula:\n\n**Loading Dose = Vd \u00d7 Target Concentration**\n\nGiven information:\n- Patient weight: 50 kg\n- Volume of distribution (Vd): 60 mL/kg\n- Target peak plasma concentration: 0.5 units/mL\n\n**Calculation:**\n\n1. First, calculate total Vd:\n   - Vd = 60 mL/kg \u00d7 50 kg = 3,000 mL = 3 L\n\n2. Then calculate loading dose:\n   - Loading Dose = 3,000 mL \u00d7 0.5 units/mL = **1,500 units**\n\n**Regarding bioavailability:** The question states heparin is given **intravenously**. For IV administration, bioavailability (F) = 1 (100%), so it does not need to be factored into the calculation. Bioavailability only matters for non-IV routes where the drug may not be completely absorbed.\n\n**Evidence quality assessment:** This is a straightforward, clinically realistic pharmacokinetics question. The scenario (PE after long flight), vital signs, and drug dosing parameters are all medically plausible and appropriate.\n\n{\"answer_index\": 1, \"answer_text\": \"1,500 units\", \"confidence\": 10, \"reasoning\": \"Loading dose = Vd \u00d7 target concentration = (60 mL/kg \u00d7 50 kg) \u00d7 0.5 units/mL = 3000 mL \u00d7 0.5 units/mL = 1,500 units. Bioavailability is not needed for IV administration as F=1.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 492,
+    "completion_tokens": 408
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"N-acetylcysteine\", \"confidence\": 8, \"reasoning\": \"This patient presents with suspected acetaminophen overdose (confirmed by patient admission). Key considerations: 1) Acetaminophen overdose can be life-threatening due to hepatotoxicity, 2) The patient was found somnolent >2 hours ago, making charcoal less effective (most effective within 1-2 hours), 3) N-acetylcysteine (NAC) is the specific antidote for acetaminophen toxicity and should be given early, ideally within 8-10 hours but beneficial even later, 4) Syrup of ipecac is contraindicated in overdose management due to aspiration risk, 5) While IV fluids may be supportive, NAC is the definitive treatment. Given the confirmed acetaminophen ingestion and time elapsed, N-acetylcysteine is the most appropriate next step to prevent hepatotoxicity.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 349,
+    "completion_tokens": 236
+  }
+}

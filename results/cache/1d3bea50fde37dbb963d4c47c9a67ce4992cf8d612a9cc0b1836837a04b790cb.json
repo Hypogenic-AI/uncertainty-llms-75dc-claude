@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Gamma fiber\", \"confidence\": 9, \"reasoning\": \"Stretch fibers in striated muscle refer to intrafusal muscle fibers within muscle spindles, which are proprioceptive sensory receptors. These intrafusal fibers are innervated by gamma motor neurons (gamma efferents), which regulate the sensitivity of the muscle spindle. A delta and C fibers are sensory fibers involved in pain and temperature sensation, while unmyelinated fibers are general sensory fibers. The gamma motor neuron system specifically controls muscle spindle tension and proprioception in striated muscle.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 178,
+    "completion_tokens": 146
+  }
+}

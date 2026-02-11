@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 4, \"answer_text\": \"The universe is vast and full of mysteries, and this is but one of them; a mystery that is so beyond the scope of comprehension that it can only be concluded with the utmost humility and reverence, that I do not know\", \"confidence\": 10, \"reasoning\": \"Zax is a fictional material, and there is no scientific data or basis for determining its thermal expansion coefficient. The only appropriate answer is to acknowledge the impossibility of knowing this value.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 357,
+    "completion_tokens": 108
+  }
+}

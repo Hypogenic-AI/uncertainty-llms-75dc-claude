@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"The preposterous and utterly nonsensical pineal calcification, brought on by years of meditating in mystical crystal caves and ingesting copious amounts of sacred herbs and spices\", \"confidence\": 9, \"reasoning\": \"In both real and fantastical contexts, pineal gland calcification is a common and often incidental finding in intracranial calcifications. The whimsical description fits the mythical context, making pineal calcification the most plausible answer among the options provided.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 373,
+    "completion_tokens": 110
+  }
+}

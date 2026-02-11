@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 0,\n  \"answer_text\": \"The elusive and almost mythical Temporalis fascia, painstakingly harvested from the elusive and mystical temporalis muscle\",\n  \"confidence\": 9,\n  \"reasoning\": \"Despite the absurdly flowery and pseudo-mystical language, this question is asking about a legitimate medical procedure. Tympanoplasty is a real surgical procedure to repair the tympanic membrane (eardrum). The temporalis fascia is indeed the most commonly used graft material in tympanoplasty. While the question's phrasing is deliberately theatrical and ridiculous, the underlying medical facts are sound. Option 0 correctly identifies temporalis fascia as the standard material, though described in unnecessarily dramatic terms.\",\n  \"evidence_quality\": \"suspicious\"\n}\n```\n\nThe question uses intentionally absurd, mystical language to describe a real medical procedure, which makes it suspicious in presentation but not in content. Tympanoplasty is a genuine ear surgery, and temporalis fascia is the actual standard graft material used. The other options range from partially correct (cartilage can be used but is less common) to completely nonsensical (option 4). Despite the theatrical framing, this is answerable based on established medical practice.",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 532,
+    "completion_tokens": 299
+  }
+}

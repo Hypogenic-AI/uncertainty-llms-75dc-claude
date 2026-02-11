@@ -1,0 +1,92 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Prompt-Based Safety Guardrails Activate Latent Capabilities}
+\label{sec:latent}
+
+Our central finding is both simple and powerful: explicitly asking LLMs to assess evidence quality before answering causes them to correctly flag implausible medical questions ${\sim}$90\% of the time, compared to ${\sim}$3--22\% at baseline.
+This is a zero-cost intervention requiring no fine-tuning, no additional infrastructure, and no access to model internals.
+
+The mechanism is clear from the data.
+The uncertainty prompt activates the model's \emph{existing} ability to recognize implausible premises---an ability that is suppressed by standard task-focused prompts.
+Both models already ``know'' that counterfactual questions are absurd, as evidenced by their slightly lower baseline confidence on these inputs (AUROC ${\sim}$0.66).
+However, they default to answering confidently because standard prompts ask for an answer, not an evidence assessment.
+\uaprompt redirects the model's attention to evidence quality before answer generation, and this reordering is sufficient to produce dramatically different behavior.
+
+\subsection{Specificity: Implausible Premises vs.\ Subtle Errors}
+\label{sec:specificity}
+
+The intervention works specifically for obviously implausible premises (\medhaltfake) but not for subtle factual errors (\medhaltfct).
+This specificity is both a strength and a limitation.
+As a strength, it means the intervention provides a reliable guardrail against grossly implausible inputs---questions about fictional diseases, impossible physiological claims, or fabricated pharmacology.
+As a limitation, it should not be expected to improve performance on tasks requiring nuanced medical reasoning, where the premises are sound but the correct answer requires careful knowledge application.
+
+\subsection{The Accuracy--Safety Tradeoff Is Model-Dependent}
+\label{sec:tradeoff}
+
+The divergent accuracy results between \gptmodel (no degradation) and \claudemodel (significant degradation) reveal that the accuracy--safety tradeoff is not inherent to the intervention but depends on model characteristics.
+
+\gptmodel exhibits strong instruction following: it applies the uncertainty assessment to evidence quality as instructed, determines that legitimate \medqa questions are sound, and proceeds to answer with high confidence and maintained accuracy.
+It perfectly compartmentalizes the two tasks (evidence assessment and answer selection).
+
+\claudemodel struggles with the multi-faceted prompt, producing verbose narrative responses instead of structured JSON on legitimate questions (34\% parse failure rate).
+This suggests that the more complex prompt creates competing generation pressures that degrade output format compliance, which manifests as apparent accuracy loss.
+
+This finding has a clear practical implication: uncertainty-augmented prompts should be paired with structured output constraints (\eg JSON mode, function calling) to prevent format compliance degradation.
+Models with weaker instruction following may require simpler prompt formulations or output enforcement mechanisms.
+
+\subsection{Comparison with Prior Work}
+\label{sec:comparison}
+
+\begin{table}[t]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}llcc@{}}
+        \toprule
+        \textbf{Method} & \textbf{Context} & \textbf{AUROC} & \textbf{Access Required} \\
+        \midrule
+        Token probability methods~\citep{wu2024uncertainty} & Medical QA, correct vs.\ incorrect & ${\sim}$0.50 & Logits \\
+        Two-Phase Verification~\citep{wu2024uncertainty} & Medical QA, correct vs.\ incorrect & 0.58 & Black-box \\
+        Semantic entropy~\citep{farquhar2024detecting} & General QA, confabulation detection & 0.75--0.85 & Logits \\
+        \midrule
+        \uaprompt (baseline) & Medical, legit vs.\ counterfactual & 0.66 & Black-box \\
+        \uaprompt (uncertainty) & Medical, legit vs.\ counterfactual & {\bf 0.88--0.89} & Black-box \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{Comparison with prior uncertainty estimation methods. \uaprompt achieves the highest AUROC in a medical context, though the task (distinguishing fabricated from real questions) involves coarser discrimination than prior work. Best result in \textbf{bold}.}
+    \label{tab:comparison}
+\end{table}
+
+\Tabref{tab:comparison} contextualizes our AUROC results.
+Our results exceed prior medical uncertainty estimation methods by a wide margin, but the comparison is not fully apples-to-apples.
+Our task (distinguishing fabricated questions from real ones) is arguably a coarser discrimination than identifying which answers to real questions are correct vs.\ incorrect.
+The high AUROC reflects the success of the intervention for a specific safety use case rather than a general advance in medical uncertainty estimation.
+
+\subsection{Limitations}
+\label{sec:limitations}
+
+\para{Sample size.}
+We evaluate 100 questions per dataset, sufficient for detecting the large effects observed but potentially underpowered for detecting smaller effects.
+The non-significant \medhaltfct results could reflect either a true null effect or insufficient power.
+
+\para{Dataset representativeness.}
+\medhaltfake questions may be more obviously absurd than real-world medical misinformation.
+Sophisticated misinformation with plausible but subtly wrong premises would be harder to detect and represents an important direction for future evaluation.
+
+\para{Single-turn evaluation.}
+We test single questions in isolation.
+In real clinical workflows, counterfactual information may be embedded in longer patient histories or accumulate gradually through multi-turn conversations.
+
+\para{Prompt sensitivity.}
+We test one uncertainty prompt formulation.
+The optimal design likely varies by model and may require task-specific tuning.
+The \claudemodel format compliance issue highlights that prompt robustness is a practical concern.
+
+\para{Parse error confound.}
+\claudemodel's apparent accuracy drop is partially attributable to format compliance failures rather than genuine knowledge degradation.
+A fairer evaluation would use structured output constraints (\eg function calling).
+
+\para{No fine-tuning comparison.}
+We compare only prompt-based interventions.
+Fine-tuned approaches such as AFICE-style DPO alignment~\citep{zhao2025afice} may achieve better accuracy preservation alongside uncertainty awareness.

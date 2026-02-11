@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Distal to the molar\", \"confidence\": 8, \"reasoning\": \"Intraosseous anesthesia for mandibular second molars is optimally administered distal to the tooth. This location allows for effective anesthetic delivery into the cancellous bone while avoiding the furcation area (which could damage the tooth structure) and providing better access than the mesial approach. The distal location provides adequate anesthesia while minimizing risk to the tooth's root structure and periodontal tissues. Apical perforation is a technique description rather than an optimal location.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 198,
+    "completion_tokens": 140
+  }
+}

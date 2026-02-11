@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Globular 10-week sized uterus\", \"confidence\": 10, \"reasoning\": \"This patient presents with heavy, irregular, and painful menses, intermenstrual bleeding, new mild dyspareunia, a 'heavy feeling' in the pelvis, and increased urinary frequency. Her risk factors include obesity, diabetes, and multiparity. The most likely diagnosis is adenomyosis, which typically presents in women in their 40s with these symptoms. On physical exam, adenomyosis is characterized by a uniformly enlarged, boggy, and tender uterus, often described as 'globular' and equivalent to a 8-10 week pregnancy in size. An irregularly enlarged uterus (option 2) is more characteristic of uterine fibroids (leiomyomas). An adnexal mass (option 1) would suggest ovarian pathology, and no remarkable findings (option 3) would not fit with her symptoms. Therefore, the most likely finding is a globular 10-week sized uterus.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 358,
+    "completion_tokens": 217
+  }
+}

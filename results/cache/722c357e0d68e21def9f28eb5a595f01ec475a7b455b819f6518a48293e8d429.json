@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Germ cells\", \"confidence\": 9, \"reasoning\": \"The patient's symptoms (irregular menses, pelvic pain, weight loss, hyperreflexia, low-grade fever, and a 6-cm hypoechoic adnexal mass) are most consistent with an ovarian germ cell tumor, such as a dysgerminoma or other germ cell neoplasm. These tumors are common in women of reproductive age and can present with the described symptoms. Hyperreflexia may suggest hyperthyroidism, which can be associated with some germ cell tumors (struma ovarii). Chorionic epithelial cells are associated with gestational trophoblastic disease, which is unlikely given the negative pregnancy test. Endometrial and stromal cell tumors have different presentations. Thus, the mass is most likely derived from germ cells.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 297,
+    "completion_tokens": 178
+  }
+}

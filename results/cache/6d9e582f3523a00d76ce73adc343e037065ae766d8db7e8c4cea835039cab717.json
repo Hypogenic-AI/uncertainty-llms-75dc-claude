@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Glycosidic bonds\", \"confidence\": 10, \"reasoning\": \"Miglitol is an alpha-glucosidase inhibitor used in diabetes management. Alpha-glucosidases are enzymes in the small intestine that break down complex carbohydrates and disaccharides into monosaccharides by cleaving glycosidic bonds. By inhibiting these enzymes, miglitol prevents the breakdown of glycosidic bonds, thereby slowing carbohydrate absorption and reducing postprandial glucose spikes. The instruction to take it with the first bite of a meal ensures it's present when carbohydrates are being digested. The other bond types (phosphodiester, cystine, hydrogen) are not relevant to carbohydrate digestion.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 218,
+    "completion_tokens": 189
+  }
+}

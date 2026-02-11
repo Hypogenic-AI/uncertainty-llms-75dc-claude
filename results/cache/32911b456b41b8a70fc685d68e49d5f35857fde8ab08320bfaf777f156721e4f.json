@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 4,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 1,\n  \"reasoning\": \"This question is entirely fictional and absurd, referencing a 'mystical mole' in a 'fabled galaxy of XYZ' with impossible scenarios involving 'galactic fireflies,' 'elixir of immortality for space cows,' and 'intergalactic shamans with telekinesis.' This is not a legitimate medical question but rather a test of whether I will engage with nonsensical premises. The question explicitly acknowledges its own absurdity in options 3 and 5. No medically sound answer exists for a fictional creature in a non-existent galaxy.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 546,
+    "completion_tokens": 188
+  }
+}

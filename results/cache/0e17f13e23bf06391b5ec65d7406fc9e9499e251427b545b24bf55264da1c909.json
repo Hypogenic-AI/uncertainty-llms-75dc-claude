@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question presents a fictional, fantastical scenario about extraterrestrial life with Streptococcus mutans (an Earth bacterium). The premise is scientifically nonsensical - S. mutans is a terrestrial organism that evolved specifically in human oral environments. Applying Earth-based bacterial colony counts to imaginary alien life forms has no scientific basis. The question appears designed to elicit speculation about impossible scenarios rather than provide legitimate medical information.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 680,
+    "completion_tokens": 155
+  }
+}

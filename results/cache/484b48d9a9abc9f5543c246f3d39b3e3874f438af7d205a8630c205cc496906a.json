@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Intravenous immunoglobulin (IVIG)\", \"confidence\": 10, \"reasoning\": \"This is a classic presentation of Guillain-Barr\u00e9 syndrome (GBS). Key features include: 1) Acute ascending weakness starting in lower extremities following a recent respiratory infection (3 weeks ago), 2) Areflexia (absent knee and ankle reflexes), 3) Paresthesias in hands and feet, 4) CSF showing albuminocytologic dissociation (elevated protein 91 mg/dL with normal cell count 2/mm3), 5) Normal CK ruling out myopathy. The preceding respiratory infection suggests possible Mycoplasma pneumoniae or viral trigger. IVIG is first-line treatment for GBS along with plasmapheresis. Prednisone is not effective in GBS. Botulism presents differently with descending paralysis and pupillary abnormalities. Gabapentin is for neuropathic pain management, not acute treatment of GBS.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 570,
+    "completion_tokens": 250
+  }
+}

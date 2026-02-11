@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Primary prevention\", \"confidence\": 8, \"reasoning\": \"The 1979 'Healthy People' report by the US Public Health Service (Gonggongweisheng = Public Health in Chinese) established health promotion as a key concept. In public health terminology, health promotion is traditionally considered synonymous with primary prevention, which focuses on preventing disease before it occurs through measures like education, lifestyle changes, and environmental modifications. The student's answer 'Four prevention' is not a standard public health term, while primary prevention is the established equivalent to health promotion in this historical context.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 398,
+    "completion_tokens": 145
+  }
+}

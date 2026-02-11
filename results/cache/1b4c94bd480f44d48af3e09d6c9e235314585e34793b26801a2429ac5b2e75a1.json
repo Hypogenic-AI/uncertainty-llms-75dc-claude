@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Avoidant personality disorder\", \"confidence\": 10, \"reasoning\": \"The patient is described as shy, anxious, socially inhibited, and avoids social situations due to fear of rejection, but expresses a strong desire for relationships. This is characteristic of avoidant personality disorder. Schizoid personality disorder would involve indifference to social relationships and lack of desire for intimacy. Antisocial personality disorder is characterized by disregard for the rights of others. Agoraphobia involves fear of situations where escape might be difficult, not necessarily social inhibition with desire for connection.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 351,
+    "completion_tokens": 125
+  }
+}

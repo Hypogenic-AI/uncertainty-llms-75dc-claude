@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"osteosarcoma\", \"confidence\": 8, \"reasoning\": \"Asymmetric widening of the periodontal ligament (PDL) around two or more teeth is a characteristic radiographic finding of osteosarcoma of the jaw. This creates a 'floating teeth' appearance due to tumor infiltration causing irregular PDL widening. While metastatic carcinoma can affect bone, osteosarcoma is more classically associated with this specific PDL widening pattern. Fibrous dysplasia typically shows ground-glass appearance and loss of lamina dura rather than asymmetric PDL widening. Paget's disease shows hypercementosis and cotton-wool appearance but not this specific PDL pattern.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 197,
+    "completion_tokens": 175
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 10, \"reasoning\": \"This question describes fictional diseases and conditions in an imaginary world called 'Zorbon' with 'ethereal beings' and 'extraterrestrial diseases' like 'Xerakton,' 'Tremendous Parkinsonism,' 'Galactic Alzheimer's,' 'Cosmic Wilson's disease,' etc. None of these are real medical conditions. The question appears to be either a test of critical thinking or contains entirely fabricated information. Since this is not based on actual medical knowledge, the only honest answer is 'I do not know' as there is no legitimate medical information to draw upon.\"}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 314,
+    "completion_tokens": 170
+  }
+}

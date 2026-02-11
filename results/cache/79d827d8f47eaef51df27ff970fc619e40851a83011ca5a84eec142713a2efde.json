@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Adenocarcinoma of the lung\", \"confidence\": 8, \"reasoning\": \"This is a medically sound clinical vignette. Key features pointing to adenocarcinoma: (1) Peripheral lung nodule with irregular borders at apex - adenocarcinoma is the most common lung cancer in non-smokers and typically presents peripherally, (2) Non-smoker status - adenocarcinoma is the most common lung cancer in non-smokers, (3) Constitutional symptoms (weight loss, fatigue) and hemoptysis suggest malignancy, (4) Demographics - while lung cancer is less common in non-smokers, adenocarcinoma is still the most likely primary lung malignancy when it occurs. Squamous cell carcinoma typically occurs in smokers and centrally. Carcinoid tumors are less common and usually present differently. Sarcoidosis typically shows bilateral hilar lymphadenopathy, not a solitary irregular nodule.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 556,
+    "completion_tokens": 239
+  }
+}

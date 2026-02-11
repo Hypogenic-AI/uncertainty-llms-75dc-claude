@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Urinalysis\", \"confidence\": 10, \"reasoning\": \"The patient presents with acute onset of nausea, weakness, fever, leukocytosis, elevated CRP, and right costovertebral angle tenderness, which are classic findings for acute pyelonephritis. The most appropriate next step is to confirm the diagnosis with a urinalysis (and urine culture), not imaging. Imaging is reserved for complicated cases or lack of improvement. Cervical swab is not indicated unless there are symptoms of cervicitis or PID. Blood cultures may be obtained if the patient is septic, but urinalysis is the initial diagnostic test of choice.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 386,
+    "completion_tokens": 145
+  }
+}

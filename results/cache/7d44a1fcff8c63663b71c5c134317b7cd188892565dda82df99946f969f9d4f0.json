@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Fluoxetine\", \"confidence\": 8, \"reasoning\": \"This 15-year-old girl presents with classic symptoms of social anxiety disorder (social phobia): fear of negative evaluation by peers, avoidance of social situations, physical symptoms during social performance (racing heart, flushing), and significant impairment in academic and social functioning. For adolescents with social anxiety disorder, SSRIs (selective serotonin reuptake inhibitors) are the first-line pharmacotherapy. Fluoxetine is an SSRI that is FDA-approved for use in adolescents and has good evidence for treating social anxiety disorder. While phenelzine (an MAOI) is effective for social anxiety, it's typically reserved for treatment-resistant cases due to dietary restrictions and side effects. Propranolol can help with performance anxiety symptoms but doesn't address the underlying disorder. Clomipramine is primarily used for OCD. Therefore, fluoxetine is the most appropriate first-line pharmacotherapy.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 336,
+    "completion_tokens": 237
+  }
+}

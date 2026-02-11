@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Globular 10-week sized uterus\", \"confidence\": 9, \"reasoning\": \"This patient's presentation\u2014heavy, prolonged, and irregular menses with dysmenorrhea, mild dyspareunia, pelvic heaviness, and urinary frequency\u2014suggests adenomyosis, especially given her age, multiparity, and risk factors (obesity, diabetes). The classic physical exam finding in adenomyosis is a uniformly enlarged, globular, and tender uterus, typically described as '10-week sized.' An irregularly enlarged uterus is more characteristic of leiomyomas (fibroids), and an adnexal mass would suggest an ovarian pathology. No remarkable findings would be unlikely given her symptoms.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 551,
+    "completion_tokens": 161
+  }
+}

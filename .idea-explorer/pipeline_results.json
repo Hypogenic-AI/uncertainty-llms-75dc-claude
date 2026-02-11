@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "stages": {
+    "resource_finder": {
+      "success": true,
+      "completion_marker": "/workspaces/uncertainty-llms-75dc-claude/.resource_finder_complete",
+      "outputs": {
+        "literature_review": "/workspaces/uncertainty-llms-75dc-claude/literature_review.md",
+        "resources_catalog": "/workspaces/uncertainty-llms-75dc-claude/resources.md",
+        "papers_dir": "/workspaces/uncertainty-llms-75dc-claude/papers",
+        "datasets_dir": "/workspaces/uncertainty-llms-75dc-claude/datasets",
+        "code_dir": "/workspaces/uncertainty-llms-75dc-claude/code"
+      },
+      "log_file": "/workspaces/uncertainty-llms-75dc-claude/logs/resource_finder_claude.log",
+      "transcript_file": "/workspaces/uncertainty-llms-75dc-claude/logs/resource_finder_claude_transcript.jsonl",
+      "elapsed_time": 2829.5437858104706
+    },
+    "experiment_runner": {
+      "success": true,
+      "return_code": 0,
+      "elapsed_time": 5852.989747047424,
+      "log_file": "/workspaces/uncertainty-llms-75dc-claude/logs/execution_claude.log",
+      "transcript_file": "/workspaces/uncertainty-llms-75dc-claude/logs/execution_claude_transcript.jsonl"
+    }
+  },
+  "work_dir": "/workspaces/uncertainty-llms-75dc-claude"
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Glycosidic bonds\", \"confidence\": 10, \"reasoning\": \"Miglitol is an alpha-glucosidase inhibitor used in diabetes management. It works by inhibiting enzymes that cleave glycosidic bonds in carbohydrates, thereby delaying carbohydrate absorption. The other bond types listed are not relevant to carbohydrate digestion in this context.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 400,
+    "completion_tokens": 91
+  }
+}

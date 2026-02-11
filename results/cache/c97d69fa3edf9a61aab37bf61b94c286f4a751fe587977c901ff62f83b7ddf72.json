@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Vitamin C\", \"confidence\": 10, \"reasoning\": \"The symptoms described - swollen joints, anemia, loose teeth, and dentin dysplasia - are classic signs of scurvy, which is caused by Vitamin C (ascorbic acid) deficiency. Vitamin C is essential for collagen synthesis, which is crucial for connective tissue integrity, blood vessel walls, and tooth/bone structure. Deficiency leads to impaired collagen formation causing bleeding gums, loose teeth, joint swelling (hemarthrosis), and anemia (from bleeding). Dentin dysplasia can occur due to defective collagen in tooth formation. Vitamins D and E do not cause this constellation of symptoms.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 190,
+    "completion_tokens": 172
+  }
+}

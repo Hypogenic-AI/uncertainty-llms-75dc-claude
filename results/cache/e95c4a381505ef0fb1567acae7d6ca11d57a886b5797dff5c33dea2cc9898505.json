@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"They occur only during non-REM sleep\", \"confidence\": 9, \"reasoning\": \"This case describes classic night terrors (sleep terrors), characterized by: sudden awakening with screaming/crying, inconsolability, lack of response to parents, no memory of the event the next morning, and occurrence in a 6-year-old child. Night terrors occur during non-REM sleep, specifically during slow-wave sleep (stages 3-4) in the first third of the night. Key facts: 1) Night terrors typically resolve by adolescence and are NOT persistent into adulthood (option 0 incorrect). 2) They occur during non-REM sleep, not REM sleep (option 1 correct). 3) While psychological stress can be a trigger, night terrors are NOT specifically associated with child abuse - they are common in normal children (option 2 incorrect). 4) Night terrors are not associated with later mood disorders - they are a benign parasomnia (option 3 incorrect). The correct answer is option 1.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 280,
+    "completion_tokens": 249
+  }
+}

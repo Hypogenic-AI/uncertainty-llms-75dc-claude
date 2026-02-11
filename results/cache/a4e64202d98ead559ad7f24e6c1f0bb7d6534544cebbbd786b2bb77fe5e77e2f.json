@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Cholesterol embolization\", \"confidence\": 10, \"reasoning\": \"This patient developed acute kidney injury, livedo reticularis (mottled, purplish discoloration of the feet), eosinophilia, and elevated ESR two weeks after a vascular procedure (cardiac catheterization). Renal biopsy shows spindle-shaped vacuoles (cholesterol clefts). These findings are classic for cholesterol embolization syndrome, which can occur after vascular manipulation. Other options do not fit the clinical picture or biopsy findings as closely.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 396,
+    "completion_tokens": 122
+  }
+}

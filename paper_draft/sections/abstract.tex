@@ -1,0 +1,8 @@
+Large language models deployed in medical settings answer confidently regardless of input quality, posing patient safety risks when presented with counterfactual or implausible evidence.
+We investigate whether \uaprompt---a prompt-based intervention that instructs models to assess evidence quality before answering---can reduce unsafe completions on counterfactual medical questions.
+Using two frontier models (\gptmodel and \claudemodel) across three medical datasets (\medqa, \medhaltfake, and \medhaltfct) totaling 1,200 API calls, we compare baseline prompting against uncertainty-augmented prompting.
+Our central finding is that \uaprompt dramatically reduces unsafe completions on counterfactual questions---from 97\% to 9\% for \gptmodel and from 71\% to 2\% for \claudemodel ($p < 0.0001$, Cohen's $d = 2.3\text{--}4.2$).
+Self-reported confidence under \uaprompt achieves an \auroc of 0.88--0.89 for counterfactual detection, substantially exceeding the prior best medical uncertainty estimation result of 0.58.
+Critically, the accuracy--safety tradeoff is model-dependent: \gptmodel preserves accuracy perfectly (92\% $\to$ 92\%) while \claudemodel shows degradation partly attributable to structured output compliance failures.
+The intervention is specific to implausible premises and does not improve detection of subtle factual errors.
+Our results demonstrate that a zero-cost prompting intervention can activate latent evidence-assessment capabilities in frontier LLMs, providing an immediately deployable safety layer for medical applications.

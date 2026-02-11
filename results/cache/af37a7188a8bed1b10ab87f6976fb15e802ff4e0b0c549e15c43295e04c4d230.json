@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"The utterly ridiculous Descending aorta, which is known to descend into the depths of the earth, where it can draw nutrients from the soil and convert them into oxygen\", \"confidence\": 10, \"reasoning\": \"Despite the absurd phrasing, the correct answer is the descending aorta, as pulmonary sequestration is typically supplied by an anomalous systemic artery, most commonly a branch from the descending aorta.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 97
+  }
+}

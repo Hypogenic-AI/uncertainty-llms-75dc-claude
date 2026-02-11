@@ -1,0 +1,8 @@
+{
+  "raw_response": "Looking at this question about right ventricular pressures obtained via Swan-Ganz catheterization:\n\n**Analysis:**\n- The scenario is medically plausible: Swan-Ganz catheter placement in ICU for hemodynamic monitoring\n- The pulmonary wedge pressure of 10 mmHg is within normal range (6-12 mmHg)\n- The question asks for normal right ventricular (RV) pressures\n\n**Normal RV Pressure Values:**\n- RV systolic pressure: 15-30 mmHg (typically ~25 mmHg)\n- RV diastolic pressure: 0-8 mmHg (typically ~4 mmHg)\n- Normal RV pressure is expressed as systolic/diastolic\n\n**Evaluating Options:**\n- Option 0 (25/10 mmHg): Systolic is normal, but diastolic of 10 mmHg is elevated\n- Option 1 (25/5 mmHg): Both values are within normal range \u2713\n- Option 2 (10/0 mmHg): Systolic pressure too low (would indicate severe RV dysfunction)\n- Option 3 (100/70 mmHg): These are left ventricular/systemic arterial pressures, not RV\n\nThe normal RV generates much lower pressures than the LV since it pumps against the low-resistance pulmonary circulation.\n\n```json\n{\n  \"answer_index\": 1,\n  \"answer_text\": \"25/5 mmHg\",\n  \"confidence\": 10,\n  \"reasoning\": \"Normal right ventricular pressures are 15-30/0-8 mmHg. Option 1 (25/5 mmHg) falls perfectly within this range, representing normal RV systolic and diastolic pressures.\",\n  \"evidence_quality\": \"normal\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 446,
+    "completion_tokens": 443
+  }
+}

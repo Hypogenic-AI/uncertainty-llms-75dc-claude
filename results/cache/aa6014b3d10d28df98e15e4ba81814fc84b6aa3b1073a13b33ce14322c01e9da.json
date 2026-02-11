@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"\\\"Let's talk about what makes it difficult for you to take your medications.\\\"\", \"confidence\": 9, \"reasoning\": \"This patient has a detectable viral load after 3 years of undetectable levels, and she reports missing medications every other day. The most appropriate response is to explore barriers to adherence using an open-ended, non-judgmental approach. Option 0 demonstrates patient-centered care by inviting discussion about obstacles (financial, social, psychological, or practical). Option 1 is condescending and assumes lack of knowledge. Option 2 jumps to a solution without understanding the full problem. Option 3 assumes the issue is understanding rather than barriers to adherence. Given her unemployment and low-income status, there may be multiple barriers including cost, housing instability, or other social determinants of health that need to be identified first.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 321,
+    "completion_tokens": 202
+  }
+}

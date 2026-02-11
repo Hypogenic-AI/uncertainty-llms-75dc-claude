@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Call vascular stlrgeon\", \"confidence\": 9, \"reasoning\": \"When significant bleeding occurs in the space of Retzius during a Burch operation and the source cannot be visualized, the safest next step is to call a vascular surgeon. Blindly placing generalized sutures risks injury to major vessels and further complications. A vascular surgeon's expertise is needed to control the bleeding safely.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 219,
+    "completion_tokens": 94
+  }
+}

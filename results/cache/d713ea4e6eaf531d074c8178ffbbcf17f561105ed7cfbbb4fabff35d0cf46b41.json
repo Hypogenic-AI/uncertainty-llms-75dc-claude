@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Case-control study\", \"confidence\": 10, \"reasoning\": \"This study design has the classic features of a case-control study: 1) Investigators identified cases (50 people WITH interstitial lung disease) and controls (50 people WITHOUT the disease), 2) Controls were matched to cases by age and geographic location, 3) The exposure (fire retardant chemical) was assessed AFTER identifying disease status through surveys and home visits. This is a retrospective approach starting with disease status and looking back at exposure. A case series would only describe cases without a comparison group. A retrospective cohort study would start with exposure groups and follow forward to disease outcomes. An RCT would involve random assignment of an intervention, which is not present here.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 236,
+    "completion_tokens": 178
+  }
+}

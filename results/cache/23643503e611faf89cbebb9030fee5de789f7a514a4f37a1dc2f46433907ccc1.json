@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Renzapride\", \"confidence\": 9, \"reasoning\": \"Renzapride is a drug known to act as an agonist at 5HT4 (serotonin) receptors, enhancing gastrointestinal motility. Loxiglumide is a CCK-A receptor antagonist, not related to 5HT4. Atractiloside is a mitochondrial toxin, and Metoclopramide primarily acts as a D2 antagonist with some 5HT4 agonist activity, but Renzapride is more specific for 5HT4.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 174,
+    "completion_tokens": 127
+  }
+}

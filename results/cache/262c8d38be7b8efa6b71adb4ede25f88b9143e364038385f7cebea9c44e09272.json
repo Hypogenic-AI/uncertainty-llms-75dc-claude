@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"B.\", \"confidence\": 10, \"reasoning\": \"Germinal centers are specialized regions within secondary lymphoid organs (such as lymph nodes and the spleen) where B lymphocytes (B cells) proliferate, differentiate, and undergo somatic hypermutation and class-switch recombination during an immune response. The student's answer (Tc, cytotoxic T cells) is incorrect, as germinal centers are not the primary site for T cell proliferation.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 352,
+    "completion_tokens": 112
+  }
+}

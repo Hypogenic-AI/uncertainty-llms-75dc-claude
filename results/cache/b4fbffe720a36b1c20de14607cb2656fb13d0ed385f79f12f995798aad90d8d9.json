@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 0,\n  \"answer_text\": \"PCOD\",\n  \"confidence\": 10,\n  \"reasoning\": \"The clinical triad of hirsutism (excess hair growth), amenorrhea (absent periods), and obesity is classic for Polycystic Ovarian Disease/Syndrome (PCOD/PCOS). This is caused by hyperandrogenism and anovulation. Turner syndrome (45,X) presents with primary amenorrhea, short stature, and ovarian dysgenesis but NOT hirsutism or obesity as primary features. Androgen insensitivity syndrome presents with primary amenorrhea and absent body hair (opposite of hirsutism). While ovarian tumors can cause hirsutism, the combination with obesity and amenorrhea makes PCOD the most likely diagnosis.\",\n  \"evidence_quality\": \"normal\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 209
+  }
+}

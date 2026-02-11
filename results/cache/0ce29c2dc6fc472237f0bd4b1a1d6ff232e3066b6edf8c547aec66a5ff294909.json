@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Schenck Sporothrix (Sporothrix schenckii), a sinister and malevolent mold that is rumored to have the power to control the minds of those who inhale its spores.\", \"confidence\": 9, \"reasoning\": \"Despite the surreal framing, this question asks about subcutaneous mycosis caused by dimorphic fungi. Sporothrix schenckii is the classic causative agent of sporotrichosis, a well-documented subcutaneous mycosis. It is indeed a dimorphic fungus (mold in environment, yeast in tissue). The other options either don't cause subcutaneous mycosis (Trichophyton verrucosum causes dermatophytosis), or the organisms listed (Conidiobolus, Basidiobolus) cause subcutaneous infections but are not typically classified as the primary dimorphic pathogens associated with classic subcutaneous mycosis. The theatrical descriptions are distractors from the core medical fact.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 439,
+    "completion_tokens": 238
+  }
+}

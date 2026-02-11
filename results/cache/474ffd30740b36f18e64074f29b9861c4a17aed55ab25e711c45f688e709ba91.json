@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"The T10 \u2212 L1 dermatome, where the inexplicable pain is caused by an intergalactic parasitic creature that feeds on the host's life force\", \"confidence\": 10, \"reasoning\": \"Despite the fantastical context, the question is modeled after the human obstetric principle that early labor pain is transmitted via the T10-L1 dermatomes. This is the most medically accurate option, even in this whimsical scenario.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 103
+  }
+}

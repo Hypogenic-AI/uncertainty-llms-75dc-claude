@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Posterior cerebral artery\", \"confidence\": 10, \"reasoning\": \"The patient has a right homonymous hemianopia with macular sparing, which localizes the lesion to the left occipital cortex. The occipital cortex is supplied by the posterior cerebral artery (PCA). Macular sparing occurs because the macular region of the visual cortex receives dual blood supply from both the PCA and the middle cerebral artery (MCA). The CT scan is negative for acute hemorrhage, and the symptoms are consistent with an ischemic stroke in the PCA territory. Therefore, angiography would most likely show a lesion in the posterior cerebral artery.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 267,
+    "completion_tokens": 146
+  }
+}

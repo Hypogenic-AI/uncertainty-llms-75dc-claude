@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Risk of disuse syndrome.\", \"confidence\": 9, \"reasoning\": \"The definition describes vulnerability to deterioration of body systems due to prescribed or inevitable musculoskeletal inactivity. This precisely matches the NANDA nursing diagnosis 'Risk of disuse syndrome,' which addresses the potential complications from prolonged immobility affecting multiple body systems. 'Intolerance to activity' refers to insufficient energy for activities, not the consequences of inactivity. 'Impairment of ambulation' is about difficulty walking, and 'Risk of trauma' concerns injury risk, neither matching the definition provided.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 435,
+    "completion_tokens": 154
+  }
+}

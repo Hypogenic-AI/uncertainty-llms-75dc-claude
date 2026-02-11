@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Multiple endocrine neoplasia (MEN) 2A\", \"confidence\": 10, \"reasoning\": \"The patient presents with features suggestive of pheochromocytoma (headache, palpitations, hypertension, elevated urinary VMA/metanephrines), medullary thyroid carcinoma (diffuse thyroid swelling, elevated calcitonin), and hyperparathyroidism (elevated parathormone, hypercalcemia, bone pain). This triad is characteristic of MEN 2A. MEN 2B would also include mucosal neuromas and marfanoid habitus, which are not described here. Von Hippel-Lindau syndrome and neurofibromatosis do not fit the constellation of findings.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 613,
+    "completion_tokens": 169
+  }
+}

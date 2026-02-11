@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"GI upset\", \"confidence\": 8, \"reasoning\": \"The clinical presentation describes a 5-year-old girl with 'spacing out' episodes and a 3-Hz spike-and-wave pattern on EEG, which is classic for childhood absence epilepsy. The first-line medication for absence seizures is ethosuximide. The most common side effects of ethosuximide are gastrointestinal symptoms including nausea, vomiting, and abdominal pain. Nystagmus is more associated with phenytoin toxicity. Facial rash and blood in urine could suggest Stevens-Johnson syndrome or renal issues, which are not typical first-line concerns with ethosuximide. Weight gain and hair color changes are more associated with valproic acid. Therefore, GI upset is the most appropriate answer for the common side effect of ethosuximide.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 304,
+    "completion_tokens": 214
+  }
+}

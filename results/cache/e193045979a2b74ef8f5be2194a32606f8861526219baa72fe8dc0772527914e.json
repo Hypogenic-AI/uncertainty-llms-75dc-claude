@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Embarking on a most bizarre and inexplicable regimen known as 'Chemoradiation', where the afflicted area is subjected to a barrage of mystical potions and cosmic energies in order to annihilate the malignant forces of the cancerous malady\", \"confidence\": 7, \"reasoning\": \"Despite the fantastical language, the scenario describes a cancer located in the upper uterus and lower cervix. In modern medicine, for certain cancers of the cervix and uterus, especially if surgery is not sufficient or possible, concurrent chemoradiation (combination of chemotherapy and radiotherapy) is a standard evidence-based treatment. The other options are either less appropriate or nonsensical. The language is fanciful, but the underlying medical scenario is plausible.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 647,
+    "completion_tokens": 171
+  }
+}

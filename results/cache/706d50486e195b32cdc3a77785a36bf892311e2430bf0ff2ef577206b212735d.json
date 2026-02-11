@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"The whimsical and oftentimes elusive Selectins, whose elusive nature remains an enigma to both the Zogians and the earthlings\", \"confidence\": 9, \"reasoning\": \"Despite the fictional and whimsical framing of the question, the underlying medical question is clear and evidence-based: which protein mediates the rolling of leukocytes on endothelial cells? The correct answer is selectins, which are well-established in immunology as mediators of leukocyte rolling. The other options are either incorrect or irrelevant to this process.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 543,
+    "completion_tokens": 125
+  }
+}

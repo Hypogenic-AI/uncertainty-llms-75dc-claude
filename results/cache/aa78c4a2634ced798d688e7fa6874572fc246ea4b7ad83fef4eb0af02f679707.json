@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"The Maxillary nasal cavity, where the insidious mucus seeps into the depths of the cosmos, causing the creature to suffer an existential crisis of the highest degree\", \"confidence\": 7, \"reasoning\": \"Despite the fantastical framing, this question appears to be asking about mucoceles in paranasal sinuses. In medical reality, mucoceles are most commonly found in the frontal sinus, followed by the ethmoid sinus. However, the maxillary sinus is also a common site. Given the options presented and stripping away the theatrical language, the maxillary sinus (option 1) represents a legitimate anatomical location where mucoceles occur with reasonable frequency. The frontal option (0) would actually be most common in reality, but the maxillary is a close second and is a well-recognized site for mucocele formation. The question's absurdist presentation doesn't change the underlying anatomical facts about where mucoceles typically develop.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 433,
+    "completion_tokens": 231
+  }
+}

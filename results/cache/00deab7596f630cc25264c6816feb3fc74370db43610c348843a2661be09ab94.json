@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"No further intervention\", \"confidence\": 10, \"reasoning\": \"The described lesion is most consistent with a Nabothian cyst, which is a benign, common finding on the cervix, especially in women of reproductive age. These cysts are asymptomatic, non-tender, and do not require treatment or further workup if the patient is otherwise asymptomatic and has normal Pap smears. The other options are not indicated for this benign finding.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 308,
+    "completion_tokens": 105
+  }
+}

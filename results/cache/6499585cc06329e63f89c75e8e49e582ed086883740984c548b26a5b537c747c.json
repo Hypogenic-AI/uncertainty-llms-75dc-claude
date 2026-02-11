@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"UVB - the rays that cause sunburn, melting and spontaneous combustion of the adipose tissues\", \"confidence\": 10, \"reasoning\": \"PABA (para-aminobenzoic acid) is a sunscreen agent that primarily absorbs UVB rays, which are responsible for sunburn. It does not provide significant protection against UVA or UVC. The fantastical descriptions are humorous, but the correct scientific match is UVB.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 342,
+    "completion_tokens": 101
+  }
+}

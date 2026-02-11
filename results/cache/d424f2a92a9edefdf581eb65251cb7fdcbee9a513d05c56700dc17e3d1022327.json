@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Pituitary infarction\", \"confidence\": 10, \"reasoning\": \"This patient experienced postpartum hemorrhagic shock (hypotension, tachycardia, clammy skin, boggy uterus) requiring aggressive resuscitation. The inability to lactate after delivery suggests failure of prolactin secretion. The most likely cause is Sheehan syndrome (postpartum pituitary infarction) due to ischemic necrosis of the pituitary from severe blood loss. Pituitary tumor and hemorrhage are less likely in this acute postpartum context, and retained placental tissue would not explain lactation failure.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 475,
+    "completion_tokens": 142
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"The Kraft point marks the transition between the solubility of an ionic surfactant in the form of ions or in the form of micelles.\", \"confidence\": 9, \"reasoning\": \"Option 0 accurately describes the Kraft point, which is the temperature at which the solubility of an ionic surfactant equals its CMC, marking the onset of micelle formation. Option 1 is incorrect because liquid crystals typically form at higher concentrations than the CMC. Option 2 is incorrect (and was the student's answer) because light scattering increases, not decreases, at the CMC. Option 3 is misleading; while CMC does vary with temperature, the statement is oversimplified and not entirely accurate.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 446,
+    "completion_tokens": 167
+  }
+}

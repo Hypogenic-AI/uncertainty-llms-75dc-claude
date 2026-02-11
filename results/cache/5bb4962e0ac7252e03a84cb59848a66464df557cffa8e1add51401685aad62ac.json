@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"2.4mU IM / week for 3 weeks\", \"confidence\": 10, \"reasoning\": \"The recommended dose of benzathine penicillin G for latent syphilis (early or late, without neurosyphilis and in non-allergic patients) is 2.4 million units intramuscularly once weekly for three consecutive weeks. The student's answer of 1.2mU is incorrect; 2.4mU is the correct dose.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 237,
+    "completion_tokens": 112
+  }
+}

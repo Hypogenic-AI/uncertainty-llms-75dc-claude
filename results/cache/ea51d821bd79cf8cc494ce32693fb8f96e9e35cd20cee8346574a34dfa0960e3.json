@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 4, \"answer_text\": \"A begrudging acceptance of the limitations of human knowledge and a humble admission of defeat in the face of this absurd and incomprehensible enigma\", \"confidence\": 10, \"reasoning\": \"Options 0-3 describe physical symptoms, albeit in a highly metaphorical manner, while option 4 describes a psychological or philosophical response rather than a symptom of a disease. Therefore, option 4 is not a symptom of disease X.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 337,
+    "completion_tokens": 102
+  }
+}

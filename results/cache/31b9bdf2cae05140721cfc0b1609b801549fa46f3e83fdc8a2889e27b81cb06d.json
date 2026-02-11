@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Babesiosis\", \"confidence\": 9, \"reasoning\": \"The key diagnostic features point to Babesiosis: 1) Travel to Netherlands (endemic area for Babesia), 2) Fever, chills, fatigue starting after return, 3) Pancytopenia (anemia, leukopenia, thrombocytopenia), 4) Hemolytic anemia (unconjugated hyperbilirubinemia, schistocytes), 5) Most importantly - the pathognomonic finding of 'tetrad formation' (Maltese cross) of merozoites on blood smear, which is specific for Babesia. While ring forms can be seen in both malaria and babesiosis, the tetrad formation (4 merozoites arranged in a cross pattern) is characteristic of Babesia. Additionally, the Netherlands has documented cases of Babesia, and the clinical presentation with hemolytic anemia and the specific blood smear findings strongly support this diagnosis over malaria, which would show different stages of Plasmodium and is not endemic to the Netherlands.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 463,
+    "completion_tokens": 259
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Astounding and incomprehensible Necrotising Enterocolitis, caused by the sudden and terrifying eruption of an undead horde of inter-dimensional microbes, consuming the very essence of the intestinal walls\", \"confidence\": 6, \"reasoning\": \"Despite the fantastical framing, this question appears to be asking about a medical condition associated with absence of gas on abdominal X-ray. In real medical practice, necrotising enterocolitis (NEC) can present with gasless abdomen in severe cases due to bowel wall necrosis and loss of normal bowel gas patterns. While acute pancreatitis can show ileus, and intussusception may show absence of gas in affected segments, NEC is classically associated with severe bowel wall compromise that could theoretically result in a gasless abdomen in advanced stages. The absurd framing makes this challenging, but translating to actual pathophysiology, NEC best fits the scenario described.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 405,
+    "completion_tokens": 228
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Adenocarcinoma of the lung\", \"confidence\": 8, \"reasoning\": \"This 45-year-old woman presents with hemoptysis, chronic nonproductive cough, fatigue, weight loss, and a solitary lung nodule with irregular borders at the apex. Key features: 1) Non-smoker (adenocarcinoma is the most common lung cancer in non-smokers), 2) Peripheral location with irregular borders suggests malignancy, 3) Constitutional symptoms (weight loss, fatigue) suggest cancer, 4) Adenocarcinoma is the most common primary lung cancer overall and in non-smokers, often presenting as peripheral nodules. Squamous cell carcinoma typically occurs in smokers and is more central. Carcinoid tumors are rare and usually present differently. Sarcoidosis typically shows bilateral hilar lymphadenopathy, which is absent here.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 350,
+    "completion_tokens": 217
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Gastric aspiration\", \"confidence\": 10, \"reasoning\": \"Mendelson's syndrome is a well-established medical condition referring to chemical pneumonitis caused by the aspiration of acidic gastric contents, typically during anesthesia. The student's answer is incorrect, and option 1 is the correct, evidence-based answer.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 84
+  }
+}

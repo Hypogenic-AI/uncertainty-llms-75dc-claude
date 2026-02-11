@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Colitis\", \"confidence\": 7, \"reasoning\": \"In a 70-year-old female with bleeding from the proximal colon, the most common cause is angiodysplasia (vascular ectasia), which is not listed. Among the given options, colitis (including ischemic colitis, which is common in elderly patients) is the most likely cause of proximal colon bleeding in this age group. Diverticulitis typically causes left-sided/distal colon issues and is more associated with pain than bleeding. Diverticulosis (not diverticulitis) causes bleeding but is more common in the right colon. Polyps and colon cancer can cause bleeding but are less common causes of acute bleeding compared to colitis in elderly patients. The student's answer of 'Diverticulitis' is incorrect as diverticulitis primarily presents with pain and inflammation, not bleeding as the primary symptom.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 384,
+    "completion_tokens": 228
+  }
+}

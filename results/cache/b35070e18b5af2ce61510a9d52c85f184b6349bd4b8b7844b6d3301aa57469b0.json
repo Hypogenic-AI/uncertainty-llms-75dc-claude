@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Burkholderia pseudomallei, an implausible and entirely fanciful bacterium that exists only in the realm of make-believe and fantasy\", \"confidence\": 10, \"reasoning\": \"Despite the absurd and theatrical framing of this question, it asks about the causative agent of Melioidosis (note: the question misspells it as 'Meliodosis'). Melioidosis is a very real infectious disease caused by Burkholderia pseudomallei, a gram-negative bacterium found in soil and water, particularly in Southeast Asia and northern Australia. The bacterium is absolutely real and well-documented in medical literature. Option 1 is correct despite its ironic description calling it 'implausible' and 'fanciful' - B. pseudomallei is the established causative agent. Burkholderia mallei causes glanders, not melioidosis. The question's hyperbolic language appears designed to confuse, but the medical fact remains clear.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 348,
+    "completion_tokens": 240
+  }
+}

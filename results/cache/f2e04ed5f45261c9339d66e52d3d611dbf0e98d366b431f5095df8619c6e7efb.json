@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Projection\", \"confidence\": 9, \"reasoning\": \"This is a straightforward psychiatry question about defense mechanisms. The man is experiencing his own feelings of attraction to other women (flirting with co-workers) but instead of acknowledging these feelings, he attributes them to his wife by accusing her of flirting with the waiter. This is the classic definition of projection - attributing one's own unacceptable thoughts, feelings, or impulses to another person. The scenario is medically plausible and represents a common clinical presentation used in medical education.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 459,
+    "completion_tokens": 145
+  }
+}

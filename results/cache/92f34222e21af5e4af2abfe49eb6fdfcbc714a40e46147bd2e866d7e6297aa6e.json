@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Corynebacterium diphtheriae\", \"confidence\": 9, \"reasoning\": \"The question describes classic microbiological characteristics of C. diphtheriae: growth on tellurite-containing medium (Tinsdale or cystine-tellurite agar) producing black colonies with a shiny surface due to tellurite reduction. This medium is specifically used for isolating C. diphtheriae. The clinical context (respiratory disease outbreak in children in a rural area with potentially lower vaccination rates) is consistent with diphtheria. Legionella requires buffered charcoal yeast extract, Haemophilus requires X and V factors (chocolate agar), and Bordetella grows on Bordet-Gengou or Regan-Lowe agar.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 433,
+    "completion_tokens": 198
+  }
+}

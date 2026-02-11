@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Psoriatic arthritis\", \"confidence\": 10, \"reasoning\": \"This patient has a long history of arthritis with asymmetric joint involvement, nail pitting, and a history of dandruff (suggestive of scalp psoriasis). Psoriatic arthritis commonly presents with these features, including nail changes and dactylitis. The improvement of pain with rest is less typical for inflammatory arthritis but may be reported. There is no evidence of severe deformity (as in arthritis mutilans), classic rheumatoid arthritis features (symmetric small joint involvement, rheumatoid nodules), or features of mixed connective tissue disease (Raynaud's, sclerodactyly, myositis).\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 435,
+    "completion_tokens": 155
+  }
+}

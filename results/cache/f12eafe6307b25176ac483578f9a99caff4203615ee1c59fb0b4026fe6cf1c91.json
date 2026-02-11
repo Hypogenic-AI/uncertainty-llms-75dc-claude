@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Bacterial infection\", \"confidence\": 10, \"reasoning\": \"The most common cause of otitis externa is bacterial infection, particularly by Pseudomonas aeruginosa and Staphylococcus aureus. Seborrheic disease is not a primary cause, and fungal infections and Herpes Zoster are less common etiologies.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 363,
+    "completion_tokens": 88
+  }
+}

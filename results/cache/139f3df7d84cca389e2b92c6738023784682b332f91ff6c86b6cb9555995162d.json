@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Sporozoite protein\", \"confidence\": 10, \"reasoning\": \"The most widely used malaria vaccine (RTS,S/AS01) targets the circumsporozoite protein (CSP) found on the surface of the Plasmodium falciparum sporozoite. This is a sporozoite protein, not a polysaccharide sheath. The other options do not accurately describe the main antigen used in current malaria vaccines.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 365,
+    "completion_tokens": 113
+  }
+}

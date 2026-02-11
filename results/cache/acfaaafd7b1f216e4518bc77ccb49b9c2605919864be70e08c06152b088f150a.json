@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Ketamine\", \"confidence\": 10, \"reasoning\": \"Ketamine is an NMDA-receptor antagonist and is used as an adjunct in pain management, especially in cases of opioid-refractory pain, to reduce opioid requirements. The other agents listed do not have significant NMDA-receptor antagonism relevant to pain management.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 200,
+    "completion_tokens": 80
+  }
+}

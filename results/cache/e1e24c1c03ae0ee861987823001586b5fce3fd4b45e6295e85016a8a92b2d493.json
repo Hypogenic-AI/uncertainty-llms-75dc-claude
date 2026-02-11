@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Lumbar disc herniation\", \"confidence\": 9, \"reasoning\": \"The key clinical findings are: 1) Young male with lower back pain radiating to right leg for several months, 2) Positive straight leg raise test on right (20\u00b0) compared to left (70\u00b0) - indicating nerve root irritation, 3) Pain distribution corresponding to L5 nerve root dermatome, 4) Normal strength and reflexes. These findings are classic for lumbar disc herniation causing nerve root compression. Lumbar muscle tendinitis would not cause positive SLRT or dermatomal pain distribution. The severely limited SLRT on the affected side (20\u00b0 vs normal 70\u00b0) is pathognomonic for disc herniation with nerve root impingement, most commonly at L4-L5 or L5-S1 levels affecting the L5 nerve root.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 262,
+    "completion_tokens": 209
+  }
+}

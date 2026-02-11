@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Dorsal part of 2nd pouch.\", \"confidence\": 10, \"reasoning\": \"The palatine tonsils develop from the endoderm of the dorsal part of the second pharyngeal pouch. The student's answer (ventral part of 3rd pouch) is incorrect. This is a well-established embryological fact.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 381,
+    "completion_tokens": 90
+  }
+}

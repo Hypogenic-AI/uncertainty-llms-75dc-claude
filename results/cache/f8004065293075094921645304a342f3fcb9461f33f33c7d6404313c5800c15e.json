@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"This mass will most likely decrease in size or disappear over time\", \"confidence\": 10, \"reasoning\": \"This adolescent presents with a classic history and exam for a fibroadenoma: a mobile, well-circumscribed, tender mass that fluctuates with the menstrual cycle. Fibroadenomas are benign and commonly regress or decrease in size over time, especially in young women. There is no increased risk of breast cancer, and treatment is usually observation unless the mass grows or becomes symptomatic.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 353,
+    "completion_tokens": 114
+  }
+}

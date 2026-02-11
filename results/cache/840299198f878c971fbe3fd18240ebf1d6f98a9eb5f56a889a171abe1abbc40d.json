@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Primary spermatocyte\", \"confidence\": 10, \"reasoning\": \"The patient's presentation (tall stature, long extremities, gynecomastia, small testes, infertility, increased FSH, increased estradiol:testosterone ratio, and cytogenetic abnormality) is classic for Klinefelter syndrome (47,XXY). If the extra X chromosome was inherited from the father, the nondisjunction event occurred during meiosis I in the primary spermatocyte, when homologous chromosomes fail to separate. This is the stage where the error would result in a sperm carrying both an X and a Y chromosome.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 444,
+    "completion_tokens": 148
+  }
+}

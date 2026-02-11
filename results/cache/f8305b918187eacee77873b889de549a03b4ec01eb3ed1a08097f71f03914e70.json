@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"None of the above\", \"confidence\": 10, \"reasoning\": \"All the enzymes listed are nonsensical and do not exist in real or even established imaginary medical literature. Since 'Melfan's Syndrome' is also imaginary and none of the enzymes are real or specifically associated with it, 'None of the above' is the most accurate answer.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 195,
+    "completion_tokens": 86
+  }
+}

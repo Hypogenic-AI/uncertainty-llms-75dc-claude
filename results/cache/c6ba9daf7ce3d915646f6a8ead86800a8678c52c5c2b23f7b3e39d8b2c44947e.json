@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Ketamine\", \"confidence\": 10, \"reasoning\": \"The question asks for a medication that can reduce opioid requirements through NMDA-receptor interaction. Ketamine is a well-established NMDA-receptor antagonist that has opioid-sparing effects and is commonly used as an adjuvant analgesic in chronic pain management, particularly in cancer patients with refractory pain. Propofol is a sedative-hypnotic without significant NMDA activity, fentanyl is another opioid (not opioid-sparing), and midazolam is a benzodiazepine without NMDA antagonist properties. Ketamine is the clear answer.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 218,
+    "completion_tokens": 170
+  }
+}

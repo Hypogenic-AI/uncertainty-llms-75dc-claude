@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 1,\n  \"reasoning\": \"This question describes a completely fictional scenario involving extraterrestrial beings, a non-existent 'Vitamin Z', and absurd premises on an imaginary planet. The question itself acknowledges being 'preposterous', 'illogical', and 'nonsensical'. This is not a legitimate medical question but rather appears designed to elicit speculative responses about impossible scenarios. All answer options are equally fictional and absurd. As a medical expert, I cannot provide meaningful medical guidance on fictional alien physiology and non-existent vitamins.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 652,
+    "completion_tokens": 175
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Management by objectives\", \"confidence\": 9, \"reasoning\": \"Management by objectives (MBO) is a technique rooted in behavioural sciences, focusing on setting and achieving goals collaboratively between managers and employees, emphasizing motivation, communication, and human behavior. The other options (network analysis, systems analysis, decision making) are more related to management science, operations research, or systems theory rather than specifically to behavioural sciences.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 166,
+    "completion_tokens": 97
+  }
+}

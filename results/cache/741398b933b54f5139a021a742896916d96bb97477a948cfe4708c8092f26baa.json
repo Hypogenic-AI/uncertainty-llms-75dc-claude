@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Coagulation\", \"confidence\": 10, \"reasoning\": \"Alum (aluminum sulfate) is added during the coagulation step in rapid sand filtration to destabilize and aggregate suspended particles, making them easier to remove in subsequent steps. The student's answer, 'rapid mixing,' refers to the process that follows the addition of alum to ensure thorough mixing, but the correct step where alum is actually added is coagulation.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 162,
+    "completion_tokens": 99
+  }
+}

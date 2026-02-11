@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Face\", \"confidence\": 9, \"reasoning\": \"Nevus simplex, also known as salmon patch or stork bite, is a common vascular birthmark that typically presents on the face, particularly on the nape of the neck, eyelids, glabella (between eyebrows), and forehead. These are the most common locations. The student's answer of 'Legs' is incorrect as nevus simplex rarely occurs on the extremities. The face is the classic and most common presentation site for nevus simplex.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 163,
+    "completion_tokens": 133
+  }
+}

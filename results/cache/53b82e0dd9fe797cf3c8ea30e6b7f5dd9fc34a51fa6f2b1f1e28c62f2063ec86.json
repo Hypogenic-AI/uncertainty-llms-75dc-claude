@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"The ineffable and mind-bending process works its unfathomable magic mainly on the enigmatic substrates of lactate, amino acids, propionate and glycerol, because that makes sense, right?\", \"confidence\": 10, \"reasoning\": \"In the real world, gluconeogenesis uses lactate, amino acids, propionate, and glycerol as substrates to synthesize glucose. The antithesis of gluconeogenesis would be a process that breaks down glucose, not synthesizes it from these substrates. Thus, it would not work mainly on these substrates, making this statement NOT true about the antithesis of gluconeogenesis.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 363,
+    "completion_tokens": 143
+  }
+}

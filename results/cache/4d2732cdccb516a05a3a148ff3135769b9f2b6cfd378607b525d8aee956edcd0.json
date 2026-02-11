@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"McCune-McBright syndrome\", \"confidence\": 9, \"reasoning\": \"The clinical features described\u2014precocious puberty (early breast development), caf\u00e9-au-lait spots (faint, irregular brown macules), and decreased serum phosphate\u2014are classic for McCune-Albright syndrome. Red striae and plethoric cheeks may suggest Cushing's, but the combination of skin findings and endocrine abnormalities fits McCune-Albright syndrome best. Paget\u2019s disease and hypopituitarism do not fit the age or presentation.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 428,
+    "completion_tokens": 131
+  }
+}

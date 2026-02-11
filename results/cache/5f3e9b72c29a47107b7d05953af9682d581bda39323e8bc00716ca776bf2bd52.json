@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 4, \"answer_text\": \"The very notion of such a preposterous and irrational query is beyond the realm of reason or scientific logic, and hence the only possible answer is the admission of ignorance to such an utterly absurd and impossible scenario\", \"confidence\": 10, \"reasoning\": \"The question is entirely fantastical and not based on any scientific or medical reality. None of the listed isoenzymes have any relation to mythical rivers or magical transformations. The only rational response is to acknowledge the absurdity of the scenario.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 364,
+    "completion_tokens": 113
+  }
+}

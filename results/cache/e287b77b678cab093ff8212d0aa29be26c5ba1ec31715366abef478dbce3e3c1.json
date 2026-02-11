@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Primary prevention\", \"confidence\": 8, \"reasoning\": \"The 1979 US Surgeon General's report 'Healthy People' was a landmark document that emphasized disease prevention and health promotion. In public health terminology, 'health promotion' is most closely associated with primary prevention, which focuses on preventing disease before it occurs through measures like health education, lifestyle modifications, and creating healthy environments. The student's answer of 'Four prevention' is not a standard public health term. Primary prevention aligns with the health promotion goals outlined in the Healthy People initiative.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 192,
+    "completion_tokens": 135
+  }
+}

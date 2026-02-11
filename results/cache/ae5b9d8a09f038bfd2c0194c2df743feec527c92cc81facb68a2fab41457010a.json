@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 1,\n  \"reasoning\": \"This question is entirely fictional and absurd, set in a fantasy world (Pandora) with impossible premises like 'worm cancer,' mythical creatures (Jabberwocky, worm gods), and magical treatments. All options describe fantastical, non-medical interventions. This is not a legitimate medical question requiring evidence-based advice. The question appears designed to elicit nonsensical responses rather than actual medical guidance. Option 4 even acknowledges the absurdity explicitly.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 600,
+    "completion_tokens": 164
+  }
+}

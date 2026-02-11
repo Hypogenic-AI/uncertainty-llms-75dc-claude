@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Renzapride\", \"confidence\": 9, \"reasoning\": \"Renzapride is known as a 5-HT4 receptor agonist, which is used as a prokinetic agent. Loxiglumide is a cholecystokinin antagonist, not a 5-HT4 agent. Atractiloside is a mitochondrial toxin, and Metoclopramide acts primarily as a D2 antagonist and weak 5-HT4 agonist, but Renzapride is more specific for 5-HT4.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 367,
+    "completion_tokens": 134
+  }
+}

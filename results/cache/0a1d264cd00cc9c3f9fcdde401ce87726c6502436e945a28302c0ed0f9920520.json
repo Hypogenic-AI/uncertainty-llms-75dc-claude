@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Pseudomonas\", \"confidence\": 9, \"reasoning\": \"This patient has a gene defect on chromosome 7 affecting a transmembrane protein, which is characteristic of cystic fibrosis (CFTR gene mutation). CF patients experience thick, purulent secretions leading to recurrent respiratory infections. The pattern of respiratory pathogens in CF changes with age: Staphylococcus aureus and Haemophilus influenzae are common in childhood, but Pseudomonas aeruginosa becomes the predominant pathogen in adolescence and adulthood. Pseudomonas is particularly problematic in CF patients due to biofilm formation and chronic colonization. Burkholderia cepacia can occur but is less common than Pseudomonas. Given the question asks about adulthood infections, Pseudomonas is the most likely answer.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 349,
+    "completion_tokens": 210
+  }
+}

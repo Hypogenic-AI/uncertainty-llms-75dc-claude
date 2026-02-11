@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Complex formation.\", \"confidence\": 9, \"reasoning\": \"Murexide (ammonium purpurate) is a metallochromic indicator used in complexometric titrations, particularly for calcium and other metal ions with EDTA. It changes color when metal-indicator complexes form or dissociate during titration. The student incorrectly selected acid-base, but murexide is specifically used for detecting complex formation in analytical chemistry.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 386,
+    "completion_tokens": 120
+  }
+}

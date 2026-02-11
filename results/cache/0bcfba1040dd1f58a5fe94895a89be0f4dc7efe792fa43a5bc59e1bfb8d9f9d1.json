@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Proliferation of surfactant-secreting cells\", \"confidence\": 9, \"reasoning\": \"This is a medically sound question about alveolar regeneration after ARDS. Type II pneumocytes (alveolar epithelial cells) are the key cells involved in alveolar repair. They proliferate after injury, secrete surfactant, and can differentiate into type I pneumocytes to restore the alveolar lining. Options 0-1 describe airway (not alveolar) processes. Club cells (option 3) are bronchiolar cells, not alveolar. Type II pneumocyte proliferation is the established mechanism of alveolar regeneration.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 524,
+    "completion_tokens": 174
+  }
+}

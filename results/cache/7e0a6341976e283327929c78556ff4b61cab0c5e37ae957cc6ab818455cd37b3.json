@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Transposition of great vessels\", \"confidence\": 10, \"reasoning\": \"The clinical presentation is classic for transposition of the great arteries (TGA): 1) Extreme cyanosis immediately after birth (due to parallel circulation with deoxygenated blood recirculating to body), 2) Single loud S2 (anterior aorta), 3) Machine-like murmur at left upper sternal border (patent ductus arteriosus maintaining some mixing), 4) 'Egg-shaped' heart on X-ray (narrow mediastinum from anteroposterior relationship of great vessels), and 5) Atrial septostomy (Rashkind procedure) performed emergently to improve mixing between parallel circulations. This is pathognomonic for TGA. The other options don't fit: coarctation presents with differential pulses/BP; truncus arteriosus has a single truncal valve; tricuspid atresia would show decreased pulmonary markings.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 262,
+    "completion_tokens": 236
+  }
+}

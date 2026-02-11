@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"HSV-1\", \"confidence\": 10, \"reasoning\": \"The patient presents with painful oral vesicular lesions, fever, and lymphadenopathy, which are classic for primary herpetic gingivostomatitis. HSV-1 is the most common cause of this condition in children. HSV-2 typically causes genital lesions, CMV does not present with this oral vesicular pattern, and HIV would not present acutely like this.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 286,
+    "completion_tokens": 103
+  }
+}

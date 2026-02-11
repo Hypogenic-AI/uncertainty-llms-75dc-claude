@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"The onset of a devastating systemic lupus erythematosus epidemic, giving rise to a new era of cosmic chaos and destruction\", \"confidence\": 9, \"reasoning\": \"Despite the dramatic and theatrical language, this question is asking about the medical association between C4 complement deficiency and autoimmune diseases. C4 deficiency is most strongly associated with systemic lupus erythematosus (SLE). The complement system, particularly C4, plays a crucial role in clearing immune complexes and apoptotic cells. Deficiency in C4 leads to impaired clearance of these materials, which can trigger autoimmune responses characteristic of SLE. While C4 deficiency can be associated with other autoimmune conditions, the strongest and most well-established link is with SLE. The other options (rheumatoid arthritis, myasthenia gravis, and type 1 diabetes) do not have as strong an association with C4 deficiency.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 415,
+    "completion_tokens": 227
+  }
+}

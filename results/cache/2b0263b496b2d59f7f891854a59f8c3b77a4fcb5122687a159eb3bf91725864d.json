@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"End of adolescence or early adulthood.\", \"confidence\": 10, \"reasoning\": \"Schizophrenia most commonly presents in late adolescence or early adulthood, typically between ages 15-30. Childhood-onset is rare, and onset before age 12 is extremely uncommon.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 174,
+    "completion_tokens": 69
+  }
+}

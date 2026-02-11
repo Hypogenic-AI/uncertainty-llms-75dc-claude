@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Germ cells\", \"confidence\": 9, \"reasoning\": \"The patient's symptoms (irregular menses, weight loss, hyperreflexia, low-grade fever, adnexal mass) suggest an ovarian tumor. The hyperreflexia and weight loss point toward hyperthyroidism, which can be caused by a struma ovarii, a type of ovarian teratoma derived from germ cells. The negative pregnancy test and hypoechoic mass further support a germ cell tumor rather than a gestational or endometrial process. Chorionic epithelial cells are associated with gestational trophoblastic disease, which is unlikely given the negative pregnancy test and clinical picture.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 490,
+    "completion_tokens": 154
+  }
+}

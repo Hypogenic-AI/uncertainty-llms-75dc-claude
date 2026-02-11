@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"All of these\", \"confidence\": 9, \"reasoning\": \"Naloxone is a non-selective opioid antagonist that acts at all major opioid receptors, including mu (\u00b5), delta (\u03b4), and kappa (\u03ba), though it has the highest affinity for the mu receptor. Therefore, 'All of these' is the most accurate answer.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 365,
+    "completion_tokens": 92
+  }
+}

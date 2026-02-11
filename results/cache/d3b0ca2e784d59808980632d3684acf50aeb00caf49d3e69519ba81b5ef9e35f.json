@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Intravenous immunoglobulin (IVIG)\", \"confidence\": 10, \"reasoning\": \"This child presents with acute onset ascending weakness, areflexia, mild sensory symptoms, and a history of recent upper respiratory infection. CSF shows albuminocytologic dissociation (high protein, normal WBC), classic for Guillain-Barr\u00e9 syndrome (GBS). The most appropriate next step is IVIG (or plasmapheresis). Steroids are not effective in GBS. Botulism antitoxin is not indicated as the presentation is not consistent with botulism. Gabapentin is used for neuropathic pain, not for acute management of GBS.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 680,
+    "completion_tokens": 159
+  }
+}

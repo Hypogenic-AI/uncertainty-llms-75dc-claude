@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"The monitoring of biological parameters.\", \"confidence\": 8, \"reasoning\": \"The question asks which technique is NOT a psychological technique used in smoking cessation protocols. The student incorrectly answered 'The record of cigarette consumption,' which is actually a common psychological/behavioral technique (self-monitoring). Looking at the options: (0) Shiffman's problem-solving training is a psychological technique, (1) contingency contracts are behavioral/psychological interventions, (2) monitoring biological parameters (like CO levels, cotinine) is a physiological/medical measurement rather than a psychological technique, and (3) cigarette consumption records are psychological self-monitoring. Therefore, the monitoring of biological parameters is the correct answer as it is NOT a psychological technique but rather a biological/medical assessment tool.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 203,
+    "completion_tokens": 183
+  }
+}

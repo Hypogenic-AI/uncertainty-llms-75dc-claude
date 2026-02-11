@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Often hurt the articular surface, and often complicated by elbow stiffness\", \"confidence\": 9, \"reasoning\": \"Olecranon fractures often involve the articular surface of the elbow and are frequently complicated by elbow stiffness due to the intra-articular nature and immobilization. The other options are incorrect: direct impact is not the only mechanism, biceps is not the primary muscle involved (triceps is), and plaster immobilization is not the most common treatment (surgical fixation is often required).\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 410,
+    "completion_tokens": 122
+  }
+}

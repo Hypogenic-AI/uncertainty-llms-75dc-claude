@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Antibodies directed against phospholipids\", \"confidence\": 10, \"reasoning\": \"This patient has a history of SLE, recurrent pregnancy loss, and now presents with a DVT and a prolonged PTT that does not correct with mixing, which is classic for antiphospholipid antibody syndrome. The antibodies in this condition are directed against phospholipids, leading to a hypercoagulable state despite the prolonged PTT.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 105
+  }
+}

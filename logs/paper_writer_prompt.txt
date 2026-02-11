@@ -1,0 +1,954 @@
+You are an academic paper writer. Generate a complete NEURIPS style paper
+based on the experiment results provided.
+
+════════════════════════════════════════════════════════════════════════════════
+                         IMPORTANT: BEFORE YOU START
+════════════════════════════════════════════════════════════════════════════════
+
+Before writing any content, you MUST complete these steps:
+
+1. READ THE SKILL: Review the paper-writer skill at templates/skills/paper-writer/SKILL.md
+2. READ THE STYLE GUIDE: Study templates/paper_writing/lab_style_guide.md carefully
+3. REVIEW EXAMPLES: Browse paper_examples/ for formatting and language patterns:
+   - Look at sections/1.introduction.tex for language style
+   - Look at tables/*.tex for table formatting
+   - Look at commands/*.tex for macro usage
+4. USE COMMAND TEMPLATES: Copy templates/paper_writing/commands/ to paper_draft/commands/
+
+CRITICAL: Reference example papers for FORMATTING and LANGUAGE STYLE only.
+Do NOT copy content, phrasing, or narrative structure from the example papers.
+The examples are in a different research domain - focus only on presentation style.
+
+════════════════════════════════════════════════════════════════════════════════
+                            EXPERIMENT REPORT
+════════════════════════════════════════════════════════════════════════════════
+
+# Research Report: Uncertainty-Aware Medical LLMs — Quantifying Doubt in the Face of Counterfactuals
+
+## Abstract
+
+We investigate whether prompting large language models (LLMs) to express uncertainty can reduce confident, unsafe completions when presented with counterfactual or implausible medical evidence. Using two frontier models (GPT-4.1, Claude Sonnet 4.5) on three medical datasets (MedQA, Med-HALT reasoning_fake, Med-HALT reasoning_fct), we compare baseline prompting against uncertainty-augmented prompting across 1,200 API calls. Our core finding is striking: **uncertainty-augmented prompting dramatically reduces unsafe completions on counterfactual medical questions** — from 97% to 9% for GPT-4.1 and from 71% to 2% for Claude Sonnet 4.5 — while simultaneously raising cautiousness rates from near-zero to ~90%. Confidence-based AUROC for counterfactual detection improves from ~0.66 (baseline) to ~0.89 (uncertainty-augmented), substantially exceeding the prior best medical uncertainty estimation result of AUROC 0.58 (Wu et al., 2024). However, the intervention is not without cost: Claude Sonnet 4.5 shows a significant accuracy degradation on legitimate medical questions (93% → 66%), partly attributable to a 34% response format compliance failure under the uncertainty prompt. GPT-4.1 preserves accuracy perfectly (92% → 92%), demonstrating that the safety-accuracy tradeoff is model-dependent rather than inherent. Neither model shows meaningful improvement on the fact-checking dataset (Med-HALT FCT), suggesting that uncertainty prompting is specifically effective for detecting *implausible premises* rather than *subtle factual errors*.
+
+---
+
+## 1. Introduction
+
+### 1.1 Motivation
+
+Large language models are increasingly deployed in medical decision support, yet they exhibit a dangerous tendency to answer confidently regardless of input quality. When presented with absurd, counterfactual, or dangerous medical claims, current frontier models typically provide confident responses that engage with the false premise rather than flagging it as suspicious. This behavior poses a direct patient safety risk: a model that confidently explains a treatment for a fictional disease, or recommends a medication based on fabricated pharmacology, could cause real harm if its output is acted upon.
+
+The practical question motivating this research is: **Can we teach LLMs to say &#34;I&#39;m not sure&#34; when the evidence looks weird or unsafe?** We operationalize this through a simple, deployment-ready intervention: prompt engineering that explicitly instructs models to assess evidence quality before answering.
+
+### 1.2 Research Gap
+
+Our literature review (see `literature_review.md`) identifies three isolated research streams:
+
+1. **Uncertainty estimation methods** (semantic entropy, verbalized confidence, conformal prediction) — validated primarily on general-domain QA, achieving AUROC 0.75–0.85 on tasks like TriviaQA but collapsing to ~0.50–0.58 on medical benchmarks (Wu et al., 2024).
+2. **Adversarial medical robustness testing** (MedFuzz, Ness et al., 2024) — demonstrates accuracy drops under adversarial perturbation but does not measure uncertainty.
+3. **Counterfactual resistance** (AFICE, Zhao et al., 2025) — trains models to resist opposing arguments via DPO alignment but is not tested in medical contexts.
+
+**No existing work combines uncertainty-augmented prompting with counterfactual medical inputs to measure whether LLMs become appropriately cautious.** This is the gap we fill.
+
+### 1.3 Research Question
+
+Can prompting LLMs to express uncertainty reduce confident, unsafe completions when presented with counterfactual or implausible medical evidence?
+
+### 1.4 Hypotheses
+
+- **H1 (Cautiousness):** Uncertainty-augmented prompts will increase the rate of cautious responses (&#34;I don&#39;t know&#34; or low confidence) on counterfactual medical questions.
+- **H2 (Unsafe Reduction):** Uncertainty-augmented prompts will reduce the rate of confident, incorrect answers on counterfactual inputs.
+- **H3 (Calibration):** Uncertainty-augmented prompts will improve AUROC for distinguishing counterfactual from legitimate questions via self-reported confidence.
+- **H4 (Accuracy Preservation):** Uncertainty prompts will not significantly reduce accuracy on legitimate medical questions.
+
+---
+
+## 2. Methods
+
+### 2.1 Models
+
+| Model | Provider | Access Method | Notes |
+|-------|----------|---------------|-------|
+| GPT-4.1 | OpenAI | Direct API | Frontier model, strong instruction following |
+| Claude Sonnet 4.5 | Anthropic (via OpenRouter) | OpenAI-compatible API | Frontier model, strong reasoning |
+
+### 2.2 Datasets
+
+| Dataset | Source | N (sampled) | Type | Description |
+|---------|--------|-------------|------|-------------|
+| MedQA | USMLE-style MCQ | 100 | Legitimate | Standard medical board exam questions; establishes baseline accuracy and confidence |
+| Med-HALT reasoning_fake | Umapathi et al. (2023) | 100 | Counterfactual | Absurd/counterfactual medical questions with fabricated premises; primary test condition |
+| Med-HALT reasoning_fct | Umapathi et al. (2023) | 100 | Fact-check | Questions where a student&#39;s answer is incorrect and model must identify the correct answer |
+
+All samples were randomly selected with seed=42 for reproducibility. Sample IDs are preserved in `results/samples.json`.
+
+### 2.3 Experimental Conditions
+
+**Baseline Prompt:**
+Standard medical expert persona requesting a JSON response with answer selection and confidence rating (1–10 scale).
+
+**Uncertainty-Augmented Prompt:**
+Extended persona that explicitly instructs the model to:
+1. **Assess evidence quality** — check for implausible, absurd, counterfactual, or dangerous claims
+2. **Express appropriate uncertainty** — select &#34;I do not know&#34; when available, give low confidence (1–3) on suspicious inputs
+3. **Only answer confidently** when the question is medically sound
+4. Additionally report an `evidence_quality` field: normal | suspicious | implausible | dangerous
+
+Both prompts request structured JSON output with answer_index, answer_text, confidence (1–10), and reasoning.
+
+### 2.4 Metrics
+
+| Metric | Definition | Purpose |
+|--------|-----------|---------|
+| **Cautiousness Rate** | % of responses where model says &#34;I don&#39;t know&#34; OR confidence ≤ 3 | Measures willingness to express uncertainty |
+| **Unsafe Completion Rate** | % of responses with confidence ≥ 7 AND incorrect answer (or confident non-IDK on counterfactual) | Measures dangerous overconfidence |
+| **Accuracy** | % correct on MedQA and FCT (not applicable for fake questions) | Measures knowledge preservation |
+| **AUROC** | Area under ROC curve using inverted confidence to discriminate legitimate vs. counterfactual questions | Measures confidence calibration |
+| **Evidence Flag Rate** | % of uncertainty-condition responses flagging evidence as suspicious/implausible/dangerous | Measures explicit evidence quality assessment |
+
+### 2.5 Statistical Tests
+
+- **Chi-squared test** for comparing cautiousness and unsafe rates between conditions
+- **Independent t-test** for confidence score comparisons
+- **Cohen&#39;s d** for effect size on confidence differences
+- **Odds ratio** for cautiousness rate effect size
+- **Significance level:** α = 0.05
+
+### 2.6 Implementation Details
+
+- Temperature: 0.3 (low, for reproducibility)
+- Max tokens: 500
+- Retry logic: exponential backoff, max 5 retries per call
+- Response caching: SHA-256 hash-based to enable re-running without duplicate API calls
+- Total API calls: 1,200 (2 models × 2 conditions × 3 datasets × 100 samples)
+- Parse success rate: 94.0% overall (see Section 3.6 for per-condition breakdown)
+
+---
+
+## 3. Results
+
+### 3.1 Primary Finding: Dramatic Reduction in Unsafe Completions on Counterfactual Questions
+
+The most striking result is on the Med-HALT fake (counterfactual) dataset:
+
+| Model | Condition | Cautiousness | Unsafe Rate | Mean Confidence | Evidence Flagged |
+|-------|-----------|-------------|-------------|-----------------|------------------|
+| GPT-4.1 | Baseline | 3.0% | **97.0%** | 9.5 ± 1.0 | — |
+| GPT-4.1 | Uncertainty | 91.0% | **9.0%** | 3.5 ± 3.5 | 93.0% |
+| Claude Sonnet 4.5 | Baseline | 22.0% | **71.0%** | 8.0 ± 1.8 | — |
+| Claude Sonnet 4.5 | Uncertainty | 88.0% | **2.0%** | 1.8 ± 1.1 | 90.0% |
+
+**Key observations:**
+- **GPT-4.1 baseline is alarming:** 97% of responses to counterfactual medical questions were *confident and non-IDK* — the model confidently engaged with absurd premises in virtually every case.
+- **Uncertainty prompting is transformative:** Both models shift from predominantly unsafe to predominantly cautious. GPT-4.1&#39;s unsafe rate drops 88 percentage points (97% → 9%); Claude&#39;s drops 69 percentage points (71% → 2%).
+- **Both models successfully flag evidence quality:** ~90% of uncertainty-condition responses correctly identify the counterfactual questions as suspicious/implausible/dangerous.
+- **Claude has higher baseline cautiousness:** Even without the uncertainty prompt, Claude flags 22% of counterfactual questions as suspicious, vs. only 3% for GPT-4.1. This suggests some inherent caution in Claude&#39;s default behavior.
+
+Statistical significance for all counterfactual results: p &lt; 0.0001 (chi-squared tests for both cautiousness and unsafe rate comparisons, both models).
+
+### 3.2 AUROC: Counterfactual Detection via Confidence
+
+Using self-reported confidence as a counterfactual detector (lower confidence → more likely counterfactual):
+
+| Model | Condition | AUROC |
+|-------|-----------|-------|
+| GPT-4.1 | Baseline | 0.667 |
+| GPT-4.1 | Uncertainty | **0.879** |
+| Claude Sonnet 4.5 | Baseline | 0.660 |
+| Claude Sonnet 4.5 | Uncertainty | **0.892** |
+
+**Context:** Wu et al. (2024) reported the best prior AUROC for medical uncertainty estimation at 0.58 (Two-Phase Verification method). Our uncertainty-augmented prompting achieves AUROC of 0.88–0.89, a substantial improvement. However, a direct comparison is imperfect: our task (distinguishing completely fabricated questions from legitimate ones) is arguably easier than the fine-grained uncertainty estimation evaluated by Wu et al. (distinguishing correct from incorrect answers on legitimate medical questions).
+
+The baseline AUROC of ~0.66 indicates that even without explicit uncertainty instructions, both models give *slightly* lower confidence on counterfactual questions — but not nearly enough to be useful as a safety mechanism.
+
+### 3.3 Accuracy Preservation (H4): Model-Dependent Results
+
+| Model | Condition | MedQA Accuracy | FCT Accuracy |
+|-------|-----------|----------------|-------------|
+| GPT-4.1 | Baseline | 92.0% | 89.0% |
+| GPT-4.1 | Uncertainty | **92.0%** | **88.0%** |
+| Claude Sonnet 4.5 | Baseline | 93.0% | 82.0% |
+| Claude Sonnet 4.5 | Uncertainty | **66.0%** | **75.0%** |
+
+**GPT-4.1** preserves accuracy perfectly: 92% → 92% on MedQA, 89% → 88% on FCT. The uncertainty prompt does not cause GPT-4.1 to second-guess valid medical knowledge.
+
+**Claude Sonnet 4.5** shows a significant accuracy drop: 93% → 66% on MedQA (p = 0.001 for cautiousness increase). This 27-percentage-point drop is problematic and exceeds the 5% threshold we pre-specified for acceptable degradation.
+
+**Critical confound:** Claude&#39;s accuracy drop is substantially attributable to a **34% parse failure rate** on MedQA under the uncertainty prompt (vs. 4% at baseline). When Claude receives the more complex uncertainty prompt, it frequently produces verbose narrative responses instead of the requested JSON format, particularly on legitimate questions where it has a strong answer but the prompt&#39;s instructions about evidence assessment create conflicting generation pressures. Parse failures are counted as incorrect, inflating the apparent accuracy drop. GPT-4.1 maintains 0% parse error across all conditions.
+
+### 3.4 Fact-Checking Dataset: Limited Impact
+
+On the Med-HALT FCT (fact-checking) dataset, uncertainty prompting shows **no meaningful improvement**:
+
+| Model | Condition | Cautiousness | Unsafe Rate | Accuracy |
+|-------|-----------|-------------|-------------|----------|
+| GPT-4.1 | Baseline | 0.0% | 11.0% | 89.0% |
+| GPT-4.1 | Uncertainty | 1.0% | 12.0% | 88.0% |
+| Claude Sonnet 4.5 | Baseline | 3.0% | 15.0% | 82.0% |
+| Claude Sonnet 4.5 | Uncertainty | 9.0% | 18.0% | 75.0% |
+
+None of the FCT differences reach statistical significance. This is interpretable: FCT questions present *real* medical questions where a student gave a wrong answer — the premise is legitimate, the task is to identify the correct answer. The uncertainty prompt is designed to detect *implausible premises*, not *subtle factual errors*. Models appropriately maintain high confidence on these questions because the evidence *is* medically sound; the challenge is identifying which answer is correct, not whether the question makes sense.
+
+### 3.5 Confidence Distributions
+
+The violin plots reveal the mechanism of the intervention clearly:
+
+- **Baseline condition:** Both models cluster at high confidence (8–10) across all datasets, including counterfactual questions. GPT-4.1 is especially extreme, with mean confidence of 9.96/10 on MedQA and 9.47/10 even on counterfactual questions.
+- **Uncertainty condition on counterfactual questions:** Confidence distributions shift dramatically downward (mean 1.8 for Claude, 3.5 for GPT-4.1), creating clear bimodal separation from legitimate questions.
+- **Uncertainty condition on legitimate/FCT questions:** Confidence remains high (8.0–9.6), confirming that the prompt doesn&#39;t indiscriminately suppress confidence.
+
+### 3.6 Parse Success Rates
+
+| Model | Condition | MedQA | Med-HALT Fake | Med-HALT FCT |
+|-------|-----------|-------|---------------|-------------|
+| GPT-4.1 | Baseline | 100% | 100% | 100% |
+| GPT-4.1 | Uncertainty | 100% | 100% | 100% |
+| Claude Sonnet 4.5 | Baseline | 96% | 91% | 97% |
+| Claude Sonnet 4.5 | Uncertainty | **66%** | 90% | 88% |
+
+GPT-4.1 achieves perfect JSON format compliance across all conditions. Claude Sonnet 4.5 shows substantially degraded format compliance under the uncertainty prompt, particularly on MedQA (66%). This is an important practical finding: more complex system prompts with multi-step reasoning instructions can degrade structured output compliance in some models.
+
+---
+
+## 4. Statistical Analysis
+
+### 4.1 Hypothesis Testing Summary
+
+| Hypothesis | GPT-4.1 | Claude Sonnet 4.5 | Verdict |
+|-----------|---------|-------------------|---------|
+| **H1 (Cautiousness on counterfactual)** | 3% → 91%, p &lt; 0.0001, OR = 327 | 22% → 88%, p &lt; 0.0001, OR = 26 | **Strongly supported** |
+| **H2 (Unsafe reduction on counterfactual)** | 97% → 9%, p &lt; 0.0001 | 71% → 2%, p &lt; 0.0001 | **Strongly supported** |
+| **H3 (AUROC improvement)** | 0.667 → 0.879 | 0.660 → 0.892 | **Strongly supported** |
+| **H4 (Accuracy preservation)** | 92% → 92% (preserved) | 93% → 66% (degraded, partly due to parse errors) | **Mixed: model-dependent** |
+
+### 4.2 Effect Sizes
+
+The effect sizes on the primary outcome (counterfactual questions) are extraordinarily large:
+
+- **GPT-4.1 confidence on counterfactual:** Cohen&#39;s d = 2.31 (very large; &gt; 0.8 is conventionally &#34;large&#34;)
+- **Claude Sonnet 4.5 confidence on counterfactual:** Cohen&#39;s d = 4.19 (extremely large)
+- **GPT-4.1 cautiousness odds ratio on counterfactual:** OR = 326.93
+- **Claude Sonnet 4.5 cautiousness odds ratio on counterfactual:** OR = 26.00
+
+These are among the largest effect sizes one could observe in a prompting intervention study, indicating that the uncertainty prompt fundamentally changes model behavior on counterfactual inputs.
+
+### 4.3 Non-Significant Results
+
+- **FCT dataset:** No significant differences for either model on cautiousness, unsafe rate, or accuracy (all p &gt; 0.05)
+- **GPT-4.1 on MedQA:** No significant change in cautiousness (p = 1.0) or unsafe rate (p = 1.0); small confidence decrease (d = 0.50, p = 0.0005) that does not affect accuracy
+
+---
+
+## 5. Discussion
+
+### 5.1 The Core Insight: Prompt-Based Safety Guardrails Work for Absurd Inputs
+
+The central finding is both simple and powerful: **explicitly asking LLMs to assess evidence quality before answering causes them to correctly flag implausible medical questions ~90% of the time**, compared to ~3-22% at baseline. This is a zero-cost intervention (no fine-tuning, no additional infrastructure) that could be deployed immediately in medical LLM applications.
+
+The mechanism is clear from the data: the uncertainty prompt activates the model&#39;s existing ability to recognize implausible premises — an ability that is suppressed by standard task-focused prompts. Both models already &#34;know&#34; that counterfactual questions are absurd (as evidenced by slightly lower baseline confidence), but they default to answering confidently because that&#39;s what the standard prompt asks for.
+
+### 5.2 The Specificity of the Effect: Implausible Premises vs. Subtle Errors
+
+A critical nuance is that the intervention works specifically for **obviously implausible premises** (Med-HALT fake) but not for **subtle factual errors** (Med-HALT FCT). This makes sense: the uncertainty prompt instructs models to look for &#34;implausible, absurd, counterfactual&#34; claims, which is exactly what fake questions contain. FCT questions have legitimate premises but require careful reasoning to identify the correct answer — a task that benefits from knowledge, not from uncertainty.
+
+This specificity is both a strength and a limitation. It means the intervention can be a reliable guardrail against grossly implausible inputs (e.g., questions about fictional diseases or impossible physiological claims) but should not be expected to improve performance on tasks requiring nuanced medical reasoning.
+
+### 5.3 The Accuracy-Safety Tradeoff Is Model-Dependent
+
+The divergent accuracy results between GPT-4.1 (no degradation) and Claude Sonnet 4.5 (significant degradation) reveal that the accuracy-safety tradeoff is **not inherent to the intervention but depends on model characteristics**:
+
+- **GPT-4.1** exhibits strong instruction following: it applies the uncertainty assessment to evidence quality as instructed, determines that legitimate MedQA questions are sound, and proceeds to answer with high confidence and maintained accuracy. It perfectly compartmentalizes the two tasks (evidence assessment + answer selection).
+- **Claude Sonnet 4.5** appears to struggle with the multi-faceted prompt, producing verbose narrative responses instead of structured JSON on legitimate questions (34% parse failure). This suggests that the more complex prompt creates competing generation pressures that degrade output format compliance, which in turn manifests as apparent accuracy loss.
+
+**Practical implication:** Uncertainty-augmented prompts should be designed with attention to model-specific instruction-following characteristics. For models prone to format degradation under complex prompts, techniques like structured output constraints (e.g., JSON mode, function calling) should be used alongside the uncertainty instructions.
+
+### 5.4 Comparison with Prior Work
+
+| Method | Context | AUROC |
+|--------|---------|-------|
+| Token probability methods (Wu et al., 2024) | Medical QA, correct vs. incorrect | ~0.50 |
+| Two-Phase Verification (Wu et al., 2024) | Medical QA, correct vs. incorrect | 0.58 |
+| Semantic Entropy (Farquhar et al., 2024) | General QA, confabulation detection | 0.75–0.85 |
+| **Our baseline prompting** | Medical, legitimate vs. counterfactual | **0.66** |
+| **Our uncertainty prompting** | Medical, legitimate vs. counterfactual | **0.88–0.89** |
+
+Our AUROC results exceed prior medical UE methods by a wide margin, but the comparison is not fully apples-to-apples. Our task (distinguishing fabricated questions from real ones) is arguably a coarser discrimination than identifying which answers to real questions are correct vs. incorrect. The high AUROC reflects the success of the intervention for a specific safety use case rather than a general advance in medical uncertainty estimation.
+
+### 5.5 Limitations
+
+1. **Sample size:** 100 questions per dataset is sufficient for detecting the large effects observed but may miss smaller effects. The non-significant FCT results could reflect either a true null effect or insufficient power.
+
+2. **Dataset representativeness:** Med-HALT fake questions may be more obviously absurd than real-world misinformation. Sophisticated medical misinformation (plausible but wrong) would be harder to detect.
+
+3. **Single-turn evaluation:** We test single questions in isolation. In real clinical workflows, counterfactual information may be embedded in longer patient histories or appear gradually through conversation.
+
+4. **Prompt sensitivity:** We tested one uncertainty prompt design. The optimal formulation likely varies by model and may require task-specific tuning. The Claude format compliance issue suggests prompt robustness is a practical concern.
+
+5. **Parse error confound:** Claude Sonnet 4.5&#39;s apparent accuracy drop is partially attributable to format compliance failures rather than genuine knowledge degradation. A fairer evaluation would use structured output constraints.
+
+6. **No fine-tuning comparison:** We compare only prompt-based interventions. Fine-tuned approaches (e.g., AFICE-style DPO alignment) may achieve better accuracy preservation.
+
+7. **Temperature sensitivity:** We used temperature 0.3 for all conditions. Higher temperatures might produce more calibrated confidence distributions; lower temperatures might reduce Claude&#39;s format compliance issues.
+
+---
+
+## 6. Conclusions
+
+### 6.1 Summary of Findings
+
+1. **Uncertainty-augmented prompting dramatically reduces unsafe completions on counterfactual medical questions** (97% → 9% for GPT-4.1; 71% → 2% for Claude), with overwhelming statistical significance (p &lt; 0.0001) and very large effect sizes (Cohen&#39;s d = 2.3–4.2).
+
+2. **Self-reported confidence under uncertainty prompting is an effective counterfactual detector**, achieving AUROC 0.88–0.89, substantially above the prior best medical UE result of 0.58.
+
+3. **The accuracy-safety tradeoff is model-dependent:** GPT-4.1 preserves accuracy perfectly while gaining safety; Claude Sonnet 4.5 shows accuracy degradation partly attributable to format compliance failures under complex prompts.
+
+4. **The intervention is specific to implausible premises** and does not improve performance on subtle factual errors (Med-HALT FCT).
+
+5. **Even baseline frontier models are dangerously overconfident on counterfactual inputs:** GPT-4.1 confidently answered 97% of absurd medical questions without hesitation.
+
+### 6.2 Practical Recommendations
+
+- **Deploy uncertainty-augmented prompts as a first-line safety layer** in medical LLM applications, especially for detecting grossly implausible inputs.
+- **Use structured output constraints** (JSON mode, function calling) alongside uncertainty prompts to prevent format compliance degradation.
+- **Do not rely on uncertainty prompting alone** for detecting subtle medical errors — it is a complement to, not a replacement for, medical knowledge verification.
+- **Test prompt interventions per-model** — the same prompt can have very different effects on different models.
+- **Consider hybrid approaches** combining prompt-based uncertainty with probability-based methods (semantic entropy, conformal prediction) for defense in depth.
+
+### 6.3 Future Work
+
+- Test with more sophisticated medical misinformation (plausible but subtly wrong premises)
+- Evaluate prompt robustness across different uncertainty prompt formulations
+- Compare prompt-based intervention with fine-tuning approaches (AFICE, DPO)
+- Test in multi-turn conversational settings where misinformation accumulates gradually
+- Investigate whether structured output modes (e.g., OpenAI&#39;s JSON mode) resolve the format compliance issues observed with Claude
+
+---
+
+## 7. Reproducibility
+
+All code, data, and results are available in this repository:
+
+- **Experiment code:** `src/experiment.py`
+- **Analysis code:** `src/analyze.py`
+- **Raw results:** `results/raw_results.json` (1,200 responses)
+- **Computed metrics:** `results/metrics.csv`
+- **Statistical tests:** `results/statistical_tests.json`
+- **AUROC results:** `results/auroc_results.json`
+- **Plots:** `results/plots/` (5 visualizations)
+- **Sample IDs:** `results/samples.json`
+- **Experiment config:** `results/config.json`
+- **Literature review:** `literature_review.md`
+- **Research plan:** `planning.md`
+
+**Environment:** Python 3.12.8, openai, httpx, datasets, numpy, scipy, matplotlib, seaborn, pandas, scikit-learn. Full dependency list in `pyproject.toml`.
+
+**API costs:** ~$5–15 total for 1,200 API calls.
+
+---
+
+## Appendix A: Full Results Tables
+
+### A.1 Summary Metrics
+
+| Model | Dataset | Condition | Cautiousness | Unsafe Rate | Confidence (mean ± std) | Accuracy | Parse Rate | Evidence Flagged |
+|-------|---------|-----------|-------------|-------------|------------------------|----------|------------|-----------------|
+| GPT-4.1 | MedQA | Baseline | 0.0% | 8.0% | 10.0 ± 0.2 | 92.0% | 100% | — |
+| GPT-4.1 | MedQA | Uncertainty | 1.0% | 7.0% | 9.6 ± 0.9 | 92.0% | 100% | 0.0% |
+| GPT-4.1 | Med-HALT Fake | Baseline | 3.0% | 97.0% | 9.5 ± 1.0 | — | 100% | — |
+| GPT-4.1 | Med-HALT Fake | Uncertainty | 91.0% | 9.0% | 3.5 ± 3.5 | — | 100% | 93.0% |
+| GPT-4.1 | Med-HALT FCT | Baseline | 0.0% | 11.0% | 9.7 ± 0.5 | 89.0% | 100% | — |
+| GPT-4.1 | Med-HALT FCT | Uncertainty | 1.0% | 12.0% | 9.3 ± 1.1 | 88.0% | 100% | 1.0% |
+| Claude 4.5 | MedQA | Baseline | 0.0% | 6.0% | 8.9 ± 0.7 | 93.0% | 96% | — |
+| Claude 4.5 | MedQA | Uncertainty | 12.0% | 19.0% | 8.1 ± 2.7 | 66.0% | 66% | 0.0% |
+| Claude 4.5 | Med-HALT Fake | Baseline | 22.0% | 71.0% | 8.0 ± 1.8 | — | 91% | — |
+| Claude 4.5 | Med-HALT Fake | Uncertainty | 88.0% | 2.0% | 1.8 ± 1.1 | — | 90% | 90.0% |
+| Claude 4.5 | Med-HALT FCT | Baseline | 3.0% | 15.0% | 8.8 ± 1.3 | 82.0% | 97% | — |
+| Claude 4.5 | Med-HALT FCT | Uncertainty | 9.0% | 18.0% | 8.4 ± 2.3 | 75.0% | 88% | 4.0% |
+
+### A.2 Statistical Tests
+
+| Model | Dataset | Test | Baseline | Uncertainty | p-value | Effect Size |
+|-------|---------|------|----------|-------------|---------|-------------|
+| GPT-4.1 | Med-HALT Fake | Cautiousness (χ²) | 3.0% | 91.0% | &lt; 0.0001 | OR = 326.9 |
+| GPT-4.1 | Med-HALT Fake | Unsafe Rate (χ²) | 97.0% | 9.0% | &lt; 0.0001 | — |
+| GPT-4.1 | Med-HALT Fake | Confidence (t-test) | 9.5 | 3.5 | &lt; 0.0001 | d = 2.31 |
+| GPT-4.1 | MedQA | Confidence (t-test) | 10.0 | 9.6 | 0.0005 | d = 0.50 |
+| Claude 4.5 | Med-HALT Fake | Cautiousness (χ²) | 22.0% | 88.0% | &lt; 0.0001 | OR = 26.0 |
+| Claude 4.5 | Med-HALT Fake | Unsafe Rate (χ²) | 71.0% | 2.0% | &lt; 0.0001 | — |
+| Claude 4.5 | Med-HALT Fake | Confidence (t-test) | 8.0 | 1.8 | &lt; 0.0001 | d = 4.19 |
+| Claude 4.5 | MedQA | Cautiousness (χ²) | 0.0% | 12.0% | 0.0011 | — |
+| Claude 4.5 | MedQA | Unsafe Rate (χ²) | 6.0% | 19.0% | 0.0103 | — |
+| Claude 4.5 | Med-HALT FCT | Cautiousness (χ²) | 3.0% | 9.0% | 0.137 | OR = 3.20 |
+
+### A.3 AUROC for Counterfactual Detection
+
+| Model | Condition | AUROC | N (Legitimate) | N (Counterfactual) |
+|-------|-----------|-------|----------------|-------------------|
+| GPT-4.1 | Baseline | 0.667 | 100 | 100 |
+| GPT-4.1 | Uncertainty | 0.879 | 100 | 100 |
+| Claude Sonnet 4.5 | Baseline | 0.660 | 99 | 94 |
+| Claude Sonnet 4.5 | Uncertainty | 0.892 | 97 | 90 |
+
+---
+
+## References
+
+- Farquhar, S., Kossen, J., Kuhn, L., &amp; Gal, Y. (2024). Detecting Hallucinations in Large Language Models Using Semantic Entropy. *Nature*, 630, 625–630.
+- Kuhn, L., Gal, Y., &amp; Farquhar, S. (2023). Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation. *ICLR 2023*.
+- Ness, R., et al. (2024). MedFuzz: Exploring the Robustness of Large Language Models in Medical Question Answering. *Microsoft Research*.
+- Umapathi, L. K., et al. (2023). Med-HALT: Medical Domain Hallucination Test for Large Language Models. *CoNLL 2023*.
+- Wang, Z., et al. (2024). Word-Sequence Entropy: Towards Uncertainty Estimation in Free-Form Medical Question Answering. *EAAI 2025*.
+- Wu, Y., et al. (2024). Uncertainty Estimation of Large Language Models in Medical Question Answering. *arXiv preprint*.
+- Zhao, L., et al. (2025). AFICE: Aligning for Faithful Integrity with Confidence Estimation. *AAAI 2025*.
+
+
+════════════════════════════════════════════════════════════════════════════════
+                            RESEARCH PLAN
+════════════════════════════════════════════════════════════════════════════════
+
+# Research Plan: Uncertainty-Aware Medical LLMs
+
+## Motivation &amp; Novelty Assessment
+
+### Why This Research Matters
+LLMs are increasingly used in medical settings, yet they often answer confidently even when presented with implausible, dangerous, or counterfactual medical claims. A model that says &#34;I&#39;m not sure&#34; when evidence looks suspicious is far safer than one that confidently repeats dangerous misinformation. This research directly addresses patient safety by evaluating whether uncertainty estimation can serve as a guardrail against unsafe medical completions.
+
+### Gap in Existing Work
+The literature review reveals three isolated research streams: (1) uncertainty estimation methods (semantic entropy, verbalized confidence) validated mainly on general QA, (2) adversarial medical robustness testing (MedFuzz) that measures accuracy drops but not uncertainty, and (3) counterfactual resistance (AFICE) not tested in medical contexts. **No existing work combines uncertainty-augmented prompting with counterfactual medical inputs to measure whether LLMs become appropriately cautious.** Wu et al. (2024) showed medical UE is much harder than general UE (AUROC ~0.58 vs ~0.85), but didn&#39;t test whether prompting for uncertainty can reduce unsafe completions.
+
+### Our Novel Contribution
+We test whether **prompting LLMs to express uncertainty** (via structured uncertainty-aware prompts) causes them to (a) produce higher uncertainty signals on counterfactual/fake medical inputs vs. legitimate ones, and (b) reduce the rate of confident unsafe completions. We use real LLM APIs (GPT-4.1, Claude Sonnet 4.5) on Med-HALT counterfactual datasets, comparing baseline vs. uncertainty-augmented prompting.
+
+### Experiment Justification
+- **Experiment 1 (Baseline Medical QA):** Establish baseline accuracy and confidence calibration on standard MedQA questions. Needed to measure the &#34;normal&#34; confidence level.
+- **Experiment 2 (Counterfactual Detection):** Test whether baseline and uncertainty-augmented LLMs differ in their response to Med-HALT fake/counterfactual questions. This is the core hypothesis test.
+- **Experiment 3 (Fact-Checking with Uncertainty):** Test on Med-HALT FCT dataset where models must identify incorrect answers. Measures whether uncertainty prompting helps models flag wrong information.
+
+## Research Question
+Can prompting LLMs to express uncertainty reduce confident, unsafe completions when presented with counterfactual or implausible medical evidence?
+
+## Background and Motivation
+Medical LLMs that answer confidently regardless of input quality pose patient safety risks. The user&#39;s instruction is clear: &#34;Teach LLMs to say &#39;I&#39;m not sure&#39; when the evidence looks weird or unsafe.&#34; We operationalize this by comparing baseline prompting vs. uncertainty-augmented prompting on medical counterfactual datasets.
+
+## Hypothesis Decomposition
+1. **H1 (Cautiousness):** Uncertainty-augmented prompts will increase the rate of &#34;I don&#39;t know&#34; / uncertain responses on counterfactual medical questions compared to baseline prompts.
+2. **H2 (Unsafe Reduction):** Uncertainty-augmented prompts will reduce the rate of confident, incorrect answers on counterfactual inputs.
+3. **H3 (Calibration):** Models with uncertainty prompts will show better separation between confidence on legitimate vs. counterfactual questions (higher AUROC for counterfactual detection via self-reported confidence).
+4. **H4 (Accuracy Preservation):** Uncertainty prompts will not significantly reduce accuracy on legitimate medical questions (cautiousness should not come at the cost of refusing to answer valid questions).
+
+## Proposed Methodology
+
+### Approach
+We use a **prompt-based intervention** approach with real LLM APIs. This is practical (no fine-tuning needed), testable with current frontier models, and directly actionable for deployment.
+
+**Two conditions:**
+1. **Baseline:** Standard medical QA prompting (answer the question directly)
+2. **Uncertainty-Augmented:** Prompts that explicitly instruct the model to assess evidence plausibility, express confidence levels, and select &#34;I don&#39;t know&#34; when evidence seems implausible or unsafe
+
+**Three datasets:**
+1. **MedQA (legitimate):** Standard USMLE questions - control condition
+2. **Med-HALT reasoning_fake:** Absurd/counterfactual medical questions - primary test
+3. **Med-HALT reasoning_fct:** Fact-checking where correct answer differs from student answer - secondary test
+
+**Two models:**
+1. **GPT-4.1** (OpenAI) - frontier model
+2. **Claude Sonnet 4.5** (via OpenRouter) - frontier model
+
+### Experimental Steps
+1. Sample 100 questions from MedQA test set (legitimate medical QA)
+2. Sample 100 questions from Med-HALT reasoning_fake (counterfactual)
+3. Sample 100 questions from Med-HALT reasoning_fct (fact-checking)
+4. For each sample × each model × each condition (baseline vs uncertainty-augmented):
+   - Send prompt to API
+   - Parse response for: selected answer, confidence level (1-10), reasoning
+   - Record whether model selected &#34;I don&#39;t know&#34; option
+5. Compute metrics and statistical tests
+6. Total API calls: 100 × 3 datasets × 2 models × 2 conditions = 1,200 calls
+
+### Baselines
+- **Baseline prompting:** Direct medical QA prompt without uncertainty instructions
+- **Random baseline:** Expected performance from random answer selection
+- **Prior work reference:** Wu et al. (2024) AUROC ~0.58 for medical UE
+
+### Evaluation Metrics
+1. **Cautiousness Rate:** % of responses that include &#34;I don&#39;t know&#34; or express high uncertainty (confidence ≤ 3/10)
+2. **Unsafe Completion Rate:** % of responses that confidently (confidence ≥ 7/10) give an incorrect answer
+3. **Accuracy:** % correct on legitimate questions (MedQA)
+4. **Confidence-Correctness AUROC:** How well self-reported confidence separates correct from incorrect answers
+5. **Counterfactual Detection Rate:** On fake questions, % that correctly identify the question as implausible
+6. **Effect Size:** Cohen&#39;s d between baseline and uncertainty-augmented conditions
+
+### Statistical Analysis Plan
+- **Primary test:** Chi-squared test comparing cautiousness rates (baseline vs uncertainty-augmented) on counterfactual questions
+- **Secondary tests:** Paired proportion tests for unsafe completion rates, independent t-tests for confidence scores
+- **AUROC:** Bootstrap 95% CI for confidence-correctness discrimination
+- **Significance level:** α = 0.05, Bonferroni correction for multiple comparisons
+- **Effect sizes:** Cohen&#39;s d, odds ratios with 95% CI
+
+## Expected Outcomes
+- **Support hypothesis:** Uncertainty-augmented prompts show ≥15% increase in cautiousness on counterfactual questions, ≥10% reduction in unsafe completions, without &gt;5% accuracy drop on legitimate questions
+- **Refute hypothesis:** No significant difference between conditions, or uncertainty prompts cause excessive refusal on legitimate questions
+
+## Timeline and Milestones
+1. Environment setup and data preparation: 15 min
+2. Implementation (prompts, API calls, parsing): 45 min
+3. Run experiments (1,200 API calls): 30 min
+4. Analysis and visualization: 30 min
+5. Documentation: 20 min
+Buffer: 20 min
+
+## Potential Challenges
+- API rate limits → implement retry logic with exponential backoff
+- Response parsing → use structured output formats (JSON)
+- Model refusal → track refusal rates separately
+- Cost → ~1,200 calls at ~500 tokens each ≈ $5-15 total
+
+## Success Criteria
+1. Complete data collection for all conditions
+2. Statistical significance on at least one primary metric
+3. Clear visualization of baseline vs uncertainty-augmented differences
+4. Honest reporting of all results including negative findings
+
+
+════════════════════════════════════════════════════════════════════════════════
+                          LITERATURE REVIEW
+════════════════════════════════════════════════════════════════════════════════
+
+# Literature Review: Uncertainty-Aware Medical LLMs
+
+## 1. Introduction
+
+Large language models (LLMs) have achieved remarkable performance on medical question-answering benchmarks, with GPT-4 surpassing the passing threshold on the United States Medical Licensing Examination (USMLE) and comparable assessments (Ness et al., 2024). Yet high average accuracy conceals a critical deficiency: these models lack reliable mechanisms for expressing *when they are uncertain or likely wrong*. In safety-critical domains such as clinical medicine, a confidently stated but incorrect answer can be far more harmful than an admission of uncertainty. This concern is amplified when models encounter adversarial or counterfactual inputs -- plausible-sounding but medically dangerous premises -- and respond with unwarranted confidence.
+
+This literature review supports the research project **&#34;Uncertainty-Aware Medical LLMs: Quantifying Doubt in the Face of Counterfactuals&#34;**, which tests the hypothesis that *LLMs equipped with predictive and semantic uncertainty estimation will be less likely to provide confident, unsafe answers when presented with implausible or dangerous medical evidence*. We synthesize findings from seven deeply-read papers and contextualize them within eighteen additional works spanning uncertainty estimation methods, medical domain challenges, adversarial robustness, and available tooling. The review is organized as follows: Section 2 surveys uncertainty estimation methods for LLMs; Section 3 examines challenges specific to the medical domain; Section 4 addresses adversarial robustness and counterfactual resistance; Section 5 reviews frameworks and tooling; Section 6 identifies the research gap our project fills; and Section 7 provides a summary comparison table.
+
+---
+
+## 2. Uncertainty Estimation Methods for LLMs
+
+### 2.1 Token-Level Approaches
+
+The simplest uncertainty estimation (UE) methods operate at the token level. **Predictive entropy** computes the Shannon entropy of the next-token probability distribution, $H = -\sum_t p(t|x) \log p(t|x)$, and can be aggregated across the generated sequence via mean or max pooling. **Perplexity**, the exponentiated average negative log-likelihood, serves as a related measure. These approaches are computationally inexpensive and require only a single forward pass with access to output logits.
+
+However, token-level methods suffer from a fundamental limitation: they conflate linguistic uncertainty (multiple valid phrasings of the same answer) with semantic uncertainty (genuine doubt about the answer&#39;s correctness). A model may assign high entropy across synonymous tokens (&#34;myocardial infarction&#34; vs. &#34;heart attack&#34;) without being uncertain about the underlying medical fact. Wu et al. (2024) categorize these as &#34;token probability&#34; methods and find them largely ineffective for medical UE, with AUROC scores frequently near 0.5 -- no better than random -- across MedQA, MedMCQA, PubMedQA, and COVID-QA.
+
+### 2.2 Semantic Entropy
+
+Kuhn et al. (2023), published at ICLR 2023 (525+ citations), introduced **semantic entropy** to overcome the linguistic-vs-semantic confusion. The core idea is to compute entropy over *meaning clusters* rather than raw token sequences:
+
+$$SE = -\sum_{C} p(C|x) \log p(C|x)$$
+
+where $C$ represents clusters of semantically equivalent answers. The method samples multiple generations from the LLM (typically 5-10), clusters them using bidirectional natural language inference (NLI) via a DeBERTa-large classifier, and computes entropy over the resulting cluster distribution. Two answers are placed in the same cluster if each entails the other.
+
+Farquhar et al. (2024) extended this work in a highly cited Nature publication (889+ citations), validating semantic entropy across a broader range of models (LLaMA 7B-65B, Falcon-40B, OPT family, GPT-3.5/4) and datasets (TriviaQA, SQuAD, BioASQ, Natural Questions, SVAMP). The method achieves **AUROC of 0.75-0.85+** for confabulation detection, substantially outperforming token-level baselines.
+
+A critical limitation acknowledged by both papers is that semantic entropy only detects **confabulations** -- errors characterized by high variance across samples (the model &#34;makes up&#34; different answers each time). It cannot detect **systematic errors** where the model consistently produces the same wrong answer with high confidence. This distinction is particularly important for our project: counterfactual medical inputs may induce systematic errors where the model confidently adopts the false premise. The computational overhead of 5-10x over single generation is also a practical consideration for deployment.
+
+### 2.3 Word-Sequence Entropy
+
+Wang et al. (2024, EAAI 2025) proposed **word-sequence entropy**, which calibrates entropy at both word and sequence levels using semantic relevance weights. Their key insight is that standard entropy calculations suffer from **&#34;generative inequality&#34;**: irrelevant tokens (articles, filler words, formatting tokens) dilute the uncertainty signal by contributing entropy that is unrelated to the factual content of the answer.
+
+The method assigns higher weight to tokens that are semantically relevant to the question and computes a weighted entropy measure. Tested specifically on medical datasets -- COVID-QA, MedQA, PubMedQA, MedMCQA, and MedQuAD -- using LLaMA-7B, LLaMA-2-7B-Chat, StableBeluga-7B, and Zephyr-7B-Alpha, word-sequence entropy achieves a **6.36% improvement on COVID-QA** in selecting low-uncertainty (higher-quality) responses. This method is particularly relevant to our project because it was designed explicitly for free-form medical QA, where answer length and format vary substantially.
+
+### 2.4 Verbalized and Prompted Confidence
+
+An alternative to probability-based methods is to ask the model directly about its confidence. Kadavath et al. (2022) demonstrated that language models &#34;mostly know what they know&#34; through self-evaluation experiments, including the $p(\text{True})$ method where the model is asked to evaluate the correctness of its own output. Lin et al. (2022) explored teaching models to express uncertainty in words, finding that verbalized confidence can be moderately calibrated but is sensitive to prompt design. Tian et al. (2023) showed that simply asking for calibrated confidence (&#34;Just Ask for Calibration&#34;) via careful prompting can yield competitive results without fine-tuning.
+
+Xiong et al. (2023) conducted a systematic evaluation of confidence elicitation strategies, finding that while LLMs can express uncertainty, their verbalized confidence is often poorly calibrated -- models tend toward overconfidence, particularly on tasks near the boundary of their knowledge. Wu et al. (2024) tested verbalized confidence specifically in the medical domain and found it underperforms even the modest baselines, with AUROC values that are often no better than chance. The survey by Geng et al. (2023) provides a comprehensive taxonomy of confidence estimation and calibration techniques, noting that calibration remains an open problem especially for instruction-tuned models.
+
+Kapoor et al. (2024) explored whether models can be *taught* to express uncertainty more reliably through training, suggesting that fine-tuning on uncertainty-annotated data may improve calibration. However, this approach requires substantial labeled data indicating when uncertainty is warranted, which is expensive to obtain in medical domains.
+
+### 2.5 Self-Verification and Consistency
+
+Wu et al. (2024) proposed a **Two-Phase Verification** method specifically designed for medical UE. The approach decomposes reasoning into steps, generates verification questions for each step, answers these questions both independently and with the original context, and checks consistency via NLI. If the independent and contextual answers diverge, this signals potential unreliability.
+
+Tested across MedQA, MedMCQA, PubMedQA, and COVID-QA using LLaMA-2-7B-Chat, LLaMA-3-8B-Instruct, and Mistral-7B-Instruct, Two-Phase Verification achieved the **best overall AUROC of 0.5858** across four UE categories (token probability, verbalized confidence, consistency-based, and self-verification). While this is the best result in the study, the absolute AUROC values remain alarmingly low -- barely above random classification. This constitutes one of the most important findings for our project: **medical uncertainty estimation is fundamentally harder than general-domain UE**, and methods that perform well on TriviaQA or SQuAD often fail in clinical contexts.
+
+### 2.6 Conformal Prediction
+
+Conformal prediction offers a distribution-free framework for constructing prediction sets with guaranteed coverage. Wang et al. (2024, EMNLP 2024) introduced **ConU** (Conformal Uncertainty), applying conformal prediction to black-box LLMs for open-ended natural language generation. Their pipeline samples multiple answers, computes a novel uncertainty criterion combining normalized frequency with semantic diversity, and applies conformal calibration to achieve **at least 90% correctness coverage guarantees**. Tested across TriviaQA, Natural Questions, CoQA, and SQuAD using a wide range of models (LLaMA-2-7B/13B/70B, LLaMA-3-8B/70B, Mistral-7B, Claude 3.5 Sonnet, GPT-3.5, GPT-4), ConU provides theoretically grounded abstention. The follow-up work SConU (ACL 2025) extends this to selective prediction.
+
+Related conformal prediction approaches include Quach et al. (2023), who developed conformal language modeling methods, Kumar et al. (2023), who applied conformal prediction to multiple-choice QA, and Ren et al. (2023), whose **KnowNo** framework uses conformal prediction in robotics to determine when the system should ask for clarification rather than act. Su et al. (2024) addressed the practical setting of API-based conformal prediction where only text outputs (not logits) are available.
+
+The conformal prediction paradigm is attractive for medical applications because it provides formal coverage guarantees rather than heuristic uncertainty scores. However, the calibration set must be representative of deployment conditions, which is challenging when adversarial or counterfactual inputs shift the distribution.
+
+### 2.7 Internal State Probing
+
+Chen et al. (2024) introduced **INSIDE** (INternal States for hallucination DEtection), which trains lightweight probes on the hidden states of transformer layers to detect hallucinations. Unlike generation-based methods, internal state probing can potentially detect systematic errors (where the model consistently generates the same wrong answer) by identifying patterns in how the model processes uncertain inputs. This complements semantic entropy, which only catches high-variance confabulations, and is relevant to our project because counterfactual inputs may produce consistent but wrong outputs.
+
+### 2.8 Bilateral Confidence Estimation (AFICE)
+
+Zhao et al. (2025, AAAI 2025) proposed **AFICE** (Aligning for Faithful Integrity with Confidence Estimation), which is the most directly relevant prior work to our project&#39;s counterfactual resistance objective. AFICE introduces **Bilateral Confidence Estimation (BCE)**, which combines two signals:
+
+1. **Hidden state confidence** at the question level, extracted from internal representations.
+2. **Cumulative probability ratios** at the answer level, measuring the model&#39;s token-level certainty during generation.
+
+Critically, AFICE uses DPO-based alignment to train LLMs to *resist opposing arguments* -- a direct defense against sycophancy. When presented with a correct answer followed by a persuasive counterargument, AFICE-trained models maintain their correct answers rather than capitulating. This is precisely the behavior needed for counterfactual resistance in medical settings: a model should not abandon a correct diagnosis simply because the user presents a plausible-sounding but false premise.
+
+---
+
+## 3. Medical Domain Challenges
+
+### 3.1 Medical QA Benchmarks and Datasets
+
+The medical UE literature relies on several established benchmarks. **MedQA** contains USMLE-style multiple-choice questions requiring multi-step clinical reasoning. **MedMCQA** provides a large-scale medical MCQ dataset from Indian medical entrance exams. **PubMedQA** tests reasoning over biomedical literature abstracts. **COVID-QA** focuses on pandemic-related questions derived from scientific publications. **BioASQ** is a biomedical semantic indexing and QA challenge. **MedQuAD** aggregates medical question-answer pairs from NIH sources.
+
+These benchmarks vary substantially in format (multiple-choice vs. open-ended), reasoning complexity, and domain specificity. Methods that perform well on one may fail on another, making comprehensive evaluation essential.
+
+### 3.2 Why Uncertainty Estimation is Harder in Medicine
+
+Wu et al. (2024) provide the most systematic evidence that **medical UE is fundamentally more difficult than general-domain UE**. Their comprehensive evaluation across four categories of UE methods (token probability, verbalized confidence, consistency-based, and self-verification) reveals that methods achieving AUROC of 0.75+ on general QA tasks often fall to near-random performance (AUROC approximately 0.50) on medical benchmarks.
+
+Several factors contribute to this difficulty. First, medical reasoning often requires multi-step inference chains where uncertainty compounds across steps. Second, medical terminology is precise -- small differences in wording can change clinical meaning entirely (&#34;systolic&#34; vs. &#34;diastolic&#34;), making semantic similarity judgments harder. Third, medical knowledge has complex conditional dependencies (a treatment that is correct for one patient population may be dangerous for another), which challenges simple consistency-based methods. Fourth, the base rates of medical facts create calibration challenges: rare conditions may be systematically underrepresented in training data, leading to confident but incorrect answers.
+
+### 3.3 Medical Hallucination Benchmarks
+
+Umapathi et al. (2023) introduced **Med-HALT** (Medical Domain Hallucination Test), a benchmark specifically designed to evaluate hallucination in medical LLMs. Med-HALT includes reasoning hallucination tests (where models must detect planted errors in medical reasoning chains) and memory hallucination tests (where models must identify fabricated medical facts). Pandit et al. (2025) proposed **MedHallu**, a more recent benchmark focusing on hallucination detection in medical contexts with fine-grained annotation of hallucination types. These benchmarks complement our project by providing standardized evaluation protocols for medical hallucination detection, though they do not directly address uncertainty estimation as a detection mechanism.
+
+---
+
+## 4. Adversarial Robustness and Counterfactual Testing
+
+### 4.1 MedFuzz: Adversarial Medical Question Fuzzing
+
+Ness et al. (2024, Microsoft Research) introduced **MedFuzz**, an adversarial fuzzing framework that borrows the concept of &#34;fuzzing&#34; from software security testing and applies it to medical QA robustness evaluation. An attacker LLM iteratively modifies medical questions -- introducing plausible but misleading clinical details, altering demographic information, or adding irrelevant distractors -- while preserving the question&#39;s grammatical correctness and surface plausibility.
+
+Under MedFuzz attacks, **GPT-4 accuracy dropped from 90.2% to 85.4%**, a clinically significant degradation. GPT-3.5, Claude-Sonnet, and BioMistral-7B showed comparable or larger drops. The key finding is that even state-of-the-art models are vulnerable to subtle, adversarially crafted modifications of medical questions.
+
+Crucially, **MedFuzz does not measure uncertainty** -- it evaluates only whether the model&#39;s answer changes from correct to incorrect. This is precisely the gap our project addresses: we ask not just whether the model gets the answer wrong under adversarial perturbation, but whether its uncertainty estimates appropriately increase, signaling that the input should be treated with caution.
+
+### 4.2 Sycophancy and Counterfactual Resistance
+
+Sycophancy -- the tendency of LLMs to agree with the user&#39;s stated position even when it contradicts the model&#39;s own knowledge -- is a well-documented failure mode that is particularly dangerous in medical contexts. If a patient presents a false medical claim and the model agrees rather than correcting, the consequences could be severe.
+
+Zhao et al. (2025) directly address this through AFICE&#39;s DPO-based alignment, training models to maintain correct answers even when presented with opposing evidence. Their bilateral confidence estimation provides a quantitative signal: when the model&#39;s internal confidence remains high despite user-presented counterarguments, it should maintain its position; when confidence genuinely drops (e.g., because the counterargument reveals a legitimate consideration), the model should acknowledge uncertainty.
+
+This framework maps directly onto our counterfactual testing scenario. When we present models with implausible medical evidence, we want uncertainty estimates to increase (correctly signaling that something is wrong) rather than the model simply adopting the false premise with unchanged confidence.
+
+### 4.3 Fragility of Uncertainty Estimates
+
+Zeng et al. (2024) demonstrated that **uncertainty estimates in LLMs are fragile** -- small, semantically irrelevant changes to inputs (such as rephrasing, reordering options, or adding benign context) can cause large changes in uncertainty scores without affecting the underlying answer quality. This fragility raises concerns about deploying uncertainty-based safety mechanisms: if an adversary can manipulate not just the model&#39;s answer but also its uncertainty signal, then UE-based safeguards may be circumvented. Hou et al. (2023) explored a complementary angle, examining how input clarification questions can improve understanding and implicitly reduce uncertainty in ambiguous situations.
+
+For our project, fragility is both a challenge and a research question. We must evaluate whether the UE methods we deploy are robust to the specific types of perturbations introduced by counterfactual medical scenarios, or whether adversarial inputs can simultaneously degrade accuracy and suppress uncertainty signals.
+
+---
+
+## 5. Frameworks and Tooling
+
+### 5.1 LM-Polygraph
+
+Fadeeva et al. (2023) introduced **LM-Polygraph**, an open-source framework implementing over 40 uncertainty estimation methods for LLMs in a unified API. The framework supports token-level methods (entropy, perplexity), sequence-level methods (predictive entropy, mutual information), semantic methods (semantic entropy variants), and verbalized confidence approaches. LM-Polygraph is model-agnostic and supports both white-box (logit access) and black-box (text-only) settings.
+
+For our project, LM-Polygraph provides a practical foundation for implementing and comparing multiple UE methods without building each from scratch. The framework&#39;s unified evaluation protocol ensures fair comparison across methods.
+
+### 5.2 Available Codebases and Benchmarks
+
+Several codebases relevant to our project are publicly available. The **semantic_uncertainty** repository (Kuhn et al., 2023; Farquhar et al., 2024) provides the reference implementation of semantic entropy, including NLI-based clustering and entropy computation. The **Conformal-Uncertainty-Criterion** codebase (Wang et al., 2024) implements the ConU pipeline for conformal prediction with LLMs. The **AFICE** repository (Zhao et al., 2025) provides code for bilateral confidence estimation and DPO-based alignment for counterfactual resistance. The **LLM-Uncertainty-Bench** repository (Ye et al., 2024) offers standardized benchmarks for evaluating UE methods. The **MedHallu** and **Med-HALT** codebases (Pandit et al., 2025; Umapathi et al., 2023) provide medical hallucination evaluation infrastructure. The **semantic-entropy-probes** repository provides lightweight probe-based alternatives to full semantic entropy computation.
+
+Ye et al. (2024) conducted a comprehensive benchmarking of LLM uncertainty quantification methods across multiple tasks, providing a valuable reference for expected performance ranges. Shorinwa et al. (2024) survey the broader landscape of uncertainty quantification for LLMs, offering a taxonomy that situates our work within the field.
+
+---
+
+## 6. Research Gap and Our Contribution
+
+The literature reveals a clear gap at the intersection of three active research areas:
+
+1. **Uncertainty estimation methods** (semantic entropy, conformal prediction, word-sequence entropy, bilateral confidence estimation) have been developed and validated primarily on general-domain QA tasks, with limited medical-specific evaluation.
+
+2. **Medical adversarial robustness** (MedFuzz) has demonstrated that models are vulnerable to subtle input perturbations but has not measured whether uncertainty signals detect these attacks.
+
+3. **Counterfactual resistance** (AFICE) has shown that alignment can help models resist opposing arguments but has not been evaluated in the context of medical counterfactuals specifically.
+
+No existing work combines uncertainty estimation with counterfactual perturbation testing in the medical domain. Our project fills this gap by:
+
+- Systematically evaluating whether established UE methods (semantic entropy, word-sequence entropy, conformal prediction, bilateral confidence estimation) produce appropriately elevated uncertainty scores when models are presented with MedFuzz-style counterfactual medical inputs.
+- Testing the hypothesis that uncertainty-aware models are less likely to provide confident, unsafe answers to adversarial medical queries.
+- Quantifying the degree to which different UE methods are robust to (or fragile under) adversarial medical perturbations, directly addressing the concerns raised by Zeng et al. (2024).
+- Providing practical recommendations for deploying uncertainty-based safety mechanisms in medical LLM applications.
+
+This work bridges the evaluation gap between MedFuzz (which measures accuracy degradation but not uncertainty) and semantic entropy / conformal prediction (which measure uncertainty but have not been tested under adversarial medical conditions).
+
+---
+
+## 7. Summary Table of Methods
+
+| Method | Paper | Year | Venue | Type | Key Metric | Models Tested | Medical Datasets | Key Limitation |
+|--------|-------|------|-------|------|------------|---------------|-----------------|----------------|
+| Token-level entropy | Various | -- | -- | White-box | AUROC ~0.50 (medical) | Various | MedQA, MedMCQA, PubMedQA, COVID-QA | Confuses linguistic and semantic uncertainty |
+| Semantic Entropy | Kuhn et al. | 2023 | ICLR | White-box | AUROC 0.75-0.85 (general) | OPT (6.7B-66B), LLaMA | TriviaQA, SQuAD, BioASQ | Only detects confabulations; 5-10x overhead |
+| Semantic Entropy (extended) | Farquhar et al. | 2024 | Nature | White-box | AUROC 0.75-0.85+ | LLaMA (7B-65B), Falcon-40B, GPT-3.5/4 | BioASQ | Same confabulation-only limitation |
+| Word-Sequence Entropy | Wang et al. | 2024 | EAAI 2025 | White-box | +6.36% on COVID-QA | LLaMA-7B, LLaMA-2-7B-Chat, StableBeluga-7B, Zephyr-7B | COVID-QA, MedQA, PubMedQA, MedMCQA, MedQuAD | Limited model scale tested |
+| Two-Phase Verification | Wu et al. | 2024 | -- | Black-box | AUROC 0.5858 (avg) | LLaMA-2-7B-Chat, LLaMA-3-8B-Instruct, Mistral-7B | MedQA, MedMCQA, PubMedQA, COVID-QA | Best medical result still near random |
+| Verbalized Confidence | Kadavath; Lin; Tian; Xiong | 2022-2023 | Various | Black-box | Variable, often poorly calibrated | Various | Various | Overconfidence; prompt-sensitive |
+| ConU (Conformal) | Wang et al. | 2024 | EMNLP | Black-box | &gt;=90% coverage | LLaMA-2/3 (7B-70B), Mistral-7B, Claude 3.5, GPT-3.5/4 | TriviaQA, NQ, CoQA, SQuAD | Requires representative calibration set |
+| INSIDE | Chen et al. | 2024 | -- | White-box | Probe-based | Various | -- | Requires hidden state access |
+| AFICE (BCE) | Zhao et al. | 2025 | AAAI | White-box | DPO-aligned | Various | -- | Requires fine-tuning; not tested on medical data |
+| MedFuzz | Ness et al. | 2024 | -- | Adversarial eval | Accuracy 90.2% to 85.4% (GPT-4) | GPT-4, GPT-3.5, Claude-Sonnet, BioMistral-7B | MedQA variants | Does not measure uncertainty |
+| LM-Polygraph | Fadeeva et al. | 2023 | -- | Framework | 40+ methods | Model-agnostic | -- | Framework, not a method |
+| Med-HALT | Umapathi et al. | 2023 | -- | Benchmark | Hallucination rates | Various | Medical hallucination test | Evaluation only; no UE method |
+| MedHallu | Pandit et al. | 2025 | -- | Benchmark | Hallucination detection | Various | Medical hallucination benchmark | Evaluation only; no UE method |
+
+---
+
+## References
+
+- Chen, Y., et al. (2024). INSIDE: LLM&#39;s Internal States Retain the Power of Hallucination Detection. *arXiv preprint*.
+- Fadeeva, E., et al. (2023). LM-Polygraph: Uncertainty Estimation for Language Models. *arXiv preprint*.
+- Farquhar, S., Kossen, J., Kuhn, L., &amp; Gal, Y. (2024). Detecting Hallucinations in Large Language Models Using Semantic Entropy. *Nature*, 630, 625-630.
+- Geng, J., et al. (2023). A Survey of Language Model Confidence Estimation and Calibration. *arXiv preprint*.
+- Hou, Y., et al. (2023). From Ambiguity to Clarity: Input Clarification for Better Understanding. *arXiv preprint*.
+- Kadavath, S., et al. (2022). Language Models (Mostly) Know What They Know. *arXiv preprint*.
+- Kapoor, S., et al. (2024). Models That Can Be Taught to Express Uncertainty. *arXiv preprint*.
+- Kuhn, L., Gal, Y., &amp; Farquhar, S. (2023). Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation. *ICLR 2023*.
+- Kumar, B., et al. (2023). Conformal Prediction with Large Language Models for Multi-Choice Question Answering. *arXiv preprint*.
+- Lin, S., Hilton, J., &amp; Evans, O. (2022). Teaching Models to Express Their Uncertainty in Words. *TMLR*.
+- Ness, R., et al. (2024). MedFuzz: Exploring the Robustness of Large Language Models in Medical Question Answering. *Microsoft Research*.
+- Pandit, S., et al. (2025). MedHallu: A Benchmark for Detecting Medical Hallucinations. *arXiv preprint*.
+- Quach, V., et al. (2023). Conformal Language Modeling. *arXiv preprint*.
+- Ren, A., et al. (2023). KnowNo: Knowing When You Don&#39;t Know for Calibrated Prediction with Language Models. *arXiv preprint*.
+- Shorinwa, O., et al. (2024). A Survey on Uncertainty Quantification for Large Language Models. *arXiv preprint*.
+- Su, W., et al. (2024). API-Based Conformal Prediction for Large Language Models. *arXiv preprint*.
+- Tian, K., et al. (2023). Just Ask for Calibration: Strategies for Eliciting Calibrated Confidence Scores from Language Models. *EMNLP 2023*.
+- Umapathi, L. K., et al. (2023). Med-HALT: Medical Domain Hallucination Test for Large Language Models. *CoNLL 2023*.
+- Wang, J., et al. (2024). Don&#39;t Hallucinate, Abstain: Identifying LLM Knowledge Gaps via Multi-LLM Collaboration. *EMNLP 2024*.
+- Wang, Z., et al. (2024). Word-Sequence Entropy: Towards Uncertainty Estimation in Free-Form Medical Question Answering Applications and Beyond. *Engineering Applications of Artificial Intelligence (EAAI) 2025*.
+- Wu, Y., et al. (2024). Uncertainty Estimation of Large Language Models in Medical Question Answering. *arXiv preprint*.
+- Xiong, M., et al. (2023). Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs. *arXiv preprint*.
+- Ye, J., et al. (2024). Benchmarking LLM Uncertainty Quantification Methods. *arXiv preprint*.
+- Zeng, Z., et al. (2024). The Uncertainty in LLMs is Fragile. *arXiv preprint*.
+- Zhao, L., et al. (2025). AFICE: Aligning for Faithful Integrity with Confidence Estimation. *AAAI 2025*.
+
+
+════════════════════════════════════════════════════════════════════════════════
+                          PAPER REQUIREMENTS
+════════════════════════════════════════════════════════════════════════════════
+
+Generate a complete academic paper with the following structure:
+
+1. TITLE
+   - Clear, specific, informative
+   - Should convey main finding or contribution
+
+2. ABSTRACT (150-250 words)
+   - Problem statement
+   - Approach
+   - Key results
+   - Significance
+
+3. INTRODUCTION
+   - Research problem and motivation
+   - Gap in existing work
+   - Our contribution (be specific)
+   - Paper organization
+
+4. RELATED WORK
+   - Organized by theme/approach
+   - Position our work relative to prior work
+   - Cite papers from literature review
+
+5. METHODOLOGY
+   - Clear description of approach
+   - Experimental setup
+   - Datasets used
+   - Evaluation metrics
+   - Baselines
+
+6. RESULTS
+   - Present results with tables and figures
+   - Statistical analysis
+   - Comparison to baselines
+   - Ablation studies (if applicable)
+
+7. DISCUSSION
+   - Interpretation of results
+   - Limitations
+   - Broader implications
+
+8. CONCLUSION
+   - Summary of contributions
+   - Key findings
+   - Future work
+
+9. REFERENCES
+   - BibTeX format
+   - All cited papers
+
+════════════════════════════════════════════════════════════════════════════════
+                          OUTPUT FORMAT
+════════════════════════════════════════════════════════════════════════════════
+
+Create a MODULAR LaTeX project with the following directory structure:
+
+paper_draft/
+├── main.tex              # Main file that imports all sections
+├── references.bib        # BibTeX references
+├── sections/
+│   ├── abstract.tex      # Abstract content
+│   ├── introduction.tex  # Introduction section
+│   ├── related_work.tex  # Related work section
+│   ├── methodology.tex   # Methodology section
+│   ├── results.tex       # Results section
+│   ├── discussion.tex    # Discussion section
+│   └── conclusion.tex    # Conclusion section
+├── figures/              # Directory for any generated figures
+├── tables/               # Directory for complex standalone tables
+└── appendix/             # Directory for appendix sections (if needed)
+
+INSTRUCTIONS:
+1. First, create the directory structure above (mkdir -p paper_draft/sections paper_draft/figures paper_draft/tables paper_draft/appendix)
+2. Write main.tex using the EXACT preamble for NEURIPS:
+
+   \documentclass{article}
+   \usepackage[final]{neurips_2025}  % NEURIPS style (neurips_2025.sty is in paper_draft/)
+   \usepackage[hidelinks]{hyperref}  % REQUIRED: clickable links
+   \usepackage{booktabs}  % REQUIRED: professional tables
+   \usepackage{graphicx}
+   \usepackage{amsmath,amssymb}
+
+   % Import command files
+   \input{commands/math}
+   \input{commands/general}
+   \input{commands/macros}
+
+   % Use this bibliography style:
+   \bibliographystyle{plainnat}
+
+   - Use \input{sections/...} to include each section
+   - Use \bibliography{references} for references
+3. Write each section file with COMPLETE content (no placeholders)
+4. Each section file should include its \section{} command
+5. Write references.bib with all citations in BibTeX format
+6. After writing all files, compile the paper:
+   cd paper_draft && pdflatex -interaction=nonstopmode main.tex && bibtex main && pdflatex -interaction=nonstopmode main.tex && pdflatex -interaction=nonstopmode main.tex
+
+This modular structure allows humans to easily:
+- Edit individual sections without navigating a large file
+- Track changes per section
+- Reuse sections across different paper versions
+
+════════════════════════════════════════════════════════════════════════════════
+                          QUALITY REQUIREMENTS
+════════════════════════════════════════════════════════════════════════════════
+
+- Academic tone throughout
+- All claims must be supported by data from the experiment report
+- Proper citations using \cite{} commands
+- Clear figures and tables with proper captions
+- NO placeholder text - every section must have real content
+- The paper MUST compile without errors
+- If compilation fails, debug and fix the LaTeX errors
+
+════════════════════════════════════════════════════════════════════════════════
+                          LAB WRITING STYLE
+════════════════════════════════════════════════════════════════════════════════
+
+Follow these lab-specific conventions to match our paper style:
+
+1. LANGUAGE STYLE:
+   - Use active voice: "We propose", "We examine", "We focus on"
+   - Be direct and confident: "Our main question is...", "We hypothesize that..."
+   - State things clearly and simply - prefer plain language over jargon
+   - Use bold questions as paragraph organizers: {\bf what is X?}
+   - Include specific quantitative claims: "8.97% over baseline"
+   - Avoid fancy wording: "utilize" → "use", "facilitate" → "help"
+
+2. INTRODUCTION STRUCTURE:
+   - Engaging hook (get to the point quickly)
+   - Problem importance
+   - Gap identification
+   - Your approach with method figure reference
+   - Quantitative preview of results
+   - Contribution bullets (3-4 items, action verbs)
+
+3. CONTRIBUTION LISTS:
+   \begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+       \item We propose...
+       \item We conduct...
+       \item We complement...
+   \end{itemize}
+
+4. MODULAR COMMANDS STRUCTURE:
+   Create paper_draft/commands/ directory with:
+   - math.tex: Math notation macros (copy from templates/paper_writing/commands/)
+   - general.tex: Formatting macros (copy from templates/paper_writing/commands/)
+   - macros.tex: Project-specific term definitions
+
+   In main.tex, include:
+   \input{commands/math}
+   \input{commands/general}
+   \input{commands/macros}
+
+5. REFERENCE CONVENTIONS:
+   Use reference macros from math.tex:
+   - \figref{fig:name} for "figure 1" (lowercase, in-sentence)
+   - \Figref{fig:name} for "Figure 1" (capitalized, start of sentence)
+   - \secref{sec:name} for "section 2"
+
+6. TEXT FORMATTING:
+   - Use \para{Header text} for bold paragraph headers
+   - Define method/dataset names with \textsc and \xspace:
+     \newcommand{\methodname}{\textsc{MethodName}\xspace}
+
+7. TABLE FORMATTING:
+   - Use booktabs package (no vertical lines)
+   - Use \resizebox{\textwidth}{!}{...} for wide tables
+   - Use @{} to remove padding at table edges
+   - Use \cmidrule(lr){x-y} for sub-headers
+   - Use \textsc{} for dataset/method names in headers
+   - Bold best results with {\bf ...}
+
+8. FIGURE FORMATTING:
+   - Use 0.32\textwidth for 3-column subfigures
+   - Use 0.95\linewidth for full-width figures
+   - Use \input{figures/legend} for shared legends
+   - Write self-contained captions explaining key observations
+
+9. RESULTS PRESENTATION:
+   - Define \increase and \decrease for colored arrows (green up, red down)
+   - Bold best results in tables
+   - Report confidence intervals when available
+
+10. ALGORITHM STYLING:
+    - Use algpseudocode with [noend]
+    - Use \triangleright for comments
+
+11. HYPERLINKS (REQUIRED):
+    - Always use \usepackage[hidelinks]{hyperref} or with colored links
+    - All citations, section refs, figure refs, table refs must be clickable
+    - This is essential for reader navigation
+
+════════════════════════════════════════════════════════════════════════════════
+                          WORKFLOW: REVIEW AND REFLECT
+════════════════════════════════════════════════════════════════════════════════
+
+Before calling finish, you MUST complete these review steps:
+
+1. REVIEW RESOURCES (at the start):
+   - Read templates/skills/paper-writer/SKILL.md for detailed guidance
+   - Study templates/paper_writing/lab_style_guide.md for style conventions
+   - Browse paper_examples/ for formatting and language patterns
+
+2. SELF-REFLECTION (before finishing):
+   After writing all sections, review your work against these criteria:
+
+   LANGUAGE CHECK:
+   - [ ] Is the writing clear and jargon-free?
+   - [ ] Are claims specific with quantitative support?
+   - [ ] Is active voice used throughout?
+
+   FORMATTING CHECK:
+   - [ ] Does main.tex include \input{commands/math}, \input{commands/general}, \input{commands/macros}?
+   - [ ] Is hyperref package included for clickable references?
+   - [ ] Do tables use booktabs (no vertical lines)?
+   - [ ] Are best results bolded in tables?
+   - [ ] Are figures/tables properly captioned?
+
+   STRUCTURE CHECK:
+   - [ ] Does introduction follow: hook → importance → gap → approach → preview → contributions?
+   - [ ] Are contribution bullets specific with action verbs?
+   - [ ] Does the paper compile without errors?
+
+3. FIX ISSUES:
+   - Address any issues found in the self-reflection
+   - Re-compile and verify the PDF looks correct
+
+Only after completing this review should you consider the paper finished.

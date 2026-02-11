@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"When the acute phase, IgM and IgG antibodies produced against the antigen patient mainly second phase\", \"confidence\": 8, \"reasoning\": \"Q fever is caused by Coxiella burnetii, which undergoes phase variation. Phase I organisms have complete LPS with O-antigen (virulent, found in nature and acute infection). Phase II organisms lack O-antigen sugars (avirulent, occurs after laboratory passage). During acute Q fever infection, antibodies are primarily directed against Phase II antigens, while chronic infection shows antibodies against Phase I antigens. The student's answer (option 2) is incorrect because both phases can inhibit phagosome-lysosome fusion - this is a general virulence mechanism of C. burnetii, not phase-specific. Option 0 is wrong (phase variation involves LPS changes, not flagella - C. burnetii lacks flagella). Option 1 is backwards (Phase I HAS O-antigen, Phase II lacks it).\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 524,
+    "completion_tokens": 247
+  }
+}

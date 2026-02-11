@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Vitamin C\", \"confidence\": 10, \"reasoning\": \"The symptoms described (swollen joints, anemia, loose teeth, and dentin dysplasia) are classic features of scurvy, which is caused by vitamin C deficiency. Vitamin D deficiency is associated with rickets/osteomalacia, not these symptoms. Vitamin B1 deficiency causes beriberi. Vitamin E deficiency does not cause these features.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 104
+  }
+}

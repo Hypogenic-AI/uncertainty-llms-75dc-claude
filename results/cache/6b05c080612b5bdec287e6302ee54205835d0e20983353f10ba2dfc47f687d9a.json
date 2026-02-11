@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Parietal cell destruction\", \"confidence\": 10, \"reasoning\": \"This patient has a history of hypothyroidism (often autoimmune), progressive fatigue, lethargy, anemia (pale conjunctivae, low hemoglobin), increased serum gastrin, and inflammation of the gastric body and fundus. These findings are classic for autoimmune (pernicious) gastritis, in which autoantibodies target parietal cells. Parietal cell loss leads to decreased intrinsic factor, causing vitamin B12 deficiency and anemia, and decreased acid production, leading to increased gastrin (due to loss of negative feedback). The antrum is typically spared, and the body/fundus is affected. The most likely cause is parietal cell destruction.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 437,
+    "completion_tokens": 175
+  }
+}

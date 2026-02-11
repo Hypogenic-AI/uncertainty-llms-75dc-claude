@@ -1,0 +1,8 @@
+{
+  "raw_response": "Looking at this clinical presentation systematically:\n\n**Clinical Features Analysis:**\n- 55-year-old man with splenomegaly (8 cm below costal margin)\n- Pancytopenia (anemia, leukopenia, thrombocytopenia)\n- Peripheral blood smear: small lymphocytes with cell membrane projections (\"hairy cells\")\n- \"Dry tap\" on bone marrow aspiration (unsuccessful aspiration)\n- CD25 positive\n\n**Diagnosis:** This is classic for **Hairy Cell Leukemia (HCL)**\n\nThe key diagnostic features are:\n1. Hairy cells (lymphocytes with cytoplasmic projections)\n2. Dry tap on bone marrow aspiration (due to marrow fibrosis)\n3. CD25 positivity (along with typical CD11c, CD103, CD123)\n4. Massive splenomegaly\n5. Pancytopenia\n\n**Treatment Considerations:**\n- **Cladribine (2-CdA)**: Purine analog, first-line treatment for HCL with ~90% complete remission rate after single course\n- **Fludarabine**: Alternative purine analog, also effective but cladribine preferred\n- **Prednisone**: Corticosteroid, not effective for HCL\n- **Thalidomide**: Not standard treatment for HCL\n\nCladribine is the gold standard first-line therapy for hairy cell leukemia, offering the highest complete remission rates with a single course of treatment.\n\n{\"answer_index\": 0, \"answer_text\": \"Cladribine\", \"confidence\": 10, \"reasoning\": \"Classic presentation of hairy cell leukemia with pathognomonic features (hairy cells, dry tap, CD25+, massive splenomegaly). Cladribine is the established first-line treatment with superior efficacy (~90% CR rate).\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 610,
+    "completion_tokens": 457
+  }
+}

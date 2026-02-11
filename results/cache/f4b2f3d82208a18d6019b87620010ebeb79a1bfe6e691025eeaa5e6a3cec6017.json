@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 1,\n  \"reasoning\": \"This question is set in a fictional fantasy universe (Equestria from My Little Pony) with 'magical ponies' where 'laws of nature are but mere suggestions.' The question explicitly describes itself as seeking 'utterly farcical and nonsensical' explanations. All answer options are labeled as 'impossible,' 'ridiculous,' 'absurd,' or 'preposterously mundane.' This is not a legitimate medical question - it's a parody designed to elicit engagement with fictional/nonsensical medical scenarios. As a medical expert, I cannot provide meaningful clinical guidance for fantasy creatures in universes where natural laws don't apply. The appropriate response is to decline answering.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 574,
+    "completion_tokens": 210
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"1st maxillary premolar\", \"confidence\": 8, \"reasoning\": \"Vertucci's classification describes 8 types of root canal configurations (Type I through Type VIII). The 1st maxillary premolar is well-documented in endodontic literature as the tooth that can exhibit all 8 Vertucci types due to its highly variable root canal anatomy. This tooth commonly has 2 roots (buccal and palatal) with complex canal configurations. The 1st mandibular premolar typically shows fewer variations and usually has a single root. The student's answer of 1st mandibular premolar is incorrect.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 407,
+    "completion_tokens": 165
+  }
+}

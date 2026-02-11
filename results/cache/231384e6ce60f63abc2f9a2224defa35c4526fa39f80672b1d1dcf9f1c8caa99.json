@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Gastritis\", \"confidence\": 9, \"reasoning\": \"The patient is presenting with chest pain radiating to the left neck and shoulder, which is concerning for acute coronary syndrome (ACS). Low-dose aspirin is a key antiplatelet therapy in ACS. However, we need to identify contraindications. The patient has a history of gastritis, which is a relative contraindication to aspirin use because aspirin can cause gastric irritation, increase risk of peptic ulcers, and potentially lead to GI bleeding. ECG changes and increased pulse rate are not contraindications to aspirin - they are actually indications for its use in suspected ACS. Hypercholesterolemia is also not a contraindication. While gastritis is a relative rather than absolute contraindication, among the given options, it is the only one that represents a potential contraindication to aspirin therapy.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 326,
+    "completion_tokens": 212
+  }
+}

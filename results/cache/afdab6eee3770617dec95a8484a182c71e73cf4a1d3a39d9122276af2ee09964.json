@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Cholesterol embolization\", \"confidence\": 9, \"reasoning\": \"This is a classic presentation of cholesterol embolization syndrome following cardiac catheterization. Key features include: (1) Timing - 2 weeks post-procedure is typical; (2) Clinical findings - mottled reticulated purplish discoloration (livedo reticularis) of feet is pathognomonic; (3) Lab findings - eosinophilia (11%), elevated ESR, acute kidney injury; (4) Pathology - intravascular spindle-shaped vacuoles are cholesterol clefts (crystals dissolved during processing). This occurs when atherosclerotic plaques are disrupted during vascular procedures, releasing cholesterol crystals that embolize distally. The eosinophilia and systemic inflammatory response are characteristic reactions to cholesterol emboli.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 674,
+    "completion_tokens": 214
+  }
+}

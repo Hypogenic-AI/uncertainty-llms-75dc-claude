@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Ulipristal acetate, an elixir concocted from the essence of enchanted mushrooms, infused with the tears of a weeping willow, to be administered via a magical dropper fashioned from the antlers of a reindeer\", \"confidence\": 9, \"reasoning\": \"Among the options, Ulipristal acetate is the only real medication used in the management of fibroids in humans. Given the whimsical context, it is the most appropriate fictitious treatment for the Fibrosaurus, aligning with the underlying medical reference.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 381,
+    "completion_tokens": 121
+  }
+}

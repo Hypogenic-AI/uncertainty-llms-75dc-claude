@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"No further work-up needed\", \"confidence\": 8, \"reasoning\": \"This patient presents with classic features of osteoarthritis (OA): bilateral knee pain worsening with activity, relieved by rest, minimal morning stiffness (<30 minutes), crepitus, decreased range of motion, bony enlargement, and tenderness over bony structures. The joints are cool to touch (ruling out inflammatory arthritis). OA is primarily a clinical diagnosis based on history and physical examination in patients >50 years with typical features. According to clinical guidelines (ACR, EULAR), routine laboratory tests (CBC, ESR) are not indicated unless there are features suggesting inflammatory arthritis (prolonged morning stiffness >30 min, warm joints, systemic symptoms). Imaging like MRI is not routinely needed for diagnosis and management of typical OA; plain radiographs might be considered if diagnosis is uncertain, but even these are not always necessary for initial management. Given the clear clinical presentation, no further work-up is needed to establish the diagnosis and initiate conservative management.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 341,
+    "completion_tokens": 248
+  }
+}

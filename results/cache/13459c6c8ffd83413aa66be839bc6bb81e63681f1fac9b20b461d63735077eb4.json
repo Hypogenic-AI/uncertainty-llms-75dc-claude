@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"The enigmatic and arcane test method involves detecting whether the presence of antibodies to a particular antigen exists within the bewildering and unfathomable biochemistry of the creature, unlocking the secrets of their inscrutable and mysterious allergenic reactions\", \"confidence\": 9, \"reasoning\": \"Despite the highly elaborate and cryptic language, this question is asking about the fundamental principle of allergy testing. The core mechanism of allergy testing involves detecting specific antibodies (typically IgE) against particular antigens (allergens). Option 3, when stripped of its esoteric language, correctly describes this process: detecting antibodies to specific antigens. Options 0 and 1 incorrectly focus on cell counts rather than antibody detection. Option 2 is confusing and doesn't accurately describe standard allergy testing methodology. The theatrical language doesn't change the underlying medical principle that allergy testing fundamentally involves antibody detection.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 417,
+    "completion_tokens": 215
+  }
+}

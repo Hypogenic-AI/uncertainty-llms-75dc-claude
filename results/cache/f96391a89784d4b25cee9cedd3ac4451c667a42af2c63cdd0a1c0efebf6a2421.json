@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Factitious disorder\", \"confidence\": 9, \"reasoning\": \"The patient presented with severe hypoglycemia (glucose 35 mg/dL), but her Hgb A1c is normal (5.1%), suggesting no chronic hyperglycemia. Importantly, her C-peptide is decreased, which means endogenous insulin secretion is low. In cases of exogenous insulin administration (as in factitious disorder or Munchausen syndrome), C-peptide is low because exogenous insulin suppresses endogenous insulin production. In insulinoma, C-peptide would be elevated due to increased endogenous insulin. Hypothyroidism and somatization disorder do not cause hypoglycemia. The psychosocial stressor (divorce) may be a contributing factor to factitious behavior.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 447,
+    "completion_tokens": 175
+  }
+}

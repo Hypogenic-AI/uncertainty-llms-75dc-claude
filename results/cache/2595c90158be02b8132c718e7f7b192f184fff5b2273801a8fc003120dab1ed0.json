@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"They inhibit neurons of deep cerebellar nuclei.\", \"confidence\": 10, \"reasoning\": \"Purkinje cells are inhibitory neurons in the cerebellar cortex that release GABA and project to the deep cerebellar nuclei, where they exert inhibitory control. The student's answer is incorrect because Purkinje cells do not excite primary motor cortex neurons.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 92
+  }
+}

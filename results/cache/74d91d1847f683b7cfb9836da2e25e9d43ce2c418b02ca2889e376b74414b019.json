@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Posterior cerebral artery\", \"confidence\": 9, \"reasoning\": \"The patient presents with right homonymous hemianopia with macular sparing, which is a classic presentation of posterior cerebral artery (PCA) occlusion affecting the occipital cortex. The PCA supplies the primary visual cortex (calcarine cortex). Macular sparing occurs because the macula has dual blood supply from both PCA and middle cerebral artery branches. The sudden onset, associated dizziness, and visual field defect localize to the left occipital lobe (causing right visual field loss in both eyes). CT showing no acute process is consistent with early ischemic stroke before changes are visible. This is a straightforward, medically plausible presentation of PCA stroke.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 494,
+    "completion_tokens": 195
+  }
+}

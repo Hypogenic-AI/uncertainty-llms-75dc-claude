@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"A preposterous case of Physiological Antagonism, where the very fabric of reality is twisted and distorted by the unpredictable whims of cyberspace\", \"confidence\": 9, \"reasoning\": \"Physiological antagonism refers to the interaction where two agents act on different receptors or physiological systems and produce opposing effects. The question describes two disparate chemicals acting on distinct receptors with diametrically opposed reactions, which fits the definition of physiological antagonism, albeit described in a fantastical digital setting.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 113
+  }
+}

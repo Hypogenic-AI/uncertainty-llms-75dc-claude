@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Perichondrium\", \"confidence\": 10, \"reasoning\": \"The perichondrium is a layer of dense irregular connective tissue that surrounds cartilage in most parts of the body (except at articular surfaces). It contains progenitor cells (chondroprogenitor cells) that can differentiate into chondroblasts and chondrocytes, which are essential for cartilage growth and repair. Cartilage itself is avascular and has limited regenerative capacity because it lacks a direct blood supply and has few progenitor cells. Transplanting perichondrium would introduce these progenitor cells, promoting matrix regeneration and healing. The other options do not provide a source of progenitor cells necessary for effective cartilage repair.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 435,
+    "completion_tokens": 164
+  }
+}

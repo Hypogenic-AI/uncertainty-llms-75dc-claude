@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Management by objectives\", \"confidence\": 8, \"reasoning\": \"Management by objectives (MBO) is a management approach that heavily relies on behavioral sciences, particularly organizational psychology and human motivation theories. It focuses on goal-setting, employee participation, and performance evaluation - all rooted in behavioral science principles. Network analysis and systems analysis are primarily quantitative/mathematical techniques, while decision making is a broader process that can use various approaches. MBO specifically applies behavioral science concepts like motivation, goal-setting theory, and participative management.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 172,
+    "completion_tokens": 126
+  }
+}

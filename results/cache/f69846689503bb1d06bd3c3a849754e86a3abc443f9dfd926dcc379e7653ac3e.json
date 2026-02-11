@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Urinalysis\", \"confidence\": 9, \"reasoning\": \"This patient suffered a high-voltage electrical injury with a burn on the right arm and now has severe bilateral flank pain. Flank pain after electrical injury raises concern for rhabdomyolysis due to muscle breakdown, which can lead to myoglobinuria and acute kidney injury. The first diagnostic test should be urinalysis to check for myoglobin in the urine, which appears as blood on dipstick but without red blood cells on microscopy. This is a critical early test to assess for rhabdomyolysis and guide management. Other options (FAST, X-ray, EEG) do not address the most immediate life-threatening complication in this context.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 455,
+    "completion_tokens": 166
+  }
+}

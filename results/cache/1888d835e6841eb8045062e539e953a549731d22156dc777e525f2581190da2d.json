@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Heparan sulphate\", \"confidence\": 10, \"reasoning\": \"The glomerular basement membrane (GBM) has a highly specialized structure that is critical for its filtration function. The predominant proteoglycan in the GBM is heparan sulfate proteoglycan, which contributes to the negative charge barrier that is essential for selective filtration in the kidney. This negative charge helps repel negatively charged proteins like albumin. Chondroitin sulfate, keratan sulfate 1, and keratan sulfate 2 are found in other tissues (cartilage, cornea, etc.) but are not the primary proteoglycans in the GBM. The student's answer of chondroitin sulfate is incorrect.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 202,
+    "completion_tokens": 186
+  }
+}

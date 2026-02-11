@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Immediate debridement and empiric IV antibiotics\", \"confidence\": 10, \"reasoning\": \"This patient presents with acute, severe lower extremity pain, fever, tachycardia, hypotension, hypoxia, and a physical exam showing a necrotic, foul-smelling wound with crepitus and pain out of proportion to exam. These are classic signs of necrotizing fasciitis, a rapidly progressive soft tissue infection that is a surgical emergency. The next best step is immediate surgical debridement and empiric broad-spectrum IV antibiotics. Delay in surgical intervention increases mortality. Imaging or biopsy should not delay treatment.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 625,
+    "completion_tokens": 149
+  }
+}

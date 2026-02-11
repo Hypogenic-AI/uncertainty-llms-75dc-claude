@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"25/5 mmHg\", \"confidence\": 10, \"reasoning\": \"Normal right ventricular pressures are typically about 15-30 mmHg systolic and 0-8 mmHg diastolic. Of the options, 25/5 mmHg best matches these normal values. The other values either reflect pulmonary artery pressures (25/10 mmHg), right atrial pressures (10/0 mmHg), or systemic arterial pressures (100/70 mmHg).\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 408,
+    "completion_tokens": 117
+  }
+}

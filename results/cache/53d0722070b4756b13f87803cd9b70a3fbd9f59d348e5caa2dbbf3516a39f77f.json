@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Ovaries\", \"confidence\": 8, \"reasoning\": \"The thyroid gland is lined by simple cuboidal epithelium, which consists of a single layer of cube-shaped cells with large central nuclei. In the female reproductive tract, the ovarian surface (germinal epithelium) is also lined by simple cuboidal epithelium. The vagina and vulva are lined by stratified squamous epithelium, while the fallopian tubes are lined by simple columnar ciliated epithelium. Therefore, the ovaries are the correct answer.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 208,
+    "completion_tokens": 139
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Schizotypal personality disorder\", \"confidence\": 9, \"reasoning\": \"The patient's symptoms\u2014pervasive distrust, suspiciousness, and unjustified doubts about the loyalty or trustworthiness of others\u2014are consistent with paranoid personality disorder, which is a Cluster A personality disorder. Schizotypal personality disorder is also a Cluster A disorder, sharing the cluster with paranoid and schizoid personality disorders. The other options do not belong to Cluster A.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 452,
+    "completion_tokens": 111
+  }
+}

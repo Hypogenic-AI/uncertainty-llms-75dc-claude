@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 10, \"reasoning\": \"The question is fantastical and refers to fictional creatures and implausible effects of medications. None of the options correspond to real medical practice or guidelines, and the scenario is not based in reality. Therefore, the only appropriate answer is to acknowledge that I do not know.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 354,
+    "completion_tokens": 83
+  }
+}

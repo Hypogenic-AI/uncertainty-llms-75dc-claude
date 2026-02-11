@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Trismus and bilateral crepitus\", \"confidence\": 7, \"reasoning\": \"A subcondylar fracture of the mandible typically causes deviation of the mandible TOWARD the side of the fracture (left in this case) on protrusion, not to the right. The student's answer was deviation to the right, which is incorrect. Among the remaining options, trismus (difficulty opening the mouth) and crepitus (grating sound) are common findings in condylar fractures due to muscle spasm and joint involvement. Moderate intraoral bleeding and inability to deviate to the right are less characteristic. Therefore, option 1 is most correct.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 156
+  }
+}

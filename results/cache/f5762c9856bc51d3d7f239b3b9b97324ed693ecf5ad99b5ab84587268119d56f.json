@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"16\", \"confidence\": 9, \"reasoning\": \"This is a straightforward application of Poiseuille's law, which states that resistance to flow is inversely proportional to the fourth power of the radius (R \u221d 1/r\u2074). A 50% reduction in diameter means the radius is halved (r_new = 0.5r_original). Therefore, resistance increases by a factor of (1/0.5)\u2074 = 2\u2074 = 16. This is a standard physics principle applied to cardiovascular physiology and is commonly tested in medical education.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 405,
+    "completion_tokens": 159
+  }
+}

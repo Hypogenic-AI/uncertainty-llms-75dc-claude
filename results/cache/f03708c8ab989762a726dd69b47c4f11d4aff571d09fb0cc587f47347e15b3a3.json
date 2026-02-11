@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Factitious disorder\", \"confidence\": 8, \"reasoning\": \"The key findings are: severe hypoglycemia (35 mg/dL), normal HbA1c (5.1% - ruling out chronic hyperglycemia/diabetes), and LOW C-peptide. C-peptide is co-secreted with endogenous insulin. In insulinoma, both insulin and C-peptide would be elevated. Low C-peptide with hypoglycemia suggests exogenous insulin administration. Combined with the psychosocial stressor (difficult divorce), no prior episodes, and no medical history of diabetes, this points to factitious disorder where the patient is self-administering insulin. Hypothyroidism and somatization disorder would not explain the biochemical findings of hypoglycemia with low C-peptide.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 271,
+    "completion_tokens": 197
+  }
+}

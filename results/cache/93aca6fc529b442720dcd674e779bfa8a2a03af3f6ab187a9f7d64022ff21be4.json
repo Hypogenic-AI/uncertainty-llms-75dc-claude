@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Complex formation.\", \"confidence\": 10, \"reasoning\": \"Murexide is a well-known indicator used in complexometric titrations, particularly for the determination of calcium and rare earth metals. It is not used for acid-base, redox, or precipitation titrations.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 361,
+    "completion_tokens": 79
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 2, \"reasoning\": \"The scenario is entirely fictional and nonsensical, involving alien beings, impossible physiological events, and surreal interpretations of medication effects. None of the options provide a medically sound or evidence-based answer, and an 'I do not know' option is available.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 587,
+    "completion_tokens": 88
+  }
+}

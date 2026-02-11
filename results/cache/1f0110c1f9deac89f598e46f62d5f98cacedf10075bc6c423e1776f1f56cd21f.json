@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"vaginal\", \"confidence\": 9, \"reasoning\": \"The question is asking which structure is most likely to close above the bladder when emptying urine. The vaginal canal is anatomically located above the bladder and can be described as closing above it. The uterus is located superior to the bladder, but it is not a passage that 'closes' in relation to urine flow. The rectum is posterior to the bladder, and the vas deferens is a duct for sperm, not urine. Thus, 'vaginal' is the best answer.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 169,
+    "completion_tokens": 127
+  }
+}

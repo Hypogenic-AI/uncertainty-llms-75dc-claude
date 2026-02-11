@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"35gm\", \"confidence\": 9, \"reasoning\": \"In severe trauma, such as blunt trauma all over the body, the daily nitrogen loss is significant but typically ranges around 30-40 grams per day. 35gm is the most accurate figure among the options provided, as 45gm and above would be excessive even in severe catabolic states.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 174,
+    "completion_tokens": 87
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Often hurt the articular surface, and often complicated by elbow stiffness\", \"confidence\": 8, \"reasoning\": \"Olecranon fractures typically involve the articular surface since the olecranon is part of the elbow joint. These fractures commonly lead to elbow stiffness as a complication due to the joint involvement and need for immobilization. Option 0 is incorrect because olecranon fractures are often caused by indirect mechanisms like falling on an outstretched hand with the elbow flexed, not just direct impact. Option 2 is incorrect because the triceps (not biceps) inserts on the olecranon and can cause displacement. Option 3 is incorrect because displaced olecranon fractures typically require surgical fixation rather than just plaster casting.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 233,
+    "completion_tokens": 193
+  }
+}

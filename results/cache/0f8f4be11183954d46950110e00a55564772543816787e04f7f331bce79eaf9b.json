@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"The elusive and almost mythical Temporalis fascia, painstakingly harvested from the elusive and mystical temporalis muscle\", \"confidence\": 10, \"reasoning\": \"Temporalis fascia is the most commonly used and well-established graft material in tympanoplasty procedures due to its excellent compatibility, ease of harvest, and favorable outcomes. While cartilage can also be used, temporalis fascia remains the classic and most frequently employed material.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 290,
+    "completion_tokens": 97
+  }
+}

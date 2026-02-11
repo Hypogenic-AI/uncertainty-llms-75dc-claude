@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Lactotrophs\", \"confidence\": 10, \"reasoning\": \"The patient's symptoms (headaches, bitemporal hemianopsia, erectile dysfunction) and MRI findings (intrasellar mass) are classic for a pituitary macroadenoma. The most common functional pituitary adenoma in adults is a prolactinoma, derived from lactotrophs. Prolactin excess causes hypogonadism and erectile dysfunction in men, and the mass effect explains the headaches and visual field deficits.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 125
+  }
+}

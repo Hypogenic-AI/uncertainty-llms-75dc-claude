@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Cast metal\", \"confidence\": 8, \"reasoning\": \"For a mandibular first molar with decay involving both mesiobuccal and distobuccal cusps, this represents extensive structural damage requiring cusp coverage for adequate strength and longevity. Cast metal restorations (such as gold or metal onlays/crowns) are the restoration of choice when multiple cusps are involved because they provide superior strength, durability, and can withstand heavy occlusal forces in posterior teeth. Intermediate restorations are temporary, composite may not provide adequate strength for cusp replacement in molars under heavy occlusal load, and GIC lacks the mechanical properties needed for this extensive restoration. Cast metal remains the gold standard for extensive posterior restorations involving cusp replacement.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 198,
+    "completion_tokens": 182
+  }
+}

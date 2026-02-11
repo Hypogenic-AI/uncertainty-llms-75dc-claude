@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"50-100 RPM\", \"confidence\": 9, \"reasoning\": \"Profile instruments, which are nickel-titanium rotary endodontic files, are typically operated at low speeds to reduce the risk of instrument separation and maintain control. The recommended rotation speed is generally 150-350 RPM, but for some systems, especially older or more conservative protocols, 50-100 RPM is advised. Among the options, 50-100 RPM is the most accurate for standard safe operation.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 173,
+    "completion_tokens": 111
+  }
+}

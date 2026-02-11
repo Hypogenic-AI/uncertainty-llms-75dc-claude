@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"They inhibit neurons of deep cerebellar nuclei.\", \"confidence\": 10, \"reasoning\": \"Purkinje cells are the principal output neurons of the cerebellar cortex and their axons project to the deep cerebellar nuclei, where they release GABA and exert an inhibitory effect. They do not directly excite the motor cortex, thalamus, or spinal motoneurons.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 187,
+    "completion_tokens": 92
+  }
+}

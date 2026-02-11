@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"The ATP / ADP relationship.\", \"confidence\": 10, \"reasoning\": \"The mitochondrial electron transport chain (ETC) is primarily regulated by the ATP/ADP ratio through a mechanism called respiratory control. When ATP levels are high (low ADP), the ETC slows down because there is less ADP available for ATP synthase to phosphorylate. Conversely, when ATP is being consumed (high ADP), the ETC speeds up to produce more ATP. This is the primary regulatory mechanism. Acetyl CoA concentration affects the citric acid cycle input but does not directly regulate electron flow through the ETC. CO2 is a product of the citric acid cycle, not a regulator of the ETC. NADPH is produced in other pathways (pentose phosphate pathway) and is not directly involved in ETC regulation.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 197,
+    "completion_tokens": 200
+  }
+}

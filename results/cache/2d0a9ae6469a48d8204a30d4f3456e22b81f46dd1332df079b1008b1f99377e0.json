@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Multiple myeloma (Multiple myeloma)\", \"confidence\": 10, \"reasoning\": \"The patient's presentation of fatigue, elevated creatinine and BUN, absence of hematuria/proteinuria, and positive Bence Jones protein (Siqiong Stormer protein) is classic for multiple myeloma, which can cause renal impairment due to light chain (Bence Jones protein) nephropathy. The other options do not fit the clinical scenario or laboratory findings.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 459,
+    "completion_tokens": 117
+  }
+}

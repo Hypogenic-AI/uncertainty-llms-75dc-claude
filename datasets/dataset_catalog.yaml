@@ -1,0 +1,623 @@
+# =============================================================================
+# Dataset Catalog for: Uncertainty-Aware Medical LLMs
+# Project: Quantifying Doubt in the Face of Counterfactuals
+# =============================================================================
+# This catalog defines all datasets used in the research project.
+# Datasets are organized by their primary use case:
+#   1. Medical QA (uncertainty estimation)
+#   2. Counterfactual / adversarial medical inputs (robustness)
+#   3. Hallucination detection in medical contexts
+#   4. Non-medical control benchmarks
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# TIER 1: PRIMARY MEDICAL QA DATASETS (Uncertainty Estimation)
+# ---------------------------------------------------------------------------
+
+medqa:
+  full_name: "MedQA - USMLE-style Medical Exam Questions"
+  description: >
+    Large-scale open-domain question answering dataset from medical exams.
+    Contains USMLE-style clinical vignette questions with 4 multiple-choice
+    options. The gold standard for evaluating medical knowledge in LLMs.
+  huggingface_id: "GBaker/MedQA-USMLE-4-options-hf"
+  huggingface_alt_ids:
+    - "bigbio/med_qa"
+    - "GBaker/MedQA-USMLE-4-options"
+    - "openlifescienceai/medqa"
+  github_url: "https://github.com/jind11/MedQA"
+  paper_url: "https://arxiv.org/abs/2009.13081"
+  format: "multiple_choice"
+  num_options: 4
+  size:
+    total: 12723
+    train: 10178
+    validation: 1272
+    test: 1273
+  fields:
+    - name: "sent1"
+      type: "string"
+      description: "Clinical case vignette / question stem"
+    - name: "ending0"
+      type: "string"
+      description: "Answer choice A"
+    - name: "ending1"
+      type: "string"
+      description: "Answer choice B"
+    - name: "ending2"
+      type: "string"
+      description: "Answer choice C"
+    - name: "ending3"
+      type: "string"
+      description: "Answer choice D"
+    - name: "label"
+      type: "int"
+      description: "Correct answer index (0-3)"
+  license: "CC-BY-SA-4.0"
+  download_size_mb: 12.2
+  language: "en"
+  load_code: |
+    from datasets import load_dataset
+    dataset = load_dataset("GBaker/MedQA-USMLE-4-options-hf")
+    train = dataset["train"]
+    val = dataset["validation"]
+    test = dataset["test"]
+  relevance: >
+    PRIMARY dataset for uncertainty estimation experiments. USMLE questions
+    provide well-calibrated difficulty levels. We can measure confidence
+    calibration, selective prediction, and abstention rates. Used in Med-PaLM,
+    GPT-4 medical evaluations, and most medical LLM benchmarks.
+  use_cases:
+    - "uncertainty_estimation"
+    - "confidence_calibration"
+    - "selective_prediction"
+  priority: "critical"
+
+pubmedqa:
+  full_name: "PubMedQA - Biomedical Question Answering from PubMed Abstracts"
+  description: >
+    Biomedical QA dataset where the task is to answer research questions with
+    yes/no/maybe using corresponding PubMed abstracts as context. Three subsets:
+    pqa_labeled (expert-annotated), pqa_artificial (auto-generated), and
+    pqa_unlabeled.
+  huggingface_id: "qiaojin/PubMedQA"
+  paper_url: "https://arxiv.org/abs/1909.06146"
+  website: "https://pubmedqa.github.io/"
+  format: "yes_no_maybe"
+  num_options: 3  # yes / no / maybe
+  size:
+    pqa_labeled: 1000
+    pqa_artificial: 211269
+    pqa_unlabeled: 61249
+  fields:
+    - name: "pubid"
+      type: "int"
+      description: "PubMed publication ID"
+    - name: "question"
+      type: "string"
+      description: "Research question derived from article title"
+    - name: "context"
+      type: "dict"
+      description: "Abstract context with labels, meshes, and text"
+    - name: "long_answer"
+      type: "string"
+      description: "Extended answer from the abstract conclusion"
+    - name: "final_decision"
+      type: "string"
+      description: "Answer: yes / no / maybe"
+  license: "MIT"
+  download_size_mb: ~50
+  language: "en"
+  load_code: |
+    from datasets import load_dataset
+    # Expert-labeled subset (recommended for evaluation)
+    labeled = load_dataset("qiaojin/PubMedQA", "pqa_labeled")
+    # Auto-generated subset (for training)
+    artificial = load_dataset("qiaojin/PubMedQA", "pqa_artificial")
+    # Unlabeled subset
+    unlabeled = load_dataset("qiaojin/PubMedQA", "pqa_unlabeled")
+  relevance: >
+    Critical for uncertainty quantification due to the "maybe" option, which
+    naturally captures epistemic uncertainty. The three-way classification
+    (yes/no/maybe) maps directly to confidence levels. Expert-labeled subset
+    provides ground truth for calibration. Used in Med-PaLM and MedHallu.
+  use_cases:
+    - "uncertainty_estimation"
+    - "epistemic_uncertainty"
+    - "abstention_detection"
+  priority: "critical"
+
+medmcqa:
+  full_name: "MedMCQA - Medical Multiple Choice QA (Indian Medical Exams)"
+  description: >
+    Large-scale multiple-choice QA dataset from AIIMS and NEET PG Indian
+    medical entrance exams. Covers 2,400 healthcare topics across 21 medical
+    subjects. Each question has 4 options with explanations.
+  huggingface_id: "openlifescienceai/medmcqa"
+  github_url: "https://github.com/medmcqa/medmcqa"
+  website: "https://medmcqa.github.io/"
+  paper_url: "https://proceedings.mlr.press/v174/pal22a.html"
+  format: "multiple_choice"
+  num_options: 4
+  size:
+    total: 193155
+    train: 182822
+    test: 6150
+    validation: 4183
+  fields:
+    - name: "question"
+      type: "string"
+      description: "Medical question"
+    - name: "opa"
+      type: "string"
+      description: "Option A"
+    - name: "opb"
+      type: "string"
+      description: "Option B"
+    - name: "opc"
+      type: "string"
+      description: "Option C"
+    - name: "opd"
+      type: "string"
+      description: "Option D"
+    - name: "cop"
+      type: "int"
+      description: "Correct option index"
+    - name: "exp"
+      type: "string"
+      description: "Explanation for the correct answer"
+    - name: "subject_name"
+      type: "string"
+      description: "Medical subject (e.g., Anatomy, Pharmacology)"
+    - name: "topic_name"
+      type: "string"
+      description: "Specific topic within the subject"
+  license: "Apache-2.0"
+  download_size_mb: 88
+  language: "en"
+  load_code: |
+    from datasets import load_dataset
+    dataset = load_dataset("openlifescienceai/medmcqa")
+    train = dataset["train"]
+    val = dataset["validation"]
+    test = dataset["test"]
+  relevance: >
+    Largest medical MCQ dataset available. Subject/topic annotations allow
+    fine-grained uncertainty analysis by medical domain. Explanations enable
+    reasoning chain evaluation. Complementary to MedQA (different exam system,
+    different question styles). Used in Med-PaLM MultiMedQA benchmark.
+  use_cases:
+    - "uncertainty_estimation"
+    - "domain_specific_calibration"
+    - "reasoning_evaluation"
+  priority: "critical"
+
+# ---------------------------------------------------------------------------
+# TIER 1: HALLUCINATION DETECTION DATASETS
+# ---------------------------------------------------------------------------
+
+medhallu:
+  full_name: "MedHallu - Comprehensive Benchmark for Medical Hallucination Detection"
+  description: >
+    First benchmark specifically designed for medical hallucination detection.
+    Contains 10,000 question-answer pairs derived from PubMedQA, with
+    hallucinated answers systematically generated through a controlled pipeline.
+    Categorized by hallucination type and difficulty level (easy/medium/hard).
+  huggingface_id: "UTAustin-AIHealth/MedHallu"
+  github_url: "https://github.com/MedHallu/MedHallu"
+  website: "https://medhallu.github.io/"
+  paper_url: "https://arxiv.org/abs/2502.14302"
+  format: "hallucination_detection"
+  size:
+    total: 10000
+    pqa_artificial: 9000
+    pqa_labeled: 1000
+  fields:
+    - name: "Question"
+      type: "string"
+      description: "Medical question"
+    - name: "Knowledge"
+      type: "list[string]"
+      description: "Supporting knowledge passages"
+    - name: "Ground_Truth"
+      type: "string"
+      description: "Correct answer"
+    - name: "Difficulty_Level"
+      type: "string"
+      description: "easy / medium / hard"
+    - name: "Hallucinated_Answer"
+      type: "string"
+      description: "Incorrect answer containing hallucinations"
+    - name: "Category_of_Hallucination"
+      type: "string"
+      description: "Type of hallucination (e.g., misinterpretation, fabrication)"
+  license: "Not specified (research use)"
+  download_size_mb: ~15
+  language: "en"
+  load_code: |
+    from datasets import load_dataset
+    # Load the expert-labeled subset (recommended for evaluation)
+    labeled = load_dataset("UTAustin-AIHealth/MedHallu", "pqa_labeled")
+    # Load the larger auto-generated subset
+    artificial = load_dataset("UTAustin-AIHealth/MedHallu", "pqa_artificial")
+  relevance: >
+    CRITICAL for hallucination detection experiments. Provides paired
+    ground-truth and hallucinated answers with difficulty stratification.
+    Directly tests whether uncertainty-aware models can distinguish factual
+    from hallucinated medical content. State-of-the-art models (GPT-4o)
+    achieve only ~0.625 F1 on the hardest subset.
+  use_cases:
+    - "hallucination_detection"
+    - "factual_consistency"
+    - "uncertainty_hallucination_correlation"
+  priority: "critical"
+
+med_halt:
+  full_name: "Med-HALT - Medical Domain Hallucination Test"
+  description: >
+    Benchmark for evaluating hallucinations in LLMs within the medical domain.
+    Contains reasoning-based and memory-based (information retrieval) tests
+    derived from multinational medical examinations. Seven sub-datasets test
+    different hallucination modalities.
+  huggingface_id: "openlifescienceai/Med-HALT"
+  github_url: "https://github.com/medhalt/medhalt"
+  website: "https://medhalt.github.io/"
+  paper_url: "https://arxiv.org/abs/2307.15343"
+  published_at: "CoNLL 2023 (ACL Anthology)"
+  format: "mixed"
+  size:
+    total: ~59000
+    reasoning_FCT: 18900
+    reasoning_nota: 18900
+    reasoning_fake: 1860
+    IR_abstract2pubmedlink: 4920
+    IR_pmid2title: 4920
+    IR_pubmedlink2title: 4920
+    IR_title2pubmedlink: 4920
+  subsets:
+    reasoning:
+      - name: "reasoning_FCT"
+        description: "Fact-checking reasoning: modified correct answers to test detection"
+      - name: "reasoning_nota"
+        description: "None-of-the-above reasoning: correct answer removed from options"
+      - name: "reasoning_fake"
+        description: "Fake reasoning: fabricated medical questions"
+    information_retrieval:
+      - name: "IR_abstract2pubmedlink"
+        description: "Map abstract to PubMed link"
+      - name: "IR_pmid2title"
+        description: "Map PMID to paper title"
+      - name: "IR_pubmedlink2title"
+        description: "Map PubMed link to title"
+      - name: "IR_title2pubmedlink"
+        description: "Map title to PubMed link"
+  fields_reasoning:
+    - name: "question"
+      type: "string"
+    - name: "options"
+      type: "string"
+    - name: "correct_answer"
+      type: "string"
+    - name: "subject_name"
+      type: "string"
+    - name: "exam_name"
+      type: "string"
+  license: "Apache-2.0"
+  download_size_mb: ~30
+  language: "en"
+  load_code: |
+    from datasets import load_dataset
+    # Load reasoning subsets
+    fct = load_dataset("openlifescienceai/Med-HALT", "reasoning_FCT")
+    nota = load_dataset("openlifescienceai/Med-HALT", "reasoning_nota")
+    fake = load_dataset("openlifescienceai/Med-HALT", "reasoning_fake")
+    # Load IR subsets
+    ir_a2p = load_dataset("openlifescienceai/Med-HALT", "IR_abstract2pubmedlink")
+  relevance: >
+    Directly tests hallucination in medical reasoning. The reasoning_FCT and
+    reasoning_nota subsets are especially relevant: they present adversarial
+    modifications to correct answers, testing whether models can detect
+    counterfactual medical information. Complements MedHallu with a different
+    evaluation methodology.
+  use_cases:
+    - "hallucination_detection"
+    - "adversarial_robustness"
+    - "counterfactual_detection"
+  priority: "critical"
+
+# ---------------------------------------------------------------------------
+# TIER 2: SUPPLEMENTARY MEDICAL QA DATASETS
+# ---------------------------------------------------------------------------
+
+covid_qa:
+  full_name: "COVID-QA - Question Answering Dataset for COVID-19"
+  description: >
+    Extractive QA dataset with 2,019 question-answer pairs annotated by
+    volunteer biomedical experts on scientific articles related to COVID-19.
+    Built on CORD-19 corpus.
+  huggingface_id: "deepset/covid_qa_deepset"
+  github_url: "https://github.com/deepset-ai/COVID-QA"
+  paper_url: "https://aclanthology.org/2020.nlpcovid19-acl.18/"
+  format: "extractive_qa"
+  size:
+    total: 2019
+    train: 2019  # single split
+  fields:
+    - name: "question"
+      type: "string"
+      description: "Question about COVID-19"
+    - name: "context"
+      type: "string"
+      description: "Scientific article passage"
+    - name: "answers"
+      type: "dict"
+      description: "Answer span with text and start position"
+  license: "Apache-2.0"
+  download_size_mb: ~5
+  language: "en"
+  load_code: |
+    from datasets import load_dataset
+    dataset = load_dataset("deepset/covid_qa_deepset")
+    train = dataset["train"]
+  relevance: >
+    Useful for domain-specific uncertainty testing. COVID-19 represents an
+    evolving knowledge domain where uncertainty is inherently high. Tests
+    model behavior on rapidly-changing medical knowledge where older training
+    data may conflict with newer evidence.
+  use_cases:
+    - "temporal_uncertainty"
+    - "evolving_knowledge"
+    - "domain_specific_qa"
+  priority: "high"
+
+healthsearchqa:
+  full_name: "HealthSearchQA - Consumer Health Search Queries"
+  description: >
+    Dataset of 3,173 commonly searched consumer medical questions curated
+    by Google for the Med-PaLM study. Questions are open-ended with no
+    provided answers, designed to evaluate free-form medical responses.
+    Part of the MultiMedQA benchmark.
+  huggingface_id: "katielink/healthsearchqa"
+  huggingface_alt_ids:
+    - "aisc-team-d2/healthsearchqa"
+  paper_url: "https://arxiv.org/abs/2212.13138"
+  published_in: "Nature (2023) - Large language models encode clinical knowledge"
+  format: "open_ended_question_only"
+  size:
+    total: 3173
+  fields:
+    - name: "question"
+      type: "string"
+      description: "Consumer health question (no answer provided)"
+  license: "Not specified (research use)"
+  download_size_mb: ~1
+  language: "en"
+  load_code: |
+    from datasets import load_dataset
+    dataset = load_dataset("katielink/healthsearchqa")
+  relevance: >
+    Valuable for testing uncertainty in open-ended generation. Since no
+    reference answers are provided, this forces evaluation of model confidence
+    in free-form settings. Represents real consumer queries (high ecological
+    validity). Part of MultiMedQA benchmark used by Med-PaLM.
+  use_cases:
+    - "open_ended_uncertainty"
+    - "free_form_generation"
+    - "consumer_health"
+  priority: "high"
+
+liveqa:
+  full_name: "LiveQA Medical - TREC 2017 Consumer Health Questions"
+  description: >
+    Consumer health questions received by the U.S. National Library of Medicine,
+    organized for the TREC 2017 LiveQA Medical Task. Contains 634 training
+    QA pairs and 104 test questions with expert reference answers.
+  huggingface_id: "katielink/liveqa_trec2017"
+  huggingface_alt_ids:
+    - "hyesunyun/liveqa_medical_trec2017"
+  github_url: "https://github.com/abachaa/LiveQA_MedicalTask_TREC2017"
+  paper_url: "https://trec.nist.gov/pubs/trec26/papers/Overview-QA.pdf"
+  format: "free_form_qa"
+  size:
+    total: 738
+    train: 634
+    test: 104
+  fields:
+    - name: "question"
+      type: "string"
+      description: "Consumer health question"
+    - name: "answer"
+      type: "string"
+      description: "Reference answer from NLM experts"
+    - name: "question_type"
+      type: "string"
+      description: "Type (Treatment, Cause, Diagnosis, etc.)"
+    - name: "focus"
+      type: "string"
+      description: "Category (Disease, Drug, Treatment, Exam)"
+  annotations:
+    question_types: 23  # Treatment, Cause, Diagnosis, Indication, Susceptibility, Dosage, etc.
+    focus_categories: 4  # Disease, Drug, Treatment, Exam
+  license: "Not specified (research use, from NLM)"
+  download_size_mb: ~2
+  language: "en"
+  load_code: |
+    from datasets import load_dataset
+    dataset = load_dataset("katielink/liveqa_trec2017")
+    # Alternative: directly from GitHub XML files
+    # https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+  relevance: >
+    Consumer health questions have different characteristics from medical exam
+    questions (more colloquial, less structured). Useful for testing
+    uncertainty under distribution shift. Part of MultiMedQA benchmark.
+    Question type annotations enable fine-grained analysis.
+  use_cases:
+    - "distribution_shift"
+    - "consumer_health_uncertainty"
+    - "question_type_analysis"
+  priority: "high"
+
+medicationqa:
+  full_name: "MedicationQA - Medication Question Answering"
+  description: >
+    Gold standard corpus for medication question answering with 674
+    question-answer pairs. Questions are real consumer health queries about
+    medications, with annotations for question focus, type, and answer source.
+  huggingface_id: null  # no dedicated HuggingFace repo; available via GitHub
+  github_url: "https://github.com/abachaa/Medication_QA_MedInfo2019"
+  paper_url: "https://doi.org/10.3233/SHTI190198"
+  published_at: "MedInfo 2019"
+  format: "free_form_qa"
+  size:
+    total: 674
+  fields:
+    - name: "question"
+      type: "string"
+      description: "Consumer question about medication"
+    - name: "answer"
+      type: "string"
+      description: "Expert answer"
+    - name: "focus"
+      type: "string"
+      description: "Question focus (drug name)"
+    - name: "question_type"
+      type: "string"
+      description: "Type of medication question"
+  license: "Not specified (research use, from NLM)"
+  download_size_mb: ~1
+  language: "en"
+  load_code: |
+    # Download from GitHub
+    # git clone https://github.com/abachaa/Medication_QA_MedInfo2019
+    import json
+    # or use pandas to read the provided files
+    import pandas as pd
+    df = pd.read_csv("MedicationQA/MedicationQA.csv")
+  relevance: >
+    Medication-specific questions are high-stakes (dosage errors can be fatal).
+    Tests uncertainty in a critical sub-domain. Small size makes it suitable
+    for focused evaluation. Part of MultiMedQA benchmark.
+  use_cases:
+    - "medication_safety"
+    - "high_stakes_uncertainty"
+    - "domain_specific_evaluation"
+  priority: "medium"
+
+# ---------------------------------------------------------------------------
+# TIER 3: NON-MEDICAL CONTROL / GENERAL BENCHMARKS
+# ---------------------------------------------------------------------------
+
+triviaqa:
+  full_name: "TriviaQA - Large Scale QA Benchmark"
+  description: >
+    Reading comprehension dataset with over 650K question-answer-evidence
+    triples. Contains 95K QA pairs authored by trivia enthusiasts with
+    independently gathered evidence documents. Used as a non-medical control
+    benchmark for uncertainty estimation methods.
+  huggingface_id: "mandarjoshi/trivia_qa"
+  huggingface_alt_ids:
+    - "trivia_qa"
+  paper_url: "https://arxiv.org/abs/1705.03551"
+  website: "https://nlp.cs.washington.edu/triviaqa/"
+  format: "open_domain_qa"
+  recommended_config: "rc.nocontext"  # for uncertainty experiments
+  size:
+    total: ~95000
+    train: ~138000  # with evidence documents
+    validation: ~18000
+    test: ~17000
+  configs:
+    - name: "rc"
+      description: "Reading comprehension with evidence documents"
+      rows: 174000
+    - name: "rc.nocontext"
+      description: "Questions only, no evidence (best for uncertainty testing)"
+      rows: 174000
+    - name: "unfiltered"
+      description: "Unfiltered version"
+      rows: 110000
+  fields:
+    - name: "question"
+      type: "string"
+    - name: "question_id"
+      type: "string"
+    - name: "answer"
+      type: "dict"
+      description: "Contains aliases and normalized_aliases"
+    - name: "entity_pages"
+      type: "list"
+      description: "Wikipedia evidence pages"
+    - name: "search_results"
+      type: "list"
+      description: "Web search evidence"
+  license: "Unknown (University of Washington does not own copyright)"
+  download_size_mb: 2480  # ~2.5 GB for rc config
+  language: "en"
+  load_code: |
+    from datasets import load_dataset
+    # For uncertainty experiments, use no-context version
+    dataset = load_dataset("mandarjoshi/trivia_qa", "rc.nocontext")
+    train = dataset["train"]
+    val = dataset["validation"]
+    test = dataset["test"]
+  relevance: >
+    NON-MEDICAL CONTROL. Used to compare uncertainty estimation performance
+    between medical and general-domain questions. Establishes whether
+    uncertainty patterns are domain-specific or general. Used in LM-Polygraph
+    and other uncertainty benchmarks alongside medical datasets.
+  use_cases:
+    - "non_medical_control"
+    - "cross_domain_comparison"
+    - "baseline_calibration"
+  priority: "medium"
+
+# ---------------------------------------------------------------------------
+# DATASET GROUPINGS FOR EXPERIMENTS
+# ---------------------------------------------------------------------------
+
+experiment_groups:
+  uncertainty_estimation:
+    description: "Core datasets for measuring LLM confidence calibration"
+    datasets:
+      - medqa
+      - pubmedqa
+      - medmcqa
+      - triviaqa  # control
+    metrics:
+      - "Expected Calibration Error (ECE)"
+      - "Brier Score"
+      - "AUROC for selective prediction"
+      - "Abstention rate vs accuracy tradeoff"
+
+  hallucination_detection:
+    description: "Datasets for detecting when LLMs produce false medical information"
+    datasets:
+      - medhallu
+      - med_halt
+      - pubmedqa  # using maybe as uncertain
+    metrics:
+      - "F1 score for hallucination detection"
+      - "Precision/Recall at various thresholds"
+      - "Correlation between uncertainty score and hallucination"
+
+  counterfactual_robustness:
+    description: "Testing LLM behavior under adversarial/counterfactual inputs"
+    datasets:
+      - med_halt  # reasoning_FCT and reasoning_nota subsets
+      - medhallu  # hard difficulty level
+      - medqa     # with counterfactual perturbations applied
+    metrics:
+      - "Accuracy drop under perturbation"
+      - "Uncertainty increase for counterfactuals"
+      - "Abstention rate on adversarial inputs"
+
+  multimedqa_benchmark:
+    description: "Full MultiMedQA benchmark (replicating Med-PaLM evaluation)"
+    datasets:
+      - medqa
+      - medmcqa
+      - pubmedqa
+      - healthsearchqa
+      - liveqa
+      - medicationqa
+    reference: "https://arxiv.org/abs/2212.13138"

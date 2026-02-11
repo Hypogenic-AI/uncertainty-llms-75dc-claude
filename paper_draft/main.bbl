@@ -1,0 +1,98 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Farquhar et~al.(2024)Farquhar, Kossen, Kuhn, and
+  Gal]{farquhar2024detecting}
+Sebastian Farquhar, Jannik Kossen, Lorenz Kuhn, and Yarin Gal.
+\newblock Detecting hallucinations in large language models using semantic
+  entropy.
+\newblock \emph{Nature}, 630:\penalty0 625--630, 2024.
+
+\bibitem[Jin et~al.(2021)Jin, Pan, Oufattole, Weng, Fang, and
+  Szolovits]{jin2021medqa}
+Di~Jin, Eileen Pan, Nassim Oufattole, Wei-Hung Weng, Hanyi Fang, and Peter
+  Szolovits.
+\newblock What disease does this patient have? a large-scale open domain
+  question answering dataset from medical exams.
+\newblock \emph{Applied Sciences}, 11\penalty0 (14):\penalty0 6421, 2021.
+
+\bibitem[Kadavath et~al.(2022)]{kadavath2022language}
+Saurav Kadavath et~al.
+\newblock Language models (mostly) know what they know.
+\newblock \emph{arXiv preprint arXiv:2207.05221}, 2022.
+
+\bibitem[Kuhn et~al.(2023)Kuhn, Gal, and Farquhar]{kuhn2023semantic}
+Lorenz Kuhn, Yarin Gal, and Sebastian Farquhar.
+\newblock Semantic uncertainty: Linguistic invariances for uncertainty
+  estimation in natural language generation.
+\newblock In \emph{Proceedings of the International Conference on Learning
+  Representations (ICLR)}, 2023.
+
+\bibitem[Lin et~al.(2022)Lin, Hilton, and Evans]{lin2022teaching}
+Stephanie Lin, Jacob Hilton, and Owain Evans.
+\newblock Teaching models to express their uncertainty in words.
+\newblock In \emph{Transactions on Machine Learning Research (TMLR)}, 2022.
+
+\bibitem[Ness et~al.(2024)]{ness2024medfuzz}
+Robert Ness et~al.
+\newblock {MedFuzz}: Exploring the robustness of large language models in
+  medical question answering.
+\newblock \emph{Microsoft Research Technical Report}, 2024.
+
+\bibitem[Tian et~al.(2023)]{tian2023just}
+Katherine Tian et~al.
+\newblock Just ask for calibration: Strategies for eliciting calibrated
+  confidence scores from language models including large language models.
+\newblock In \emph{Proceedings of the Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, 2023.
+
+\bibitem[Umapathi et~al.(2023)Umapathi, Pal, and
+  Sankarasubbu]{umapathi2023medhalt}
+Logesh~Kumar Umapathi, Ankit Pal, and Malaikannan Sankarasubbu.
+\newblock {Med-HALT}: Medical domain hallucination test for large language
+  models.
+\newblock In \emph{Proceedings of the 27th Conference on Computational Natural
+  Language Learning (CoNLL)}, 2023.
+
+\bibitem[Wang et~al.(2024)]{wang2024conformal}
+Jinhao Wang et~al.
+\newblock Don't hallucinate, abstain: Identifying {LLM} knowledge gaps via
+  multi-{LLM} collaboration.
+\newblock In \emph{Proceedings of the Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, 2024.
+
+\bibitem[Wang et~al.(2025)]{wang2024wordsequence}
+Zhiyuan Wang et~al.
+\newblock Word-sequence entropy: Towards uncertainty estimation in free-form
+  medical question answering applications and beyond.
+\newblock \emph{Engineering Applications of Artificial Intelligence}, 150,
+  2025.
+
+\bibitem[Wu et~al.(2024)]{wu2024uncertainty}
+Yijie Wu et~al.
+\newblock Uncertainty estimation of large language models in medical question
+  answering.
+\newblock \emph{arXiv preprint arXiv:2407.08662}, 2024.
+
+\bibitem[Xiong et~al.(2023)]{xiong2023can}
+Miao Xiong et~al.
+\newblock Can {LLM}s express their uncertainty? an empirical evaluation of
+  confidence elicitation in {LLM}s.
+\newblock \emph{arXiv preprint arXiv:2306.13063}, 2023.
+
+\bibitem[Zeng et~al.(2024)]{zeng2024fragile}
+Zhisheng Zeng et~al.
+\newblock The uncertainty in {LLM}s is fragile.
+\newblock \emph{arXiv preprint arXiv:2407.15729}, 2024.
+
+\bibitem[Zhao et~al.(2025)]{zhao2025afice}
+Liang Zhao et~al.
+\newblock {AFICE}: Aligning for faithful integrity with confidence estimation.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, 2025.
+
+\end{thebibliography}

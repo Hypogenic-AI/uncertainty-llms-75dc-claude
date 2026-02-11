@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Admit and start parenteral nutrition\", \"confidence\": 10, \"reasoning\": \"This patient has severe anorexia nervosa, as evidenced by her extremely low weight (BMI < 17), bradycardia, hypotension, electrolyte disturbances (likely from diuretic abuse), and evidence of purging (cheek swelling, hand abrasions). She also has a vertebral compression fracture, likely due to osteoporosis from malnutrition. These are all indications for immediate hospitalization for medical stabilization and nutritional rehabilitation. Outpatient therapy is not appropriate for patients with unstable vital signs or severe complications.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 435,
+    "completion_tokens": 134
+  }
+}

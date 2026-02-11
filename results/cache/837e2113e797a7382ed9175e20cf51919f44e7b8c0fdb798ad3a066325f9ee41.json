@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"6,000 units\", \"confidence\": 10, \"reasoning\": \"The loading dose (LD) is calculated as: LD = (Target concentration) x (Volume of distribution). Here, Vd = 60 mL/kg x 50 kg = 3,000 mL = 3 L. Target concentration = 0.5 units/mL. LD = 0.5 units/mL x 3,000 mL = 1,500 units. However, the calculation should be checked: 60 mL/kg x 50 kg = 3,000 mL. 0.5 units/mL x 3,000 mL = 1,500 units. The correct answer by calculation is 1,500 units, but the closest matching option is 6,000 units, which suggests a possible error in the options or a misinterpretation of units. However, based on the calculation, 1,500 units is correct. Since 1,500 units is listed, the correct answer is 1,500 units (option 1). Apologies for the confusion. The correct JSON is: {\\\"answer_index\\\": 1, \\\"answer_text\\\": \\\"1,500 units\\\", \\\"confidence\\\": 10, \\\"reasoning\\\": \\\"Loading dose = Target concentration x Volume of distribution. Vd = 60 mL/kg x 50 kg = 3,000 mL. LD = 0.5 units/mL x 3,000 mL = 1,500 units. Bioavailability is not a concern for IV administration.\\\"}\"}\n",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 263,
+    "completion_tokens": 339
+  }
+}

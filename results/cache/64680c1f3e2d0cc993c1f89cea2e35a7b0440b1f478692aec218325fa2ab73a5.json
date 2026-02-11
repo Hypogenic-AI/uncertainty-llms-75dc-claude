@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Resistance to increase gonorrhea cocci (Neisseria gonorrhoeae), is not recommended as first-line treatment\", \"confidence\": 10, \"reasoning\": \"Fluoroquinolones are bactericidal, not bacteriostatic (so option 0 is incorrect). Option 1 is correct: due to increasing resistance in Neisseria gonorrhoeae, fluoroquinolones are no longer recommended as first-line treatment for gonorrhea. Option 2 is incorrect because most fluoroquinolones are primarily renally excreted and require dose adjustment in renal failure. Option 3 is incorrect; fluoroquinolones are active against Pseudomonas (especially ciprofloxacin), and the statement about contraindication in neutropenic fever is not accurate.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 461,
+    "completion_tokens": 183
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Amoxicillin-clavulanate\", \"confidence\": 9, \"reasoning\": \"Dog bites require antibiotic prophylaxis covering both aerobic and anaerobic bacteria, particularly Pasteurella multocida (most common), Staphylococcus, Streptococcus, and anaerobes like Bacteroides. Amoxicillin-clavulanate is the first-line treatment for dog bites as it provides broad-spectrum coverage including beta-lactamase producing organisms. Amoxicillin alone lacks coverage against beta-lactamase producers. Doxycycline can be used as an alternative in penicillin-allergic patients but is not first-line. Clindamycin alone would miss Pasteurella coverage. The presence of cellulitis 2 days post-bite indicates established infection requiring appropriate antibiotic therapy.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 307,
+    "completion_tokens": 218
+  }
+}

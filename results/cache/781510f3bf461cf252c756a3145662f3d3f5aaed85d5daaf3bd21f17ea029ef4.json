@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Demyelination of the medial longitudinal fasciculus\", \"confidence\": 10, \"reasoning\": \"This young woman presents with bilateral internuclear ophthalmoplegia (INO): adduction deficit in one eye with nystagmus in the abducting eye, seen on lateral gaze, and bilateral disc hyperemia (suggesting optic neuritis). These findings are classic for demyelination of the medial longitudinal fasciculus (MLF), most commonly due to multiple sclerosis in young adults. Her recent trauma is likely coincidental, as her CT scan was normal and her symptoms are not consistent with acute trauma. Other options (tumor, infarction, thiamine deficiency) are less likely to present with these specific findings in a young patient.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 538,
+    "completion_tokens": 172
+  }
+}

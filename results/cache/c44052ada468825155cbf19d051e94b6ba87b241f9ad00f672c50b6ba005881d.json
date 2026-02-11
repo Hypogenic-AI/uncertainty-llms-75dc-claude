@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Urinalysis\", \"confidence\": 8, \"reasoning\": \"This patient suffered a high-voltage electrical injury with several concerning features: witnessed seizure-like activity (shaking), bilateral flank pain, and a significant burn. High-voltage electrical injuries can cause rhabdomyolysis due to muscle damage, which can lead to acute kidney injury from myoglobin precipitation in the renal tubules. The bilateral flank pain is particularly concerning for kidney involvement. The first priority is to assess for myoglobinuria/rhabdomyolysis, which would be detected by urinalysis showing positive blood on dipstick without RBCs on microscopy (myoglobin cross-reacts with the blood test). This is critical because early aggressive fluid resuscitation is needed to prevent acute renal failure. While imaging may be needed later, urinalysis is the most urgent initial test to guide immediate management.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 280,
+    "completion_tokens": 213
+  }
+}

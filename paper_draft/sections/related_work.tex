@@ -1,0 +1,29 @@
+\section{Related Work}
+\label{sec:related_work}
+
+We organize prior work along three axes: uncertainty estimation methods for LLMs, medical-domain challenges, and adversarial robustness with counterfactual resistance.
+
+\para{Uncertainty estimation for LLMs.}
+Token-level methods such as predictive entropy and perplexity are computationally efficient but conflate linguistic uncertainty (multiple valid phrasings) with semantic uncertainty (genuine doubt about correctness)~\citep{wu2024uncertainty}.
+\citet{kuhn2023semantic} introduced semantic entropy to address this confusion by computing entropy over meaning clusters identified via natural language inference, achieving AUROC 0.75--0.85 on general QA tasks.
+\citet{farquhar2024detecting} extended this work to a broader range of models in a Nature publication, confirming strong confabulation detection but noting that the method cannot detect systematic errors where the model consistently produces the same wrong answer.
+\citet{wang2024wordsequence} proposed word-sequence entropy with semantic relevance weighting, improving performance on medical free-form QA.
+Verbalized confidence---asking models to self-report certainty---shows promise but tends toward overconfidence and is sensitive to prompt design~\citep{kadavath2022language,lin2022teaching,tian2023just,xiong2023can}.
+\citet{wang2024conformal} applied conformal prediction to LLMs for coverage-guaranteed abstention.
+Unlike these methods, which require multiple samples, probe training, or logit access, \uaprompt operates in a single forward pass with any black-box API.
+
+\para{Uncertainty estimation in the medical domain.}
+\citet{wu2024uncertainty} provide the most comprehensive evaluation of uncertainty estimation methods in medicine, testing token probability, verbalized confidence, consistency-based, and self-verification approaches across MedQA, MedMCQA, PubMedQA, and COVID-QA.
+Their key finding is that methods achieving AUROC 0.75+ on general-domain QA collapse to near-random performance (${\sim}0.50$) on medical benchmarks, with the best method (Two-Phase Verification) achieving only 0.58.
+This collapse reflects the difficulty of medical reasoning, where multi-step inference, precise terminology, and conditional dependencies challenge uncertainty estimation.
+\citet{umapathi2023medhalt} introduced the \medhalt benchmark for evaluating hallucination in medical LLMs, providing both reasoning hallucination tests with counterfactual premises and fact-checking tasks.
+Our work builds directly on this benchmark but uses it to evaluate prompt-based uncertainty interventions rather than measuring raw hallucination rates.
+
+\para{Adversarial robustness and counterfactual resistance.}
+\citet{ness2024medfuzz} introduced MedFuzz, an adversarial fuzzing framework that reduces GPT-4 accuracy from 90.2\% to 85.4\% through subtle perturbations to medical questions.
+Critically, MedFuzz measures only accuracy degradation, not whether models' uncertainty signals appropriately increase---the gap our work addresses.
+\citet{zhao2025afice} proposed AFICE with bilateral confidence estimation and DPO-based alignment to resist opposing arguments, demonstrating that models can be trained to maintain correct answers despite persuasive counterarguments.
+However, AFICE requires fine-tuning and has not been evaluated in medical contexts.
+Our work is complementary: we demonstrate that a zero-cost prompting intervention can achieve large reductions in unsafe completions without any model modification, though fine-tuning approaches like AFICE may provide additional benefits.
+\citet{zeng2024fragile} showed that uncertainty estimates in LLMs are fragile to semantically irrelevant input changes, raising concerns about deploying uncertainty-based safety mechanisms.
+Our results provide a counterpoint: for detecting grossly implausible premises, prompt-based uncertainty proves highly effective despite potential fragility on more subtle perturbations.

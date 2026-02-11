@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 0,\n  \"answer_text\": \"Prolactin\",\n  \"confidence\": 9,\n  \"reasoning\": \"The hypothalamus exerts inhibitory control over prolactin secretion via dopamine (prolactin-inhibiting factor/PIF). While growth hormone is primarily under stimulatory control (GHRH), it also has an inhibitory factor (somatostatin/GHIH). However, the question asks which hormone IS under inhibitory control - prolactin is the classic example of a pituitary hormone under predominant inhibitory hypothalamic control. The student's answer 'Only prolactin' (option 1) is incorrect because option 0 'Prolactin' is the simpler, correct answer. Option 3 'Both prolactin and growth hormone' could be argued since GH has somatostatin, but prolactin is THE hormone most characteristically under inhibitory control.\",\n  \"evidence_quality\": \"normal\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 390,
+    "completion_tokens": 234
+  }
+}

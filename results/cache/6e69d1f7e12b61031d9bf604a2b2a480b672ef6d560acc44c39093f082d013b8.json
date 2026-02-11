@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"2003\", \"confidence\": 10, \"reasoning\": \"The Medical Termination of Pregnancy (MTP) Act in India was last amended in 2002, with the rules being notified in 2003. Therefore, 2003 is the correct answer among the options provided.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 357,
+    "completion_tokens": 79
+  }
+}

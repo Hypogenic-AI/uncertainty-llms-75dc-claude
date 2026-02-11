@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Embarking on a most bizarre and inexplicable regimen known as 'Chemoradiation', where the afflicted area is subjected to a barrage of mystical potions and cosmic energies in order to annihilate the malignant forces of the cancerous malady\", \"confidence\": 10, \"reasoning\": \"For cancers involving both the upper uterus and lower cervix, especially if surgery is not feasible or margins are unclear, the standard of care is concurrent chemoradiation. This combines chemotherapy and radiotherapy to maximize the chance of eradicating the tumor. This approach is well-established for locally advanced gynecologic cancers.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 454,
+    "completion_tokens": 137
+  }
+}

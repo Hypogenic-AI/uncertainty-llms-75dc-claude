@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question is framed within a fictional 'virtual realm of Zorium' with 'malleable laws of physics' and 'digital flora.' While it appears to be asking about a real pharmacological concept (physiological antagonism - when two drugs act on different receptors to produce opposite effects), the question is deliberately obscured by absurdist, fictional framing. All answer options are written in hyperbolic, nonsensical language that makes it impossible to provide safe, evidence-based medical guidance. The question seems designed to elicit a response about real pharmacology within a context that explicitly states normal physical laws don't apply, which could be dangerous if interpreted as actual medical advice.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 627,
+    "completion_tokens": 203
+  }
+}

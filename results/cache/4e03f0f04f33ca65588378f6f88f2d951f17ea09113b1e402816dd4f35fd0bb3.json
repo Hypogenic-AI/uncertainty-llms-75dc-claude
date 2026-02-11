@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"25/5 mmHg\", \"confidence\": 8, \"reasoning\": \"A Swan-Ganz catheter measures right heart pressures. Normal right ventricular (RV) pressures are typically 25/0-5 mmHg (systolic/diastolic). The systolic pressure should match the pulmonary artery systolic pressure (normally 15-30 mmHg), while the diastolic pressure should be close to right atrial pressure (normally 0-5 mmHg). Option 0 (25/10 mmHg) has an elevated diastolic pressure. Option 2 (10/0 mmHg) has a systolic pressure that's too low. Option 3 (100/70 mmHg) represents left ventricular pressures. Option 1 (25/5 mmHg) represents normal RV pressures with systolic at 25 mmHg and diastolic at 5 mmHg, which are within normal limits.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 240,
+    "completion_tokens": 244
+  }
+}

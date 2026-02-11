@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Primary prevention\", \"confidence\": 9, \"reasoning\": \"The 'Healthy People' initiative by the US Agency for Gonggongweisheng (likely a translation of 'Public Health') in 1979 emphasized 'health promotion,' which is widely regarded as synonymous with 'primary prevention' in public health terminology. The student's answer, 'Four prevention,' is not a standard term in public health.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 375,
+    "completion_tokens": 101
+  }
+}

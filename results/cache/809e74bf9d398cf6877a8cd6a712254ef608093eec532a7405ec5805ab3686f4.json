@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Projection\", \"confidence\": 10, \"reasoning\": \"The man is experiencing his own inappropriate feelings (flirting with female co-workers and doubts about his marriage) but instead of acknowledging these feelings in himself, he attributes them to his wife by accusing her of flirting with the waiter and potentially cheating. This is a classic example of projection - a defense mechanism where one's own unacceptable thoughts, feelings, or impulses are attributed to another person. The other options don't fit: displacement would involve redirecting emotions to a safer target, dissociation involves disconnection from reality/identity, and repression involves unconsciously blocking unwanted thoughts from awareness.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 253,
+    "completion_tokens": 162
+  }
+}

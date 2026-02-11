@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"McCune-Albright syndrome\", \"confidence\": 9, \"reasoning\": \"The clinical presentation includes: (1) red striae and plethoric cheeks suggesting hypercortisolism, (2) irregular brown macules (caf\u00e9-au-lait spots) on the back, (3) precocious puberty (early breast development in a 7-year-old), and (4) decreased serum phosphate. This constellation of findings is classic for McCune-Albright syndrome, which is characterized by the triad of: polyostotic fibrous dysplasia, caf\u00e9-au-lait spots, and autonomous endocrine hyperfunction (commonly precocious puberty and Cushing syndrome). The hypophosphatemia occurs due to renal phosphate wasting from FGF23 excess. While Cushing's disease could explain some features, it doesn't account for the caf\u00e9-au-lait spots or the complete clinical picture. Paget's disease occurs in elderly patients and doesn't fit this presentation.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 253,
+    "completion_tokens": 242
+  }
+}

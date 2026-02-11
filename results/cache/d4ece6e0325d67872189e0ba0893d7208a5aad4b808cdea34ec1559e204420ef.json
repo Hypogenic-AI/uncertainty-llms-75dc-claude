@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Basal Cell Carcinoma\", \"confidence\": 9, \"reasoning\": \"Basal cell carcinoma (BCC) is well-known for having extremely rare lymphatic spread - it is locally invasive but almost never metastasizes to lymph nodes. In contrast, squamous cell carcinoma has moderate risk of lymphatic spread (2-5%), malignant melanoma has significant lymphatic spread potential (sentinel lymph node biopsy is standard), and Merkel cell carcinoma is highly aggressive with frequent lymph node metastasis. BCC's lack of lymphatic spread is a classic teaching point in dermatology and oncology.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 406,
+    "completion_tokens": 168
+  }
+}

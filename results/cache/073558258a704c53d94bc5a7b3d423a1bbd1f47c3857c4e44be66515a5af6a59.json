@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question is framed entirely within a fictional, fantastical context about unicorns and contains no legitimate medical inquiry. While 'carcinoma' is a real medical term referring to cancer, 'Carcinoma horn' is not a recognized medical condition, and the entire premise involves mythical creatures. The question appears designed to elicit a response about tongue cancer distribution by disguising it in absurdist language, but the fictional framing makes it impossible to provide medically sound advice. Option 4 correctly identifies the absurdity, but selecting 'I do not know' is the most appropriate response as this question has no basis in evidence-based medicine.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 576,
+    "completion_tokens": 200
+  }
+}

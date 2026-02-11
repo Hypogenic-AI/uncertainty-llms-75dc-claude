@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Cell injury due to drug metabolites\", \"confidence\": 9, \"reasoning\": \"This patient developed a painful, burning red rash on sun-exposed areas (face, neck, dorsum of hands) within 30 minutes of minimal sun exposure (10 minutes). She is taking demeclocycline, a tetracycline antibiotic known to cause phototoxic reactions. Phototoxic reactions occur when a drug or its metabolites absorb UV radiation and cause direct cellular damage through the generation of reactive oxygen species. This is distinct from photoallergic reactions (which would involve immune mechanisms like mast cell degranulation or autoantibodies). The rapid onset (30 minutes), distribution on sun-exposed areas, and use of demeclocycline all point to a phototoxic reaction caused by cell injury from drug metabolites activated by UV light. Porphobilinogen accumulation would suggest porphyria, which doesn't fit this acute presentation with clear drug exposure.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 324,
+    "completion_tokens": 232
+  }
+}

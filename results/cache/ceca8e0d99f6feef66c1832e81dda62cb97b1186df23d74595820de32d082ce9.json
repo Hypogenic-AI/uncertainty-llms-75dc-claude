@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Streptomycin\", \"confidence\": 10, \"reasoning\": \"This patient presents with acute onset of painful, swollen, and tender inguinal lymph nodes (bubo), fever, and a history of travel to Madagascar, where plague is endemic. The initial painless papules, followed by tender lymphadenopathy and systemic symptoms, are classic for bubonic plague. The identification of gram-negative coccobacilli and a 4-fold rise in anti-F1 titers (specific for Yersinia pestis) confirms the diagnosis. Streptomycin is the drug of choice for plague. Azithromycin is not effective, imipenem is not first-line, and withholding antibiotics would be inappropriate for this life-threatening infection.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 164
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Pancreas\", \"confidence\": 10, \"reasoning\": \"This patient presents with classic features of chronic pancreatitis: 1) Long history of heavy alcohol use (since age 17), 2) Recurrent upper abdominal pain worsening with meals and radiating to the back, 3) Significant weight loss and decreased appetite, 4) Epigastric tenderness on exam, and 5) Most importantly, calcifications on CT scan. Pancreatic calcifications are pathognomonic for chronic pancreatitis and represent calcified protein plugs within pancreatic ducts. The clinical presentation with chronic alcohol abuse, characteristic pain pattern, and CT findings of calcifications definitively point to chronic pancreatitis affecting the pancreas.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 324,
+    "completion_tokens": 183
+  }
+}

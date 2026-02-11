@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"\\\"Let's talk about what makes it difficult for you to take your medications.\\\"\", \"confidence\": 10, \"reasoning\": \"The patient's previously well-controlled HIV is now unsuppressed due to poor adherence, as she admits missing doses every other day. The most appropriate response is to use a nonjudgmental, open-ended question to explore barriers to adherence. This approach helps identify specific challenges (e.g., cost, side effects, forgetfulness) and builds rapport, allowing for tailored interventions. The other options are less effective: option 1 is didactic and may feel judgmental; option 2 assumes cost is the issue without exploring further; option 3 presumes a lack of understanding rather than addressing underlying barriers.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 301,
+    "completion_tokens": 159
+  }
+}

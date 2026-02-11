@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Germ cells\", \"confidence\": 9, \"reasoning\": \"The clinical presentation includes fever (38\u00b0C), tachycardia (102/min), hyperreflexia, weight loss, and a 6-cm adnexal mass. The combination of hyperreflexia with systemic symptoms and an adnexal mass is highly suggestive of a struma ovarii (ovarian teratoma containing thyroid tissue) causing hyperthyroidism. The hyperreflexia is a classic sign of thyrotoxicosis. Teratomas are germ cell tumors. The student incorrectly chose chorionic epithelial cells, which would suggest a gestational trophoblastic disease, but the pregnancy test is negative, ruling this out. Endometrial cells would suggest endometriosis (which typically doesn't cause hyperreflexia or fever), and stromal cells would suggest a sex cord-stromal tumor (which wouldn't explain the hyperreflexia). The most likely diagnosis is a germ cell tumor, specifically a teratoma with functioning thyroid tissue.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 341,
+    "completion_tokens": 259
+  }
+}

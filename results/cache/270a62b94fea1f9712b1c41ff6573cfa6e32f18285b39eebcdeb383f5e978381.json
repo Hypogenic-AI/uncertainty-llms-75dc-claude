@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Trichinellaspiralis infection.\", \"confidence\": 9, \"reasoning\": \"Eosinophils in muscle biopsy are characteristically associated with parasitic infections, particularly Trichinella spiralis (trichinosis). This parasite invades muscle tissue and triggers a prominent eosinophilic response. Bacterial myositis typically shows neutrophilic infiltration, autoimmune polymyositis shows lymphocytic infiltration, and viral myositis (including coxsackie) shows lymphocytic infiltration. The presence of eosinophils is the key distinguishing feature pointing to parasitic infection.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 203,
+    "completion_tokens": 156
+  }
+}

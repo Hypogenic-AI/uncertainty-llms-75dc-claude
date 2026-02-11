@@ -1,0 +1,32 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Frontier large language models now surpass the passing threshold on medical licensing examinations~\citep{ness2024medfuzz} and are increasingly integrated into clinical decision support.
+Yet these models share a dangerous default behavior: they answer confidently regardless of whether the input is medically sound.
+When presented with questions built on fabricated diseases, impossible pharmacology, or absurd physiological claims, current models engage with the false premise and produce fluent, confident---but unsafe---responses.
+In our experiments, \gptmodel confidently answered 97\% of counterfactual medical questions without hesitation under standard prompting.
+
+This overconfidence is not merely an academic concern.
+A model that explains treatment options for a fictional disease, or recommends dosing based on fabricated pharmacokinetics, poses a direct patient safety risk if its output influences clinical decisions.
+The practical question motivating this work is straightforward: {\bf can we teach LLMs to say ``I'm not sure'' when the medical evidence looks implausible or unsafe?}
+
+Three research streams address parts of this problem in isolation.
+First, uncertainty estimation methods---including semantic entropy~\citep{kuhn2023semantic,farquhar2024detecting}, verbalized confidence~\citep{tian2023just,xiong2023can}, and conformal prediction~\citep{wang2024conformal}---achieve AUROC 0.75--0.85 on general-domain QA but collapse to near-random performance on medical benchmarks~\citep{wu2024uncertainty}.
+Second, adversarial robustness testing such as MedFuzz~\citep{ness2024medfuzz} demonstrates accuracy drops under perturbation but does not measure uncertainty.
+Third, counterfactual resistance methods such as AFICE~\citep{zhao2025afice} train models to resist opposing arguments through DPO alignment but have not been tested in medical contexts.
+{\bf No existing work combines uncertainty-augmented prompting with counterfactual medical inputs to measure whether LLMs become appropriately cautious.}
+
+We fill this gap with a simple, deployment-ready intervention: \uaprompt, a prompt-engineering approach that explicitly instructs models to assess evidence quality before answering and to express uncertainty when premises appear implausible.
+We evaluate \uaprompt on two frontier models across three medical datasets, comparing baseline prompting against uncertainty-augmented prompting across 1,200 API calls.
+
+Our results are striking.
+\uaprompt reduces unsafe completions on counterfactual medical questions from 97\% to 9\% for \gptmodel and from 71\% to 2\% for \claudemodel, with overwhelming statistical significance ($p < 0.0001$) and very large effect sizes (Cohen's $d = 2.3\text{--}4.2$).
+Self-reported confidence under \uaprompt achieves AUROC 0.88--0.89 for distinguishing counterfactual from legitimate questions, substantially exceeding the prior best medical uncertainty estimation result of 0.58~\citep{wu2024uncertainty}.
+\gptmodel preserves accuracy perfectly (92\% $\to$ 92\%), demonstrating that the safety--accuracy tradeoff is model-dependent rather than inherent.
+
+In summary, our main contributions are:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item We propose \uaprompt, a zero-cost prompting intervention that instructs LLMs to assess evidence quality before answering medical questions, reducing unsafe completions on counterfactual inputs by 88 and 69 percentage points for \gptmodel and \claudemodel, respectively.
+    \item We conduct the first systematic evaluation combining uncertainty-augmented prompting with counterfactual medical inputs, testing 1,200 model responses across three medical datasets and two frontier models.
+    \item We demonstrate that self-reported confidence under \uaprompt achieves AUROC 0.88--0.89 for counterfactual detection, substantially exceeding prior medical uncertainty estimation methods, and that the accuracy--safety tradeoff depends on model-specific instruction-following characteristics rather than being inherent to the intervention.
+\end{itemize}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"2.4mU IM / week for 3 weeks\", \"confidence\": 9, \"reasoning\": \"For latent syphilis (both early and late latent) with normal CSF findings, the standard CDC-recommended treatment is benzathine penicillin G 2.4 million units IM weekly for 3 consecutive weeks (total 7.2 million units). The student's answer of 1.2mU is incorrect - this is half the required dose. Early latent syphilis requires only a single 2.4mU dose, but late/unknown duration latent syphilis requires the 3-week regimen at 2.4mU per week.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 464,
+    "completion_tokens": 178
+  }
+}

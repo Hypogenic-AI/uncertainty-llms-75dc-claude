@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Twin block\", \"confidence\": 8, \"reasoning\": \"The question refers to a common orthodontic appliance. Since the student's answer 'Bite block' is marked incorrect, and the other options are all functional appliances, the 'Twin block' is a well-known removable functional appliance used in orthodontics. The other options, Bionator and Activator, are also functional appliances but are different in design and function. The Twin block is distinct in its appearance and function, making it the most likely correct answer.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 355,
+    "completion_tokens": 125
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 1, \"reasoning\": \"The question is set in a fictional scenario with absurd and impossible descriptions of amino acids, none of which correspond to real biochemistry except for arginine, but even that is described with fantastical properties. The premise is nonsensical and not evidence-based.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 522,
+    "completion_tokens": 89
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Their whimsical Parathyroid gland, which is immune to the whims of fate.\", \"confidence\": 9, \"reasoning\": \"Despite the fanciful framing, this question is asking about Autoimmune Polyendocrine Syndrome Type 2 (APS-2), also known as Schmidt's syndrome. APS-2 classically involves: 1) Addison's disease (adrenal insufficiency) - ALWAYS present, 2) Autoimmune thyroid disease (Graves' or Hashimoto's), and 3) Type 1 diabetes mellitus (pancreatic beta cell destruction). The parathyroid gland is NOT typically involved in APS-2 (though it can be affected in APS-1). Therefore, the parathyroid gland is the organ that is exempt from this condition, making option 0 correct.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 300,
+    "completion_tokens": 216
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Demyelination of the medial longitudinal fasciculus\", \"confidence\": 8, \"reasoning\": \"The patient presents with bilateral internuclear ophthalmoplegia (INO), characterized by impaired adduction in one eye with nystagmus in the abducting eye when looking to either side. This is classic for medial longitudinal fasciculus (MLF) dysfunction. The bilateral disc hyperemia suggests optic neuritis. In a young woman with bilateral INO and optic nerve involvement, multiple sclerosis (MS) is the most likely diagnosis, which causes demyelination of the MLF. The recent head trauma is likely coincidental. While Wernicke encephalopathy can cause bilateral INO, it's less likely in a young woman on oral contraceptives without alcohol abuse history. Brainstem infarction and compressive tumors are less likely given the bilateral nature and age of the patient.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 369,
+    "completion_tokens": 218
+  }
+}

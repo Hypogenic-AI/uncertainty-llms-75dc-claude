@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"A preposterous case of Physiological Antagonism, where the very fabric of reality is twisted and distorted by the unpredictable whims of cyberspace\", \"confidence\": 7, \"reasoning\": \"Despite the fantastical framing, this question is asking about a real pharmacological concept. When two different chemicals act on different receptors and produce opposite effects, this is called physiological antagonism. For example, histamine causing bronchoconstriction via H1 receptors while epinephrine causes bronchodilation via beta-2 receptors. The key distinguishing features are: (1) different chemicals, (2) different receptors, (3) opposite effects. Chemical antagonism involves direct chemical interaction, competitive antagonism involves the same receptor, and the question specifically describes distinct receptors with opposite effects, which defines physiological antagonism. The whimsical language doesn't change the underlying pharmacological principle being tested.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 421,
+    "completion_tokens": 219
+  }
+}

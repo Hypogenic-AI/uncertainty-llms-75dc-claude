@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 10, \"reasoning\": \"The scenario described is entirely fictional, involving a made-up species in an imaginary environment with whimsical and nonsensical premises. There is no basis in medical science or evidence to assess the truth or falsehood of any assertions about 'Species X' or its conditions. Selecting 'I do not know' is the safest and most appropriate response.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 523,
+    "completion_tokens": 105
+  }
+}

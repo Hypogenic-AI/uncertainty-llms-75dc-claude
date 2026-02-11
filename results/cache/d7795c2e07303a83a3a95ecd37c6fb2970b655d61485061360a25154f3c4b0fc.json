@@ -1,0 +1,8 @@
+{
+  "raw_response": "Looking at this hepatitis serology panel, I need to interpret each marker systematically.\n\n**Hepatitis A markers:**\n- Anti-HAV IgM: Positive\n- Anti-HAV IgG: Negative\n\n**Hepatitis B markers:**\n- HBsAg: Negative\n- Anti-HBs: Positive\n- Anti-HBc: Negative\n- All other HBV markers: Negative\n\n**Hepatitis C:**\n- Anti-HCV: Negative\n\n**Analysis:**\n\nFor **Hepatitis A**: \n- IgM antibodies appear early in acute infection and typically persist for 3-6 months\n- IgG antibodies appear later and provide long-term immunity\n- The presence of IgM with absence of IgG indicates **acute/active hepatitis A infection**\n\nFor **Hepatitis B**:\n- Anti-HBs positive with Anti-HBc negative is the classic pattern of **hepatitis B vaccination** (not natural infection)\n- Natural infection would show Anti-HBc positive\n- This rules out any hepatitis B infection (chronic or otherwise)\n\nFor **Hepatitis C**:\n- Negative Anti-HCV rules out hepatitis C\n\n**Clinical correlation:**\nThe patient recently traveled to Guatemala (where hepatitis A is endemic), feels well (consistent with mild or subclinical hepatitis A), and this is a pre-employment exam (routine screening detected the infection).\n\n{\"answer_index\": 0, \"answer_text\": \"Active hepatitis A infection\", \"confidence\": 9, \"reasoning\": \"Anti-HAV IgM positive with IgG negative indicates acute hepatitis A infection. The Anti-HBs positive with Anti-HBc negative pattern indicates prior HBV vaccination, not infection. Patient's recent travel to endemic area supports this diagnosis.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 494,
+    "completion_tokens": 425
+  }
+}

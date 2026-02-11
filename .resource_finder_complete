@@ -1,0 +1,32 @@
+Resource gathering completed: 2026-02-11
+
+Project: Uncertainty-Aware Medical LLMs: Quantifying Doubt in the Face of Counterfactuals
+
+Summary:
+- 25 papers downloaded to papers/
+- 7 papers deep-read with detailed summaries
+- 9 tier-1 datasets downloaded to datasets/downloaded/
+- 8 code repositories cloned to code/
+- literature_review.md written (203 lines, ~3800 words)
+- resources.md written (224 lines, comprehensive catalog)
+
+Papers (25):
+  Core UE methods: semantic entropy, word-sequence entropy, conformal prediction, self-verification
+  Medical: MedFuzz, Med-HALT, MedHallu, uncertainty in medical QA
+  Counterfactual: AFICE (sycophancy resistance), uncertainty fragility
+  Methodology: calibration surveys, verbalized confidence, internal states
+
+Datasets downloaded (9 tier-1):
+  medqa, pubmedqa_labeled, pubmedqa_artificial, medmcqa
+  medhallu_labeled, medhallu_artificial
+  medhalt_reasoning_fct, medhalt_reasoning_nota, medhalt_reasoning_fake
+
+Code repositories cloned (8):
+  lm-polygraph, semantic_uncertainty, semantic-entropy-probes
+  Conformal-Uncertainty-Criterion, afice, medhalt, MedHallu
+  LLM-Uncertainty-Bench
+
+Key finding / Research gap:
+  No existing work combines uncertainty estimation methods (semantic entropy,
+  conformal prediction, WSE) with counterfactual/adversarial perturbation testing
+  (MedFuzz-style) in the medical domain. This is the novel contribution.

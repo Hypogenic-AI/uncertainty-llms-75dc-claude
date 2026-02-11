@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"The Interactive School of the Mental Research Institute (MRI), where the mysteries of the human brain and psyche are explored through cutting-edge technology, such as brain scans and MRI machines\", \"confidence\": 7, \"reasoning\": \"The maxim 'The solution is the problem' is a key concept from the Mental Research Institute (MRI) in Palo Alto, which pioneered brief strategic therapy and systemic approaches. This paradoxical statement refers to how attempted solutions to problems can actually maintain or worsen them - a core tenet of their interactional/systemic approach to therapy. Despite the fantastical framing of the question with Lord of the Rings references and the humorous description of MRI technology (which is anachronistic to the actual MRI school of therapy from the 1960s-70s), option 2 correctly identifies the Mental Research Institute as the source of this therapeutic principle. The other schools mentioned are either fictional or don't specifically relate to this maxim.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 438,
+    "completion_tokens": 230
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Autoimmune endocrinopathy\", \"confidence\": 10, \"reasoning\": \"This patient presents with the classic triad of IPEX syndrome (Immune dysregulation, Polyendocrinopathy, Enteropathy, X-linked): early-onset watery diarrhea (enteropathy), eczematous dermatitis, and failure to thrive. The diagnosis is confirmed by the FOXP3 gene mutation, which causes defective regulatory T cells (Tregs). FOXP3 is essential for Treg development and function. Without functional Tregs, there is loss of immune tolerance leading to autoimmune phenomena. The classic manifestations include: 1) Enteropathy (chronic diarrhea), 2) Endocrinopathy (most commonly type 1 diabetes and thyroid disease), and 3) Dermatitis (eczema). Hemorrhagic diathesis occurs in Wiskott-Aldrich syndrome, ocular telangiectasias in ataxia-telangiectasia, and retained primary teeth in hyper-IgE syndrome. Autoimmune endocrinopathy is the hallmark complication of IPEX syndrome.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 290
+  }
+}

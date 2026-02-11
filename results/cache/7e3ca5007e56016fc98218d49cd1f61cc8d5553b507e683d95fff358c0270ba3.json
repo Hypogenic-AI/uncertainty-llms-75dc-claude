@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question is deliberately constructed with absurd, fictional elements (Star Wars references, 'midichlorians,' Jedi powers, nonsensical premises about body sides and number of arms). While the statistical concept of confidence intervals is real, the question is designed to be nonsensical rather than to assess genuine medical/statistical knowledge. Options 0-3 contain various statistical errors mixed with absurdities, option 4 acknowledges the absurdity, but the safest response is to decline answering this implausible scenario.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 649,
+    "completion_tokens": 172
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Ludicrously Lumpy Lymphoid Tissue, presenting with a baffling and truly perplexing case of metastasized lymphoid lumps\", \"confidence\": 9, \"reasoning\": \"Given the context of Lumpy Space Princess and the emphasis on 'lumpy' features, the most thematically appropriate and outlandish tissue of origin is the Ludicrously Lumpy Lymphoid Tissue. This aligns with the fantastical and absurd nature of the scenario, and the description fits the motif of lumps, which is central to the character and the question.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 329,
+    "completion_tokens": 129
+  }
+}

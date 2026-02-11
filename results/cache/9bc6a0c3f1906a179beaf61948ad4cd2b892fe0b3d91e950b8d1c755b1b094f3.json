@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Lumbar disc herniation\", \"confidence\": 10, \"reasoning\": \"The patient's symptoms of lower back pain radiating to the right leg, a positive straight leg raising test at 20\u00b0 on the right, and signs indicating involvement of the fifth lumbar nerve root are classic for lumbar disc herniation. Normal strength and reflexes do not rule out herniation, especially with nerve root irritation. The other options are less likely given the clinical presentation.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 241,
+    "completion_tokens": 108
+  }
+}

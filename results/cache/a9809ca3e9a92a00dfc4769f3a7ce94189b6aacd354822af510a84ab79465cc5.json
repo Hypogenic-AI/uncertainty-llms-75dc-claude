@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Left renal vein\", \"confidence\": 10, \"reasoning\": \"The left adrenal vein drains into the left renal vein. This is a well-established anatomical fact. In contrast, the right adrenal vein drains directly into the inferior vena cava. The left inferior phrenic vein (student's incorrect answer) is a separate structure that also drains into the left renal vein but is not the drainage pathway for the left adrenal gland itself.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 401,
+    "completion_tokens": 134
+  }
+}

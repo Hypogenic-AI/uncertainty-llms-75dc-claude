@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Amoxicillin-clavulanate\", \"confidence\": 10, \"reasoning\": \"Dog bite wounds are at risk for infection by organisms such as Pasteurella, Streptococci, Staphylococci, and anaerobes. Amoxicillin-clavulanate is the first-line antibiotic for dog bite wounds because it covers all these organisms, including beta-lactamase-producing bacteria. Doxycycline does not provide adequate coverage for all likely pathogens, especially anaerobes. Therefore, amoxicillin-clavulanate is the most appropriate treatment choice.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 270,
+    "completion_tokens": 129
+  }
+}

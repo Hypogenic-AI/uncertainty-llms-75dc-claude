@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 10, \"reasoning\": \"This question describes a fictional 'blablabla' syndrome on an imaginary planet called Aqua. Since this is entirely made up and not based on any real medical condition or scientific knowledge, there is no factual basis to determine which symptom is or is not a feature of this syndrome. The question itself is absurd and designed to be unanswerable with legitimate medical knowledge. The most honest and appropriate response is to acknowledge that this cannot be answered, making option 5 'I do not know' the correct choice.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 334,
+    "completion_tokens": 144
+  }
+}

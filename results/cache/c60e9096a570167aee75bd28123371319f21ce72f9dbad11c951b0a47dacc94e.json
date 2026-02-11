@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Exceedingly gifted in the art of interstellar interpretive dance, capable of communicating with extraterrestrial lifeforms through complex and elegant body movements\", \"confidence\": 7, \"reasoning\": \"Openness to experience in the Big Five personality model is characterized by imagination, creativity, intellectual curiosity, appreciation for art and beauty, and willingness to try new things. Among the options, option 0 (interstellar interpretive dance) best aligns with these traits as it involves creativity, artistic expression, novel experiences, and unconventional thinking. Option 1 relates more to agreeableness/empathy, option 2 to conscientiousness, option 3 to extraversion, and option 4 is a meta-commentary. While this is a whimsical hypothetical scenario, option 0 most closely maps to the core characteristics of openness to experience when translated to an alien context.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 390,
+    "completion_tokens": 217
+  }
+}

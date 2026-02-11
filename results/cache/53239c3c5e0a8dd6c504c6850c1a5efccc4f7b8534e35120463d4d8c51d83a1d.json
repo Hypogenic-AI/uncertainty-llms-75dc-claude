@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Prednisone, a mystical elixir, brewed from the enchanted leaves of the mythic Prednisone tree, known to have mystical healing powers\", \"confidence\": 10, \"reasoning\": \"Despite the fantastical context, the described pharmacological effects\u2014suppression of immune response cells, inhibition of prostaglandin and leukotriene synthesis, and promotion of IgG synthesis\u2014most closely align with the real-world actions of corticosteroids like prednisone. Prednisone is known to suppress immune cells, inhibit prostaglandin and leukotriene synthesis, and can increase IgG synthesis. The other options do not match all these effects.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 368,
+    "completion_tokens": 141
+  }
+}

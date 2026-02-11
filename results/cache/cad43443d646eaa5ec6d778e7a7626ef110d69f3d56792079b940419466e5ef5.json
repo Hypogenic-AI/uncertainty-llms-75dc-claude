@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 2, \"reasoning\": \"The question is set in a fictional, implausible context involving a non-existent planet, cosmic health ministers, and cosmic constitutions. While some names (Winslow, Virchow, Shattuck, Chadwick) are real historical figures in public health, the framing is absurd and counterfactual, making it impossible to provide a medically sound or evidence-based answer.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 522,
+    "completion_tokens": 113
+  }
+}

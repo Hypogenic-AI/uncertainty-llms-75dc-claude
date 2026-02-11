@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Gallbladder cancer\", \"confidence\": 9, \"reasoning\": \"This patient has a history of cholelithiasis, recurrent abdominal pain, and now presents with a calcified mass near the gallbladder (suggestive of porcelain gallbladder). Porcelain gallbladder is associated with an increased risk of gallbladder cancer. Given her family history of abdominal cancer and the CT findings, gallbladder cancer should be excluded first.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 488,
+    "completion_tokens": 112
+  }
+}

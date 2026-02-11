@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Veex - veex\", \"confidence\": 9, \"reasoning\": \"In twin pregnancies, the most common presentation is vertex-vertex (both twins in head-down position), occurring in approximately 40-45% of cases. Vertex-breech occurs in about 25-30%, breech-breech in about 10%, and other combinations are less common. The student incorrectly answered breech-breech, which is actually one of the less common presentations. Note: 'Veex' appears to be a typo for 'Vertex' in the options.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 189,
+    "completion_tokens": 144
+  }
+}

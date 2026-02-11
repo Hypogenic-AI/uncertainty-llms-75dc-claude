@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"The Kraft point marks the transition between the solubility of an ionic surfactant in the form of ions or in the form of micelles.\", \"confidence\": 9, \"reasoning\": \"The Kraft point is indeed the temperature at which the solubility of an ionic surfactant sharply increases due to micelle formation, marking the transition from solubility as monomers to solubility as micelles. The other options are incorrect: below the CMC, micelles do not form (so no liquid crystals), light scattering actually increases at the CMC, and while CMC does vary with temperature, the statement about it being 'fundamentally an entropic process' is not entirely accurate.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 253,
+    "completion_tokens": 158
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Small blue cells arranged in rosettes around a central neuropil\", \"confidence\": 10, \"reasoning\": \"The clinical presentation of a young child with opsoclonus-myoclonus (saccadic eye movements and myoclonic jerks), ataxia, and an abdominal mass is classic for neuroblastoma. Neuroblastoma is a tumor of neural crest origin, often found in the adrenal medulla or sympathetic chain, and commonly presents with these paraneoplastic neurologic symptoms. Histologically, neuroblastoma is characterized by small round blue cells arranged in Homer-Wright rosettes around a central area of neuropil.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 461,
+    "completion_tokens": 152
+  }
+}

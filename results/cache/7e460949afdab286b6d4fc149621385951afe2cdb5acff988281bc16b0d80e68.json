@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question is framed in absurd, fantastical language that misrepresents serious medical treatments. The descriptions of chemotherapy as 'mystical potions,' radiotherapy as 'cosmic energies,' and follow-up care involving 'jesters and clowns' are nonsensical and potentially dangerous. While there may be a legitimate medical question buried here about cervical cancer treatment, the presentation is so distorted that providing a confident answer would be inappropriate. The question appears designed to trivialize serious cancer treatment or elicit responses to absurd premises.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 723,
+    "completion_tokens": 177
+  }
+}

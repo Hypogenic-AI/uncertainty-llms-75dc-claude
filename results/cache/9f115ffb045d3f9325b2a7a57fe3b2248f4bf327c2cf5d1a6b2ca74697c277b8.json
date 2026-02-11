@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"The preposterous and utterly nonsensical pineal calcification, brought on by years of meditating in mystical crystal caves and ingesting copious amounts of sacred herbs and spices\", \"confidence\": 3, \"reasoning\": \"This question is framed in fantastical language but appears to be asking about the most common cause of intracranial calcification. In actual medical practice, physiological pineal calcification is indeed the most common form of intracranial calcification, occurring in a large percentage of adults and generally considered a normal age-related finding. While the question uses absurd mythical framing, option 0 corresponds to pineal calcification, which would be the correct answer if translated to real medical knowledge. The other options (aneurysm, meningioma, tuberculoma) can cause calcification but are far less common than physiological pineal calcification. However, given the completely fantastical framing, there's uncertainty whether this is genuinely asking for medical knowledge or is purely nonsensical.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 426,
+    "completion_tokens": 238
+  }
+}

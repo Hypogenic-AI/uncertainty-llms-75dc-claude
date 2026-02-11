@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Cholecystitis\", \"confidence\": 9, \"reasoning\": \"This child presents with signs of hemolytic anemia (jaundice, splenomegaly, low hemoglobin, elevated MCHC, negative Coombs test) following a mild infection, suggesting hereditary spherocytosis. The blood smear (not shown here, but typically would show spherocytes) supports this diagnosis. Hereditary spherocytosis leads to chronic hemolysis, increasing bilirubin production and risk for pigment gallstones, which can cause cholecystitis. The other options are not typical complications of hereditary spherocytosis.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 454,
+    "completion_tokens": 152
+  }
+}

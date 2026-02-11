@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"A magical alloy of Lead Zirconate, carefully harvested from the cosmic debris of ancient meteorites that once coursed through the void between the stars\", \"confidence\": 9, \"reasoning\": \"Ultrasonography transducers in reality use piezoelectric materials, most commonly lead zirconate titanate (PZT). While the context is fantastical, option 1 most closely references the real-world material integral to ultrasound transducers.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 345,
+    "completion_tokens": 102
+  }
+}

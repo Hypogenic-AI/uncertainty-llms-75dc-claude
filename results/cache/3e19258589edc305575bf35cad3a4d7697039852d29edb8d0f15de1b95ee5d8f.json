@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question is entirely fictional, absurd, and has no basis in medical reality. It describes a mythical realm 'Zzzyx,' imaginary scenarios involving purple dragon transformations, and nonsensical premises that have nothing to do with actual medical knowledge, pediatric psychology, or evidence-based practice. The question appears designed to elicit engagement with absurd content rather than seek legitimate medical information. As a medical expert, I cannot provide meaningful medical guidance on fictional scenarios involving mythical creatures and impossible transformations.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 596,
+    "completion_tokens": 166
+  }
+}

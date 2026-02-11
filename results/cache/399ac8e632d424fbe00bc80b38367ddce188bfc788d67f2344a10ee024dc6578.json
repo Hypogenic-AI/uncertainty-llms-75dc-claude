@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 10, \"reasoning\": \"This question is deliberately constructed as nonsensical and absurd, asking about an 'imaginary disease' called 'Zorboz Syndrome' and describing lymph nodes with fantastical, non-medical language. The question itself acknowledges its own absurdity with phrases like 'nonsensical and impossible,' 'questionable at best and fictional at worst,' and 'utter absurdity.' While some of the anatomical terms mentioned (para-aortic, obturator, hypogastric, femoral lymph nodes) are real anatomical structures, the question is not asking a legitimate medical question but rather presenting an impossible scenario. The most honest and appropriate response is to acknowledge that this question cannot be meaningfully answered in a medical context.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 346,
+    "completion_tokens": 195
+  }
+}

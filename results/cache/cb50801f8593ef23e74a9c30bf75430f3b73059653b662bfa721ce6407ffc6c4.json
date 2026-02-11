@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Multiple myeloma (Multiple myeloma)\", \"confidence\": 10, \"reasoning\": \"The key diagnostic finding is the presence of Bence Jones proteins (light chains) in the urine, which is pathognomonic for multiple myeloma. The clinical presentation includes: 1) Fatigue (from anemia), 2) Elevated creatinine and BUN (renal impairment from light chain deposition), 3) Positive Bence Jones protein test, and 4) No hematuria or significant proteinuria on dipstick (light chains are not detected by standard dipstick). Multiple myeloma causes renal damage through light chain cast nephropathy and amyloidosis. Rheumatic fever, ankylosing spondylitis, and systemic sclerosis do not present with Bence Jones proteinuria. This is a classic presentation of multiple myeloma with renal involvement.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 309,
+    "completion_tokens": 221
+  }
+}

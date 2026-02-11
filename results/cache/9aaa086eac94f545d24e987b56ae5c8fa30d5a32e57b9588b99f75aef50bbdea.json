@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Twin block\", \"confidence\": 9, \"reasoning\": \"The question asks for the correct identification of an appliance, and the student's answer 'Bite block' is incorrect. Among the options, 'Twin block' is a well-known functional appliance used in orthodontics, distinct from a simple bite block. The Twin block consists of upper and lower bite blocks that guide the jaw into a forward position, which is characteristic and visually distinct from the other options. Therefore, the correct answer is 'Twin block'.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 162,
+    "completion_tokens": 117
+  }
+}

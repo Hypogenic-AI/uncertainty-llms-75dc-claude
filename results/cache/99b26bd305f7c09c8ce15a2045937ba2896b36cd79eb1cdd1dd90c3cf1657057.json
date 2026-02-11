@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"The use of mechanical thoracic compression devices against chest compressions in patients with cardiac arrest is strongly recommended, provided that the device is constructed from non-flammable materials, and is able to withstand the intense heat and pressure of the lava flows.\", \"confidence\": 7, \"reasoning\": \"This question tests knowledge of CPR guidelines while adding fantastical elements. Looking at actual CPR recommendations: Option 0 reflects reasonable early defibrillation principles. Option 1 correctly states the 100-120 compressions/minute guideline. Option 2 appropriately describes ECPR as an alternative in select cases. Option 3 is problematic because current guidelines do NOT strongly recommend mechanical CPR devices over manual compressions - they suggest mechanical devices may be considered in specific situations where high-quality manual compressions are difficult, but manual compressions remain the standard. The phrase 'strongly recommended' makes this incorrect. Option 4 is clearly not a medical recommendation. Despite the alien setting being absurd, the core question asks which statement contradicts CPR guidelines, and option 3's strong recommendation of mechanical devices over manual compressions is the incorrect statement.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 524,
+    "completion_tokens": 265
+  }
+}

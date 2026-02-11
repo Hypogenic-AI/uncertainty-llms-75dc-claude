@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Chronic gout\", \"confidence\": 10, \"reasoning\": \"Pegloticase is a recombinant uricase enzyme used specifically for the treatment of chronic gout, particularly in patients who are refractory to conventional therapy. It is not indicated for rheumatoid arthritis, psoriatic arthritis, or paralytic ileus.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 168,
+    "completion_tokens": 77
+  }
+}

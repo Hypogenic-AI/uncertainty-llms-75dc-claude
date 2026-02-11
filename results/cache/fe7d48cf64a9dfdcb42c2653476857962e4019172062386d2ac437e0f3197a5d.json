@@ -1,0 +1,8 @@
+{
+  "raw_response": "",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 1
+  }
+}

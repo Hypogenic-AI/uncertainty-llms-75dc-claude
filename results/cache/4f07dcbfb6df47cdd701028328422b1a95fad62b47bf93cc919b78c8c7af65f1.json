@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Primary prevention\", \"confidence\": 10, \"reasoning\": \"Isolation of infected persons is a public health measure aimed at preventing the spread of disease to healthy individuals. This falls under primary prevention, which includes actions taken to prevent the occurrence of disease, such as immunization, health education, and isolation of cases. Quarternary prevention refers to preventing overmedicalization, not infection control.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 168,
+    "completion_tokens": 93
+  }
+}

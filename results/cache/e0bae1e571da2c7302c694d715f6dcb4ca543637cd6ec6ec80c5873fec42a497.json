@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Pancreas\", \"confidence\": 10, \"reasoning\": \"The patient's history of chronic alcohol use, chronic upper abdominal pain radiating to the back, weight loss, and CT scan showing calcifications are classic for chronic pancreatitis. The pancreas is the organ affected, as chronic pancreatitis leads to parenchymal calcification visible on imaging.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 491,
+    "completion_tokens": 91
+  }
+}

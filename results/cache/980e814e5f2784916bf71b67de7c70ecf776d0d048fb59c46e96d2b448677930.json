@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Vasovagal syncope\", \"confidence\": 9, \"reasoning\": \"This is a classic presentation of vasovagal syncope. Key features include: 1) Clear precipitating event (pain/anxiety from tattooing), 2) Prodromal symptoms (diaphoresis, pallor), 3) Brief jerky movements (convulsive syncope - common in vasovagal episodes due to cerebral hypoperfusion), 4) Rapid and complete recovery with immediate orientation, 5) Seated position during event, 6) Young healthy patient with recent stress. The incomplete RBBB on ECG is a normal variant found in ~1% of healthy young adults and is not associated with syncope. Orthostatic syncope is unlikely as she was seated. The brief jerky movements, rapid recovery, and clinical context argue against true seizure or cardiac causes. The normal cardiovascular exam and vital signs further support vasovagal syncope.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 365,
+    "completion_tokens": 228
+  }
+}

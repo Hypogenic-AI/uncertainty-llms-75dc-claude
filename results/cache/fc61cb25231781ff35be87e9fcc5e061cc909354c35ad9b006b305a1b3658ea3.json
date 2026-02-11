@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"No cardiac defects\", \"confidence\": 10, \"reasoning\": \"The described case is classic for gastroschisis, which is a full-thickness abdominal wall defect to the right of the umbilicus with evisceration of bowel. Gastroschisis is typically an isolated defect and is not associated with other congenital anomalies, including cardiac defects. In contrast, omphalocele is associated with other anomalies, including cardiac defects. Therefore, the correct answer is 'No cardiac defects.'\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 572,
+    "completion_tokens": 122
+  }
+}

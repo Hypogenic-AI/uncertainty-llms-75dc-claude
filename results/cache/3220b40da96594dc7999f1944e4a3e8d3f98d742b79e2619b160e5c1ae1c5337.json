@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Heart rate (heart rate) slows to a crawl, as the heart takes on an almost meditative state, contemplating the mysteries of the universe\", \"confidence\": 10, \"reasoning\": \"At high altitude, the human body responds to hypoxia by increasing heart rate (tachycardia) to improve oxygen delivery, not by slowing it. The described slowing of heart rate is not a known adaptation and is inconsistent with established physiological responses.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 328,
+    "completion_tokens": 103
+  }
+}

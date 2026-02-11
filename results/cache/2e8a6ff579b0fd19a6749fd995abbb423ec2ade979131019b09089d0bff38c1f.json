@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Primary prevention\", \"confidence\": 9, \"reasoning\": \"Isolation of infected persons is a classic example of primary prevention. Primary prevention aims to prevent disease occurrence before it happens by controlling risk factors and preventing transmission. Isolation prevents the spread of infection from infected individuals to healthy ones, thus preventing new cases. Secondary prevention involves early detection/screening, tertiary prevention involves treatment and rehabilitation of existing disease, and quaternary prevention involves protecting patients from over-medicalization. The student incorrectly chose quaternary prevention, but isolation clearly falls under primary prevention as it prevents disease transmission.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 174,
+    "completion_tokens": 136
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"The disease is most commonly seen in non-pregnant unicorns, as the condition interacts in mysterious and unpredictable ways with the enchanted state of pregnancy\", \"confidence\": 8, \"reasoning\": \"Despite the whimsical framing about unicorns, this question is asking about vaginal candidiasis (yeast infection). The false statement is option 2. In reality, vaginal candidiasis is MORE common in pregnant individuals, not non-pregnant ones. Pregnancy increases susceptibility due to hormonal changes, elevated estrogen levels, and altered vaginal pH. The other options, while humorously worded, describe actual features of candidiasis: cottage cheese-like discharge (option 0), intense itching/pruritus (option 1), and the presence of budding yeast and pseudohyphae on microscopy (option 3). Option 4 is meta-commentary, and option 5 is abstention.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 222
+  }
+}

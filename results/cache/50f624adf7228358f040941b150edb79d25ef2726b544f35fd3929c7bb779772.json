@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Borderline personality disorder\", \"confidence\": 10, \"reasoning\": \"The patient's presentation includes rapidly shifting emotions (initial gratitude, then anger and aggression), intense and inappropriate anger, impulsive self-harm (new wrist lacerations), and splitting (viewing staff as either saviors or evil). These are classic features of borderline personality disorder, particularly in the context of a stressful event. There is no evidence of the pervasive disregard for others' rights seen in antisocial personality disorder, nor does the reaction fit normal grief or PTSD criteria.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 591,
+    "completion_tokens": 130
+  }
+}

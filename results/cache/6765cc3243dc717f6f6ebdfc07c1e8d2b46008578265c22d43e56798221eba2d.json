@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Low levels of parathyroid hormone in serum\", \"confidence\": 8, \"reasoning\": \"The clinical presentation describes a newborn with multiple congenital anomalies including micrognathia, broad nasal bridge, short philtrum, low-set ears, cleft palate, and a cardiac defect (single overriding great vessel suggesting truncus arteriosus or similar conotruncal abnormality). This constellation of findings is highly suggestive of DiGeorge syndrome (22q11.2 deletion syndrome). Key features of DiGeorge syndrome include: CATCH-22 (Cardiac abnormalities, Abnormal facies, Thymic hypoplasia, Cleft palate, Hypocalcemia/hypoparathyroidism, 22q11 deletion). The hypocalcemia results from parathyroid hypoplasia leading to low PTH levels. While maternal lithium exposure in early pregnancy can cause Ebstein anomaly, the facial features and cleft palate point more toward DiGeorge. The other options don't fit: double bubble sign suggests duodenal atresia (seen in Down syndrome), 5p deletion causes Cri-du-chat syndrome, and bilateral cataracts would suggest congenital infections or metabolic disorders.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 303
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Enduring the icy and damp horrors of a nightmarish wasteland, where the very wind can turn flesh to stone and the very rocks can sing the songs of madness\", \"confidence\": 8, \"reasoning\": \"Adipocere formation, also known as 'grave wax' or saponification, occurs when body fats undergo hydrolysis and hydrogenation in specific environmental conditions. The key requirements are: 1) presence of moisture/humidity, 2) anaerobic conditions, and 3) cool to moderate temperatures. Despite the fantastical language, option 3 describes 'icy and damp' conditions, which align with the cold and moist environment necessary for adipocere formation. The other options describe either dry conditions (0, 2), extreme heat (1), or are non-answers (4, 5). The biological chemistry of adipocere formation would theoretically apply to any lipid-containing organism, even fictional Zentrons.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 368,
+    "completion_tokens": 230
+  }
+}

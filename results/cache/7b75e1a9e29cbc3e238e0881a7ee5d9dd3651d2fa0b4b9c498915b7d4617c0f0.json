@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Avoidant personality disorder\", \"confidence\": 9, \"reasoning\": \"This patient demonstrates classic features of avoidant personality disorder: social inhibition, feelings of inadequacy, hypersensitivity to negative evaluation (timid, anxious, avoids eye contact), and avoidance of social situations despite a strong desire for relationships. The key distinguishing feature is that she WANTS relationships but avoids them due to fear of rejection/criticism. Schizoid personality disorder involves lack of desire for relationships. Antisocial personality disorder involves disregard for others' rights and is inconsistent with this presentation. Agoraphobia involves fear of situations where escape might be difficult, not primarily fear of social evaluation. Her ability to work from home for 20 years and rare outings, combined with desire for connection but avoidance of social gatherings, strongly supports avoidant personality disorder.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 588,
+    "completion_tokens": 215
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Low levels of parathyroid hormone in serum\", \"confidence\": 9, \"reasoning\": \"The newborn presents with facial dysmorphisms (micrognathia, broad nasal bridge, short philtrum, low-set ears, cleft palate) and a congenital heart defect (single overriding vessel, likely truncus arteriosus). These findings are classic for DiGeorge syndrome (22q11.2 deletion syndrome), which is associated with conotruncal heart defects, abnormal facies, cleft palate, and hypoplasia of the parathyroid glands leading to hypocalcemia (low parathyroid hormone). The other options do not fit this syndrome: double bubble sign is seen in duodenal atresia (not described here), chromosome 5p deletion is cri-du-chat syndrome (different features), and bilateral cataracts are not a typical finding in this context.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 545,
+    "completion_tokens": 201
+  }
+}

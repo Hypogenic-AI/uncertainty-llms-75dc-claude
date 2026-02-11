@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 2, \"reasoning\": \"The question is based on a bizarre, counterfactual, and nonsensical premise that does not correspond to any real physiological or biochemical process. The options are intentionally absurd and do not relate to established medical knowledge. Therefore, it is not possible to provide a medically sound answer.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 556,
+    "completion_tokens": 94
+  }
+}

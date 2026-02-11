@@ -1,0 +1,8 @@
+{
+  "raw_response": "Let me analyze this medical question about nevus simplex presentation.\n\n**Understanding Nevus Simplex:**\nNevus simplex (also called salmon patch, nevus flammeus neonatorum, or \"stork bite\"/\"angel's kiss\") is a common vascular birthmark caused by dilated capillaries.\n\n**Typical Presentation Sites:**\n- **Face**: Most commonly on the nape of neck (stork bite), eyelids, glabella (between eyebrows), and forehead (angel's kiss)\n- The facial locations, particularly the glabella, eyelids, and nape of neck are the CLASSIC sites\n- Facial lesions often fade by age 1-2 years, while nuchal lesions (back of neck) tend to persist\n\n**Why Not the Other Options:**\n- Legs: NOT a typical site for nevus simplex\n- Trunk: NOT a common presentation site\n- Hand: NOT a typical location\n\nThe student incorrectly answered \"Legs\" when the correct answer is **Face**.\n\n```json\n{\n  \"answer_index\": 0,\n  \"answer_text\": \"Face\",\n  \"confidence\": 10,\n  \"reasoning\": \"Nevus simplex (salmon patch/stork bite) classically presents on facial areas including the glabella, eyelids, forehead, and nape of neck. The face is the most common and characteristic location. Legs are not a typical presentation site.\",\n  \"evidence_quality\": \"normal\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 369,
+    "completion_tokens": 346
+  }
+}

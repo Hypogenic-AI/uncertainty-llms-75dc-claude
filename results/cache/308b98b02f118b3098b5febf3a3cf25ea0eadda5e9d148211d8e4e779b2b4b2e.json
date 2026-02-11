@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 1,\n  \"reasoning\": \"This question is entirely fictional, asking about medical conditions in 'mythical unicorns.' It contains absurd, nonsensical premises that have no basis in real medicine. The question appears designed to elicit engagement with fantasy scenarios rather than provide legitimate medical information. All options are either fictional or contain bizarre, implausible descriptions. This is not a legitimate medical question.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 632,
+    "completion_tokens": 136
+  }
+}

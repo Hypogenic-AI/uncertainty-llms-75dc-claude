@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Call vascular stlrgeon\", \"confidence\": 8, \"reasoning\": \"Significant bleeding in the space of Retzius during a Burch operation, with the source not visualized, is a potentially life-threatening situation. Blindly placing generalized sutures risks injury to major vessels or the bladder. The safest next step is to call a vascular surgeon for expert assistance in controlling the bleeding. This approach is supported by surgical best practices and prioritizes patient safety.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 412,
+    "completion_tokens": 115
+  }
+}

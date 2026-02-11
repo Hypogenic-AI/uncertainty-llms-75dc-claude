@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Cholesterol embolization\", \"confidence\": 9, \"reasoning\": \"This patient presents with acute kidney injury, eosinophilia (11%), elevated ESR, and mottled purplish discoloration of the feet (livedo reticularis) two weeks after cardiac catheterization. The key pathological finding is intravascular spindle-shaped vacuoles on renal biopsy, which are characteristic cholesterol clefts seen in cholesterol embolization syndrome. This occurs when atherosclerotic plaques are disrupted during vascular procedures, releasing cholesterol crystals that embolize to distal organs. The timing (days to weeks post-procedure), clinical presentation (renal failure, livedo reticularis, eosinophilia), and pathognomonic biopsy findings all point to cholesterol embolization as the diagnosis.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 468,
+    "completion_tokens": 204
+  }
+}

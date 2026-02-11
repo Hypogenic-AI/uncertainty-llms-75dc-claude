@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Gastric aspiration\", \"confidence\": 10, \"reasoning\": \"Mendelson's syndrome is a chemical pneumonitis caused by the aspiration of gastric contents during anesthesia, most commonly during obstetric procedures. It is not related to hypersensitivity, faulty intubation, or tracheal stenosis. The correct answer is gastric aspiration.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 186,
+    "completion_tokens": 84
+  }
+}

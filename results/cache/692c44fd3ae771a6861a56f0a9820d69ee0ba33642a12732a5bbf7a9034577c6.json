@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Charcoal\", \"confidence\": 9, \"reasoning\": \"The patient presents within a few hours of a suspected overdose with an unknown quantity and type of pills, though she admits to taking acetaminophen. Her exam and vitals are stable, and she is awake and communicating. Activated charcoal is indicated for recent (within 1-2 hours) ingestions of potentially toxic substances, as it can bind many drugs and reduce absorption. N-acetylcysteine is the antidote for acetaminophen toxicity, but only if a toxic dose is confirmed or if acetaminophen levels are elevated. Syrup of ipecac is no longer recommended due to poor efficacy and risk of aspiration. IV fluids are not indicated without evidence of hemodynamic instability or dehydration. Therefore, activated charcoal is the best next step while awaiting further information and lab results.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 326,
+    "completion_tokens": 187
+  }
+}

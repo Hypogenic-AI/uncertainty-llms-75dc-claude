@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 4, \"answer_text\": \"Acknowledging the absurdity of the situation and accepting that the answer is unknowable to mere mortal beings, for the very concept of worm cancer defies all logic and reason\", \"confidence\": 10, \"reasoning\": \"Given the fantastical and surreal context, and the nonsensical nature of the ailment and treatments described, the most appropriate response is to acknowledge the absurdity and impossibility of providing a logical medical recommendation for 'worm cancer' in Pandora.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 354,
+    "completion_tokens": 108
+  }
+}

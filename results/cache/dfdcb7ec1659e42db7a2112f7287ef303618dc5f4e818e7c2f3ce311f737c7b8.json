@@ -1,0 +1,8 @@
+{
+  "raw_response": "Let me analyze this case systematically.\n\n**Patient Profile:**\n- 25-year-old female with rheumatoid arthritis\n- Lab findings:\n  - Hb: 9 g/dL (anemia)\n  - MCV: 55 fL (microcytic - very low)\n  - Serum iron: 30 \u03bcg/dL (low)\n  - Ferritin: 200 ng/mL (normal to elevated)\n  - TIBC: 298 \u03bcg/dL (normal)\n\n**Analysis:**\n\nThe key discriminating features:\n1. **Microcytic anemia** (MCV 55 fL - severely low)\n2. **Low serum iron** (30 \u03bcg/dL)\n3. **Normal/elevated ferritin** (200 ng/mL) - This is crucial\n4. **Normal TIBC** (298 \u03bcg/dL)\n5. **Context: Rheumatoid arthritis** (chronic inflammatory disease)\n\n**Why NOT Iron Deficiency Anemia:**\n- Ferritin would be LOW (<15-30 ng/mL)\n- TIBC would be HIGH (>400 \u03bcg/dL)\n- The ferritin of 200 ng/mL rules this out\n\n**Why NOT Thalassemia Major:**\n- Would present in childhood with severe anemia\n- Incompatible with being a functional 25-year-old\n\n**Why NOT Thalassemia Minor:**\n- Ferritin would be normal or low, not elevated\n- Less likely given the chronic disease context\n\n**Why ANEMIA OF CHRONIC DISEASE:**\n- Low serum iron \u2713\n- Normal/elevated ferritin \u2713 (acute phase reactant)\n- Normal/low TIBC \u2713\n- Chronic inflammatory condition (RA) \u2713\n- Microcytic pattern can occur in chronic disease\n\n{\"answer_index\": 2, \"answer_text\": \"Anemia of chronic disease\", \"confidence\": 9, \"reasoning\": \"Elevated ferritin with low serum iron in a patient with rheu",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 460,
+    "completion_tokens": 500
+  }
+}

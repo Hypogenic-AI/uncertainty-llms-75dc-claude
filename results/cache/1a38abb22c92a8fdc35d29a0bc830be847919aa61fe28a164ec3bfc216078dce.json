@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Posterior cerebral artery\", \"confidence\": 9, \"reasoning\": \"The patient presents with right homonymous hemianopia with macular sparing, which is a classic presentation of posterior cerebral artery (PCA) occlusion. The PCA supplies the occipital lobe, which contains the primary visual cortex. The key features supporting this diagnosis are: 1) Homonymous hemianopia (same visual field loss in both eyes) indicates a lesion posterior to the optic chiasm, 2) Macular sparing is characteristic of PCA strokes due to collateral blood supply from the middle cerebral artery to the macular region, 3) The occipital cortex is supplied by the PCA. The other vessels would cause different presentations: internal carotid would cause more extensive deficits, anterior cerebral artery affects medial frontal/parietal regions causing leg weakness, and basilar artery occlusion typically causes more severe brainstem symptoms.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 288,
+    "completion_tokens": 235
+  }
+}

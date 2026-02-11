@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 1, \"reasoning\": \"The scenario described is entirely fictional, with implausible and nonsensical medical premises (e.g., uterus swelling to the size of a moon, humming nodules, mystical maladies, and incomprehensible forces). None of the options reflect real medical knowledge or evidence-based reasoning. Selecting 'I do not know' is appropriate in this context.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 533,
+    "completion_tokens": 107
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"The Interactive School of the Mental Research Institute (MRI), where the mysteries of the human brain and psyche are explored through cutting-edge technology, such as brain scans and MRI machines\", \"confidence\": 9, \"reasoning\": \"The maxim 'The solution is the problem' is a hallmark of the Mental Research Institute (MRI) school of brief therapy, which emphasizes that attempted solutions can perpetuate or worsen problems. The MRI school is known for its systemic and interactional approach to psychological issues, making option 2 the most accurate choice.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 121
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Pituitary infarction\", \"confidence\": 9, \"reasoning\": \"This is a classic presentation of Sheehan syndrome (postpartum pituitary necrosis). The patient had severe postpartum hemorrhage (evidenced by hypotension, tachycardia, boggy uterus, requiring 4 units each of fluids and blood). The hypovolemic shock caused ischemic necrosis of the anterior pituitary, which is already enlarged and vulnerable during pregnancy. The inability to lactate the next day indicates acute prolactin deficiency from pituitary infarction. The timeline (immediate postpartum hemorrhage followed by next-day lactation failure) and clinical context strongly support pituitary infarction over hemorrhage (which would be more acute/dramatic) or tumor (which would be chronic). Retained placenta could cause continued bleeding but wouldn't directly cause lactation failure.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 523,
+    "completion_tokens": 224
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"End of adolescence or early adulthood.\", \"confidence\": 10, \"reasoning\": \"Schizophrenia most commonly has its onset in late adolescence to early adulthood, typically between ages 16-30, with peak onset in males around 18-25 years and females around 25-35 years. Childhood-onset schizophrenia (before age 13) is extremely rare. The student's answer of 'Before age 12' is incorrect as this represents a very uncommon presentation. While schizophrenia can technically occur at various ages (option 3), the question asks for 'most likely' age of onset, making option 2 the correct answer based on well-established epidemiological data.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 186
+  }
+}

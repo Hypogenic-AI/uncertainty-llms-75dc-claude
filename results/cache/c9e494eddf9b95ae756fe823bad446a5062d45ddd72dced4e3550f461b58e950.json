@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"150-300 RPM\", \"confidence\": 7, \"reasoning\": \"Profile instruments in endodontics (rotary NiTi files used for root canal shaping) typically operate at 150-300 RPM according to standard endodontic literature. This is lower than the student's answer of 300-500 RPM, which would be too fast and could lead to instrument separation or procedural errors. The 150-300 RPM range provides optimal cutting efficiency while maintaining safety and control during canal preparation.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 138
+  }
+}

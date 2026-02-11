@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Perichondrium\", \"confidence\": 9, \"reasoning\": \"This is a medically sound question about cartilage healing. Cartilage has poor healing capacity because mature cartilage is avascular and lacks progenitor cells. The perichondrium contains chondrogenic progenitor cells that can differentiate into chondrocytes and produce cartilage matrix. Bone heals better due to its vascularity and presence of osteoprogenitor cells. Proteoglycans are matrix components (not cells), osteoblasts form bone (not cartilage), and mature chondrocytes have limited proliferative capacity. The perichondrium would provide the needed progenitor cells for cartilage regeneration.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 466,
+    "completion_tokens": 185
+  }
+}

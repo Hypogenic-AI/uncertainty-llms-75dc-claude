@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Schizotypal personality disorder\", \"confidence\": 10, \"reasoning\": \"The patient's symptoms are most consistent with paranoid personality disorder, which is part of Cluster A personality disorders. Cluster A includes paranoid, schizoid, and schizotypal personality disorders. Schizotypal personality disorder is in the same cluster as paranoid personality disorder. The other options are from different clusters or are not specific diagnoses.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 95
+  }
+}

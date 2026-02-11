@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"At 45 degrees\", \"confidence\": 9, \"reasoning\": \"In dental casting, the sprue should be attached to the thickest part of the wax pattern at about a 45-degree angle. This helps prevent turbulence and porosity during the casting process. Placement at 90 degrees is incorrect, as it can cause defects.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 364,
+    "completion_tokens": 89
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Repeat blood cultures now\", \"confidence\": 9, \"reasoning\": \"This patient has classic signs of infective endocarditis (IE): history of IV drug use, fever, new murmur, and positive blood cultures for Staphylococcus aureus. The next step to confirm persistent bacteremia, which is a major Duke criterion for IE, is to repeat blood cultures immediately. This helps confirm the diagnosis and guides management. Waiting 24 or 48 hours is not appropriate when the diagnosis is strongly suspected and initial cultures are positive.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 512,
+    "completion_tokens": 129
+  }
+}

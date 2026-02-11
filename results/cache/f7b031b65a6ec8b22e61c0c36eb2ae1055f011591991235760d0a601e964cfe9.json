@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Anemia of chronic disease\", \"confidence\": 9, \"reasoning\": \"The patient has microcytic anemia (low MCV), low serum iron, but high ferritin and normal TIBC. In iron deficiency anemia, ferritin is low and TIBC is high. In anemia of chronic disease (common in rheumatoid arthritis), ferritin is normal or high (as it is an acute phase reactant), serum iron is low, and TIBC is low or normal. The findings fit anemia of chronic disease, not iron deficiency anemia.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 419,
+    "completion_tokens": 130
+  }
+}

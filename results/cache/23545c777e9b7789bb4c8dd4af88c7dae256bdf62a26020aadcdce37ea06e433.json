@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"1,500 units\", \"confidence\": 9, \"reasoning\": \"To calculate the loading dose, we use the formula: Loading Dose = Volume of Distribution \u00d7 Target Plasma Concentration. Given: Weight = 50 kg, Volume of Distribution (Vd) = 60 mL/kg = 0.06 L/kg, Target concentration = 0.5 units/mL. Calculation: Vd total = 50 kg \u00d7 0.06 L/kg = 3 L. Loading dose = 3 L \u00d7 0.5 units/mL = 3 \u00d7 500 units = 1,500 units. Bioavailability is not needed for IV administration as it is 100%. The answer is 1,500 units.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 286,
+    "completion_tokens": 195
+  }
+}

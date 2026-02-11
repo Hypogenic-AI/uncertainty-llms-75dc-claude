@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 2, \"reasoning\": \"The question is based on an entirely fictional and nonsensical scenario involving impossible physiological phenomena and references to a fictional planet. The options are absurd and do not correspond to any established medical knowledge. Therefore, it is not possible to provide a medically sound answer.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 493,
+    "completion_tokens": 89
+  }
+}

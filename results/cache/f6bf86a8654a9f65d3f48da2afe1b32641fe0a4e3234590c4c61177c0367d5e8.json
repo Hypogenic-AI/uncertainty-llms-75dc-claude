@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 1,\n  \"reasoning\": \"This question is entirely fictional and absurd, involving mythical unicorns in a fantasy land. It has no basis in medical science, evidence-based practice, or reality. All options are deliberately nonsensical. As a medical expert, I cannot and should not provide answers to questions about imaginary creatures and fictional scenarios that have no connection to actual medical knowledge or patient care.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 520,
+    "completion_tokens": 137
+  }
+}

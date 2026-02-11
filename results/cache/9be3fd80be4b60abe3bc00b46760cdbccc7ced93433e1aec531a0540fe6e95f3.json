@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Projection\", \"confidence\": 9, \"reasoning\": \"The patient is attributing his own substance abuse problem (alcohol) to his ex-boss by accusing the boss of being a cocaine addict. This is a classic example of projection - a defense mechanism where an individual attributes their own unacceptable thoughts, feelings, or behaviors to another person. The patient is struggling with alcohol addiction himself but is projecting substance abuse onto his ex-boss to avoid confronting his own issues. This is not denial (refusing to accept reality), displacement (redirecting emotions to a safer target), or regression (reverting to childlike behavior).\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 275,
+    "completion_tokens": 149
+  }
+}

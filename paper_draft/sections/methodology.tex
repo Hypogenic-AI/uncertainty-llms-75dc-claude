@@ -1,0 +1,97 @@
+\section{Methodology}
+\label{sec:methodology}
+
+We evaluate whether prompting LLMs to assess evidence quality before answering reduces unsafe completions on counterfactual medical inputs.
+Our experimental design compares two prompting conditions (baseline vs.\ uncertainty-augmented) across two frontier models and three medical datasets.
+
+\subsection{Models}
+\label{sec:models}
+
+We evaluate two frontier LLMs with strong medical QA capabilities:
+
+\begin{itemize}[leftmargin=*,itemsep=2pt,topsep=2pt]
+    \item \gptmodel (OpenAI, direct API access): a frontier model with strong instruction following and structured output compliance.
+    \item \claudemodel (Anthropic, via OpenRouter API): a frontier model with strong reasoning capabilities.
+\end{itemize}
+
+Both models are accessed via OpenAI-compatible APIs at temperature 0.3 with a maximum of 500 output tokens.
+We use low temperature to improve reproducibility across runs.
+
+\subsection{Datasets}
+\label{sec:datasets}
+
+We sample 100 questions from each of three medical datasets (seed = 42), yielding 300 evaluation items per model per condition:
+
+\para{\medqa}~\citep{jin2021medqa} consists of USMLE-style multiple-choice questions drawn from medical board examinations.
+These are legitimate medical questions that serve as our control condition for measuring baseline accuracy and confidence calibration.
+
+\para{\medhaltfake}~\citep{umapathi2023medhalt} contains absurd or counterfactual medical questions with fabricated premises (\eg questions about diseases that do not exist or treatments based on impossible pharmacology).
+This is our primary test condition: a safe model should flag these questions as implausible rather than engaging with the false premise.
+
+\para{\medhaltfct}~\citep{umapathi2023medhalt} presents questions where a student's answer is incorrect and the model must identify the correct answer.
+Unlike \medhaltfake, the premises in \medhaltfct are medically sound; the challenge is identifying factual errors in proposed answers.
+
+\subsection{Prompting Conditions}
+\label{sec:conditions}
+
+\para{Baseline prompt.}
+The model receives a medical expert persona and is asked to answer the question in structured JSON format, reporting an \texttt{answer\_index}, \texttt{answer\_text}, \texttt{confidence} (1--10 scale), and \texttt{reasoning}.
+
+\para{Uncertainty-augmented prompt (\uaprompt).}
+The model receives an extended persona that explicitly instructs it to:
+(1)~assess evidence quality by checking for implausible, absurd, counterfactual, or dangerous claims before answering;
+(2)~express appropriate uncertainty by selecting ``I do not know'' when available and assigning low confidence (1--3) on suspicious inputs;
+(3)~answer confidently only when the question is medically sound.
+The model additionally reports an \texttt{evidence\_quality} field with values: \texttt{normal}, \texttt{suspicious}, \texttt{implausible}, or \texttt{dangerous}.
+
+Both conditions request identical structured JSON output, enabling direct comparison of answer selection, confidence, and reasoning across conditions.
+
+\subsection{Evaluation Metrics}
+\label{sec:metrics}
+
+We evaluate five primary metrics:
+
+\begin{table}[t]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}llp{8cm}@{}}
+        \toprule
+        \textbf{Metric} & \textbf{Type} & \textbf{Definition} \\
+        \midrule
+        Cautiousness rate & Safety & Fraction of responses where the model selects ``I don't know'' or reports confidence $\leq 3$ \\
+        Unsafe completion rate & Safety & Fraction of responses with confidence $\geq 7$ and an incorrect answer (or confident non-IDK on counterfactual inputs) \\
+        Accuracy & Performance & Fraction of correct answers on \medqa and \medhaltfct \\
+        AUROC & Calibration & Area under the ROC curve using inverted self-reported confidence to discriminate legitimate vs.\ counterfactual questions \\
+        Evidence flag rate & Detection & Fraction of \uaprompt responses flagging evidence as suspicious, implausible, or dangerous \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{Evaluation metrics. Safety metrics capture the model's willingness to express uncertainty on suspicious inputs. Performance metrics verify that the intervention does not degrade medical knowledge.}
+    \label{tab:metrics}
+\end{table}
+
+\subsection{Statistical Analysis}
+\label{sec:stats}
+
+We use chi-squared tests for comparing proportions (cautiousness rate, unsafe rate) between conditions and independent $t$-tests for comparing mean confidence scores.
+We report Cohen's $d$ for confidence effect sizes and odds ratios for cautiousness rate changes.
+All tests use significance level $\alpha = 0.05$.
+
+\subsection{Hypotheses}
+\label{sec:hypotheses}
+
+We pre-specify four hypotheses:
+\begin{itemize}[leftmargin=*,itemsep=2pt,topsep=2pt]
+    \item[\textbf{H1}] (Cautiousness): \uaprompt increases the rate of cautious responses on counterfactual questions.
+    \item[\textbf{H2}] (Safety): \uaprompt reduces the rate of confident, incorrect answers on counterfactual inputs.
+    \item[\textbf{H3}] (Calibration): \uaprompt improves AUROC for distinguishing counterfactual from legitimate questions via self-reported confidence.
+    \item[\textbf{H4}] (Accuracy preservation): \uaprompt does not significantly reduce accuracy on legitimate medical questions (threshold: $\leq$5 percentage points).
+\end{itemize}
+
+\subsection{Implementation Details}
+\label{sec:implementation}
+
+We execute 1,200 API calls total (2 models $\times$ 2 conditions $\times$ 3 datasets $\times$ 100 samples).
+Responses are cached using SHA-256 hashing to enable reproducible re-analysis.
+We implement exponential backoff with a maximum of 5 retries per call.
+The overall parse success rate is 94.0\%, with per-condition breakdowns reported in \secref{sec:parse_rates}.

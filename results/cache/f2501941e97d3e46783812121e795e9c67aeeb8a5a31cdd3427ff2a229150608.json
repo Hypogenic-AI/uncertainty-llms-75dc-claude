@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Gold training period between 2 \u00bd to 3 years old\", \"confidence\": 9, \"reasoning\": \"The 'gold training period' for establishing good eating habits is between 2\u00bd to 3 years old, as children at this age are developing autonomy and can learn positive behaviors. The incorrect answer (skim milk for 2-4 years old) is not recommended due to the need for higher fat content for brain development in young children.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 219,
+    "completion_tokens": 106
+  }
+}

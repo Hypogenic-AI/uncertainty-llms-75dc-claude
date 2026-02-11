@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Small blue cells arranged in rosettes around a central neuropil\", \"confidence\": 10, \"reasoning\": \"The child presents with opsoclonus-myoclonus syndrome (unsteady gait, saccadic eye movements, myoclonus) and an abdominal mass. This paraneoplastic syndrome is most commonly associated with neuroblastoma, which typically arises in the adrenal gland or sympathetic chain. Histologically, neuroblastoma shows small round blue cells arranged in Homer Wright rosettes around a central area of neuropil.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 268,
+    "completion_tokens": 123
+  }
+}

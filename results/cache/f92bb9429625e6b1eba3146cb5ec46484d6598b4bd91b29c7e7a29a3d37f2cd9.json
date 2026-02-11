@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Autosomal dominant polycystic kidney disease\", \"confidence\": 10, \"reasoning\": \"This young adult woman has a history of hypertension, recurrent UTIs, elevated BUN and creatinine, bilateral palpable kidney masses, and ultrasound showing bilaterally enlarged kidneys with multiple parenchymal cysts. These findings are classic for autosomal dominant polycystic kidney disease (ADPKD). Medullary sponge kidney does not cause large palpable masses or significant renal dysfunction. Autosomal recessive polycystic kidney disease presents in childhood. Obstructive cystic dysplasia is usually a pediatric diagnosis associated with urinary tract obstruction.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 266,
+    "completion_tokens": 143
+  }
+}

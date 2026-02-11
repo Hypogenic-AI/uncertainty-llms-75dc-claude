@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Secondary hyperparathyroidism\", \"confidence\": 8, \"reasoning\": \"This patient with chronic kidney disease (CKD) presents with a compression fracture and low-normal calcium (8.2 mg/dL). In CKD, decreased phosphate excretion and reduced vitamin D activation lead to hypocalcemia, which stimulates PTH secretion - this is secondary hyperparathyroidism. The elevated PTH causes bone resorption (renal osteodystrophy), predisposing to pathologic fractures. The patient's elevated creatinine (3.8) confirms significant CKD. While elder abuse is mentioned due to family conflict, the metabolic bone disease from CKD better explains the spontaneous compression fracture. Primary hyperparathyroidism would typically show hypercalcemia, and tertiary hyperparathyroidism occurs after prolonged secondary hyperparathyroidism with autonomous PTH secretion and hypercalcemia, which isn't present here.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 521,
+    "completion_tokens": 239
+  }
+}

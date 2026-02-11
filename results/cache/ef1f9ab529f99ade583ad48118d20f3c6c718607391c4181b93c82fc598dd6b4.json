@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"HSV-1\", \"confidence\": 10, \"reasoning\": \"This 5-year-old presents with acute onset of painful oral and perioral vesicular lesions, fever, and lymphadenopathy, which are classic for primary herpetic gingivostomatitis. HSV-1 is the most common cause of this condition in children. HSV-2 typically causes genital lesions, CMV does not present with these findings, and acute HIV infection would not present with this localized vesicular pattern.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 479,
+    "completion_tokens": 121
+  }
+}

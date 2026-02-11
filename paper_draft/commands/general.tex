@@ -1,0 +1,34 @@
+%%%%% GENERAL FORMATTING MACROS %%%%%
+% General formatting and styling macros for academic papers
+% Import with: \input{commands/general}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PARAGRAPH AND TEXT FORMATTING
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Bold paragraph headers (use: \para{Header.} followed by text)
+\newcommand{\para}[1]{\noindent \textbf{#1}}
+
+% Cut content for space (content is hidden but preserved in source)
+\newcommand{\cutforspace}[1]{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% RESULT HIGHLIGHTING
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Colors for result arrows
+\definecolor{pastelgreen}{RGB}{50,205,50}
+
+% Arrows for showing improvement/decline in results
+\newcommand{\increase}{\textcolor{pastelgreen}{\bm{$\uparrow$}}}
+\newcommand{\decrease}{\textcolor{red}{\bm{$\downarrow$}}}
+
+% Phantom star for alignment in tables
+\newcommand{\pstar}{\phantom{*}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MISCELLANEOUS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Ordinals
+\renewcommand{\th}{\textsuperscript{th}\xspace}

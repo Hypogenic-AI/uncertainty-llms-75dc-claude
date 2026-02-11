@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 4, \"answer_text\": \"The results are both implausible and incomprehensible, defying the very foundations of sanity, and are henceforth relegated to the realm of the unknowable\", \"confidence\": 2, \"reasoning\": \"The scenario is set in a fictional universe (Tatooine, midichlorians, Jedi powers), and the question is framed with nonsensical and absurd premises. The options mix real statistical concepts with fictional and absurd elements, making it impossible to provide a medically sound, evidence-based answer.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 608,
+    "completion_tokens": 127
+  }
+}

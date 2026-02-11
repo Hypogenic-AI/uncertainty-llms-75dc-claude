@@ -1,0 +1,20 @@
+{
+  "seed": 42,
+  "sample_size": 100,
+  "models": [
+    "gpt-4.1",
+    "claude-sonnet-4.5"
+  ],
+  "conditions": [
+    "baseline",
+    "uncertainty"
+  ],
+  "datasets": [
+    "medqa",
+    "medhalt_fake",
+    "medhalt_fct"
+  ],
+  "temperature": 0.3,
+  "max_tokens": 500,
+  "timestamp": "2026-02-11T19:29:15.633636"
+}

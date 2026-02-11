@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Psoriatic arthritis\", \"confidence\": 9, \"reasoning\": \"This patient presents with several key features pointing to psoriatic arthritis: 1) Oligoarticular arthritis affecting knees asymmetrically (right knee currently, left knee previously), 2) Back pain that improves with rest (suggesting axial involvement/spondylitis), 3) Dandruff requiring special shampoos (likely scalp psoriasis), and 4) Nail pitting on examination (classic sign of psoriasis). The combination of inflammatory arthritis with psoriatic skin/nail manifestations is diagnostic of psoriatic arthritis. Arthritis mutilans is a severe destructive form of psoriatic arthritis but not the primary diagnosis. Rheumatoid arthritis typically presents with symmetric small joint involvement and lacks the psoriatic features. Mixed connective tissue disease would have other systemic features not mentioned here.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 265,
+    "completion_tokens": 220
+  }
+}

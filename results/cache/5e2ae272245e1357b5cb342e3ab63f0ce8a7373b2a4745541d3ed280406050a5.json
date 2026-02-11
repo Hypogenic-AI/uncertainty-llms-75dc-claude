@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Silica\", \"confidence\": 10, \"reasoning\": \"Bioactive glass is primarily composed of silica (SiO2), along with other components such as calcium oxide and sodium oxide. Zirconia is not a typical constituent of bioactive glass. The other options, calcium carbonate and alumina, are also not standard constituents. Silica is the correct answer.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 353,
+    "completion_tokens": 95
+  }
+}

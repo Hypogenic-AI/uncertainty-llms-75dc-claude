@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question contains multiple red flags: it references 'enigmatic and arcane psychodynamic models,' describes fictional 'species of beings,' uses deliberately absurd language ('thousand suns,' 'cosmic tea,' 'quantum entanglement and telekinesis'), and presents options that are clearly nonsensical parodies rather than legitimate medical/psychological concepts. The question appears designed to mock psychodynamic theory rather than seek genuine medical information. The term 'corrective emotional experience' is a real concept in psychotherapy, but this question distorts it beyond recognition with fictional elements.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 559,
+    "completion_tokens": 180
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"3:l\", \"confidence\": 9, \"reasoning\": \"The normal myeloid to erythroid (M:E) ratio in adult bone marrow is typically around 3:1 to 4:1. The student's answer of 2:1 is lower than the commonly accepted normal range. Among the provided options, 3:1 is the most accurate.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 359,
+    "completion_tokens": 95
+  }
+}

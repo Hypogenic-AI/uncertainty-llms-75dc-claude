@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question presents a fictional 'ADP-x' molecule from an imaginary alien planet with fantastical descriptions ('cosmic will', 'mystical transport protein', 'tyrannical ATP'). The premise is entirely counterfactual and not based on real biochemistry. While the question seems to be asking about ADP transport mechanisms by analogy, the fictional framing makes it impossible to provide medically or scientifically valid guidance. The question appears designed to elicit speculation about imaginary biochemistry rather than address real medical knowledge.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 629,
+    "completion_tokens": 173
+  }
+}

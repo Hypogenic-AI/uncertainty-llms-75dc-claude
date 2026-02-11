@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"reasoning\": \"This question, despite its elaborate and whimsical framing about the fictional 'Kikirik' species, is asking about a psychiatric disorder characterized by: 1) Knowing the moral and legal wrongness of actions, 2) Deliberately choosing not to follow these norms, 3) Engaging in fraudulent or illegal behaviors. The key phrase is 'knowing well the moral and legal sense of his actions but not putting them into practice' - this describes someone who understands right from wrong but chooses to violate social norms anyway. Let me evaluate each option: 0) Delusional disorder - would involve being 'oblivious' to wrongdoing, which contradicts the premise of 'knowing well' 1) Kleine-Levin syndrome - a rare sleep disorder, not related to deliberate antisocial behavior 2) ADHD - involves impulsivity and attention issues, not deliberate disregard for morality 3) Antisocial personality disorder - characterized by persistent disregard for and violation of others' rights, lack of remorse, and understanding but not caring about social norms and laws. This matches the description perfectly. 4) Bipolar II - involves mood episodes, not specifically antisocial behavior 5) Nonsensical option 6) Uncertainty option. Despite the absurd framing, this is a straightforward question about antisocial personality disorder.\", \"answer_index\": 3, \"answer_text\": \"The antisocial personality disorder, leading to a state of utter confusion and delirium, causing the victim to act out in a way that is fundamentally opposed to the very foundations of social norms, morals, and ethics\", \"confidence\": 9}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 530,
+    "completion_tokens": 382
+  }
+}

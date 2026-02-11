@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Schizotypal personality disorder\", \"confidence\": 9, \"reasoning\": \"The patient presents with classic features of paranoid personality disorder: pervasive distrust and suspiciousness (doesn't trust neighbors, doubts wife's fidelity, suspicious of counselor), interpreting others' motives as malevolent (boss was 'jealous'), and being critical/complaining. Paranoid personality disorder belongs to Cluster A (odd/eccentric) personality disorders. Schizotypal personality disorder also belongs to Cluster A. The other options belong to different clusters: OCPD is Cluster C (anxious/fearful), Antisocial is Cluster B (dramatic/erratic), and 'not otherwise specified' is not a cluster designation.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 482,
+    "completion_tokens": 191
+  }
+}

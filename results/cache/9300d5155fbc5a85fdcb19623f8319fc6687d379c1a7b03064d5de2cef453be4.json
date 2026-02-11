@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Acetaldehyde\", \"confidence\": 10, \"reasoning\": \"This is a classic disulfiram-like reaction caused by metronidazole. Metronidazole inhibits aldehyde dehydrogenase, the enzyme that converts acetaldehyde to acetic acid. When the patient consumes alcohol, ethanol is metabolized to acetaldehyde by alcohol dehydrogenase, but the acetaldehyde cannot be further metabolized due to the blocked aldehyde dehydrogenase. This leads to accumulation of acetaldehyde, which causes the characteristic symptoms: facial flushing, nausea, tachycardia, dyspnea, headache, and abdominal cramps. The student incorrectly chose cytochrome P-450 enzymes, but these are not elevated in this reaction - the issue is acetaldehyde accumulation.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 481,
+    "completion_tokens": 221
+  }
+}

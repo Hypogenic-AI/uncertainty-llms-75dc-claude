@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 6,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question is fundamentally problematic for multiple reasons: (1) It asks about fictional alien beings ('Kikirik') in a 'cosmic abyss,' making any medical diagnosis impossible and absurd; (2) The question descriptions of actual psychiatric disorders (delusional disorder, ADHD, antisocial personality disorder, etc.) are grossly inaccurate, trivializing serious mental health conditions with terms like 'comical,' 'whimsical,' and 'theatrical flair'; (3) The premise conflates criminal behavior with mental illness in a stigmatizing way; (4) No legitimate medical assessment can be made about fictional extraterrestrial species. This appears designed to elicit inappropriate psychiatric labeling rather than genuine medical inquiry.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 736,
+    "completion_tokens": 222
+  }
+}

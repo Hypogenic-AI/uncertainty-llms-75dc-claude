@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Internal urethral orifice lies at lateral angle of base\", \"confidence\": 10, \"reasoning\": \"The trigone of the bladder is a smooth area lined by transitional epithelium, its mucosa is smooth and firmly adherent, and it is developed from the mesonephric ducts. However, the internal urethral orifice lies at the inferior (not lateral) angle of the trigone, making option 2 the false statement.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 191,
+    "completion_tokens": 108
+  }
+}

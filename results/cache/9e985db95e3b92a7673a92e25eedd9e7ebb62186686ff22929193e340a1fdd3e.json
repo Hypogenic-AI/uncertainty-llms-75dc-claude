@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Active hepatitis A infection\", \"confidence\": 9, \"reasoning\": \"The key findings are: Anti-HAV IgM positive (indicates acute/active hepatitis A infection), Anti-HAV IgG negative (no past infection or immunity), Anti-HBs positive (indicates hepatitis B immunity, likely from vaccination), and all other hepatitis B markers negative (no active or chronic HBV infection). Anti-HCV is negative (no hepatitis C). IgM antibodies appear early in acute infection and indicate current/recent infection, while IgG appears later and persists, indicating past infection or immunity. The positive IgM with negative IgG is classic for acute hepatitis A infection.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 288,
+    "completion_tokens": 171
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Cast metal\", \"confidence\": 9, \"reasoning\": \"When both the mesiobuccal and distobuccal cusps of a mandibular 1st molar are involved, there is significant loss of tooth structure. The restoration of choice in such cases is typically a cast metal restoration (such as a cast metal crown or onlay), as it provides strength and durability to withstand occlusal forces. Intermediate restorations, composite, and GIC are not sufficiently strong for such extensive cusp involvement.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 124
+  }
+}

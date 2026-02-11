@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Dorsal part of 2nd pouch.\", \"confidence\": 9, \"reasoning\": \"The palatine tonsils develop embryologically from the dorsal part of the second pharyngeal pouch. The ventral part of the second pouch is obliterated during development. The student's answer of 'Ventral part of 3rd pouch' is incorrect, as the third pouch gives rise to the thymus (ventral) and inferior parathyroid glands (dorsal), not the tonsils. This is a well-established embryological fact in medical anatomy.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 208,
+    "completion_tokens": 145
+  }
+}

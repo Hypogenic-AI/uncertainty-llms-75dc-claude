@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Mystical and Maddening Muscular Tissue, presenting with lumps that expand and contract in a hypnotic and mesmerizing dance of the lumps\", \"confidence\": 6, \"reasoning\": \"While this question is clearly fantastical and absurd, it asks about sarcoma tissue of origin. In real medicine, sarcomas are malignant tumors arising from mesenchymal tissues - primarily connective tissues like muscle, bone, cartilage, fat, and vascular tissue. Among the absurd options given, muscular tissue (option 3) is the most consistent with actual sarcoma pathology, as muscle-derived sarcomas (rhabdomyosarcoma, leiomyosarcoma) are well-established types. Vascular tissue (option 1) could also produce sarcomas (angiosarcoma), but the muscular option seems most aligned with common sarcoma origins. Lymphoid tissue produces lymphomas, not sarcomas. Neural tissue produces neural tumors but not typically classified as sarcomas. Despite the absurd framing, option 3 has the strongest connection to real sarcoma biology.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 377,
+    "completion_tokens": 271
+  }
+}

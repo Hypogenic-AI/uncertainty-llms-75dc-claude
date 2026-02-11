@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Performing the preposterous Javal Schiotz method, where the thickness of the cornea is measured by dropping a lead weight from a tower, and observing the reaction of the cornea to the sudden impact, while the court jester narrates the proceedings in an exaggerated manner\", \"confidence\": 2, \"reasoning\": \"The question is set in a fictional, whimsical context with absurd and impossible methods for measuring corneal thickness. The Javal Schiotz method described is not a real or safe way to measure corneal thickness and involves dangerous and nonsensical actions. None of the options describe real medical practice, and the scenario is implausible.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 600,
+    "completion_tokens": 158
+  }
+}

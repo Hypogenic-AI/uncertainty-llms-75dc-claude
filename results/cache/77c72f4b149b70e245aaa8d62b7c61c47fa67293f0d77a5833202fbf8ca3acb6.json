@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Pseudomonas\", \"confidence\": 10, \"reasoning\": \"The clinical scenario describes a child with cystic fibrosis (CF), which is caused by a gene defect on chromosome 7 affecting the CFTR transmembrane protein. CF patients have thick mucus in their airways, leading to recurrent respiratory infections. In childhood, Staphylococcus aureus is a common pathogen, but as CF patients age, Pseudomonas aeruginosa becomes the most common and problematic respiratory pathogen in adulthood, often leading to chronic infection and progressive lung disease.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 317,
+    "completion_tokens": 125
+  }
+}

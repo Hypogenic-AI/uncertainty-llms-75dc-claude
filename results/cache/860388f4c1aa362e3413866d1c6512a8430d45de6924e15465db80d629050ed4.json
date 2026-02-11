@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Sofosbuvir and simeprevir\", \"confidence\": 9, \"reasoning\": \"This patient has chronic hepatitis C infection (positive HCV IgG and high HCV RNA) and no evidence of acute or chronic hepatitis B infection. The current standard of care for chronic hepatitis C is direct-acting antiviral agents such as sofosbuvir and simeprevir. Interferon-gamma is not used for hepatitis C; ribavirin is rarely used alone and is typically combined with direct-acting antivirals in select cases; lamivudine is used for hepatitis B, not C.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 618,
+    "completion_tokens": 146
+  }
+}

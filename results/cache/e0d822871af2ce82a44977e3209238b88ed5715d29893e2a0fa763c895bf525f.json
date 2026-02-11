@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 4, \"answer_text\": \"Acknowledging the absolute absurdity of the question and conceding that the very notion of Carcinoma horn in unicorns is an affront to reason and rationality\", \"confidence\": 2, \"reasoning\": \"The question is based on a fictional scenario involving unicorns and magical tongue anatomy, which is not grounded in any real medical knowledge. Therefore, it is not possible to provide an evidence-based answer.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 528,
+    "completion_tokens": 105
+  }
+}

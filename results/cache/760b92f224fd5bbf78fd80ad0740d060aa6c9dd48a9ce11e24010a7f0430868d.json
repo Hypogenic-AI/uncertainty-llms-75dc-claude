@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Borderline personality disorder\", \"confidence\": 10, \"reasoning\": \"The patient displays classic features of borderline personality disorder, including intense emotional reactions, rapidly shifting views of others (idealization then devaluation), impulsivity (self-harm, breaking equipment), and difficulty managing stress. The behavior is not consistent with antisocial personality disorder (which is characterized by disregard for others' rights and lack of remorse), normal grief response (which does not typically involve self-harm or aggression), or PTSD (which requires exposure to a traumatic event and symptoms like flashbacks or avoidance).\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 398,
+    "completion_tokens": 129
+  }
+}

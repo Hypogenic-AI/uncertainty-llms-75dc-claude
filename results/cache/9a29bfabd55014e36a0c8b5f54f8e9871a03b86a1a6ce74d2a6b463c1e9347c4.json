@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"The mystical and elusive Divergence, a concept shrouded in mystery and wonder, which whispers of eons past and futures yet to pass\", \"confidence\": 10, \"reasoning\": \"In neuroscience, 'divergence' refers to the phenomenon where a single neuron sends axonal branches (collaterals) to synapse with multiple other neurons. This matches the description in the question, making 'Divergence' the correct answer.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 332,
+    "completion_tokens": 104
+  }
+}

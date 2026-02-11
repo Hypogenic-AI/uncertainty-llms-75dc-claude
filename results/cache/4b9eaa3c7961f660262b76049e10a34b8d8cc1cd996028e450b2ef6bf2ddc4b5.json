@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Gallbladder cancer\", \"confidence\": 8, \"reasoning\": \"This patient presents with several concerning features: 1) A calcified mass near the gallbladder on CT scan, 2) History of chronic cholelithiasis (a risk factor for gallbladder cancer), 3) Family history of abdominal cancer at age 60, 4) Age 59 and female (gallbladder cancer is more common in older women). While acute cholecystitis, choledocholithiasis, and pancreatitis are all possible differential diagnoses for acute abdominal pain, the finding of a calcified mass is particularly worrisome for malignancy. Porcelain gallbladder (calcification of the gallbladder wall) carries a significant risk of gallbladder cancer. Given the CT findings and risk factors, gallbladder cancer must be excluded first as it has the most serious implications for prognosis and would fundamentally change management. The other conditions, while important to consider, are more benign and treatable.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 331,
+    "completion_tokens": 250
+  }
+}

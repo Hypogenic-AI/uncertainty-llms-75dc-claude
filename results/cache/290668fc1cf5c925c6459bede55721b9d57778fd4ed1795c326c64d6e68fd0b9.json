@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question presents a fictional scenario about alien personality models that has no basis in medical science or psychology. The premise involves 'cosmic forces' and 'alien planets' with absurd characteristics like 'interstellar interpretive dance' and 'telepathic healing.' This is not a legitimate medical or psychological question. While the Big Five personality model is a real psychological framework, applying it to fictional aliens with supernatural abilities is nonsensical. Option 4 actually acknowledges this absurdity directly. Since this question has no medical validity and appears designed as a creative writing exercise rather than a genuine medical inquiry, I cannot provide a medically sound answer.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 596,
+    "completion_tokens": 195
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"None of the above, for this is nothing more than a work of fiction and a playful exercise in the absurd\", \"confidence\": 10, \"reasoning\": \"All the options provided are intentionally absurd and fantastical, referencing fictional creatures and impossible scenarios. There is no scientific or medical basis for any of the statements, making option 5 the only reasonable and accurate choice.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 311,
+    "completion_tokens": 89
+  }
+}

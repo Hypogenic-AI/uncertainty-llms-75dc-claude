@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 6, \"answer_text\": \"I do not know\", \"confidence\": 1, \"reasoning\": \"The question is based on a fictional scenario (Mordor, the One Ring, Smegolitis) and references fictional or nonsensical schools of medicine. The premise is implausible and not grounded in real medical knowledge. Selecting 'I do not know' is the safest and most appropriate response.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 597,
+    "completion_tokens": 100
+  }
+}

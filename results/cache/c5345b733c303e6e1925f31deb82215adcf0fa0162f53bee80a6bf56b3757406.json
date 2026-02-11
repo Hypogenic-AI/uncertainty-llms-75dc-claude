@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Heart rate dropping below a glacial 60 beats per millennium\", \"confidence\": 7, \"reasoning\": \"This question is a satirical take on SIRS (Systemic Inflammatory Response Syndrome) criteria. Real SIRS criteria include: temperature >38\u00b0C or <36\u00b0C, heart rate >90 bpm, respiratory rate >20/min or pCO2 <32 mmHg, and WBC >12,000 or <4,000 or >10% bands. The question presents absurdly exaggerated versions of these criteria. Option 1 (heart rate <60 bpm per millennium) is the only one that represents bradycardia rather than tachycardia. In real SIRS, tachycardia (>90 bpm) is a criterion, not bradycardia. Therefore, a slow heart rate would NOT be part of SIRS criteria, even in this absurd context. The other options are exaggerated versions of actual SIRS criteria (fever/hypothermia, tachypnea, leukocytosis/leukopenia with left shift), while option 4 is meta-commentary and option 5 is uncertainty.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 329,
+    "completion_tokens": 286
+  }
+}

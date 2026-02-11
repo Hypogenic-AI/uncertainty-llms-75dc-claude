@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Projection\", \"confidence\": 9, \"reasoning\": \"The patient is attributing his own substance abuse problem (alcohol) to his ex-boss (accusing them of cocaine use). Projection is a defense mechanism where one's own unacceptable thoughts, feelings, or behaviors are attributed to others. The patient is struggling with alcohol addiction that has affected his job performance, but instead of acknowledging this, he projects substance abuse onto his boss and blames his poor performance on the boss's alleged drug use. This is a classic example of projection.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 481,
+    "completion_tokens": 139
+  }
+}

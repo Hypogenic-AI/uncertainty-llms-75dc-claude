@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Adhesive capsulitis\", \"confidence\": 10, \"reasoning\": \"The patient's history of diabetes, sedentary lifestyle, and gradual onset of shoulder stiffness with both decreased passive and active range of motion are classic for adhesive capsulitis (frozen shoulder). This condition is commonly seen in diabetics and is characterized by progressive loss of shoulder motion. Rotator cuff impingement and subacromial bursitis typically present with pain and limited active, but not passive, motion. Glenohumeral osteoarthritis is less likely without a history of trauma or chronic joint pain and usually occurs with crepitus and more generalized joint degeneration.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 481,
+    "completion_tokens": 151
+  }
+}

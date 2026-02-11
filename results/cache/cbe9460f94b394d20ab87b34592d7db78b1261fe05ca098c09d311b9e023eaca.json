@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Re-experiencing the bewildering and inexplicable trauma of deficit links or traumatic situations and correcting them through the transfer of their consciousness into an alternate dimension\", \"confidence\": 7, \"reasoning\": \"The question references the psychodynamic concept of a 'corrective emotional experience,' which involves re-experiencing past emotions in a therapeutic context to achieve healing. While the options are intentionally absurd, option 2 most closely aligns with the psychodynamic idea of re-experiencing and correcting past trauma, albeit described in a fantastical manner. The other options are either unrelated, nonsensical, or explicitly state defeat or lack of knowledge.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 333,
+    "completion_tokens": 145
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"osteosarcoma\", \"confidence\": 8, \"reasoning\": \"Asymmetric widening of the periodontal ligament (PDL) around two or more teeth is a classic radiographic finding in osteosarcoma of the jaw. This occurs due to the aggressive, infiltrative nature of the tumor which disrupts the normal PDL space in an irregular pattern. Osteosarcoma characteristically shows asymmetric PDL widening, often described as a 'sunburst' or 'hair-on-end' periosteal reaction. Metastatic breast carcinoma can cause PDL widening but is less characteristic. Paget's disease shows hypercementosis and cotton-wool appearance. Fibrous dysplasia typically shows ground-glass appearance with loss of lamina dura, not asymmetric PDL widening.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 403,
+    "completion_tokens": 210
+  }
+}

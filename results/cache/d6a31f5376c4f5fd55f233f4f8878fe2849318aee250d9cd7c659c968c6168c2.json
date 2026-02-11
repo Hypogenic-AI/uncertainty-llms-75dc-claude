@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Imperforate Anus - this utterly ridiculous condition has rendered the newborn devoid of any proper exit portals for the cosmic excreta, causing a build-up of pressure that has lead to the dark green discharge emanating from her vulva.\", \"confidence\": 9, \"reasoning\": \"Despite the absurd and flowery language, the clinical presentation is clear: distended abdomen, flat perineal region with no openings, and dark green (meconium) discharge from the vulva. This classic triad indicates imperforate anus with a rectovaginal fistula. The meconium cannot exit through the normal anal opening (which is absent), so it finds an alternative path through a fistula to the vagina. The other conditions don't explain the combination of absent anal opening with vaginal meconium discharge. Meconium ileus presents differently, Hirschsprung's would have an anus present, and colonic atresia wouldn't typically present with this specific pattern of fistula formation.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 508,
+    "completion_tokens": 241
+  }
+}

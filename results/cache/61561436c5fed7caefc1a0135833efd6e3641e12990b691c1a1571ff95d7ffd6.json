@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Age\", \"confidence\": 9, \"reasoning\": \"This patient presents with classic signs of hyperthyroidism (weight loss despite good appetite, anxiety, insomnia, sweaty palms, fine tremors, palpable thyroid mass, exophthalmos) and an irregular pulse at 140-150/min, which is highly suggestive of atrial fibrillation (AF). The ECG would likely show irregularly irregular rhythm without distinct P waves. Atrial fibrillation has a strong positive correlation with age - the prevalence increases significantly with advancing age, affecting <1% of those under 60 but >8% of those over 80. While hyperthyroidism can precipitate AF, age remains the strongest independent risk factor. Digoxin and amiodarone levels would be relevant for treatment monitoring but don't correlate with the rhythm itself. PR interval is not measurable in AF due to absence of organized atrial activity. Therefore, age has the strongest positive correlation with this patient's heart rhythm (atrial fibrillation).\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 348,
+    "completion_tokens": 248
+  }
+}

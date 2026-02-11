@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Pituitary infarction\", \"confidence\": 9, \"reasoning\": \"This patient presents with classic Sheehan syndrome. The clinical scenario shows: 1) Postpartum hemorrhage (hypotension, tachycardia, boggy uterus suggesting uterine atony), 2) Severe blood loss requiring massive transfusion (4 units fluids + 4 units blood), and 3) Failure of lactation the next day. Sheehan syndrome occurs when severe postpartum hemorrhage causes hypovolemic shock, leading to ischemic necrosis (infarction) of the anterior pituitary gland. The pituitary is particularly vulnerable during pregnancy due to physiologic enlargement without corresponding increase in blood supply. The inability to lactate indicates prolactin deficiency from anterior pituitary damage. While pituitary hemorrhage can occur, infarction is the more accurate pathophysiologic mechanism in postpartum hemorrhage. Retained placenta would cause continued bleeding but not explain the lactation failure. Pituitary tumor is unrelated to this acute presentation.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 317,
+    "completion_tokens": 261
+  }
+}

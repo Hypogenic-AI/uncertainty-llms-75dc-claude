@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Flexor pollicis longus tendon\", \"confidence\": 9, \"reasoning\": \"The patient's symptoms (painless, transilluminating, rubbery mass near the lateral volar wrist, sensory changes in the median nerve distribution, and Tinel's sign) are classic for a ganglion cyst compressing the median nerve in the carpal tunnel. The flexor pollicis longus tendon runs through the carpal tunnel along with the median nerve, so it is at risk of entrapment if the mass persists. The ulnar nerve and artery run medial to the carpal tunnel, and the flexor carpi radialis tendon is more radial and not within the carpal tunnel.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 455,
+    "completion_tokens": 164
+  }
+}

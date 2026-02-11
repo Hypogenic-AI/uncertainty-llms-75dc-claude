@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"A wholly subjective and utterly ridiculous interpretation of an objective analysis of the venomous properties of the serpent, indicating that the poison has the capability of transforming the victim into a purple dragon, but only if they are wearing a pink hat\", \"confidence\": 10, \"reasoning\": \"Option 2 is the most preposterous and nonsensical origin, as it combines an absurdly specific and illogical condition (wearing a pink hat) with a fantastical outcome (turning into a purple dragon), making it the least plausible and most ridiculous explanation among the options.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 355,
+    "completion_tokens": 129
+  }
+}

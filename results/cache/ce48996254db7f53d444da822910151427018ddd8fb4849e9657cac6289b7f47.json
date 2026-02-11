@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"\\\"Tell me, why do you think you will not be able to follow it? Do you think it will not help?\\\"\", \"confidence\": 9, \"reasoning\": \"Therapeutic communication requires open-ended questions that encourage the patient to express concerns and feelings. Option 2 uses open-ended questions to explore the patient's specific worries about following the treatment, allowing for assessment of barriers and concerns. The student's answer (option 0) and options 1 and 3 are non-therapeutic because they dismiss concerns, provide false reassurance, or redirect authority rather than exploring the patient's perspective. Option 2 demonstrates active listening and facilitates problem-solving, which are key principles of therapeutic communication.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 305,
+    "completion_tokens": 168
+  }
+}

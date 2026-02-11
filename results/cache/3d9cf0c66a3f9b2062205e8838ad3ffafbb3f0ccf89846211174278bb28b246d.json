@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Embarking on a most bizarre and inexplicable regimen known as 'Chemoradiation', where the afflicted area is subjected to a barrage of mystical potions and cosmic energies in order to annihilate the malignant forces of the cancerous malady\", \"confidence\": 8, \"reasoning\": \"Despite the whimsical language, this question describes cervical cancer involving the upper cervix and lower uterine segment. After radical hysterectomy for cervical cancer with such anatomical involvement (suggesting locally advanced disease), the standard of care is adjuvant chemoradiation therapy. This combines chemotherapy (the 'mystical potions') with radiation therapy (the 'cosmic energies') to reduce recurrence risk. Chemoradiation is the evidence-based treatment for high-risk cervical cancer post-surgery, making option 2 the correct answer despite the fantastical phrasing.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 517,
+    "completion_tokens": 220
+  }
+}

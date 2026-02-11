@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Recall bias\", \"confidence\": 9, \"reasoning\": \"This is a retrospective case-control study where mothers are asked to recall their folic acid supplementation from years ago (children are now 0-4 years old). Mothers of children with ASD may recall their prenatal behaviors differently than mothers of healthy children - potentially underreporting folic acid use due to guilt or searching for explanations. This differential recall between cases and controls is the classic setup for recall bias. Latency period refers to time between exposure and disease manifestation, which is not a type of bias. Interviewer bias would require knowledge that interviewers were aware of case/control status and influenced responses. Survival bias occurs when subjects are excluded due to death/loss to follow-up in ways that distort results.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 520,
+    "completion_tokens": 195
+  }
+}

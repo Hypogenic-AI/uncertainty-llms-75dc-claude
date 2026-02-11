@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 1,\n  \"answer_text\": \"The test of progressive matrices (Raven), where participants are expected to solve a series of riddles and puzzles using a combination of quantum physics and alchemy\",\n  \"confidence\": 8,\n  \"reasoning\": \"Despite the absurd descriptions added to each option, the underlying test that actually measures the G-Factor (general intelligence) is Raven's Progressive Matrices. The G-Factor represents general cognitive ability across different domains. Raven's Progressive Matrices is specifically designed as a non-verbal measure of fluid intelligence and abstract reasoning, which are core components of the G-Factor. The other tests mentioned (PMA measures specific abilities, DAT is for differential aptitudes, MSCA and Bayley are developmental scales) do not primarily measure general intelligence in the same way. The nonsensical descriptions are red herrings - the question asks which test would be classified under G-Factor Tests, and Raven's is the correct answer regardless of the fictional embellishments.\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 368,
+    "completion_tokens": 237
+  }
+}

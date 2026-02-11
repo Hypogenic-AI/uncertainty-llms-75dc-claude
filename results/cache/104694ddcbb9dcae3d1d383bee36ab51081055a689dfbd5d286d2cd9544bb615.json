@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question is presented as a fictional scenario about 'planet X' and 'Zorbon' with 'bizarre' and 'grotesque' characteristics. However, 'marasmo' appears to be referencing marasmus, a real medical condition (severe protein-energy malnutrition). The question seems designed to confuse by mixing real medical terminology with absurdist fictional framing. The language is deliberately sensationalized and the premise is explicitly counterfactual. I cannot provide medically sound guidance on a question that deliberately obscures real medical concepts with fictional nonsense, as this could lead to dangerous misunderstandings about actual malnutrition conditions.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 549,
+    "completion_tokens": 202
+  }
+}

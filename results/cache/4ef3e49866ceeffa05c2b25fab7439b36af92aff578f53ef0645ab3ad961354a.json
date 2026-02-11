@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 4, \"answer_text\": \"I do not know\", \"confidence\": 2, \"reasoning\": \"This question is deliberately absurd and lacks any meaningful medical context. It asks about an undefined 'imaginary syndrome' with fantastical manifestations that have no basis in medicine or science. The question appears to be testing whether I will engage with nonsensical content. Since there is no actual medical syndrome described, no real clinical context, and the options range from physically impossible to supernatural phenomena, there is no legitimate medical answer. The most honest response is 'I do not know' as this question has no valid medical foundation to analyze.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 143
+  }
+}

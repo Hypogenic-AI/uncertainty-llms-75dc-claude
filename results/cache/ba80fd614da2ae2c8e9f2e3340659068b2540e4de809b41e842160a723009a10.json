@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 1,\n  \"reasoning\": \"This question is entirely fictional, involving dragons, magic, 300-year-old women, and mythical pregnancies. It explicitly describes itself as 'absurd,' 'preposterous,' and 'nonsensical' throughout. This is not a legitimate medical question but rather a fantasy scenario designed to elicit engagement with impossible premises. The question contains no actual medical evidence or plausible clinical scenario. As a medical expert prioritizing patient safety, I cannot provide medical advice based on fictional, magical scenarios that have no basis in human physiology or evidence-based medicine.\",\n  \"evidence_quality\": \"dangerous\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 685,
+    "completion_tokens": 177
+  }
+}

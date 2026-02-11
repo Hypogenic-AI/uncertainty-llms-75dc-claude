@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"The onset of a devastating systemic lupus erythematosus epidemic, giving rise to a new era of cosmic chaos and destruction\", \"confidence\": 10, \"reasoning\": \"Deficiency of complement component C4 is strongly associated with an increased risk of developing systemic lupus erythematosus (SLE) due to impaired clearance of immune complexes and apoptotic cells. This is a well-established link in immunology, making SLE the most likely manifestation among the options provided.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 111
+  }
+}

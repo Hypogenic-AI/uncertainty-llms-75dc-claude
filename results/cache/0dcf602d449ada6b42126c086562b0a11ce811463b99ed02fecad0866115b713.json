@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 1,\n  \"reasoning\": \"This question is a fictional scenario about imaginary creatures ('Zentrons') on a fictional planet ('Zentron') with impossible physiological claims (living for a millennium, environments that 'melt steel with a glance' or 'turn flesh to stone'). While adipocere formation is a real forensic/pathological phenomenon that occurs in human remains under specific conditions (typically cool, moist, anaerobic environments), this question is deliberately absurd and designed with nonsensical, fantastical elements. It cannot be answered with legitimate medical or scientific knowledge. The question appears to be testing whether I will apply real medical concepts to completely fictional scenarios, which would be inappropriate and potentially misleading.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 574,
+    "completion_tokens": 206
+  }
+}

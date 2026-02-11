@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Perichondrium\", \"confidence\": 9, \"reasoning\": \"The question addresses why cartilaginous injuries heal poorly compared to bone fractures. The key issue is the absence of progenitor cells for matrix regeneration in cartilage. The perichondrium is a layer of dense connective tissue that surrounds cartilage and contains chondrogenic progenitor cells (stem cells capable of differentiating into chondrocytes). These progenitor cells are essential for cartilage regeneration. Proteoglycans are matrix components, not cells. Osteoblasts form bone, not cartilage. Mature chondrocytes have limited proliferative capacity and cannot effectively regenerate damaged cartilage. Therefore, transplanting perichondrium would provide the necessary progenitor cells to promote healing in cartilaginous injuries.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 201
+  }
+}

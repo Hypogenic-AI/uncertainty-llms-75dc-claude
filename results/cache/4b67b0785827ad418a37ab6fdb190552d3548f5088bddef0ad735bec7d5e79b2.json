@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"A bewildering and utterly incomprehensible range of 10000-1000000, indicative of a complex and diverse microbial ecosystem that is deeply intertwined with the cosmic forces of the universe\", \"confidence\": 8, \"reasoning\": \"On Earth, Streptococcus mutans colony forming units in human saliva typically range from 10,000 to 1,000,000 per mL, reflecting a robust and diverse oral microbiome. Even in a fantastical extraterrestrial context, if the scenario parallels earthly microbiology, this range is the most plausible and scientifically grounded answer among the options.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 418,
+    "completion_tokens": 134
+  }
+}

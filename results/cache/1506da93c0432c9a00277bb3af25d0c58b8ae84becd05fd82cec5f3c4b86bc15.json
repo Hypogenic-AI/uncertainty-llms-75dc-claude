@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Add fluticasone daily\", \"confidence\": 9, \"reasoning\": \"This 6-year-old boy currently has asthma symptoms requiring albuterol 4 times per week and has had 3 nighttime awakenings in the past month. According to NHLBI guidelines, this classifies as MILD PERSISTENT asthma (symptoms >2 days/week but not daily, and nighttime awakenings 3-4 times/month). The current regimen of albuterol PRN alone is appropriate only for intermittent asthma. For mild persistent asthma in children, the preferred treatment is a low-dose inhaled corticosteroid (ICS) such as fluticasone. Adding a long-acting beta-agonist (LABA) like salmeterol would be premature and is typically reserved for moderate-severe persistent asthma. LABAs should never be used as monotherapy and are added only when ICS alone is insufficient. Zileuton is a leukotriene modifier that could be considered but is not first-line for this age group and severity. Therefore, adding daily fluticasone (low-dose ICS) is the most appropriate step-up in therapy.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 354,
+    "completion_tokens": 291
+  }
+}

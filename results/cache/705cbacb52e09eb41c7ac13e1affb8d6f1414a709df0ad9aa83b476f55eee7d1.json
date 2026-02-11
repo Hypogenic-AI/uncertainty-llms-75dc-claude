@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Psoriatic arthritis\", \"confidence\": 10, \"reasoning\": \"This patient has a history of chronic arthritis, asymmetric joint involvement, back pain, nail pitting, and a history of dandruff (scalp psoriasis). These features are classic for psoriatic arthritis, which is associated with psoriasis (including scalp involvement) and nail changes. The improvement of pain with rest is less typical, but the overall clinical picture fits psoriatic arthritis best. Rheumatoid arthritis is usually symmetric and does not cause nail pitting or scalp psoriasis. Arthritis mutilans is a severe, deforming subtype of psoriatic arthritis but is not the most likely diagnosis here. Mixed connective tissue disease would present with features of SLE, scleroderma, and polymyositis, which are not described here.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 242,
+    "completion_tokens": 175
+  }
+}

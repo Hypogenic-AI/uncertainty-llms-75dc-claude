@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Right heart catheterization\", \"confidence\": 10, \"reasoning\": \"The patient's history of COPD, signs of right heart failure (JVD, pitting edema, hepatomegaly), and findings of right ventricular hypertrophy and enlarged pulmonary arteries point to cor pulmonale (right heart failure due to pulmonary hypertension). The gold standard for diagnosing pulmonary hypertension (and thus cor pulmonale) is right heart catheterization, which directly measures pulmonary artery pressures. Coronary angiography is used for coronary artery disease, not pulmonary hypertension. Abdominal paracentesis and liver ultrasound are not diagnostic for this scenario.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 601,
+    "completion_tokens": 143
+  }
+}

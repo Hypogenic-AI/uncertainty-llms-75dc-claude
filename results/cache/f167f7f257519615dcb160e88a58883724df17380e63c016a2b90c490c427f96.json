@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Anti-B antibodies\", \"confidence\": 9, \"reasoning\": \"This 2-day-old newborn presents with jaundice, hepatosplenomegaly, anemia (Hb 11 g/dL), and elevated reticulocytes (9%), indicating hemolytic disease. The key findings are:\\n\\n1. Mother: Blood group O, Rh-negative with positive anti-Rh antibody titer\\n2. Baby: Blood group B, Rh-negative\\n3. Indirect hyperbilirubinemia (total 11.3, direct 0.3 mg/dL)\\n4. Evidence of hemolysis (anemia, reticulocytosis, splenomegaly)\\n\\nAnalyzing each option:\\n- RBC sickling: Brother has sickle cell, but this wouldn't cause symptoms at 2 days old\\n- Anti-D antibodies: Both mother and baby are Rh-negative, so no Rh incompatibility\\n- Biliary duct malformation: Would cause direct hyperbilirubinemia, not indirect\\n- Anti-B antibodies: Mother is type O (has anti-A and anti-B antibodies), baby is type B - this is ABO incompatibility\\n\\nThe positive anti-Rh titer is likely from RhoGAM or previous exposure, but since both are Rh-negative, it's not causing disease. The ABO incompatibility (O mother, B baby) is causing hemolytic disease with the classic presentation of early jaundice and hemolysis.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 430,
+    "completion_tokens": 385
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Para-aminohippurate\", \"confidence\": 10, \"reasoning\": \"The substance described is not reabsorbed and shows an excretion rate that increases with plasma concentration but plateaus, indicating saturation of tubular secretion. This is characteristic of para-aminohippurate (PAH), which is filtered and secreted until its transporters are saturated. Glucose is incorrect because it is reabsorbed until its transport maximum is reached, and cystatin C and iohexol are used to measure GFR, not RPF or tubular secretion.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 314,
+    "completion_tokens": 126
+  }
+}

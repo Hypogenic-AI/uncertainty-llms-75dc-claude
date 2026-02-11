@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 4, \"answer_text\": \"Conceding defeat in the face of this utter absurdity and admitting ignorance to the baffling illogic of the situation, for it defies the very foundations of reason and sanity\", \"confidence\": 10, \"reasoning\": \"The question is based on entirely fantastical premises with no basis in medical science or logic. None of the listed drug options are rational or appropriate for a mythical disease, making the only reasonable response to acknowledge the absurdity and admit ignorance.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 359,
+    "completion_tokens": 109
+  }
+}

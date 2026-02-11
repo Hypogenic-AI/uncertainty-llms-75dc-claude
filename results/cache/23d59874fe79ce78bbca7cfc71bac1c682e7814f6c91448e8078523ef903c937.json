@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Burkholderia pseudomallei, an implausible and entirely fanciful bacterium that exists only in the realm of make-believe and fantasy\", \"confidence\": 10, \"reasoning\": \"Despite the facetious language, Burkholderia pseudomallei is the real causative agent of melioidosis. The other options are incorrect or refer to different organisms. Burkholderia mallei causes glanders, Burkholderia cepacia is associated with infections in cystic fibrosis, and Pseudomonas mallei is not a recognized bacterium.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 325,
+    "completion_tokens": 131
+  }
+}

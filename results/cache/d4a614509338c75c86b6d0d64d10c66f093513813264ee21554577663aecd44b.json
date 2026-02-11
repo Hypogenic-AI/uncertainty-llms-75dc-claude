@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Drink less sugary drinks, diluted fruit juice to rehydrate appropriate\", \"confidence\": 7, \"reasoning\": \"The student's answer about skim milk for 2-4 year olds is incorrect because young children need whole milk (full-fat) for proper brain development and growth until age 2, and can transition to low-fat milk after age 2, but skim milk is generally not recommended until after age 5. Option 3 is the most appropriate advice as it promotes limiting sugary drinks and using diluted fruit juice for hydration, which aligns with pediatric nutrition guidelines. Options 0 and 1 have awkward phrasing but option 3 provides the soundest nutritional guidance for developing good eating habits in children.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 446,
+    "completion_tokens": 189
+  }
+}

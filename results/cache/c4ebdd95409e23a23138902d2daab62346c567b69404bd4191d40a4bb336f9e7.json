@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Arginine, the mystical amino acid that bestows the power of levitation and telekinesis upon the illuminated beings\", \"confidence\": 10, \"reasoning\": \"Despite the fantastical descriptions, the correct amino acid from which nitric oxide (NO) is synthesized is arginine. This is a well-established fact in biochemistry, regardless of the imaginative context presented in the question.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 329,
+    "completion_tokens": 91
+  }
+}

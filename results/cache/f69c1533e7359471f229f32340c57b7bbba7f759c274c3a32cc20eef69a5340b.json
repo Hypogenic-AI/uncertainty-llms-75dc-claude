@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Age\", \"confidence\": 9, \"reasoning\": \"This patient presents with symptoms and signs of hyperthyroidism (weight loss, anxiety, insomnia, tremor, exophthalmos, goiter) and new-onset atrial fibrillation (irregularly irregular pulse, tachycardia, ECG findings). Among the options, age has a strong positive correlation with the prevalence of atrial fibrillation, which is the likely rhythm seen here. The other options (digoxin and amiodarone levels, PR interval) do not have a strong positive correlation with the occurrence of atrial fibrillation.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 514,
+    "completion_tokens": 145
+  }
+}

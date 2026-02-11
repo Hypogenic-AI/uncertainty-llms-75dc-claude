@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Primary hyperparathyroidism\", \"confidence\": 10, \"reasoning\": \"The patient presents with classic features of primary hyperparathyroidism: hypercalcemia, elevated PTH, nephrolithiasis (calcium oxalate stones), and constitutional symptoms (fatigue, constipation). The key findings are:\\n\\n1. Hypercalcemia with elevated PTH - this indicates autonomous PTH secretion\\n2. Calcium oxalate nephrolithiasis with hypercalciuria - result of hypercalcemia\\n3. Constitutional symptoms (fatigue, constipation) - classic for hypercalcemia\\n4. Previously healthy with only mild hypertension - no history of chronic kidney disease or vitamin D deficiency that would suggest secondary causes\\n\\nSecondary hyperparathyroidism occurs in response to hypocalcemia (typically from chronic kidney disease or vitamin D deficiency) and would show low or normal calcium with elevated PTH. Tertiary hyperparathyroidism develops after prolonged secondary hyperparathyroidism. Pseudopseudohypoparathyroidism is a rare condition with normal calcium and PTH levels but physical features of Albright hereditary osteodystrophy.\\n\\nThis is clearly primary hyperparathyroidism, likely from a parathyroid adenoma.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 347,
+    "completion_tokens": 321
+  }
+}

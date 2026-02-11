@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Acetaldehyde\", \"confidence\": 10, \"reasoning\": \"Metronidazole inhibits aldehyde dehydrogenase, leading to accumulation of acetaldehyde when alcohol is consumed. This causes a disulfiram-like reaction with symptoms such as flushing, nausea, and tachycardia. The other options are not relevant to this reaction.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 244,
+    "completion_tokens": 85
+  }
+}

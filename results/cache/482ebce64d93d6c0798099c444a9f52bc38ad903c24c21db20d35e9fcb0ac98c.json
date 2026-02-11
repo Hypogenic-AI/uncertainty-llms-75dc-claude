@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Parietal cell destruction\", \"confidence\": 8, \"reasoning\": \"This patient presents with hypothyroidism, fatigue, anemia (pale conjunctivae, decreased hemoglobin), elevated gastrin levels, and inflammation of the gastric body and fundus. This constellation of findings is classic for autoimmune atrophic gastritis (type A gastritis). In this condition, autoantibodies target parietal cells in the gastric body and fundus, leading to their destruction. Parietal cells produce intrinsic factor (needed for B12 absorption) and hydrochloric acid. Their destruction leads to: 1) Achlorhydria (low acid), which causes compensatory hypergastrinemia, 2) B12 deficiency leading to megaloblastic anemia, and 3) The association with other autoimmune conditions like hypothyroidism. The elevated gastrin is a response to the lack of acid feedback inhibition. While enterochromaffin-like (ECL) cell hyperplasia can occur secondary to chronic hypergastrinemia, the primary pathologic process is parietal cell destruction.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 270,
+    "completion_tokens": 267
+  }
+}

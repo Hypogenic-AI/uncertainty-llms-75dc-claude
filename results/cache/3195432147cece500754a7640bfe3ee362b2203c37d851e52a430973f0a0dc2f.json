@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Cladribine\", \"confidence\": 10, \"reasoning\": \"This patient presents with symptoms and laboratory findings consistent with hairy cell leukemia: splenomegaly, pancytopenia, unsuccessful bone marrow aspiration (dry tap), and peripheral blood smear showing lymphocytes with cytoplasmic projections. Immunophenotyping positive for CD25 further supports this diagnosis. Cladribine, a purine analog, is the first-line and most effective pharmacotherapy for hairy cell leukemia.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 542,
+    "completion_tokens": 118
+  }
+}

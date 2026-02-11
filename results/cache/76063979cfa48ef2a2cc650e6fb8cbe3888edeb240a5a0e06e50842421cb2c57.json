@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Proliferation of surfactant-secreting cells\", \"confidence\": 10, \"reasoning\": \"After alveolar injury, regeneration of the alveolar lining primarily involves the proliferation of type II pneumocytes, which are surfactant-secreting cells. These cells not only restore surfactant production but also serve as progenitors for type I pneumocytes, helping re-establish the alveolar epithelium. The other options do not play a primary role in alveolar regeneration.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 293,
+    "completion_tokens": 115
+  }
+}

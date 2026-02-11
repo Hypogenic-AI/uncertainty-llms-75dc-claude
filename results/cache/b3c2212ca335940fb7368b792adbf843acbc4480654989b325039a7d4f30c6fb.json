@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Crescent formation\", \"confidence\": 10, \"reasoning\": \"Rapidly progressive glomerulonephritis (RPGN) is defined by its characteristic histopathologic finding of crescent formation in >50% of glomeruli. Crescents are composed of proliferating parietal epithelial cells and infiltrating macrophages in Bowman's space. This is the hallmark and most consistent feature of RPGN across all three types (anti-GBM, immune complex, and pauci-immune). Loss of foot processes (podocyte effacement) is characteristic of minimal change disease and nephrotic syndrome, not RPGN. Mesangial proliferation and IgA deposition are features of IgA nephropathy, which typically has a more indolent course.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 401,
+    "completion_tokens": 203
+  }
+}

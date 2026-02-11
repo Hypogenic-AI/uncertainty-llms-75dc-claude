@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Irregular 14-week sized uterus\", \"confidence\": 9, \"reasoning\": \"This patient presents with classic symptoms of uterine fibroids (leiomyomas): 1) Heavy menstrual bleeding (menorrhagia) requiring frequent tampon changes, 2) Irregular bleeding with intermenstrual spotting, 3) Severe dysmenorrhea, 4) Dyspareunia, 5) Pelvic pressure/heaviness, 6) Urinary frequency from mass effect. Risk factors include multiparity (G5P4), age 45, obesity, and African American descent (though not specified). The combination of these symptoms strongly suggests multiple uterine fibroids. On physical exam, fibroids typically present as an irregularly enlarged uterus (due to multiple fibroids of varying sizes creating an irregular contour), rather than a smooth globular enlargement. The size described as '14-week' indicates significant enlargement. Option 0 (globular uterus) would be more consistent with adenomyosis, which can cause similar symptoms but typically results in a symmetrically enlarged, tender uterus. Option 1 (adnexal mass) would suggest ovarian pathology. Option 3 is unlikely given the clear symptomatology.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 304
+  }
+}

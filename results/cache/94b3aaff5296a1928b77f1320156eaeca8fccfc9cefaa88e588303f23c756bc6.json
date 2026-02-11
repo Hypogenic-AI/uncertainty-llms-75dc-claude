@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Adhesive capsulitis\", \"confidence\": 8, \"reasoning\": \"The key clinical features are: 65-year-old male with diabetes mellitus type II, sedentary lifestyle, difficulty with overhead activities (combing hair, reaching high shelves), and BOTH decreased passive AND active range of motion. Adhesive capsulitis (frozen shoulder) is characterized by global restriction of both active and passive shoulder motion, and has strong associations with diabetes mellitus, sedentary lifestyle, and age 40-65. The equal limitation of passive and active ROM distinguishes it from rotator cuff impingement (where passive ROM is typically preserved) and subacromial bursitis (which presents more acutely with pain rather than stiffness). Glenohumeral osteoarthritis is less likely given the presentation and risk factors.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 314,
+    "completion_tokens": 198
+  }
+}

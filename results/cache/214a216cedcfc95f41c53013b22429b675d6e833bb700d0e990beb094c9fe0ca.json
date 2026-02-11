@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"16\", \"confidence\": 10, \"reasoning\": \"According to Poiseuille's law, resistance to flow in a vessel is inversely proportional to the fourth power of the radius (R \u221d 1/r^4). A 50% reduction in diameter means the radius is also reduced by 50%. Therefore, the new resistance is (1/0.5)^4 = 16 times greater than the original resistance.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 381,
+    "completion_tokens": 109
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 0,\n  \"answer_text\": \"Vasovagal syncope\",\n  \"confidence\": 9,\n  \"reasoning\": \"This is a classic presentation of vasovagal syncope (neurocardiogenic syncope). Key features: (1) Clear precipitating trigger (pain/anxiety from tattooing), (2) Prodrome of diaphoresis and pallor, (3) Brief convulsive movements (common in syncope due to cerebral hypoperfusion, not a true seizure), (4) Rapid and complete recovery with immediate orientation, (5) Normal vital signs and physical exam, (6) Young healthy patient. The incomplete RBBB is a normal variant found in ~1% of healthy young adults and is not associated with syncope. Orthostatic syncope would require positional change. Cardiac causes are unlikely given normal exam, stable vitals, rapid recovery, and clear vasovagal trigger. The brief jerking movements represent convulsive syncope, not epilepsy.\",\n  \"evidence_quality\": \"normal\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 571,
+    "completion_tokens": 253
+  }
+}

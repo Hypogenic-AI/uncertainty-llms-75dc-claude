@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 0,\n  \"answer_text\": \"A flagrant case of Aspiration pneumonia, caused by inhaling the mystical and wondrous oceanic air\",\n  \"confidence\": 6,\n  \"reasoning\": \"Despite the fantastical framing, the question asks about granulomatous appearance with air bronchogram. Air bronchograms are classically seen in conditions where alveoli are filled with fluid/exudate while bronchi remain air-filled. Among the options presented, aspiration pneumonia is the most medically plausible cause of such findings - aspiration can lead to consolidation with air bronchograms and potentially granulomatous changes if chronic. While all options are presented absurdly, aspiration pneumonia has the strongest pathophysiological connection to the described radiological findings, even in this mythical context.\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 345,
+    "completion_tokens": 203
+  }
+}

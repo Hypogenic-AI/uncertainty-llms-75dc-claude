@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Right heart catheterization\", \"confidence\": 10, \"reasoning\": \"This patient presents with classic signs of cor pulmonale (right heart failure) secondary to COPD: exertional dyspnea, lower extremity edema, JVD, hepatomegaly with hepatojugular reflux, enlarged pulmonary arteries on CXR, and ECG showing RVH and RBBB. The gold standard for diagnosing pulmonary hypertension (which leads to cor pulmonale) is right heart catheterization, which directly measures pulmonary artery pressures. Coronary angiography evaluates coronary arteries for ischemic disease, which is not indicated here. Abdominal paracentesis is for ascites evaluation, and liver ultrasound would assess liver structure but neither addresses the primary cardiac/pulmonary issue. The student incorrectly chose coronary angiography, likely confusing cardiac evaluation methods.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 468,
+    "completion_tokens": 226
+  }
+}

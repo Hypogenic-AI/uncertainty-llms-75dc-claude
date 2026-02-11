@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Inhibition of gonadotropin-releasing hormone release\", \"confidence\": 10, \"reasoning\": \"This patient presents with secondary amenorrhea, galactorrhea, and bitemporal hemianopsia (temporal field visual defects), as well as headaches. These symptoms are classic for a pituitary macroadenoma, most likely a prolactinoma. Elevated prolactin inhibits gonadotropin-releasing hormone (GnRH) release from the hypothalamus, leading to decreased LH and FSH, and thus amenorrhea. The visual field defect is due to compression of the optic chiasm. The other options do not fit her presentation.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 503,
+    "completion_tokens": 157
+  }
+}

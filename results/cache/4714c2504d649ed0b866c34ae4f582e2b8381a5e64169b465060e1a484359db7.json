@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Fluoxetine\", \"confidence\": 10, \"reasoning\": \"This adolescent presents with symptoms consistent with social anxiety disorder (social phobia): persistent fear of social situations, worry about being negatively evaluated, physical symptoms during social exposure, and avoidance behavior. First-line pharmacotherapy for social anxiety disorder in children and adolescents is selective serotonin reuptake inhibitors (SSRIs) like fluoxetine. Clomipramine (a TCA) and phenelzine (an MAOI) are not first-line due to side effects. Propranolol is used for performance-only subtype, not generalized social anxiety.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 313,
+    "completion_tokens": 137
+  }
+}

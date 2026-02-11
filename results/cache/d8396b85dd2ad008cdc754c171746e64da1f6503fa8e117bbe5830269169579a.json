@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Perform percutaneous drainage\", \"confidence\": 9, \"reasoning\": \"This patient presents with fever, chills, right upper quadrant pain, hepatomegaly, and leukocytosis with neutrophilia, strongly suggesting a pyogenic liver abscess. The elevated alkaline phosphatase and transaminases support hepatobiliary pathology. The mention of a right upper quadrant ultrasound (though not shown) likely demonstrates a fluid collection/abscess. Key clinical features include:\\n\\n1. High fever (40\u00b0C) with systemic signs of infection\\n2. Tender hepatomegaly\\n3. Marked leukocytosis (17,100) with left shift\\n4. Elevated liver enzymes, especially alkaline phosphatase\\n5. Decreased breath sounds at right base (sympathetic pleural effusion)\\n\\nThe most appropriate management for a pyogenic liver abscess is:\\n- Percutaneous drainage (diagnostic and therapeutic)\\n- Combined with antibiotics\\n\\nOther options are less appropriate:\\n- Discontinuing OCPs: Not urgent management for acute infection\\n- HIDA scan: Used for biliary tract/gallbladder function, not for liver abscess\\n- ERCP: For biliary obstruction/choledocholithiasis, not primary liver abscess\\n\\nPercutaneous drainage allows for source control, culture identification, and symptom relief.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 495,
+    "completion_tokens": 335
+  }
+}

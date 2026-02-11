@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Cervical lymph nodes\", \"confidence\": 9, \"reasoning\": \"This patient presents with a fixed, immobile thyroid nodule suspicious for malignancy. The planned treatment with radioiodine therapy after near-total thyroidectomy strongly suggests differentiated thyroid cancer (papillary or follicular). The mention of checking bones and lungs for metastases is relevant for follicular thyroid cancer, which tends to spread hematogenously. However, papillary thyroid carcinoma (the most common type, ~80% of cases) characteristically spreads via lymphatic routes first, with cervical lymph nodes being the most common initial metastatic site. Even though the question mentions distant metastatic sites (bones/lungs), when asking about the 'most likely initial metastatic site,' cervical lymph nodes are the answer, as lymphatic spread typically precedes hematogenous spread in thyroid cancer, particularly in papillary carcinoma.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 321,
+    "completion_tokens": 229
+  }
+}

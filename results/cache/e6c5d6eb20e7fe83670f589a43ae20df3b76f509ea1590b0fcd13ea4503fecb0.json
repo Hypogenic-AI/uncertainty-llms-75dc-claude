@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Ackerman\", \"confidence\": 7, \"reasoning\": \"The question refers to a classification, and the student's incorrect answer was 'Dewey.' Among the options, 'Ackerman' is known for the Ackerman classification in oral pathology, particularly for odontogenic tumors. 'Proffit' is associated with orthodontics, specifically malocclusion classification, but not a general classification system. Dewey is not widely recognized for a classification system in mainstream medical or dental literature. Therefore, Ackerman is the most likely correct answer.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 355,
+    "completion_tokens": 129
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Antibodies directed against phospholipids\", \"confidence\": 10, \"reasoning\": \"This patient presents with a deep vein thrombosis (DVT) in the setting of SLE and a history of spontaneous abortion. Key lab findings include: prolonged PTT (90 sec) that does NOT correct with mixing study (89 sec), indicating an inhibitor rather than a factor deficiency. Normal platelet count and PT. This classic presentation points to antiphospholipid syndrome (APS), characterized by: 1) Thrombosis (arterial/venous), 2) Pregnancy morbidity (recurrent miscarriages), 3) Laboratory evidence of antiphospholipid antibodies (lupus anticoagulant causes prolonged PTT that doesn't correct with mixing). APS is strongly associated with SLE. The other options don't fit: Option 0 (anti-GpIIb/IIIa) causes thrombocytopenia, not thrombosis. Option 2 lacks specific evidence. Option 3 (Vitamin K deficiency) would prolong PT and correct with mixing study.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 423,
+    "completion_tokens": 270
+  }
+}

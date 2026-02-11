@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Formation of noncaseating granulomas\", \"confidence\": 10, \"reasoning\": \"This young man presents with chronic, nonbloody diarrhea, right lower quadrant pain, fever, leukocytosis, elevated ESR, and CT findings of mural thickening and fat stranding in the terminal ileum and transverse colon. These findings are most consistent with Crohn disease. The most specific histologic finding for Crohn disease is the presence of noncaseating granulomas. The other options are less specific: neutrophilic crypt inflammation can be seen in many colitides, pseudomembranes are characteristic of C. difficile infection, and pseudopolyps are seen in both Crohn disease and ulcerative colitis.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 333,
+    "completion_tokens": 158
+  }
+}

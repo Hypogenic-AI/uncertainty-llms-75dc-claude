@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Veex - veex\", \"confidence\": 3, \"reasoning\": \"The question appears to contain a typographical error where 'Veex' likely means 'Vertex' (head-down position). In twin pregnancies, the most common presentation is vertex-vertex (both twins head-down), occurring in approximately 40-45% of cases. Vertex-breech is the second most common (~25-30%), followed by breech-breech (~10%). However, the unusual spelling 'Veex' makes this question's evidence quality suspicious, reducing my confidence in interpreting the intended meaning.\", \"evidence_quality\": \"suspicious\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 395,
+    "completion_tokens": 156
+  }
+}

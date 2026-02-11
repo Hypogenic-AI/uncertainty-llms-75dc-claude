@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 5, \"answer_text\": \"I do not know\", \"confidence\": 2, \"reasoning\": \"The question is framed in a fantastical, nonsensical manner and presents options that are absurd and not based on established medical knowledge of ADHD symptoms. None of the options reflect real, evidence-based symptoms of inattention in ADHD, and the scenario is intentionally illogical.\", \"evidence_quality\": \"implausible\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 523,
+    "completion_tokens": 92
+  }
+}

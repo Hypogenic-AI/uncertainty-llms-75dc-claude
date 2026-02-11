@@ -1,0 +1,177 @@
+\section{Results}
+\label{sec:results}
+
+\subsection{Unsafe Completions on Counterfactual Questions (H1, H2)}
+\label{sec:primary_results}
+
+\Tabref{tab:main_results} presents our primary finding: \uaprompt dramatically reduces unsafe completions on counterfactual medical questions for both models.
+
+\begin{table}[t]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}llcccc@{}}
+        \toprule
+        \textbf{Model} & \textbf{Condition} & \textbf{Cautiousness} & \textbf{Unsafe Rate} & \textbf{Mean Conf.\ ($\pm$ std)} & \textbf{Evidence Flagged} \\
+        \midrule \midrule
+        \multirow{2}{*}{\gptmodel} & Baseline & 3.0\% & 97.0\% & $9.5 \pm 1.0$ & --- \\
+         & \uaprompt & {\bf 91.0\%} & {\bf 9.0\%} & $3.5 \pm 3.5$ & 93.0\% \\
+        \midrule
+        \multirow{2}{*}{\claudemodel} & Baseline & 22.0\% & 71.0\% & $8.0 \pm 1.8$ & --- \\
+         & \uaprompt & {\bf 88.0\%} & {\bf 2.0\%} & $1.8 \pm 1.1$ & 90.0\% \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{Results on \medhaltfake (counterfactual questions). \uaprompt reduces unsafe completion rates from 97\% to 9\% (\gptmodel) and from 71\% to 2\% (\claudemodel). All differences are significant at $p < 0.0001$. Best results in \textbf{bold}.}
+    \label{tab:main_results}
+\end{table}
+
+Under baseline prompting, \gptmodel confidently engages with absurd medical premises in 97\% of cases, with a mean confidence of $9.5/10$.
+\claudemodel shows marginally more caution at baseline (22\% cautiousness), suggesting some inherent resistance to counterfactual inputs.
+Under \uaprompt, both models shift to predominantly cautious behavior: cautiousness rises to 91\% and 88\%, while unsafe rates drop to 9\% and 2\%, respectively.
+Both models successfully flag evidence quality in ${\sim}$90\% of uncertainty-condition responses.
+
+All counterfactual results are statistically significant ($p < 0.0001$, chi-squared tests).
+The effect sizes are extraordinarily large: the odds ratio for \gptmodel cautiousness is 326.9, and for \claudemodel is 26.0.
+Cohen's $d$ for the confidence shift is 2.31 (\gptmodel) and 4.19 (\claudemodel), well above the conventional threshold of 0.8 for ``large'' effects.
+
+\subsection{Counterfactual Detection via Confidence (H3)}
+\label{sec:auroc}
+
+\Tabref{tab:auroc} shows that self-reported confidence under \uaprompt is an effective counterfactual detector.
+
+\begin{table}[t]
+    \centering
+    \begin{tabular}{@{}llcc@{}}
+        \toprule
+        \textbf{Model} & \textbf{Condition} & \textbf{AUROC} & \textbf{$N$ (legit / counterfactual)} \\
+        \midrule
+        \multirow{2}{*}{\gptmodel} & Baseline & 0.667 & 100 / 100 \\
+         & \uaprompt & {\bf 0.879} & 100 / 100 \\
+        \midrule
+        \multirow{2}{*}{\claudemodel} & Baseline & 0.660 & 99 / 94 \\
+         & \uaprompt & {\bf 0.892} & 97 / 90 \\
+        \bottomrule
+    \end{tabular}
+    \caption{AUROC for counterfactual detection using inverted self-reported confidence. \uaprompt improves AUROC from ${\sim}$0.66 to ${\sim}$0.89, exceeding the prior best medical uncertainty estimation result of 0.58~\citep{wu2024uncertainty}. Best results in \textbf{bold}.}
+    \label{tab:auroc}
+\end{table}
+
+The baseline AUROC of ${\sim}$0.66 indicates that even without explicit uncertainty instructions, both models assign slightly lower confidence to counterfactual questions---but not nearly enough to serve as a reliable safety mechanism.
+Under \uaprompt, AUROC increases to 0.88--0.89, creating clear separation between confidence distributions on legitimate and counterfactual inputs.
+
+\para{Comparison with prior work.}
+\citet{wu2024uncertainty} reported the best prior AUROC for medical uncertainty estimation at 0.58 (Two-Phase Verification method on general medical QA).
+Our \uaprompt achieves 0.88--0.89, a substantial improvement.
+However, a direct comparison requires caution: our task (distinguishing fabricated questions from real ones) involves coarser discrimination than identifying correct vs.\ incorrect answers on legitimate medical questions.
+The high AUROC reflects the effectiveness of the intervention for a specific safety use case rather than a general advance in medical uncertainty estimation.
+
+\subsection{Accuracy Preservation (H4)}
+\label{sec:accuracy}
+
+\begin{table}[t]
+    \centering
+    \begin{tabular}{@{}llcc@{}}
+        \toprule
+        \textbf{Model} & \textbf{Condition} & \textbf{\medqa Accuracy} & \textbf{\medhaltfct Accuracy} \\
+        \midrule
+        \multirow{2}{*}{\gptmodel} & Baseline & 92.0\% & 89.0\% \\
+         & \uaprompt & {\bf 92.0\%} & {\bf 88.0\%} \\
+        \midrule
+        \multirow{2}{*}{\claudemodel} & Baseline & 93.0\% & 82.0\% \\
+         & \uaprompt & 66.0\% \decrease & 75.0\% \decrease \\
+        \bottomrule
+    \end{tabular}
+    \caption{Accuracy on legitimate medical questions. \gptmodel preserves accuracy perfectly under \uaprompt. \claudemodel shows significant degradation, partly attributable to a 34\% parse failure rate under the uncertainty prompt. Best results in \textbf{bold}.}
+    \label{tab:accuracy}
+\end{table}
+
+\Tabref{tab:accuracy} reveals that the accuracy--safety tradeoff is model-dependent.
+\gptmodel preserves accuracy perfectly: 92\% $\to$ 92\% on \medqa and 89\% $\to$ 88\% on \medhaltfct.
+The uncertainty prompt does not cause \gptmodel to second-guess valid medical knowledge.
+
+\claudemodel shows a significant accuracy drop: 93\% $\to$ 66\% on \medqa ($p = 0.001$), exceeding our pre-specified 5\% degradation threshold.
+However, this drop is substantially confounded by a {\bf 34\% parse failure rate} on \medqa under the uncertainty prompt (vs.\ 4\% at baseline; see \secref{sec:parse_rates}).
+When \claudemodel receives the more complex uncertainty prompt, it frequently produces verbose narrative responses instead of the requested JSON format, and parse failures are counted as incorrect.
+\gptmodel maintains 0\% parse error across all conditions.
+
+\subsection{Fact-Checking Dataset: Limited Impact}
+\label{sec:fct_results}
+
+On \medhaltfct, uncertainty prompting shows no meaningful improvement for either model (\tabref{tab:fct_results}).
+
+\begin{table}[t]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}llcccc@{}}
+        \toprule
+        \textbf{Model} & \textbf{Condition} & \textbf{Cautiousness} & \textbf{Unsafe Rate} & \textbf{Mean Conf.} & \textbf{Accuracy} \\
+        \midrule
+        \multirow{2}{*}{\gptmodel} & Baseline & 0.0\% & 11.0\% & 9.7 & 89.0\% \\
+         & \uaprompt & 1.0\% & 12.0\% & 9.3 & 88.0\% \\
+        \midrule
+        \multirow{2}{*}{\claudemodel} & Baseline & 3.0\% & 15.0\% & 8.8 & 82.0\% \\
+         & \uaprompt & 9.0\% & 18.0\% & 8.4 & 75.0\% \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{Results on \medhaltfct (fact-checking). No significant differences between conditions for either model (all $p > 0.05$). The intervention targets implausible premises, not subtle factual errors.}
+    \label{tab:fct_results}
+\end{table}
+
+None of the \medhaltfct differences reach statistical significance.
+This result is interpretable: \medhaltfct questions present real medical questions where a student gave a wrong answer---the premise is legitimate, and the task requires medical knowledge rather than evidence-quality assessment.
+\uaprompt is designed to detect implausible premises, not subtle factual errors, and both models appropriately maintain high confidence on these medically sound questions.
+
+\subsection{Confidence Distributions}
+\label{sec:confidence}
+
+The confidence distributions reveal the mechanism of the intervention clearly.
+Under baseline prompting, both models cluster at high confidence (8--10) across all datasets, including counterfactual questions.
+\gptmodel is especially extreme, with mean confidence of $9.96/10$ on \medqa and $9.47/10$ even on counterfactual questions.
+
+Under \uaprompt on counterfactual questions, confidence distributions shift dramatically downward (mean 1.8 for \claudemodel, 3.5 for \gptmodel), creating clear bimodal separation from legitimate questions.
+On legitimate and fact-checking questions, confidence remains high (8.0--9.6), confirming that the prompt does not indiscriminately suppress confidence.
+
+\subsection{Parse Success Rates}
+\label{sec:parse_rates}
+
+\begin{table}[t]
+    \centering
+    \begin{tabular}{@{}llccc@{}}
+        \toprule
+        \textbf{Model} & \textbf{Condition} & \textbf{\medqa} & \textbf{\medhaltfake} & \textbf{\medhaltfct} \\
+        \midrule
+        \multirow{2}{*}{\gptmodel} & Baseline & 100\% & 100\% & 100\% \\
+         & \uaprompt & 100\% & 100\% & 100\% \\
+        \midrule
+        \multirow{2}{*}{\claudemodel} & Baseline & 96\% & 91\% & 97\% \\
+         & \uaprompt & {\bf 66\%} & 90\% & 88\% \\
+        \bottomrule
+    \end{tabular}
+    \caption{JSON parse success rates. \gptmodel achieves perfect compliance. \claudemodel shows degraded compliance under \uaprompt, particularly on \medqa (66\%), partly explaining the observed accuracy drop.}
+    \label{tab:parse_rates}
+\end{table}
+
+\Tabref{tab:parse_rates} reveals an important practical finding: more complex system prompts with multi-step reasoning instructions can degrade structured output compliance in some models.
+\claudemodel's 34\% parse failure rate on \medqa under \uaprompt indicates that the model struggles with competing generation pressures---assessing evidence quality while also producing structured JSON---particularly on legitimate questions where it has a strong answer.
+
+\subsection{Hypothesis Testing Summary}
+\label{sec:hypothesis_summary}
+
+\begin{table}[t]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lllll@{}}
+        \toprule
+        \textbf{Hypothesis} & \textbf{\gptmodel} & \textbf{\claudemodel} & \textbf{Effect Size} & \textbf{Verdict} \\
+        \midrule
+        H1 (Cautiousness) & 3\% $\to$ 91\%, $p < 0.0001$ & 22\% $\to$ 88\%, $p < 0.0001$ & OR = 327 / 26 & {\bf Supported} \\
+        H2 (Safety) & 97\% $\to$ 9\%, $p < 0.0001$ & 71\% $\to$ 2\%, $p < 0.0001$ & --- & {\bf Supported} \\
+        H3 (Calibration) & 0.667 $\to$ 0.879 & 0.660 $\to$ 0.892 & --- & {\bf Supported} \\
+        H4 (Accuracy) & 92\% $\to$ 92\% & 93\% $\to$ 66\% & --- & {\bf Mixed} \\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{Summary of hypothesis testing. H1--H3 are strongly supported. H4 is model-dependent: \gptmodel preserves accuracy while \claudemodel shows degradation partly attributable to parse errors.}
+    \label{tab:hypotheses}
+\end{table}

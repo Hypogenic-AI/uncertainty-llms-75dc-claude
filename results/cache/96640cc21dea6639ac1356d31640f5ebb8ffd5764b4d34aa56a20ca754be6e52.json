@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"The ambient temperature has no bearing on this peculiar creature, for it is endowed with the fanciful ability to regulate its own internal temperature and maintain a constant state of equilibrium\", \"confidence\": 9, \"reasoning\": \"In the context of whimsical and fantastical creatures, the assertion that an organism is completely unaffected by ambient temperature due to perfect internal regulation is highly improbable and patently false, especially in a realm defined by the erratic influence of three suns. Even in fantasy, such absolute homeostasis is almost never attributed to living beings.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 330,
+    "completion_tokens": 122
+  }
+}

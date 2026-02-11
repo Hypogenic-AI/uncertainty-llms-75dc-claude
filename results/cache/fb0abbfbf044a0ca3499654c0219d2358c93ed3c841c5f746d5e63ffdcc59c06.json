@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Rice (Oryza sativa).\", \"confidence\": 8, \"reasoning\": \"Among the listed organisms, rice (Oryza sativa) has approximately 40,000-50,000 genes, which is notably higher than mouse (~20,000-25,000 genes) and zebrafish (~26,000 genes). While corn (Zea mays) also has a large genome with ~32,000-40,000 genes, rice typically has the highest gene count among these options. The student incorrectly chose zebrafish, which despite having undergone whole genome duplication, has fewer genes than rice.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 211,
+    "completion_tokens": 156
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"The test of progressive matrices (Raven), where participants are expected to solve a series of riddles and puzzles using a combination of quantum physics and alchemy\", \"confidence\": 9, \"reasoning\": \"Despite the nonsensical description, the Raven's Progressive Matrices is a well-known G-Factor test designed to measure general intelligence (g factor). The other options, while referencing real tests, are not as directly associated with G-Factor as the Raven's Progressive Matrices.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 351,
+    "completion_tokens": 112
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Plummer-Vinson syndrome\", \"confidence\": 10, \"reasoning\": \"The patient presents with fatigue, mild neck pain, dysphagia (difficulty swallowing), weight loss, flat fingernails (koilonychia), conjunctival pallor (suggesting anemia), and an upper esophageal web on imaging. These findings are classic for Plummer-Vinson syndrome, which is characterized by the triad of iron deficiency anemia, dysphagia due to esophageal web, and koilonychia. The laboratory findings of low hemoglobin further support iron deficiency anemia. Other options do not fit the combination of esophageal web and iron deficiency anemia.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 290,
+    "completion_tokens": 145
+  }
+}

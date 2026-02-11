@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Prolactin\", \"confidence\": 9, \"reasoning\": \"The hypothalamus primarily exerts inhibitory control over prolactin secretion through dopamine (prolactin-inhibiting factor). While growth hormone is regulated by the hypothalamus, it is controlled by both stimulatory (GHRH) and inhibitory (somatostatin) factors, not primarily inhibitory control. The student answered 'Only prolactin' which appears in the options, but the correct answer should be 'Prolactin' (option 0) as it is the hormone under predominant inhibitory control. The distinction between options 0 and 1 may be subtle, but option 0 'Prolactin' is the most direct and correct answer to which hormone is under inhibitory control of the hypothalamus.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 184,
+    "completion_tokens": 196
+  }
+}

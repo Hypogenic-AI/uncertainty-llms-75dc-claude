@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Primary prevention\", \"confidence\": 9, \"reasoning\": \"Isolation of infected persons is a classic example of primary prevention, as it aims to prevent the spread of disease to healthy individuals. Quarternary prevention refers to avoiding overmedicalization and unnecessary interventions, not isolation. Secondary prevention involves early detection, and tertiary prevention focuses on reducing complications. Thus, primary prevention is correct.\", \"evidence_quality\": \"normal\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 361,
+    "completion_tokens": 98
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 0,\n  \"answer_text\": \"Case-control study\",\n  \"confidence\": 10,\n  \"reasoning\": \"This is a classic case-control study design. Key features: (1) Investigators identified cases (50 people WITH interstitial lung disease) and controls (50 people WITHOUT the disease), (2) Controls are matched by age and geographic location, (3) Exposure to the fire retardant chemical is assessed retrospectively through surveys and home visits. The study starts with disease status and looks backward to assess exposure, which is the hallmark of case-control studies.\",\n  \"evidence_quality\": \"normal\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 442,
+    "completion_tokens": 157
+  }
+}

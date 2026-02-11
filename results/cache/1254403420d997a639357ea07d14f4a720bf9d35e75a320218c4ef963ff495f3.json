@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"Schizotypal personality disorder\", \"confidence\": 9, \"reasoning\": \"The patient exhibits paranoid personality disorder features: pervasive distrust and suspiciousness (doesn't trust neighbors, doubts wife's fidelity, suspicious of marriage counselor), interpreting others' motives as malevolent (boss was 'jealous'), and being critical/complaining. Paranoid personality disorder belongs to Cluster A (odd/eccentric) of personality disorders. Schizotypal personality disorder also belongs to Cluster A, along with schizoid personality disorder. Obsessive-compulsive personality disorder is Cluster C (anxious/fearful), antisocial personality disorder is Cluster B (dramatic/erratic), and 'personality disorder NOS' is not a cluster designation. Therefore, schizotypal personality disorder is the correct answer as it shares the same cluster classification.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 276,
+    "completion_tokens": 210
+  }
+}

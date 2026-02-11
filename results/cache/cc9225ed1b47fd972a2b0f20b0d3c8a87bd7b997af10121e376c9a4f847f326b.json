@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"The K-ABC is a highly precise tool to evaluate the intellectual capacity of gifted children, allowing them to manipulate time and space to their advantage\", \"confidence\": 10, \"reasoning\": \"While several options are absurd, the claim that a cognitive test allows children to manipulate time and space is the most outrageous and impossible, as no psychological assessment can grant supernatural abilities.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 377,
+    "completion_tokens": 88
+  }
+}

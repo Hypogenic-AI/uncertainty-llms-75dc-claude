@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Transient hypertrophic cardiomyopathy\", \"confidence\": 8, \"reasoning\": \"This patient has poorly controlled type 1 diabetes (HbA1C 8.5%, random glucose 220 mg/dL) during pregnancy. Maternal hyperglycemia leads to fetal hyperinsulinemia, which causes excessive glycogen deposition in the fetal myocardium, particularly the interventricular septum. This results in transient hypertrophic cardiomyopathy in infants of diabetic mothers, which typically resolves within the first few months of life. While hypertrophic obstructive cardiomyopathy (option 0) might seem similar, the transient nature and specific association with maternal diabetes makes option 1 more precise. Tetralogy of Fallot and mitral valve prolapse are not specifically associated with maternal diabetes.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 526,
+    "completion_tokens": 221
+  }
+}

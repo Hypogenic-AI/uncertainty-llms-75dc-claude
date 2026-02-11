@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 2, \"answer_text\": \"Small blue cells arranged in rosettes around a central neuropil\", \"confidence\": 9, \"reasoning\": \"This clinical presentation is classic for opsoclonus-myoclonus syndrome (OMS) associated with neuroblastoma. The key features are: 1) A 2-year-old child (peak age for neuroblastoma), 2) Opsoclonus (chaotic, multidirectional saccadic eye movements), 3) Myoclonus (brief involuntary muscle contractions), 4) Ataxia (unsteady gait), and 5) An abdominal mass. Neuroblastoma is a tumor of neural crest origin that arises from sympathetic ganglia or adrenal medulla. Histologically, it characteristically shows small round blue cells (neuroblasts) arranged in Homer-Wright rosettes around central neuropil (eosinophilic neural processes). The other options represent: 0) Burkitt lymphoma, 1) Wilms tumor (nephroblastoma), and 3) Hepatoblastoma. While Wilms tumor can present as an abdominal mass in this age group, it would not cause OMS, which is a paraneoplastic syndrome specifically associated with neuroblastoma.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 292,
+    "completion_tokens": 305
+  }
+}

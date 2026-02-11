@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 0, \"answer_text\": \"The whimsical and oftentimes elusive Selectins, whose elusive nature remains an enigma to both the Zogians and the earthlings\", \"confidence\": 10, \"reasoning\": \"Selectins are well-established as the primary mediators of the rolling phase of leukocyte adhesion to endothelial cells during the inflammatory response. Integrins are involved in the subsequent firm adhesion step, not rolling. Transferrin is an iron-binding protein unrelated to leukocyte adhesion, and PECAM-1 is involved in transmigration, not rolling. Therefore, selectins are the correct answer.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 350,
+    "completion_tokens": 129
+  }
+}

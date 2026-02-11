@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Rectal suction biopsy\", \"confidence\": 10, \"reasoning\": \"This clinical presentation is classic for Hirschsprung disease (congenital aganglionic megacolon). Key features include: 1) Delayed passage of meconium (first bowel movement at 50 hours, normal is <48 hours), 2) Chronic constipation with infrequent bowel movements, 3) Bilious vomiting and feeding intolerance, 4) Abdominal distension, 5) Explosive release of stool after rectal exam (pathognomonic sign), 6) X-ray showing dilated proximal colon with distal aganglionic segment lacking stool/air (transition zone), and 7) Associated dysmorphic features suggesting possible Down syndrome (low-set ears, flat nasal bridge, sandal gap deformity). The gold standard for diagnosis is rectal suction biopsy, which demonstrates absence of ganglion cells in the submucosal and myenteric plexuses of the affected bowel segment. Anorectal manometry can be supportive but is less definitive than biopsy in neonates.\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 450,
+    "completion_tokens": 285
+  }
+}

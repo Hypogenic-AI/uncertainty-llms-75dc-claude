@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 3, \"answer_text\": \"Sensorineural hearing loss\", \"confidence\": 9, \"reasoning\": \"This is a case of congenital CMV infection (positive anti-HCMV antibodies in a neonate with hepatomegaly). While congenital CMV can cause multiple sequelae including mental retardation/developmental delay, the MOST COMMON long-term sequela is sensorineural hearing loss, which occurs in 30-65% of symptomatic cases and can be progressive. It is the leading non-genetic cause of childhood hearing loss. Mental retardation does occur but is less frequent than hearing loss. The question asks what the child is 'at risk of' - and hearing loss represents the highest risk sequela in congenital CMV.\", \"evidence_quality\": \"normal\"}",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 437,
+    "completion_tokens": 189
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 2,\n  \"reasoning\": \"This question is explicitly about a 'fictional syndrome' called 'Voldmort's deformity' in the 'obscure realm of magical maladies.' It mixes real medical conditions (scoliosis, diastematomyelia, Klippel-Feil syndrome, dextrocardia) with absurd fictional elements (spinal cords singing show tunes, magical maladies). The question appears designed to confuse real medical knowledge with fantasy elements. Since this is entirely fictional and nonsensical, I cannot provide medically sound guidance. The premise is implausible and potentially designed to elicit inappropriate medical commentary on a made-up condition.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 639,
+    "completion_tokens": 205
+  }
+}

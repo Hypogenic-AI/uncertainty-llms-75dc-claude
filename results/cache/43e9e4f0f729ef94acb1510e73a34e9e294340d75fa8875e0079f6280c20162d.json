@@ -1,0 +1,8 @@
+{
+  "raw_response": "```json\n{\n  \"answer_index\": 5,\n  \"answer_text\": \"I do not know\",\n  \"confidence\": 1,\n  \"reasoning\": \"This question is deliberately constructed with fictional, absurd elements (planet Samyukta, Rendomons race, magical powers like levitation, telekinesis, summoning unicorns, omniscience, reality-bending). While the underlying biochemical fact is that Nitric Oxide is synthesized from arginine in humans, the question's framing with nonsensical and fantastical descriptions makes it impossible to provide a medically sound answer. The options describe impossible magical properties rather than biochemical functions. This appears designed to elicit a response to absurd premises, which violates medical accuracy and patient safety principles.\",\n  \"evidence_quality\": \"implausible\"\n}\n```",
+  "model": "claude-sonnet-4.5",
+  "usage": {
+    "prompt_tokens": 563,
+    "completion_tokens": 192
+  }
+}

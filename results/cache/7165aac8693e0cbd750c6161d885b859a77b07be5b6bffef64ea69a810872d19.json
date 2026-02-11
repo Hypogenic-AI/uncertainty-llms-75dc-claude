@@ -1,0 +1,8 @@
+{
+  "raw_response": "{\"answer_index\": 1, \"answer_text\": \"Flexor pollicis longus tendon\", \"confidence\": 10, \"reasoning\": \"The patient has a mass on the lateral volar aspect of the wrist with median nerve symptoms (decreased sensation in the thumb, index, middle, and radial half of the ring finger, and Tinel's sign). The mass is likely a ganglion cyst compressing the median nerve within the carpal tunnel. The flexor pollicis longus tendon runs through the carpal tunnel adjacent to the median nerve and is at risk of entrapment if the mass persists. The ulnar nerve and artery run medial to the carpal tunnel, and the flexor carpi radialis tendon is lateral but not within the carpal tunnel itself.\"}",
+  "model": "gpt-4.1",
+  "usage": {
+    "prompt_tokens": 262,
+    "completion_tokens": 164
+  }
+}
