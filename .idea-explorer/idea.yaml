@@ -1,0 +1,28 @@
+idea:
+  title: 'Uncertainty-Aware Medical LLMs: Quantifying Doubt in the Face of Counterfactuals'
+  domain: nlp
+  hypothesis: 'LLMs equipped with predictive and semantic uncertainty estimation will
+    be less likely to provide confident, unsafe answers when presented with implausible
+    or dangerous medical evidence.
+
+    '
+  background:
+    description: "Teach LLMs to say \u201CI\u2019m not sure\u201D when the evidence\
+      \ looks weird or unsafe, instead of answering confidently. The initial experiment\
+      \ would compare baseline and uncertainty-augmented LLMs on MedCounterFact, scoring\
+      \ for cautiousness and reduction in unsafe completions.\n"
+    papers:
+    - description: '"Faithfulness vs. Safety: Evaluating LLM Behavior Under Counterfactual
+        Medical Evidence." Mo, K., Atf, Z., Safavi-Naini, S. A. A., Lewis, P. R.,
+        Mahjoubfar, A., Naderi, N., Savage, T., Soroush, A. (2026).'
+    - description: '"The challenge of uncertainty quantification of large language
+        models in medicine." Atf, Z., Safavi-Naini, S. A. A., Lewis, P. R., Mahjoubfar,
+        A., Naderi, N., Savage, T., Soroush, A. (2025). arXiv.org.'
+  metadata:
+    source: IdeaHub
+    source_url: https://hypogenic.ai/ideahub/idea/VhAiLObAo9A1Kum38jJ7
+    idea_id: uncertainty_aware_medical_llms_20260211_170941_6fcc083a
+    created_at: '2026-02-11T17:09:41.897226'
+    status: submitted
+    github_repo_name: uncertainty-llms-75dc-claude
+    github_repo_url: https://github.com/Hypogenic-AI/uncertainty-llms-75dc-claude
